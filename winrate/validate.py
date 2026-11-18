@@ -19,8 +19,8 @@ CHECKPOINT = ROOT / "model" / "model.pt"
 METRICS = ROOT / "model" / "metrics.json"
 CATALOG = ROOT / "data" / "catalog.json"
 SCENARIO_SEED = 20261202
-BATCHES = ((0, 20261203), (50, 20261204))
-CASES_PER_BATCH = 50
+BATCHES = ((0, 20261203), (25, 20261204), (50, 20261205), (75, 20261206))
+CASES_PER_BATCH = 25
 TRIALS_PER_CASE = 300
 
 
@@ -79,6 +79,10 @@ def make_report(batches):
         raise ValueError("A held-out simulation ended before producing all outcomes.")
 
     gaps = [case["model_win_rate"] - case["sim_win_rate"] for case in rows]
+    close_gaps = [
+        gap for case, gap in zip(rows, gaps)
+        if 0.4 <= case["sim_win_rate"] <= 0.6
+    ]
     return {
         "cases": len(rows),
         "battles": total_battles,
@@ -90,6 +94,10 @@ def make_report(batches):
         "battle_seeds": [seed for _, seed in BATCHES],
         "probability_mae": sum(map(abs, gaps)) / len(gaps),
         "probability_rmse": math.sqrt(sum(gap**2 for gap in gaps) / len(gaps)),
+        "observed_40_60": {
+            "cases": len(close_gaps),
+            "probability_mae": sum(map(abs, close_gaps)) / len(close_gaps) if close_gaps else None,
+        },
         "mean_simulation_standard_error": sum(
             case["sim_standard_error"] for case in rows
         )

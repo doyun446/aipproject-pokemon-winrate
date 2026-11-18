@@ -4,2705 +4,45 @@
   "trials_per_case": 300,
   "engine": "f827a1d41064e0dec4c19c6ea0394fcf0c23479c",
   "format": "gen9championsbssregmc",
-  "model_sha256": "834f0edf57951014ea4c84b8c4180b4bb2adb444124116416c9997d5787be0ce",
+  "model_sha256": "82fafd966e5fbb9854755723d91144c134271706af3f03178b22dd53b08e7d1d",
   "scenario_seed": 20261202,
   "battle_seeds": [
     20261203,
-    20261204
+    20261204,
+    20261205,
+    20261206
   ],
-  "probability_mae": 0.21212460078913725,
-  "probability_rmse": 0.29487381509232063,
-  "mean_simulation_standard_error": 0.011025242883036463,
+  "probability_mae": 0.19332761807416876,
+  "probability_rmse": 0.26849779414769265,
+  "observed_40_60": {
+    "cases": 6,
+    "probability_mae": 0.15478616005844545
+  },
+  "mean_simulation_standard_error": 0.011697175979382544,
   "scope_ko": "Showdown 행동 정책과 대표 세트의 추정 사용률을 기준으로 반복한 결과입니다. 입력한 HP 비율을 엔진의 정수 HP로 환산하고, 상태이상 면역은 엔진 규칙을 따릅니다.",
   "rows": [
     {
-      "pair": "banettemega|clefablemega",
+      "pair": "glimmora|starmie",
       "scenario": {
         "mode": "duel",
         "own": [
           {
-            "pokemon": "clefablemega",
-            "set": "set1",
             "hp": 100,
-            "status": "psn",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "banettemega",
-            "set": "",
-            "hp": 93,
-            "status": "",
-            "attack": -1,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.3933333333333333,
-      "sim_standard_error": 0.028250090846760858,
-      "model_win_rate": 0.43026241660118103
-    },
-    {
-      "pair": "kingambit|sneasler",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "sneasler",
-            "set": "set3",
-            "hp": 100,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "kingambit",
-            "set": "",
-            "hp": 11,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 1,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.9446811079978943
-    },
-    {
-      "pair": "glimmora|raichumegay",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "raichumegay",
-            "set": "set1",
-            "hp": 100,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "glimmora",
-            "set": "",
-            "hp": 16,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": "rain"
-      },
-      "trials": 300,
-      "sim_win_rate": 0.8833333333333333,
-      "sim_standard_error": 0.018565220437280063,
-      "model_win_rate": 0.9021067023277283
-    },
-    {
-      "pair": "glimmora|lucariomegaz",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "glimmora",
-            "set": "set1",
-            "hp": 74,
-            "status": "",
-            "attack": 2,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "lucariomegaz",
-            "set": "",
-            "hp": 100,
-            "status": "",
-            "attack": 0,
-            "speed": -1
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.6633333333333333,
-      "sim_standard_error": 0.02732941756218688,
-      "model_win_rate": 0.13958583772182465
-    },
-    {
-      "pair": "blazikenmega|golisopodmega",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "golisopodmega",
-            "set": "set3",
-            "hp": 50,
-            "status": "tox",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "blazikenmega",
-            "set": "",
-            "hp": 93,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.06891660392284393
-    },
-    {
-      "pair": "blazikenmega|sneasler",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "blazikenmega",
-            "set": "set3",
-            "hp": 29,
-            "status": "par",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "sneasler",
-            "set": "",
-            "hp": 34,
-            "status": "",
-            "attack": 0,
-            "speed": 1
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.0948854386806488
-    },
-    {
-      "pair": "indeedee|pelipper",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "pelipper",
-            "set": "set1",
-            "hp": 100,
-            "status": "tox",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "indeedee",
-            "set": "",
-            "hp": 35,
-            "status": "brn",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.5759528875350952
-    },
-    {
-      "pair": "cinderace|pelipper",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "cinderace",
-            "set": "set1",
-            "hp": 67,
-            "status": "slp",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "pelipper",
-            "set": "",
-            "hp": 100,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.03263050317764282
-    },
-    {
-      "pair": "raichumegay|toxapex",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "raichumegay",
-            "set": "set3",
-            "hp": 64,
-            "status": "",
-            "attack": 0,
-            "speed": 1
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "toxapex",
-            "set": "",
-            "hp": 58,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 1,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.8699042797088623
-    },
-    {
-      "pair": "basculegion|pelipper",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "pelipper",
-            "set": "set2",
-            "hp": 100,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "basculegion",
-            "set": "",
-            "hp": 19,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.9633333333333334,
-      "sim_standard_error": 0.010868970626620914,
-      "model_win_rate": 0.9542462825775146
-    },
-    {
-      "pair": "raichumegay|sneasler",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "raichumegay",
-            "set": "set1",
-            "hp": 16,
-            "status": "brn",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "sneasler",
-            "set": "",
-            "hp": 29,
-            "status": "",
-            "attack": -2,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.10666666666666667,
-      "sim_standard_error": 0.017851944882371792,
-      "model_win_rate": 0.2290143370628357
-    },
-    {
-      "pair": "gyaradosmega|kingambit",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "gyaradosmega",
-            "set": "set3",
-            "hp": 33,
-            "status": "",
-            "attack": -1,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "kingambit",
-            "set": "",
-            "hp": 69,
-            "status": "par",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.27,
-      "sim_standard_error": 0.025674838352260674,
-      "model_win_rate": 0.41621649265289307
-    },
-    {
-      "pair": "charizardmegay|rotomheat",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "charizardmegay",
-            "set": "set2",
-            "hp": 100,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "rotomheat",
-            "set": "",
-            "hp": 11,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.3,
-      "sim_standard_error": 0.026501719512585325,
-      "model_win_rate": 0.8237047791481018
-    },
-    {
-      "pair": "kingambit|primarina",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "kingambit",
-            "set": "set3",
-            "hp": 49,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "primarina",
-            "set": "",
-            "hp": 91,
-            "status": "slp",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.9233333333333333,
-      "sim_standard_error": 0.015386751988387182,
-      "model_win_rate": 0.7086513042449951
-    },
-    {
-      "pair": "charizardmegay|grimmsnarl",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "grimmsnarl",
-            "set": "set1",
-            "hp": 50,
-            "status": "",
-            "attack": 3,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "charizardmegay",
-            "set": "",
-            "hp": 73,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.7466666666666667,
-      "sim_standard_error": 0.025152082937711873,
-      "model_win_rate": 0.4034986197948456
-    },
-    {
-      "pair": "gengarmega|hydreigon",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "gengarmega",
-            "set": "set1",
-            "hp": 100,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "hydreigon",
-            "set": "",
-            "hp": 42,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.24,
-      "sim_standard_error": 0.024698855131686844,
-      "model_win_rate": 0.7580774426460266
-    },
-    {
-      "pair": "samurotthisui|scizor",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "samurotthisui",
-            "set": "set1",
-            "hp": 93,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "scizor",
-            "set": "",
-            "hp": 100,
-            "status": "par",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.09333333333333334,
-      "sim_standard_error": 0.016823122945106277,
-      "model_win_rate": 0.08188971877098083
-    },
-    {
-      "pair": "gengarmega|salamencemega",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "gengarmega",
-            "set": "set2",
-            "hp": 19,
             "status": "frz",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "salamencemega",
-            "set": "",
-            "hp": 20,
-            "status": "slp",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.8233333333333334,
-      "sim_standard_error": 0.022056142680706676,
-      "model_win_rate": 0.6246244311332703
-    },
-    {
-      "pair": "garchompmegaz|lucariomegaz",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "lucariomegaz",
-            "set": "set1",
-            "hp": 61,
-            "status": "",
-            "attack": 1,
-            "speed": 2
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "garchompmegaz",
-            "set": "",
-            "hp": 13,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 1,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.9272795915603638
-    },
-    {
-      "pair": "glimmora|starmiemega",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
+            "attack": 2,
+            "speed": 0,
             "pokemon": "glimmora",
-            "set": "set3",
-            "hp": 100,
-            "status": "",
-            "attack": 3,
-            "speed": 3
+            "set": "set3"
           }
         ],
         "foe": [
           {
+            "hp": 36,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
             "pokemon": "starmiemega",
-            "set": "",
-            "hp": 39,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": "sun"
-      },
-      "trials": 300,
-      "sim_win_rate": 1,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.8504475951194763
-    },
-    {
-      "pair": "cinderace|hydreigon",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "hydreigon",
-            "set": "set1",
-            "hp": 13,
-            "status": "frz",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "cinderace",
-            "set": "",
-            "hp": 100,
-            "status": "",
-            "attack": 3,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.03333333333333333,
-      "sim_standard_error": 0.010381070730216605,
-      "model_win_rate": 0.04020512104034424
-    },
-    {
-      "pair": "dragapult|gholdengo",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "dragapult",
-            "set": "set1",
-            "hp": 79,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "gholdengo",
-            "set": "",
-            "hp": 79,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": "sand"
-      },
-      "trials": 300,
-      "sim_win_rate": 0.01,
-      "sim_standard_error": 0.005754160919975786,
-      "model_win_rate": 0.389635294675827
-    },
-    {
-      "pair": "archaludon|grimmsnarl",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "archaludon",
-            "set": "set1",
-            "hp": 19,
-            "status": "psn",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "grimmsnarl",
-            "set": "",
-            "hp": 95,
-            "status": "frz",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": "snow"
-      },
-      "trials": 300,
-      "sim_win_rate": 0.9833333333333333,
-      "sim_standard_error": 0.00740353546766903,
-      "model_win_rate": 0.8051900863647461
-    },
-    {
-      "pair": "clefablemega|corviknight",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "corviknight",
-            "set": "set1",
-            "hp": 24,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "clefablemega",
-            "set": "",
-            "hp": 100,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": "sand"
-      },
-      "trials": 300,
-      "sim_win_rate": 0,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.006590867415070534
-    },
-    {
-      "pair": "lucariomegaz|rotomheat",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "lucariomegaz",
-            "set": "set1",
-            "hp": 100,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "rotomheat",
-            "set": "",
-            "hp": 100,
-            "status": "psn",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.02666666666666667,
-      "sim_standard_error": 0.009317074546885731,
-      "model_win_rate": 0.561984658241272
-    },
-    {
-      "pair": "blastoisemega|glimmora",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "glimmora",
-            "set": "set1",
-            "hp": 19,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "blastoisemega",
-            "set": "",
-            "hp": 93,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.04006326571106911
-    },
-    {
-      "pair": "blastoisemega|blastoisemega",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "blastoisemega",
-            "set": "set1",
-            "hp": 84,
-            "status": "psn",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "blastoisemega",
-            "set": "",
-            "hp": 78,
-            "status": "",
-            "attack": 0,
-            "speed": 3
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.01,
-      "sim_standard_error": 0.005754160919975786,
-      "model_win_rate": 0.22948822379112244
-    },
-    {
-      "pair": "grimmsnarl|starmiemega",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "grimmsnarl",
-            "set": "set1",
-            "hp": 69,
-            "status": "frz",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "starmiemega",
-            "set": "",
-            "hp": 24,
-            "status": "frz",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.3233333333333333,
-      "sim_standard_error": 0.027050608391385768,
-      "model_win_rate": 0.4779062867164612
-    },
-    {
-      "pair": "basculegion|meowscarada",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "basculegion",
-            "set": "set2",
-            "hp": 78,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "meowscarada",
-            "set": "",
-            "hp": 55,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.11288514733314514
-    },
-    {
-      "pair": "archaludon|scizor",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "archaludon",
-            "set": "set3",
-            "hp": 39,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "scizor",
-            "set": "",
-            "hp": 52,
-            "status": "par",
-            "attack": 1,
-            "speed": -2
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.24333333333333335,
-      "sim_standard_error": 0.02481518457232593,
-      "model_win_rate": 0.6845778226852417
-    },
-    {
-      "pair": "lucariomegaz|scizor",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "scizor",
-            "set": "set1",
-            "hp": 57,
-            "status": "",
-            "attack": 0,
-            "speed": 2
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "lucariomegaz",
-            "set": "",
-            "hp": 65,
-            "status": "",
-            "attack": 1,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.09333333333333334,
-      "sim_standard_error": 0.016823122945106277,
-      "model_win_rate": 0.5819985270500183
-    },
-    {
-      "pair": "charizardmegax|indeedee",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "indeedee",
-            "set": "set1",
-            "hp": 96,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "charizardmegax",
-            "set": "",
-            "hp": 100,
-            "status": "par",
-            "attack": 1,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.24333333333333335,
-      "sim_standard_error": 0.02481518457232593,
-      "model_win_rate": 0.3409230709075928
-    },
-    {
-      "pair": "charizardmegax|mimikyu",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "charizardmegax",
-            "set": "set1",
-            "hp": 100,
-            "status": "par",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "mimikyu",
-            "set": "",
-            "hp": 30,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.2733333333333333,
-      "sim_standard_error": 0.025773792282785916,
-      "model_win_rate": 0.6222370862960815
-    },
-    {
-      "pair": "baxcalibur|raichumegay",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "baxcalibur",
-            "set": "set3",
-            "hp": 100,
-            "status": "",
-            "attack": 0,
-            "speed": 2
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "raichumegay",
-            "set": "",
-            "hp": 37,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 1,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.9599714279174805
-    },
-    {
-      "pair": "cinderace|greninja",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "cinderace",
-            "set": "set1",
-            "hp": 49,
-            "status": "slp",
-            "attack": 2,
-            "speed": -2
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "greninja",
-            "set": "",
-            "hp": 83,
-            "status": "",
-            "attack": 2,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.09634724259376526
-    },
-    {
-      "pair": "hippowdon|primarina",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "primarina",
-            "set": "set2",
-            "hp": 28,
-            "status": "",
-            "attack": 3,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "hippowdon",
-            "set": "",
-            "hp": 31,
-            "status": "slp",
-            "attack": 0,
-            "speed": 3
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 1,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.9606931805610657
-    },
-    {
-      "pair": "basculegion|hippowdon",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "basculegion",
-            "set": "set3",
-            "hp": 17,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "hippowdon",
-            "set": "",
-            "hp": 100,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.89,
-      "sim_standard_error": 0.01809488184995635,
-      "model_win_rate": 0.2532579302787781
-    },
-    {
-      "pair": "gholdengo|ninetalesalola",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "gholdengo",
-            "set": "set1",
-            "hp": 16,
-            "status": "tox",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "ninetalesalola",
-            "set": "",
-            "hp": 23,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": "snow"
-      },
-      "trials": 300,
-      "sim_win_rate": 0.2,
-      "sim_standard_error": 0.023132597278649608,
-      "model_win_rate": 0.7886370420455933
-    },
-    {
-      "pair": "dragapult|salamencemega",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "salamencemega",
-            "set": "set3",
-            "hp": 23,
-            "status": "",
-            "attack": 0,
-            "speed": 2
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "dragapult",
-            "set": "",
-            "hp": 61,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": "sun"
-      },
-      "trials": 300,
-      "sim_win_rate": 0.88,
-      "sim_standard_error": 0.018793010869072674,
-      "model_win_rate": 0.7726249694824219
-    },
-    {
-      "pair": "blazikenmega|blazikenmega",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "blazikenmega",
-            "set": "set3",
-            "hp": 16,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "blazikenmega",
-            "set": "",
-            "hp": 54,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.8966666666666666,
-      "sim_standard_error": 0.017603545131283913,
-      "model_win_rate": 0.31646350026130676
-    },
-    {
-      "pair": "garchomp|meowscarada",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "meowscarada",
-            "set": "set2",
-            "hp": 83,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "garchomp",
-            "set": "",
-            "hp": 31,
-            "status": "psn",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": "sun"
-      },
-      "trials": 300,
-      "sim_win_rate": 0.96,
-      "sim_standard_error": 0.011332611951597247,
-      "model_win_rate": 0.949821949005127
-    },
-    {
-      "pair": "basculegion|cinderace",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "cinderace",
-            "set": "set1",
-            "hp": 34,
-            "status": "",
-            "attack": -2,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "basculegion",
-            "set": "",
-            "hp": 44,
-            "status": "",
-            "attack": 0,
-            "speed": 2
-          }
-        ],
-        "weather": "sun"
-      },
-      "trials": 300,
-      "sim_win_rate": 0.97,
-      "sim_standard_error": 0.0098653137160315,
-      "model_win_rate": 0.10344722867012024
-    },
-    {
-      "pair": "floettemega|raichumegay",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "floettemega",
-            "set": "set2",
-            "hp": 55,
-            "status": "slp",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "raichumegay",
-            "set": "",
-            "hp": 41,
-            "status": "",
-            "attack": 0,
-            "speed": 3
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.1524493396282196
-    },
-    {
-      "pair": "grimmsnarl|sneasler",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "sneasler",
-            "set": "set1",
-            "hp": 97,
-            "status": "",
-            "attack": 1,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "grimmsnarl",
-            "set": "",
-            "hp": 100,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 1,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.9744226336479187
-    },
-    {
-      "pair": "charizardmegay|gholdengo",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "charizardmegay",
-            "set": "set1",
-            "hp": 68,
-            "status": "",
-            "attack": 3,
-            "speed": 1
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "gholdengo",
-            "set": "",
-            "hp": 39,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.02,
-      "sim_standard_error": 0.008096409047527363,
-      "model_win_rate": 0.5169241428375244
-    },
-    {
-      "pair": "dragapult|starmiemega",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "starmiemega",
-            "set": "set2",
-            "hp": 54,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "dragapult",
-            "set": "",
-            "hp": 47,
-            "status": "par",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": "sun"
-      },
-      "trials": 300,
-      "sim_win_rate": 1,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.9247852563858032
-    },
-    {
-      "pair": "hippowdon|rotomheat",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "rotomheat",
-            "set": "set2",
-            "hp": 79,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "hippowdon",
-            "set": "",
-            "hp": 100,
-            "status": "",
-            "attack": 3,
-            "speed": -1
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.9666666666666667,
-      "sim_standard_error": 0.010381070730216616,
-      "model_win_rate": 0.15526311099529266
-    },
-    {
-      "pair": "baxcalibur|gholdengo",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "baxcalibur",
-            "set": "set1",
-            "hp": 19,
-            "status": "",
-            "attack": 0,
-            "speed": 2
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "gholdengo",
-            "set": "",
-            "hp": 89,
-            "status": "psn",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": "sand"
-      },
-      "trials": 300,
-      "sim_win_rate": 0.27,
-      "sim_standard_error": 0.025674838352260674,
-      "model_win_rate": 0.5703611969947815
-    },
-    {
-      "pair": "baxcaliburmega|dragonitemega",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "baxcaliburmega",
-            "set": "set1",
-            "hp": 58,
-            "status": "",
-            "attack": 3,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "dragonitemega",
-            "set": "",
-            "hp": 59,
-            "status": "",
-            "attack": 0,
-            "speed": 2
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 1,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.646388590335846
-    },
-    {
-      "pair": "archaludon|glimmora",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "archaludon",
-            "set": "set1",
-            "hp": 53,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "glimmora",
-            "set": "",
-            "hp": 83,
-            "status": "tox",
-            "attack": 0,
-            "speed": 3
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.1862512230873108
-    },
-    {
-      "pair": "blazikenmega|samurotthisui",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "blazikenmega",
-            "set": "set1",
-            "hp": 73,
-            "status": "",
-            "attack": 2,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "samurotthisui",
-            "set": "",
-            "hp": 100,
-            "status": "brn",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.6666666666666666,
-      "sim_standard_error": 0.027262027336984358,
-      "model_win_rate": 0.8284066319465637
-    },
-    {
-      "pair": "salamencemega|scizor",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "salamencemega",
-            "set": "set1",
-            "hp": 11,
-            "status": "",
-            "attack": 2,
-            "speed": -1
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "scizor",
-            "set": "",
-            "hp": 100,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": "sun"
-      },
-      "trials": 300,
-      "sim_win_rate": 0,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.27383461594581604
-    },
-    {
-      "pair": "rotomheat|umbreon",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "umbreon",
-            "set": "set1",
-            "hp": 100,
-            "status": "",
-            "attack": 0,
-            "speed": -1
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "rotomheat",
-            "set": "",
-            "hp": 79,
-            "status": "tox",
-            "attack": 0,
-            "speed": -1
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.9133333333333333,
-      "sim_standard_error": 0.016270657623983987,
-      "model_win_rate": 0.6573563814163208
-    },
-    {
-      "pair": "indeedee|rotomheat",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "indeedee",
-            "set": "set1",
-            "hp": 43,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "rotomheat",
-            "set": "",
-            "hp": 100,
-            "status": "",
-            "attack": 1,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.13666666666666666,
-      "sim_standard_error": 0.019864834973508137,
-      "model_win_rate": 0.24235956370830536
-    },
-    {
-      "pair": "baxcaliburmega|umbreon",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "baxcaliburmega",
-            "set": "set1",
-            "hp": 100,
-            "status": "",
-            "attack": -2,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "umbreon",
-            "set": "",
-            "hp": 100,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": "rain"
-      },
-      "trials": 300,
-      "sim_win_rate": 0.02,
-      "sim_standard_error": 0.008096409047527363,
-      "model_win_rate": 0.4974076449871063
-    },
-    {
-      "pair": "dragonitemega|indeedee",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "dragonitemega",
-            "set": "set1",
-            "hp": 79,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "indeedee",
-            "set": "",
-            "hp": 11,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.9733333333333334,
-      "sim_standard_error": 0.00931707454688571,
-      "model_win_rate": 0.7620558738708496
-    },
-    {
-      "pair": "aegislash|corviknight",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "corviknight",
-            "set": "set1",
-            "hp": 40,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "aegislash",
-            "set": "",
-            "hp": 27,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.13666666666666666,
-      "sim_standard_error": 0.019864834973508137,
-      "model_win_rate": 0.34543168544769287
-    },
-    {
-      "pair": "mimikyu|rotomheat",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "mimikyu",
-            "set": "set1",
-            "hp": 77,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "rotomheat",
-            "set": "",
-            "hp": 100,
-            "status": "psn",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.9666666666666667,
-      "sim_standard_error": 0.010381070730216616,
-      "model_win_rate": 0.7955693602561951
-    },
-    {
-      "pair": "clefablemega|kingambit",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "kingambit",
-            "set": "set1",
-            "hp": 73,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "clefablemega",
-            "set": "",
-            "hp": 100,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.03,
-      "sim_standard_error": 0.009865313716031492,
-      "model_win_rate": 0.40488865971565247
-    },
-    {
-      "pair": "aegislash|gyaradosmega",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "gyaradosmega",
-            "set": "set3",
-            "hp": 82,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "aegislash",
-            "set": "",
-            "hp": 67,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.68,
-      "sim_standard_error": 0.02697701238692703,
-      "model_win_rate": 0.868172287940979
-    },
-    {
-      "pair": "charizardmegay|mimikyu",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "mimikyu",
-            "set": "set1",
-            "hp": 75,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "charizardmegay",
-            "set": "",
-            "hp": 100,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": "sun"
-      },
-      "trials": 300,
-      "sim_win_rate": 0.16333333333333333,
-      "sim_standard_error": 0.021378540451223525,
-      "model_win_rate": 0.7086513042449951
-    },
-    {
-      "pair": "blastoisemega|samurotthisui",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "samurotthisui",
-            "set": "set3",
-            "hp": 69,
-            "status": "brn",
-            "attack": 0,
-            "speed": -2
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "blastoisemega",
-            "set": "",
-            "hp": 100,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.007100362796336412
-    },
-    {
-      "pair": "grimmsnarl|rotomheat",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "grimmsnarl",
-            "set": "set1",
-            "hp": 100,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "rotomheat",
-            "set": "",
-            "hp": 32,
-            "status": "",
-            "attack": 0,
-            "speed": 1
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.7766666666666666,
-      "sim_standard_error": 0.024085657867318547,
-      "model_win_rate": 0.6742609143257141
-    },
-    {
-      "pair": "hydreigon|rillaboom",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "hydreigon",
-            "set": "set2",
-            "hp": 86,
-            "status": "",
-            "attack": -2,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "rillaboom",
-            "set": "",
-            "hp": 49,
-            "status": "",
-            "attack": 0,
-            "speed": -2
-          }
-        ],
-        "weather": "rain"
-      },
-      "trials": 300,
-      "sim_win_rate": 0.9566666666666667,
-      "sim_standard_error": 0.011774860635912814,
-      "model_win_rate": 0.9301825761795044
-    },
-    {
-      "pair": "hippowdon|sneasler",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "sneasler",
-            "set": "set1",
-            "hp": 100,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "hippowdon",
-            "set": "",
-            "hp": 100,
-            "status": "",
-            "attack": 0,
-            "speed": 1
-          }
-        ],
-        "weather": "sand"
-      },
-      "trials": 300,
-      "sim_win_rate": 0,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.027981290593743324
-    },
-    {
-      "pair": "glimmora|scolipede",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "scolipede",
-            "set": "set1",
-            "hp": 54,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "glimmora",
-            "set": "",
-            "hp": 23,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": "sun"
-      },
-      "trials": 300,
-      "sim_win_rate": 0.6733333333333333,
-      "sim_standard_error": 0.02712263463512262,
-      "model_win_rate": 0.7174617052078247
-    },
-    {
-      "pair": "dragapult|glimmora",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "dragapult",
-            "set": "set1",
-            "hp": 100,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "glimmora",
-            "set": "",
-            "hp": 53,
-            "status": "",
-            "attack": 2,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.95,
-      "sim_standard_error": 0.012604081729907205,
-      "model_win_rate": 0.8568660616874695
-    },
-    {
-      "pair": "mimikyu|primarina",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "primarina",
-            "set": "set1",
-            "hp": 23,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "mimikyu",
-            "set": "",
-            "hp": 44,
-            "status": "",
-            "attack": 0,
-            "speed": 3
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.006666666666666667,
-      "sim_standard_error": 0.00470615558697011,
-      "model_win_rate": 0.0536830835044384
-    },
-    {
-      "pair": "lucariomegaz|pelipper",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "pelipper",
-            "set": "set1",
-            "hp": 100,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "lucariomegaz",
-            "set": "",
-            "hp": 84,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.14333333333333334,
-      "sim_standard_error": 0.020264875529605347,
-      "model_win_rate": 0.13165909051895142
-    },
-    {
-      "pair": "meowscarada|pelipper",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "meowscarada",
-            "set": "set2",
-            "hp": 97,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "pelipper",
-            "set": "",
-            "hp": 75,
-            "status": "brn",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.3566666666666667,
-      "sim_standard_error": 0.02770216390105995,
-      "model_win_rate": 0.8054856657981873
-    },
-    {
-      "pair": "clefablemega|glimmora",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "glimmora",
-            "set": "set1",
-            "hp": 100,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "clefablemega",
-            "set": "",
-            "hp": 58,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 1,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.9801052808761597
-    },
-    {
-      "pair": "basculegion|starmiemega",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "starmiemega",
-            "set": "set1",
-            "hp": 80,
-            "status": "",
-            "attack": 2,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "basculegion",
-            "set": "",
-            "hp": 100,
-            "status": "",
-            "attack": -2,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.97,
-      "sim_standard_error": 0.0098653137160315,
-      "model_win_rate": 0.9617884755134583
-    },
-    {
-      "pair": "grimmsnarl|primarina",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "grimmsnarl",
-            "set": "set2",
-            "hp": 87,
-            "status": "",
-            "attack": 3,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "primarina",
-            "set": "",
-            "hp": 100,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.06460156291723251
-    },
-    {
-      "pair": "aegislash|floettemega",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "floettemega",
-            "set": "set1",
-            "hp": 42,
-            "status": "",
-            "attack": 0,
-            "speed": 3
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "aegislash",
-            "set": "",
-            "hp": 100,
-            "status": "slp",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.08666666666666667,
-      "sim_standard_error": 0.016270657623983987,
-      "model_win_rate": 0.47345876693725586
-    },
-    {
-      "pair": "archaludon|basculegion",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "archaludon",
-            "set": "set2",
-            "hp": 100,
-            "status": "par",
-            "attack": -2,
-            "speed": 3
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "basculegion",
-            "set": "",
-            "hp": 86,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 1,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.9368792772293091
-    },
-    {
-      "pair": "grimmsnarl|toxapex",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "grimmsnarl",
-            "set": "set1",
-            "hp": 100,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "toxapex",
-            "set": "",
-            "hp": 11,
-            "status": "tox",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.8233333333333334,
-      "sim_standard_error": 0.022056142680706676,
-      "model_win_rate": 0.959398090839386
-    },
-    {
-      "pair": "cinderace|dragonite",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "dragonite",
-            "set": "set1",
-            "hp": 73,
-            "status": "",
-            "attack": 0,
-            "speed": 1
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "cinderace",
-            "set": "",
-            "hp": 99,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.84,
-      "sim_standard_error": 0.021201375610068268,
-      "model_win_rate": 0.8360112309455872
-    },
-    {
-      "pair": "dragonite|rotomwash",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "rotomwash",
-            "set": "set1",
-            "hp": 20,
-            "status": "tox",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "dragonite",
-            "set": "",
-            "hp": 63,
-            "status": "frz",
-            "attack": 2,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.19627131521701813
-    },
-    {
-      "pair": "floettemega|umbreon",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "umbreon",
-            "set": "set1",
-            "hp": 100,
-            "status": "",
-            "attack": -2,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "floettemega",
-            "set": "",
-            "hp": 95,
-            "status": "",
-            "attack": 3,
-            "speed": -1
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.06140553578734398
-    },
-    {
-      "pair": "floettemega|floettemega",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "floettemega",
-            "set": "set2",
-            "hp": 100,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "floettemega",
-            "set": "",
-            "hp": 80,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": "sand"
-      },
-      "trials": 300,
-      "sim_win_rate": 0.6133333333333333,
-      "sim_standard_error": 0.028163138908196887,
-      "model_win_rate": 0.7302748560905457
-    },
-    {
-      "pair": "cinderace|scolipede",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "cinderace",
-            "set": "set2",
-            "hp": 31,
-            "status": "tox",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "scolipede",
-            "set": "",
-            "hp": 100,
-            "status": "frz",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.06,
-      "sim_standard_error": 0.013734218672418393,
-      "model_win_rate": 0.820190966129303
-    },
-    {
-      "pair": "cinderace|pawmot",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "cinderace",
-            "set": "set3",
-            "hp": 39,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "pawmot",
-            "set": "",
-            "hp": 100,
-            "status": "",
-            "attack": 3,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.20449694991111755
-    },
-    {
-      "pair": "clefablemega|rillaboom",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "rillaboom",
-            "set": "set3",
-            "hp": 93,
-            "status": "psn",
-            "attack": -2,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "clefablemega",
-            "set": "",
-            "hp": 76,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.044435594230890274
-    },
-    {
-      "pair": "baxcaliburmega|rotomheat",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "baxcaliburmega",
-            "set": "set1",
-            "hp": 100,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "rotomheat",
-            "set": "",
-            "hp": 100,
-            "status": "frz",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.9433333333333334,
-      "sim_standard_error": 0.01337090581297256,
-      "model_win_rate": 0.9886553287506104
-    },
-    {
-      "pair": "primarina|scolipede",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "primarina",
-            "set": "set1",
-            "hp": 100,
-            "status": "",
-            "attack": -1,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "scolipede",
-            "set": "",
-            "hp": 66,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": "snow"
-      },
-      "trials": 300,
-      "sim_win_rate": 0.30333333333333334,
-      "sim_standard_error": 0.02658501993650098,
-      "model_win_rate": 0.41396716237068176
-    },
-    {
-      "pair": "gengarmega|sneasler",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "sneasler",
-            "set": "set2",
-            "hp": 58,
-            "status": "",
-            "attack": -1,
-            "speed": 3
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "gengarmega",
-            "set": "",
-            "hp": 86,
-            "status": "par",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.01,
-      "sim_standard_error": 0.005754160919975786,
-      "model_win_rate": 0.46804356575012207
-    },
-    {
-      "pair": "mimikyu|toxapex",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "toxapex",
-            "set": "set1",
-            "hp": 71,
-            "status": "psn",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "mimikyu",
-            "set": "",
-            "hp": 63,
-            "status": "",
-            "attack": 0,
-            "speed": -2
+            "set": ""
           }
         ],
         "weather": ""
@@ -2710,216 +50,30 @@
       "trials": 300,
       "sim_win_rate": 0.17,
       "sim_standard_error": 0.02172340568407841,
-      "model_win_rate": 0.13845722377300262
+      "model_win_rate": 0.19510790705680847
     },
     {
-      "pair": "dragapult|hippowdon",
+      "pair": "lopunny|meowscarada",
       "scenario": {
         "mode": "duel",
         "own": [
           {
-            "pokemon": "hippowdon",
-            "set": "set2",
-            "hp": 48,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "dragapult",
-            "set": "",
-            "hp": 53,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": "sand"
-      },
-      "trials": 300,
-      "sim_win_rate": 0.9766666666666667,
-      "sim_standard_error": 0.008730235947285751,
-      "model_win_rate": 0.6233726143836975
-    },
-    {
-      "pair": "lucariomegaz|rotomwash",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "lucariomegaz",
-            "set": "set1",
-            "hp": 68,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "rotomwash",
-            "set": "",
-            "hp": 18,
-            "status": "frz",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 1,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.9611814022064209
-    },
-    {
-      "pair": "gholdengo|hydreigon",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "gholdengo",
-            "set": "set3",
-            "hp": 20,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "hydreigon",
-            "set": "",
-            "hp": 53,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.037060920149087906
-    },
-    {
-      "pair": "cinderace|gholdengo",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "cinderace",
-            "set": "set1",
-            "hp": 100,
-            "status": "par",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "gholdengo",
-            "set": "",
-            "hp": 100,
-            "status": "slp",
-            "attack": -1,
-            "speed": -2
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 0.9766666666666667,
-      "sim_standard_error": 0.008730235947285751,
-      "model_win_rate": 0.9713899493217468
-    },
-    {
-      "pair": "baxcaliburmega|dragonite",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "dragonite",
-            "set": "set1",
-            "hp": 78,
-            "status": "",
-            "attack": 0,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "baxcaliburmega",
-            "set": "",
             "hp": 100,
             "status": "",
             "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": "sand"
-      },
-      "trials": 300,
-      "sim_win_rate": 0,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.051350705325603485
-    },
-    {
-      "pair": "dragonite|metagrossmega",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "metagrossmega",
-            "set": "set2",
-            "hp": 28,
-            "status": "",
-            "attack": 0,
-            "speed": 2
+            "speed": 2,
+            "pokemon": "meowscarada",
+            "set": "set1"
           }
         ],
         "foe": [
           {
-            "pokemon": "dragonite",
-            "set": "",
-            "hp": 58,
+            "hp": 51,
             "status": "",
             "attack": 0,
-            "speed": 0
-          }
-        ],
-        "weather": ""
-      },
-      "trials": 300,
-      "sim_win_rate": 1,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.9206697940826416
-    },
-    {
-      "pair": "greninja|primarina",
-      "scenario": {
-        "mode": "duel",
-        "own": [
-          {
-            "pokemon": "greninja",
-            "set": "set1",
-            "hp": 18,
-            "status": "",
-            "attack": 1,
-            "speed": 0
-          }
-        ],
-        "foe": [
-          {
-            "pokemon": "primarina",
-            "set": "",
-            "hp": 29,
-            "status": "",
-            "attack": 1,
-            "speed": 0
+            "speed": 2,
+            "pokemon": "lopunnymega",
+            "set": ""
           }
         ],
         "weather": "sun"
@@ -2927,61 +81,92 @@
       "trials": 300,
       "sim_win_rate": 1,
       "sim_standard_error": 0,
-      "model_win_rate": 0.5928667187690735
+      "model_win_rate": 0.3745367228984833
     },
     {
-      "pair": "aegislash|indeedee",
+      "pair": "meganium|scolipede",
       "scenario": {
         "mode": "duel",
         "own": [
           {
-            "pokemon": "indeedee",
-            "set": "set1",
-            "hp": 76,
-            "status": "",
+            "hp": 100,
+            "status": "slp",
             "attack": 0,
-            "speed": 0
+            "speed": 2,
+            "pokemon": "scolipede",
+            "set": "set1"
           }
         ],
         "foe": [
           {
-            "pokemon": "aegislash",
-            "set": "",
-            "hp": 57,
-            "status": "frz",
+            "hp": 65,
+            "status": "",
             "attack": 0,
-            "speed": 0
+            "speed": 0,
+            "pokemon": "meganiummega",
+            "set": ""
           }
         ],
         "weather": ""
       },
       "trials": 300,
-      "sim_win_rate": 0.49666666666666665,
-      "sim_standard_error": 0.028915104019025535,
-      "model_win_rate": 0.8356976509094238
+      "sim_win_rate": 0.5566666666666666,
+      "sim_standard_error": 0.02872944307316003,
+      "model_win_rate": 0.7816944122314453
     },
     {
-      "pair": "golisopodmega|starmiemega",
+      "pair": "ninetales|sneasler",
       "scenario": {
         "mode": "duel",
         "own": [
           {
-            "pokemon": "starmiemega",
-            "set": "set1",
-            "hp": 41,
+            "hp": 28,
             "status": "",
-            "attack": 0,
-            "speed": 0
+            "attack": 3,
+            "speed": 0,
+            "pokemon": "sneasler",
+            "set": "set2"
           }
         ],
         "foe": [
           {
-            "pokemon": "golisopodmega",
-            "set": "",
-            "hp": 44,
+            "hp": 31,
+            "status": "slp",
+            "attack": 0,
+            "speed": 3,
+            "pokemon": "ninetalesalola",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 1,
+      "sim_standard_error": 0,
+      "model_win_rate": 0.9204491376876831
+    },
+    {
+      "pair": "blaziken|metagross",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 17,
             "status": "",
             "attack": 0,
-            "speed": 0
+            "speed": 0,
+            "pokemon": "blazikenmega",
+            "set": "set3"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "metagrossmega",
+            "set": ""
           }
         ],
         "weather": ""
@@ -2989,123 +174,1673 @@
       "trials": 300,
       "sim_win_rate": 0,
       "sim_standard_error": 0,
-      "model_win_rate": 0.19065161049365997
+      "model_win_rate": 0.2695203721523285
     },
     {
-      "pair": "blazikenmega|scolipede",
+      "pair": "blaziken|ninetales",
       "scenario": {
         "mode": "duel",
         "own": [
           {
-            "pokemon": "scolipede",
-            "set": "set1",
+            "hp": 88,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "ninetalesalola",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 99,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "blaziken",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0,
+      "sim_standard_error": 0,
+      "model_win_rate": 0.023671293631196022
+    },
+    {
+      "pair": "mamoswine|rotom",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 73,
+            "status": "",
+            "attack": 1,
+            "speed": -2,
+            "pokemon": "rotomheat",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 22,
+            "status": "tox",
+            "attack": -2,
+            "speed": 0,
+            "pokemon": "mamoswine",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.9966666666666667,
+      "sim_standard_error": 0.0033333333333333383,
+      "model_win_rate": 0.536811888217926
+    },
+    {
+      "pair": "espathra|golisopod",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 16,
+            "status": "tox",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "golisopodmega",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 23,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "espathra",
+            "set": ""
+          }
+        ],
+        "weather": "snow"
+      },
+      "trials": 300,
+      "sim_win_rate": 1,
+      "sim_standard_error": 0,
+      "model_win_rate": 0.774853527545929
+    },
+    {
+      "pair": "gengar|pawmot",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 83,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "pawmot",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 31,
+            "status": "psn",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "gengar",
+            "set": ""
+          }
+        ],
+        "weather": "sun"
+      },
+      "trials": 300,
+      "sim_win_rate": 0.84,
+      "sim_standard_error": 0.021201375610068268,
+      "model_win_rate": 0.923966646194458
+    },
+    {
+      "pair": "indeedee|lopunny",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
             "hp": 100,
             "status": "",
             "attack": 0,
-            "speed": 0
+            "speed": 0,
+            "pokemon": "indeedeef",
+            "set": "set1"
           }
         ],
         "foe": [
           {
-            "pokemon": "blazikenmega",
-            "set": "",
-            "hp": 92,
+            "hp": 100,
             "status": "",
             "attack": 0,
-            "speed": 0
+            "speed": 0,
+            "pokemon": "lopunnymega",
+            "set": ""
           }
         ],
         "weather": "rain"
       },
       "trials": 300,
-      "sim_win_rate": 1,
-      "sim_standard_error": 0,
-      "model_win_rate": 0.5548888444900513
+      "sim_win_rate": 0.9966666666666667,
+      "sim_standard_error": 0.0033333333333333383,
+      "model_win_rate": 0.5929965972900391
     },
     {
-      "pair": "golisopodmega|ninetalesalola",
+      "pair": "garchomp|tyranitar",
       "scenario": {
         "mode": "duel",
         "own": [
           {
+            "hp": 66,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "tyranitar",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 100,
+            "status": "frz",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "garchompmega",
+            "set": ""
+          }
+        ],
+        "weather": "sun"
+      },
+      "trials": 300,
+      "sim_win_rate": 0.006666666666666667,
+      "sim_standard_error": 0.00470615558697011,
+      "model_win_rate": 0.5873295664787292
+    },
+    {
+      "pair": "floette|swampert",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 96,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "floettemega",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "swampertmega",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.9566666666666667,
+      "sim_standard_error": 0.011774860635912814,
+      "model_win_rate": 0.27489715814590454
+    },
+    {
+      "pair": "raichu|salamence",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 69,
+            "status": "",
+            "attack": 0,
+            "speed": 2,
+            "pokemon": "salamencemega",
+            "set": "set2"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 85,
+            "status": "",
+            "attack": 0,
+            "speed": 2,
+            "pokemon": "raichualola",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.8433333333333334,
+      "sim_standard_error": 0.021020950070830324,
+      "model_win_rate": 0.922519326210022
+    },
+    {
+      "pair": "hatterene|scizor",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 80,
+            "status": "",
+            "attack": -2,
+            "speed": 0,
+            "pokemon": "scizor",
+            "set": "set3"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 88,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "hatterene",
+            "set": ""
+          }
+        ],
+        "weather": "sun"
+      },
+      "trials": 300,
+      "sim_win_rate": 0.61,
+      "sim_standard_error": 0.028207307101406252,
+      "model_win_rate": 0.2621888518333435
+    },
+    {
+      "pair": "rotom|samurott",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 60,
+            "status": "",
+            "attack": -1,
+            "speed": 0,
+            "pokemon": "samurotthisui",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 81,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "rotomfrost",
+            "set": ""
+          }
+        ],
+        "weather": "sun"
+      },
+      "trials": 300,
+      "sim_win_rate": 0,
+      "sim_standard_error": 0,
+      "model_win_rate": 0.036660317331552505
+    },
+    {
+      "pair": "rotom|scizor",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "rotomfrost",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 45,
+            "status": "",
+            "attack": 2,
+            "speed": 0,
+            "pokemon": "scizormega",
+            "set": ""
+          }
+        ],
+        "weather": "snow"
+      },
+      "trials": 300,
+      "sim_win_rate": 0.08333333333333333,
+      "sim_standard_error": 0.015983780333266074,
+      "model_win_rate": 0.2421310395002365
+    },
+    {
+      "pair": "salamence|swampert",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 2,
+            "speed": 0,
+            "pokemon": "salamence",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 16,
+            "status": "",
+            "attack": 1,
+            "speed": 0,
+            "pokemon": "swampertmega",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.8933333333333333,
+      "sim_standard_error": 0.017851944882371795,
+      "model_win_rate": 0.6927143931388855
+    },
+    {
+      "pair": "gardevoir|gardevoir",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 55,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "gardevoir",
+            "set": "set2"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 80,
+            "status": "tox",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "gardevoir",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.14666666666666667,
+      "sim_standard_error": 0.020459238826580572,
+      "model_win_rate": 0.24451769888401031
+    },
+    {
+      "pair": "corviknight|lucario",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 69,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "lucariomega",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 100,
+            "status": "tox",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "corviknight",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.09,
+      "sim_standard_error": 0.016550318531021114,
+      "model_win_rate": 0.1638813018798828
+    },
+    {
+      "pair": "blastoise|starmie",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "starmiemega",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 17,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "blastoisemega",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 1,
+      "sim_standard_error": 0,
+      "model_win_rate": 0.9525412917137146
+    },
+    {
+      "pair": "garchomp|rotom",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "rotomfrost",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 25,
+            "status": "",
+            "attack": 1,
+            "speed": 0,
+            "pokemon": "garchomp",
+            "set": ""
+          }
+        ],
+        "weather": "sun"
+      },
+      "trials": 300,
+      "sim_win_rate": 0.5766666666666667,
+      "sim_standard_error": 0.028573804116352325,
+      "model_win_rate": 0.7605245113372803
+    },
+    {
+      "pair": "baxcalibur|swampert",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": -1,
+            "pokemon": "baxcaliburmega",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 79,
+            "status": "tox",
+            "attack": 0,
+            "speed": -1,
+            "pokemon": "swampertmega",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.69,
+      "sim_standard_error": 0.026746674847251864,
+      "model_win_rate": 0.9306821227073669
+    },
+    {
+      "pair": "rillaboom|scizor",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 43,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "rillaboom",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 1,
+            "speed": 0,
+            "pokemon": "scizor",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0,
+      "sim_standard_error": 0,
+      "model_win_rate": 0.008525898680090904
+    },
+    {
+      "pair": "pelipper|slowking",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 60,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "pelipper",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 100,
+            "status": "par",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "slowkinggalar",
+            "set": ""
+          }
+        ],
+        "weather": "snow"
+      },
+      "trials": 300,
+      "sim_win_rate": 0,
+      "sim_standard_error": 0,
+      "model_win_rate": 0.05755913630127907
+    },
+    {
+      "pair": "charizard|indeedee",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "charizardmegay",
+            "set": "set3"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 100,
+            "status": "tox",
+            "attack": -1,
+            "speed": 0,
+            "pokemon": "indeedee",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.8966666666666666,
+      "sim_standard_error": 0.017603545131283913,
+      "model_win_rate": 0.7291706800460815
+    },
+    {
+      "pair": "charizard|rotom",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "rotomheat",
+            "set": "set3"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 36,
+            "status": "",
+            "attack": 2,
+            "speed": 0,
+            "pokemon": "charizardmegax",
+            "set": ""
+          }
+        ],
+        "weather": "snow"
+      },
+      "trials": 300,
+      "sim_win_rate": 0.04,
+      "sim_standard_error": 0.011332611951597255,
+      "model_win_rate": 0.517844021320343
+    },
+    {
+      "pair": "archaludon|indeedee",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 88,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "indeedeef",
+            "set": "set2"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 89,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "archaludon",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.02666666666666667,
+      "sim_standard_error": 0.009317074546885731,
+      "model_win_rate": 0.1382085680961609
+    },
+    {
+      "pair": "gardevoir|mamoswine",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 100,
+            "status": "brn",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "mamoswine",
+            "set": "set3"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "gardevoirmega",
+            "set": ""
+          }
+        ],
+        "weather": "snow"
+      },
+      "trials": 300,
+      "sim_win_rate": 0.056666666666666664,
+      "sim_standard_error": 0.01337090581297255,
+      "model_win_rate": 0.15316151082515717
+    },
+    {
+      "pair": "banette|sneasler",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "banettemega",
+            "set": "set2"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 1,
+            "pokemon": "sneasler",
+            "set": ""
+          }
+        ],
+        "weather": "sand"
+      },
+      "trials": 300,
+      "sim_win_rate": 0.9566666666666667,
+      "sim_standard_error": 0.011774860635912814,
+      "model_win_rate": 0.9058553576469421
+    },
+    {
+      "pair": "glimmora|salamence",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 49,
+            "status": "",
+            "attack": 0,
+            "speed": 3,
+            "pokemon": "salamencemega",
+            "set": "set2"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 95,
+            "status": "",
+            "attack": 0,
+            "speed": -1,
+            "pokemon": "glimmora",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.88,
+      "sim_standard_error": 0.018793010869072674,
+      "model_win_rate": 0.8634213209152222
+    },
+    {
+      "pair": "glimmora|tyranitar",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 58,
+            "status": "brn",
+            "attack": 0,
+            "speed": 3,
+            "pokemon": "glimmora",
+            "set": "set3"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 100,
+            "status": "par",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "tyranitar",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.14,
+      "sim_standard_error": 0.020066778149077168,
+      "model_win_rate": 0.4397749900817871
+    },
+    {
+      "pair": "gholdengo|scolipede",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "scolipede",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 84,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "gholdengo",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.48333333333333334,
+      "sim_standard_error": 0.02889967782985893,
+      "model_win_rate": 0.35632646083831787
+    },
+    {
+      "pair": "hippowdon|raichu",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 74,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "raichumegay",
+            "set": "set3"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 33,
+            "status": "frz",
+            "attack": 3,
+            "speed": 0,
+            "pokemon": "hippowdon",
+            "set": ""
+          }
+        ],
+        "weather": "snow"
+      },
+      "trials": 300,
+      "sim_win_rate": 1,
+      "sim_standard_error": 0,
+      "model_win_rate": 0.7050732374191284
+    },
+    {
+      "pair": "clefable|primarina",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "clefable",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 36,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "primarina",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.6633333333333333,
+      "sim_standard_error": 0.02732941756218688,
+      "model_win_rate": 0.8314514756202698
+    },
+    {
+      "pair": "lopunny|tyranitar",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 42,
+            "status": "",
+            "attack": 0,
+            "speed": 3,
+            "pokemon": "tyranitarmega",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 100,
+            "status": "slp",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "lopunny",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 1,
+      "sim_standard_error": 0,
+      "model_win_rate": 0.9731910824775696
+    },
+    {
+      "pair": "rotom|salamence",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "rotomfrost",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "salamencemega",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.9,
+      "sim_standard_error": 0.017349447958987196,
+      "model_win_rate": 0.7301534414291382
+    },
+    {
+      "pair": "ceruledge|floette",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "floettemega",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 52,
+            "status": "",
+            "attack": 3,
+            "speed": -2,
+            "pokemon": "ceruledge",
+            "set": ""
+          }
+        ],
+        "weather": "snow"
+      },
+      "trials": 300,
+      "sim_win_rate": 0.1,
+      "sim_standard_error": 0.017349447958987206,
+      "model_win_rate": 0.2163579910993576
+    },
+    {
+      "pair": "gardevoir|starmie",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 47,
+            "status": "",
+            "attack": 0,
+            "speed": 2,
+            "pokemon": "gardevoir",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 70,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "starmiemega",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.02666666666666667,
+      "sim_standard_error": 0.009317074546885731,
+      "model_win_rate": 0.23851363360881805
+    },
+    {
+      "pair": "golisopod|lucario",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 20,
+            "status": "tox",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "lucariomegaz",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 63,
+            "status": "frz",
+            "attack": 2,
+            "speed": 0,
             "pokemon": "golisopodmega",
-            "set": "set2",
-            "hp": 92,
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.5933333333333334,
+      "sim_standard_error": 0.02840750341836662,
+      "model_win_rate": 0.5888658165931702
+    },
+    {
+      "pair": "starmie|zoroark",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "starmiemega",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 63,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "zoroarkhisui",
+            "set": ""
+          }
+        ],
+        "weather": "rain"
+      },
+      "trials": 300,
+      "sim_win_rate": 0.9933333333333333,
+      "sim_standard_error": 0.004706155586970124,
+      "model_win_rate": 0.8493084907531738
+    },
+    {
+      "pair": "glimmora|umbreon",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 31,
+            "status": "tox",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "glimmora",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 100,
+            "status": "frz",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "umbreon",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.56,
+      "sim_standard_error": 0.028706798281217784,
+      "model_win_rate": 0.4468913972377777
+    },
+    {
+      "pair": "greninja|zoroark",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 64,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "greninja",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 3,
+            "pokemon": "zoroarkhisui",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.056666666666666664,
+      "sim_standard_error": 0.01337090581297255,
+      "model_win_rate": 0.2036856859922409
+    },
+    {
+      "pair": "archaludon|blaziken",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 58,
+            "status": "",
+            "attack": -1,
+            "speed": 3,
+            "pokemon": "blazikenmega",
+            "set": "set2"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 86,
+            "status": "par",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "archaludon",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.4066666666666667,
+      "sim_standard_error": 0.02840750341836662,
+      "model_win_rate": 0.6819150447845459
+    },
+    {
+      "pair": "basculegion|garchomp",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "garchompmegaz",
+            "set": "set2"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 63,
+            "status": "frz",
+            "attack": 3,
+            "speed": 0,
+            "pokemon": "basculegion",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.9733333333333334,
+      "sim_standard_error": 0.00931707454688571,
+      "model_win_rate": 0.9364968538284302
+    },
+    {
+      "pair": "gengar|glimmora",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 85,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "gengar",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 50,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "glimmoramega",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.04,
+      "sim_standard_error": 0.011332611951597255,
+      "model_win_rate": 0.26096633076667786
+    },
+    {
+      "pair": "dragonite|raichu",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 34,
+            "status": "frz",
+            "attack": 1,
+            "speed": 0,
+            "pokemon": "raichumegax",
+            "set": "set2"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 16,
+            "status": "slp",
+            "attack": 0,
+            "speed": -2,
+            "pokemon": "dragonite",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.36333333333333334,
+      "sim_standard_error": 0.02781461696898194,
+      "model_win_rate": 0.8198942542076111
+    },
+    {
+      "pair": "garchomp|gengar",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 20,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "garchompmega",
+            "set": "set3"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 53,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "gengarmega",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0,
+      "sim_standard_error": 0,
+      "model_win_rate": 0.22690406441688538
+    },
+    {
+      "pair": "greninja|raichu",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 67,
             "status": "psn",
             "attack": 0,
-            "speed": 0
+            "speed": -2,
+            "pokemon": "greninja",
+            "set": "set1"
           }
         ],
         "foe": [
           {
-            "pokemon": "ninetalesalola",
-            "set": "",
-            "hp": 79,
+            "hp": 12,
             "status": "",
             "attack": 0,
-            "speed": 0
+            "speed": 0,
+            "pokemon": "raichumegay",
+            "set": ""
           }
         ],
-        "weather": "rain"
+        "weather": "sun"
       },
       "trials": 300,
-      "sim_win_rate": 1,
+      "sim_win_rate": 0,
       "sim_standard_error": 0,
-      "model_win_rate": 0.9455437660217285
+      "model_win_rate": 0.5829526782035828
     },
     {
-      "pair": "mimikyu|sneasler",
+      "pair": "cinderace|gardevoir",
       "scenario": {
         "mode": "duel",
         "own": [
           {
-            "pokemon": "sneasler",
-            "set": "set1",
+            "hp": 76,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "cinderace",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 57,
+            "status": "frz",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "gardevoir",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.9933333333333333,
+      "sim_standard_error": 0.004706155586970124,
+      "model_win_rate": 0.9563958048820496
+    },
+    {
+      "pair": "charizard|dragonite",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 10,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "charizardmegax",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 56,
+            "status": "",
+            "attack": 0,
+            "speed": -1,
+            "pokemon": "dragonitemega",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.7366666666666667,
+      "sim_standard_error": 0.025471401031969185,
+      "model_win_rate": 0.2919549345970154
+    },
+    {
+      "pair": "blastoise|delphox",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 72,
+            "status": "",
+            "attack": 3,
+            "speed": 0,
+            "pokemon": "blastoisemega",
+            "set": "set2"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 74,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "delphoxmega",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.9633333333333334,
+      "sim_standard_error": 0.010868970626620914,
+      "model_win_rate": 0.3872712254524231
+    },
+    {
+      "pair": "glimmora|meowscarada",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "glimmora",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 99,
+            "status": "par",
+            "attack": 0,
+            "speed": -2,
+            "pokemon": "meowscarada",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 1,
+      "sim_standard_error": 0,
+      "model_win_rate": 0.9641437530517578
+    },
+    {
+      "pair": "gholdengo|glimmora",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 80,
+            "status": "frz",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "gholdengo",
+            "set": "set2"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 75,
+            "status": "par",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "glimmoramega",
+            "set": ""
+          }
+        ],
+        "weather": "sand"
+      },
+      "trials": 300,
+      "sim_win_rate": 0.2833333333333333,
+      "sim_standard_error": 0.026059845940064923,
+      "model_win_rate": 0.25530415773391724
+    },
+    {
+      "pair": "delphox|golisopod",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 73,
+            "status": "",
+            "attack": -2,
+            "speed": 0,
+            "pokemon": "golisopod",
+            "set": "set2"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 68,
+            "status": "psn",
+            "attack": 3,
+            "speed": 0,
+            "pokemon": "delphoxmega",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.93,
+      "sim_standard_error": 0.01475553294558895,
+      "model_win_rate": 0.5312851071357727
+    },
+    {
+      "pair": "ceruledge|scizor",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
             "hp": 95,
             "status": "par",
             "attack": 0,
-            "speed": 0
+            "speed": 0,
+            "pokemon": "ceruledge",
+            "set": "set1"
           }
         ],
         "foe": [
           {
-            "pokemon": "mimikyu",
-            "set": "",
             "hp": 13,
             "status": "",
             "attack": -1,
-            "speed": 0
+            "speed": 0,
+            "pokemon": "scizormega",
+            "set": ""
           }
         ],
         "weather": ""
       },
       "trials": 300,
-      "sim_win_rate": 0.8633333333333333,
-      "sim_standard_error": 0.019864834973508147,
-      "model_win_rate": 0.5863164067268372
+      "sim_win_rate": 0.9766666666666667,
+      "sim_standard_error": 0.008730235947285751,
+      "model_win_rate": 0.9795289039611816
     },
     {
-      "pair": "gyaradosmega|sneasler",
+      "pair": "archaludon|basculegion",
       "scenario": {
         "mode": "duel",
         "own": [
           {
-            "pokemon": "sneasler",
-            "set": "set3",
-            "hp": 73,
+            "hp": 38,
             "status": "",
-            "attack": 0,
-            "speed": 0
+            "attack": -1,
+            "speed": 2,
+            "pokemon": "archaludon",
+            "set": "set2"
           }
         ],
         "foe": [
           {
-            "pokemon": "gyaradosmega",
-            "set": "",
-            "hp": 13,
+            "hp": 39,
+            "status": "",
+            "attack": 2,
+            "speed": 0,
+            "pokemon": "basculegionf",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.85,
+      "sim_standard_error": 0.020649973478972666,
+      "model_win_rate": 0.6278982758522034
+    },
+    {
+      "pair": "rotom|tyranitar",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 100,
             "status": "",
             "attack": 0,
-            "speed": 0
+            "speed": 0,
+            "pokemon": "rotomfan",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "tyranitar",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.016666666666666666,
+      "sim_standard_error": 0.0074035354676690165,
+      "model_win_rate": 0.07617265731096268
+    },
+    {
+      "pair": "blastoise|floette",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "blastoisemega",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": -2,
+            "speed": 0,
+            "pokemon": "floetteeternal",
+            "set": ""
+          }
+        ],
+        "weather": "rain"
+      },
+      "trials": 300,
+      "sim_win_rate": 0.16666666666666666,
+      "sim_standard_error": 0.021552525004661323,
+      "model_win_rate": 0.04426441341638565
+    },
+    {
+      "pair": "gyarados|skeledirge",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "gyaradosmega",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 81,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "skeledirge",
+            "set": ""
           }
         ],
         "weather": ""
@@ -3113,7 +1848,1278 @@
       "trials": 300,
       "sim_win_rate": 1,
       "sim_standard_error": 0,
-      "model_win_rate": 0.7850382924079895
+      "model_win_rate": 0.9618003368377686
+    },
+    {
+      "pair": "ceruledge|metagross",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 97,
+            "status": "",
+            "attack": -2,
+            "speed": 0,
+            "pokemon": "ceruledge",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 63,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "metagross",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.1,
+      "sim_standard_error": 0.017349447958987206,
+      "model_win_rate": 0.13505199551582336
+    },
+    {
+      "pair": "blaziken|raichu",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 66,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "blaziken",
+            "set": "set2"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 82,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "raichualola",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.016666666666666666,
+      "sim_standard_error": 0.0074035354676690165,
+      "model_win_rate": 0.35638174414634705
+    },
+    {
+      "pair": "blaziken|toxapex",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": -2,
+            "speed": 0,
+            "pokemon": "blazikenmega",
+            "set": "set3"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 73,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "toxapex",
+            "set": ""
+          }
+        ],
+        "weather": "rain"
+      },
+      "trials": 300,
+      "sim_win_rate": 0.7933333333333333,
+      "sim_standard_error": 0.02341679610131769,
+      "model_win_rate": 0.7822698950767517
+    },
+    {
+      "pair": "pelipper|sneasler",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 12,
+            "status": "tox",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "pelipper",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 1,
+            "speed": 0,
+            "pokemon": "sneasler",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0,
+      "sim_standard_error": 0,
+      "model_win_rate": 0.09124547243118286
+    },
+    {
+      "pair": "gengar|kingambit",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "gengarmega",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 26,
+            "status": "frz",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "kingambit",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.6433333333333333,
+      "sim_standard_error": 0.027702163901059954,
+      "model_win_rate": 0.8439639806747437
+    },
+    {
+      "pair": "absol|skeledirge",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": -1,
+            "pokemon": "absolmega",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 68,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "skeledirge",
+            "set": ""
+          }
+        ],
+        "weather": "snow"
+      },
+      "trials": 300,
+      "sim_win_rate": 1,
+      "sim_standard_error": 0,
+      "model_win_rate": 0.9054116606712341
+    },
+    {
+      "pair": "basculegion|meowscarada",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 21,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "basculegionf",
+            "set": "set2"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 11,
+            "status": "",
+            "attack": 0,
+            "speed": 1,
+            "pokemon": "meowscarada",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0,
+      "sim_standard_error": 0,
+      "model_win_rate": 0.2461947351694107
+    },
+    {
+      "pair": "indeedee|pawmot",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 3,
+            "pokemon": "pawmot",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": -2,
+            "speed": 0,
+            "pokemon": "indeedeef",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.22333333333333333,
+      "sim_standard_error": 0.024085657867318543,
+      "model_win_rate": 0.37822189927101135
+    },
+    {
+      "pair": "ceruledge|dragapult",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 41,
+            "status": "",
+            "attack": 3,
+            "speed": 0,
+            "pokemon": "ceruledge",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 50,
+            "status": "",
+            "attack": -1,
+            "speed": -1,
+            "pokemon": "dragapult",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 1,
+      "sim_standard_error": 0,
+      "model_win_rate": 0.7582703232765198
+    },
+    {
+      "pair": "grimmsnarl|sneasler",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 50,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "grimmsnarl",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 12,
+            "status": "frz",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "sneasler",
+            "set": ""
+          }
+        ],
+        "weather": "sun"
+      },
+      "trials": 300,
+      "sim_win_rate": 0,
+      "sim_standard_error": 0,
+      "model_win_rate": 0.8152511119842529
+    },
+    {
+      "pair": "glimmora|slowking",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 64,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "glimmoramega",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 1,
+            "speed": 0,
+            "pokemon": "slowkinggalar",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.7266666666666667,
+      "sim_standard_error": 0.025773792282785916,
+      "model_win_rate": 0.8460574150085449
+    },
+    {
+      "pair": "gholdengo|rotom",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 55,
+            "status": "",
+            "attack": 0,
+            "speed": 1,
+            "pokemon": "gholdengo",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "rotomheat",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.013333333333333334,
+      "sim_standard_error": 0.006633137535414968,
+      "model_win_rate": 0.041954971849918365
+    },
+    {
+      "pair": "dragapult|glimmora",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 58,
+            "status": "slp",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "dragapult",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "glimmora",
+            "set": ""
+          }
+        ],
+        "weather": "sand"
+      },
+      "trials": 300,
+      "sim_win_rate": 0,
+      "sim_standard_error": 0,
+      "model_win_rate": 0.014125639572739601
+    },
+    {
+      "pair": "absol|charizard",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 72,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "absolmega",
+            "set": "set2"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 90,
+            "status": "tox",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "charizardmegax",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0,
+      "sim_standard_error": 0,
+      "model_win_rate": 0.159849613904953
+    },
+    {
+      "pair": "garchomp|gholdengo",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 13,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "garchomp",
+            "set": "set3"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 100,
+            "status": "psn",
+            "attack": 0,
+            "speed": 2,
+            "pokemon": "gholdengo",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0,
+      "sim_standard_error": 0,
+      "model_win_rate": 0.15023910999298096
+    },
+    {
+      "pair": "absol|ninetales",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 88,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "absolmega",
+            "set": "set2"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 32,
+            "status": "",
+            "attack": 0,
+            "speed": 1,
+            "pokemon": "ninetalesalola",
+            "set": ""
+          }
+        ],
+        "weather": "sand"
+      },
+      "trials": 300,
+      "sim_win_rate": 0.08,
+      "sim_standard_error": 0.01568929081105472,
+      "model_win_rate": 0.704135537147522
+    },
+    {
+      "pair": "meowscarada|ninetales",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "ninetales",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 47,
+            "status": "",
+            "attack": -2,
+            "speed": 0,
+            "pokemon": "meowscarada",
+            "set": ""
+          }
+        ],
+        "weather": "sand"
+      },
+      "trials": 300,
+      "sim_win_rate": 0.9633333333333334,
+      "sim_standard_error": 0.010868970626620914,
+      "model_win_rate": 0.9726054668426514
+    },
+    {
+      "pair": "floette|lopunny",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 100,
+            "status": "slp",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "lopunnymega",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 50,
+            "status": "",
+            "attack": -2,
+            "speed": 0,
+            "pokemon": "floettemega",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0,
+      "sim_standard_error": 0,
+      "model_win_rate": 0.03584737703204155
+    },
+    {
+      "pair": "umbreon|volcarona",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 62,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "umbreon",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 69,
+            "status": "par",
+            "attack": 1,
+            "speed": 0,
+            "pokemon": "volcarona",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.39,
+      "sim_standard_error": 0.028207307101406252,
+      "model_win_rate": 0.37526118755340576
+    },
+    {
+      "pair": "clefable|mamoswine",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 60,
+            "status": "",
+            "attack": -2,
+            "speed": 0,
+            "pokemon": "clefablemega",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 93,
+            "status": "",
+            "attack": -1,
+            "speed": 0,
+            "pokemon": "mamoswine",
+            "set": ""
+          }
+        ],
+        "weather": "snow"
+      },
+      "trials": 300,
+      "sim_win_rate": 0.02666666666666667,
+      "sim_standard_error": 0.009317074546885731,
+      "model_win_rate": 0.3912731409072876
+    },
+    {
+      "pair": "clefable|kingambit",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "clefablemega",
+            "set": "set2"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 100,
+            "status": "brn",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "kingambit",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.9333333333333333,
+      "sim_standard_error": 0.014425708913820999,
+      "model_win_rate": 0.682914674282074
+    },
+    {
+      "pair": "meganium|tyranitar",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "tyranitarmega",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 35,
+            "status": "",
+            "attack": -1,
+            "speed": 0,
+            "pokemon": "meganiummega",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.26,
+      "sim_standard_error": 0.025366873297069256,
+      "model_win_rate": 0.4997217655181885
+    },
+    {
+      "pair": "primarina|scolipede",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 87,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "primarina",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 79,
+            "status": "",
+            "attack": 3,
+            "speed": 0,
+            "pokemon": "scolipede",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.23,
+      "sim_standard_error": 0.024337372337779037,
+      "model_win_rate": 0.20903633534908295
+    },
+    {
+      "pair": "baxcalibur|rotom",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "baxcalibur",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 27,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "rotomfan",
+            "set": ""
+          }
+        ],
+        "weather": "sand"
+      },
+      "trials": 300,
+      "sim_win_rate": 1,
+      "sim_standard_error": 0,
+      "model_win_rate": 0.9858285188674927
+    },
+    {
+      "pair": "lucario|sneasler",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 15,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "sneasler",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 67,
+            "status": "",
+            "attack": 1,
+            "speed": 0,
+            "pokemon": "lucariomegaz",
+            "set": ""
+          }
+        ],
+        "weather": "sun"
+      },
+      "trials": 300,
+      "sim_win_rate": 0,
+      "sim_standard_error": 0,
+      "model_win_rate": 0.341359943151474
+    },
+    {
+      "pair": "glimmora|kingambit",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 48,
+            "status": "",
+            "attack": -1,
+            "speed": 0,
+            "pokemon": "kingambit",
+            "set": "set2"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 46,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "glimmora",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0,
+      "sim_standard_error": 0,
+      "model_win_rate": 0.5199253559112549
+    },
+    {
+      "pair": "corviknight|espathra",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "espathra",
+            "set": "set3"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 10,
+            "status": "frz",
+            "attack": 0,
+            "speed": 2,
+            "pokemon": "corviknight",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 1,
+      "sim_standard_error": 0,
+      "model_win_rate": 0.9835723042488098
+    },
+    {
+      "pair": "gholdengo|starmie",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "gholdengo",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 64,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "starmie",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 1,
+      "sim_standard_error": 0,
+      "model_win_rate": 0.9422107934951782
+    },
+    {
+      "pair": "kingambit|sneasler",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 64,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "sneasler",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "kingambit",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.8333333333333334,
+      "sim_standard_error": 0.02155252500466131,
+      "model_win_rate": 0.6761711239814758
+    },
+    {
+      "pair": "kingambit|primarina",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 10,
+            "status": "frz",
+            "attack": 0,
+            "speed": -1,
+            "pokemon": "kingambit",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "primarina",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0,
+      "sim_standard_error": 0,
+      "model_win_rate": 0.03746877610683441
+    },
+    {
+      "pair": "ceruledge|rotom",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 47,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "ceruledge",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 26,
+            "status": "frz",
+            "attack": -1,
+            "speed": 0,
+            "pokemon": "rotommow",
+            "set": ""
+          }
+        ],
+        "weather": "snow"
+      },
+      "trials": 300,
+      "sim_win_rate": 1,
+      "sim_standard_error": 0,
+      "model_win_rate": 0.9610755443572998
+    },
+    {
+      "pair": "gyarados|swampert",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 100,
+            "status": "frz",
+            "attack": -1,
+            "speed": 0,
+            "pokemon": "gyarados",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 100,
+            "status": "tox",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "swampertmega",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.9633333333333334,
+      "sim_standard_error": 0.010868970626620914,
+      "model_win_rate": 0.6576744914054871
+    },
+    {
+      "pair": "indeedee|kingambit",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 100,
+            "status": "brn",
+            "attack": 0,
+            "speed": 1,
+            "pokemon": "kingambit",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "indeedee",
+            "set": ""
+          }
+        ],
+        "weather": "rain"
+      },
+      "trials": 300,
+      "sim_win_rate": 0.7366666666666667,
+      "sim_standard_error": 0.025471401031969185,
+      "model_win_rate": 0.9678248763084412
+    },
+    {
+      "pair": "blastoise|clefable",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 43,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "clefablemega",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 94,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "blastoisemega",
+            "set": ""
+          }
+        ],
+        "weather": "snow"
+      },
+      "trials": 300,
+      "sim_win_rate": 0.13666666666666666,
+      "sim_standard_error": 0.019864834973508137,
+      "model_win_rate": 0.052595410495996475
+    },
+    {
+      "pair": "golisopod|salamence",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 21,
+            "status": "",
+            "attack": 0,
+            "speed": -2,
+            "pokemon": "salamence",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 57,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "golisopodmega",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0,
+      "sim_standard_error": 0,
+      "model_win_rate": 0.5146204829216003
+    },
+    {
+      "pair": "blastoise|indeedee",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 77,
+            "status": "",
+            "attack": -2,
+            "speed": 0,
+            "pokemon": "blastoise",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "indeedee",
+            "set": ""
+          }
+        ],
+        "weather": "sun"
+      },
+      "trials": 300,
+      "sim_win_rate": 0,
+      "sim_standard_error": 0,
+      "model_win_rate": 0.11174733191728592
+    },
+    {
+      "pair": "slowking|zoroark",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 47,
+            "status": "tox",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "zoroarkhisui",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 27,
+            "status": "frz",
+            "attack": 0,
+            "speed": 1,
+            "pokemon": "slowking",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.8833333333333333,
+      "sim_standard_error": 0.018565220437280063,
+      "model_win_rate": 0.9396345615386963
+    },
+    {
+      "pair": "blaziken|dragonite",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 96,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "blazikenmega",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 100,
+            "status": "tox",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "dragonite",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0,
+      "sim_standard_error": 0,
+      "model_win_rate": 0.06420496106147766
+    },
+    {
+      "pair": "greninja|primarina",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 68,
+            "status": "",
+            "attack": 0,
+            "speed": 2,
+            "pokemon": "primarina",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 61,
+            "status": "",
+            "attack": 0,
+            "speed": 1,
+            "pokemon": "greninjamega",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0,
+      "sim_standard_error": 0,
+      "model_win_rate": 0.6747391819953918
+    },
+    {
+      "pair": "blastoise|hydreigon",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 23,
+            "status": "",
+            "attack": 0,
+            "speed": 1,
+            "pokemon": "blastoise",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 51,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "hydreigon",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.23666666666666666,
+      "sim_standard_error": 0.024580463430538737,
+      "model_win_rate": 0.24749663472175598
+    },
+    {
+      "pair": "pelipper|umbreon",
+      "scenario": {
+        "mode": "duel",
+        "own": [
+          {
+            "hp": 100,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "umbreon",
+            "set": "set1"
+          }
+        ],
+        "foe": [
+          {
+            "hp": 87,
+            "status": "",
+            "attack": 0,
+            "speed": 0,
+            "pokemon": "pelipper",
+            "set": ""
+          }
+        ],
+        "weather": ""
+      },
+      "trials": 300,
+      "sim_win_rate": 0.7966666666666666,
+      "sim_standard_error": 0.023275928749679653,
+      "model_win_rate": 0.6879839897155762
     }
   ]
 }

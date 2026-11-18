@@ -1,5 +1,6 @@
 import html
 import json
+from itertools import product
 from pathlib import Path
 
 import altair as alt
@@ -36,6 +37,15 @@ TYPE_IMMUNITIES = {
     "Fire": {"brn"}, "Electric": {"par"}, "Poison": {"psn", "tox"},
     "Steel": {"psn", "tox"}, "Ice": {"frz"},
 }
+ABILITY_IMMUNITIES = {
+    "Comatose": set(STATUS) - {""}, "Purifying Salt": set(STATUS) - {""},
+    "Immunity": {"psn", "tox"}, "Pastel Veil": {"psn", "tox"},
+    "Insomnia": {"slp"}, "Sweet Veil": {"slp"}, "Vital Spirit": {"slp"},
+    "Limber": {"par"}, "Magma Armor": {"frz"},
+    "Thermal Exchange": {"brn"}, "Water Bubble": {"brn"}, "Water Veil": {"brn"},
+}
+CLOSE_CHOICE_MARGIN = 3.0
+SET_SENSITIVITY_MARGIN = 10.0
 
 
 @st.cache_data
@@ -78,39 +88,89 @@ def index_for(options, value):
     return options.index(value) if value in options else 0
 
 
-def active_controls(side, entries, start, weather):
-    ids = list(entries)
-    selected = st.selectbox(
-        f"{side} 포켓몬", ids, index=index_for(ids, start.get("pokemon")),
-        format_func=lambda value: pokemon_name(entries[value]), key=f"{side}-active",
+def select_option(label, options, default, format_option, key, **kwargs):
+    if key in st.session_state and st.session_state[key] not in options:
+        del st.session_state[key]
+    return st.selectbox(
+        label, options, index=index_for(options, default), format_func=format_option,
+        key=key, **kwargs,
+    )
+
+
+def base_species(entry):
+    return entry.get("base_species", entry["id"])
+
+
+def select_pokemon(label, entries, options, initial, key):
+    groups = {}
+    for pokemon_id in options:
+        row = entries[pokemon_id]
+        species = base_species(row)
+        groups.setdefault(species, []).append(pokemon_id)
+    initial = initial if initial in entries else options[0]
+
+    def species_label(species):
+        first = entries[groups[species][0]]
+        return first.get("base_name_ko") or pokemon_name(entries.get(species, first))
+
+    species = select_option(
+        label, list(groups), base_species(entries[initial]), species_label, key,
+    )
+    forms = groups[species]
+    if len(forms) == 1:
+        return forms[0]
+    default_form = max(forms, key=lambda pokemon_id: entries[pokemon_id].get("usage", 0))
+    return select_option(
+        f"{label} 형태", forms, initial if initial in forms else default_form,
+        lambda value: pokemon_name(entries[value]), f"{key}-form-{species}",
+    )
+
+
+def select_set(label, candidates, initial, catalog, key, hidden=False):
+    sets = {row["id"]: row for row in candidates}
+    options = [None, *sets] if hidden else list(sets)
+
+    def option_label(set_id):
+        if set_id is None:
+            return "사용률로 추정"
+        row = sets[set_id]
+        item = localized(catalog, row.get("item"), "item")
+        move = localized(catalog, row["moves"][0], "move")
+        return f"{set_name(row)} · {item} · {move}"
+
+    return select_option(
+        label, options, initial, option_label, key,
+        help="상대의 도구·특성·기술을 알고 있다면 해당 세트를 직접 골라요." if hidden else None,
+    )
+
+
+def active_controls(side, entries, catalog, start, weather):
+    is_foe = side == "상대"
+    selected = select_pokemon(
+        f"{side} 포켓몬", entries, list(entries), start.get("pokemon"), f"{side}-active",
     )
     pokemon = entries[selected]
+    selected_set = select_set(
+        f"{side} 세트", pokemon["sets"], start.get("set"), catalog,
+        f"{side}-set-{selected}", hidden=is_foe,
+    )
     result = {
-        "pokemon": selected, "set": None, "attack": 0, "speed": 0,
+        "pokemon": selected, "set": selected_set, "attack": 0, "speed": 0,
     }
-    abilities = {
-        row.get("battle_ability") or row["ability"] for row in pokemon["sets"]
-    }
-    if side == "아군":
-        sets = {row["id"]: row for row in pokemon["sets"]}
-        result["set"] = st.selectbox(
-            "아군 세트", list(sets), index=index_for(list(sets), start.get("set")),
-            format_func=lambda value: set_name(sets[value]), key=f"own-set-{selected}",
-        )
-        known = sets[result["set"]]
-        abilities = {known.get("battle_ability") or known["ability"]}
+    candidates = [row for row in pokemon["sets"] if selected_set is None or row["id"] == selected_set]
+    blocked = set().union(*(TYPE_IMMUNITIES.get(kind, set()) for kind in pokemon["types"]))
+    blocked.update(set.intersection(*[
+        ABILITY_IMMUNITIES.get(row.get("battle_ability") or row["ability"], set())
+        for row in candidates
+    ]))
+    if weather == "sun":
+        blocked.add("frz")
+    statuses = [condition for condition in STATUS if condition not in blocked]
     result["hp"] = st.slider(
         f"{side} HP", 1, 100, int(start.get("hp", 100)), key=f"{side}-hp",
     )
-    blocked = set().union(*(TYPE_IMMUNITIES.get(kind, set()) for kind in pokemon["types"]))
-    if weather == "sun":
-        blocked.add("frz")
-    if abilities == {"Thermal Exchange"}:
-        blocked.add("brn")
-    statuses = [condition for condition in STATUS if condition not in blocked]
-    result["status"] = st.selectbox(
-        f"{side} 상태이상", statuses, index=index_for(statuses, start.get("status", "")),
-        format_func=STATUS.__getitem__, key=f"{side}-status",
+    result["status"] = select_option(
+        f"{side} 상태이상", statuses, start.get("status", ""), STATUS.__getitem__, f"{side}-status",
     )
     with st.expander(f"{side} 랭크 조정"):
         result["attack"] = st.slider(
@@ -119,47 +179,80 @@ def active_controls(side, entries, start, weather):
         result["speed"] = st.slider(
             "스피드 랭크", -6, 6, int(start.get("speed", 0)), key=f"{side}-speed",
         )
+    if is_foe and selected_set is None:
+        reveal_foe_info(result, pokemon, catalog)
     return result
 
 
-def base_species(entry):
-    return entry.get("base_species", entry["id"])
+def reveal_foe_info(slot, pokemon, catalog):
+    known_pokemon = slot["pokemon"]
+    with st.expander("공개된 상대 정보"):
+        candidates = pokemon["sets"]
+        possible_moves = sorted({move for row in candidates for move in row["moves"]})
+        revealed_move = select_option(
+            "확인한 기술", [None, *possible_moves], None,
+            lambda value: localized(catalog, value, "move") if value else "미확인",
+            f"revealed-move-{known_pokemon}",
+        )
+        if revealed_move:
+            slot["revealed_moves"] = [revealed_move]
+            candidates = [row for row in candidates if revealed_move in row["moves"]]
+        possible_items = sorted({row["item"] for row in candidates if row.get("item")})
+        revealed_item = select_option(
+            "확인한 도구", [None, *possible_items], None,
+            lambda value: localized(catalog, value, "item") if value else "미확인",
+            f"revealed-item-{known_pokemon}",
+        )
+        if revealed_item:
+            slot["revealed_item"] = revealed_item
 
 
-def bench_controls(side, active, entries, start):
+def item_options(sets):
+    return {to_id(row["item"]) if row.get("item") else "" for row in sets}
+
+
+def can_add_item(previous, item):
+    for combination in product(*previous, (item,)):
+        held = [value for value in combination if value]
+        if len(held) == len(set(held)):
+            return True
+    return False
+
+
+def bench_controls(side, active, entries, catalog, start, compatible_sets):
+    is_foe = side == "상대"
     active_entry = entries[active["pokemon"]]
     team = [active]
     used_species = {base_species(active_entry)}
     used_mega = active_entry["mega"]
-    used_items = set()
-    if active["set"]:
-        active_set = next(row for row in active_entry["sets"] if row["id"] == active["set"])
-        if active_set["item"]:
-            used_items.add(active_set["item"])
+    previous_items = [item_options(row for row, _ in compatible_sets(active))]
     for slot in (1, 2):
-        options = [
-            key for key, entry in entries.items()
-            if base_species(entry) not in used_species
-            and not (used_mega and entry["mega"])
-            and any(row["item"] not in used_items for row in entry["sets"])
-        ]
+        available_sets = {}
+        for key, entry in entries.items():
+            if base_species(entry) in used_species or (used_mega and entry["mega"]):
+                continue
+            candidates = [
+                row for row in entry["sets"]
+                if can_add_item(previous_items, to_id(row.get("item") or ""))
+            ]
+            if candidates:
+                available_sets[key] = candidates
         slot_start = start[slot] if len(start) > slot else {}
-        key = st.selectbox(
-            f"{side} 대기 {slot}", options, index=index_for(options, slot_start.get("pokemon")),
-            format_func=lambda value: pokemon_name(entries[value]), key=f"{side}-bench-{slot}",
+        key = select_pokemon(
+            f"{side} 대기 {slot}", entries, list(available_sets), slot_start.get("pokemon"),
+            f"{side}-bench-{slot}",
         )
         pokemon = entries[key]
         used_species.add(base_species(pokemon))
         used_mega = used_mega or pokemon["mega"]
-        selected_set = None
-        if side == "아군":
-            sets = {row["id"]: row for row in pokemon["sets"] if row["item"] not in used_items}
-            selected_set = st.selectbox(
-                f"대기 {slot} 세트", list(sets), index=index_for(list(sets), slot_start.get("set")),
-                format_func=lambda value: set_name(sets[value]), key=f"own-bench-{slot}-set-{key}",
-            )
-            if sets[selected_set]["item"]:
-                used_items.add(sets[selected_set]["item"])
+        selected_set = select_set(
+            f"{side} 대기 {slot} 세트", available_sets[key], slot_start.get("set"),
+            catalog, f"{side}-bench-{slot}-set-{key}", hidden=is_foe,
+        )
+        possible_sets = [
+            row for row in available_sets[key] if selected_set is None or row["id"] == selected_set
+        ]
+        previous_items.append(item_options(possible_sets))
         hp = st.slider(
             f"{side} 대기 {slot} HP", 1, 100, int(slot_start.get("hp", 100)),
             key=f"{side}-bench-{slot}-hp",
@@ -234,12 +327,33 @@ def decision_chart(results, names):
     best_action = best["action"]
     best_name = names[best_action]
     decision = "교체" if best_action.startswith("switch:") else "기술"
+    close = lead <= CLOSE_CHOICE_MARGIN
+    banner_class = "recommendation is-close" if close else "recommendation"
     st.html(
-        f'<div class="recommendation"><div><span class="recommend-label">추천 {decision}</span>'
+        f'<div class="{banner_class}"><div><span class="recommend-label">추천 {decision}</span>'
         f'<strong>{esc(best_name)}</strong></div>'
         f'<div class="recommend-score">{100 * best["win"]:.1f}%'
         f'<small> · 다음 선택지보다 {lead:.1f}%p</small></div></div>'
     )
+    notes = []
+    if close:
+        notes.append((
+            "선택 차이 작음",
+            f"예상 승률 상위 두 선택지의 차이가 {CLOSE_CHOICE_MARGIN:g}%p 이하예요.",
+        ))
+    set_min = 100 * best.get("set_min", best["win"])
+    set_max = 100 * best.get("set_max", best["win"])
+    if set_max - set_min >= SET_SENSITIVITY_MARGIN:
+        notes.append((
+            "상대 세트에 민감",
+            f"가능한 상대 세트 조합에 따라 이 선택의 예상 승률은 {set_min:.1f}~{set_max:.1f}%예요.",
+        ))
+    if notes:
+        st.html("".join(
+            f'<div class="decision-note" role="note"><strong>{esc(title)}</strong>'
+            f'<span>{esc(message)}</span></div>'
+            for title, message in notes
+        ))
     rows = []
     for result in sorted_results:
         action = result["action"]
@@ -261,14 +375,15 @@ def decision_chart(results, names):
     st.caption("첫 턴에 각 행동을 선택한 뒤 시뮬레이션 정책을 따랐을 때의 경기 승률이에요. HP는 그 행동으로 나온 포켓몬의 첫 턴 종료 예상치예요.")
 
 
-def opponent_panels(rows, catalog):
-    st.subheader("상대 세트 추정")
+def opponent_panels(rows, catalog, specified):
+    st.subheader("상대 선봉 세트")
     if not rows:
         st.info("공개된 정보에 맞는 세트가 등록되어 있지 않아요.")
         return
     cards = []
     for row in sorted(rows, key=lambda item: item["probability"], reverse=True):
         probability = 100 * row["probability"]
+        weight_label = "직접 지정" if specified else f"{probability:.0f}%"
         item = localized(catalog, row.get("item"), "item")
         ability = localized(catalog, row.get("battle_ability") or row.get("ability"), "ability")
         moves = "".join(
@@ -277,11 +392,14 @@ def opponent_panels(rows, catalog):
         )
         cards.append(
             f'<div class="set-card"><div class="set-title"><strong>{esc(set_name(row))}</strong>'
-            f'<span>{probability:.0f}%</span></div><div class="set-detail">{esc(item)} · {esc(ability)}</div>'
+            f'<span>{weight_label}</span></div><div class="set-detail">{esc(item)} · {esc(ability)}</div>'
             f'<div class="set-moves">{moves}</div></div>'
         )
     st.html('<div class="sets">' + "".join(cards) + "</div>")
-    st.caption("사용률 통계에서 구성한 후보 세트의 추정 비중이에요. 기술과 도구를 공개하면 일치하는 후보끼리 비중을 다시 계산해요.")
+    if specified:
+        st.caption("직접 지정한 선봉 세트를 100% 반영한 결과예요.")
+    else:
+        st.caption("사용률 통계에서 구성한 선봉 후보의 추정 비중이에요. 공개된 정보와 팀의 도구 중복 제한을 반영해요.")
 
 
 def evaluation():
@@ -351,11 +469,17 @@ def evaluation():
                 f'각각 {summary["trials_per_case"]}번 시뮬레이션했어요. '
                 f'모델의 대면별 예측과 시뮬레이션 승률은 평균 {100 * summary["probability_mae"]:.1f}%p 차이가 났어요.'
             )
+            close_cases = summary.get("observed_40_60")
+            if close_cases and close_cases["cases"]:
+                st.caption(
+                    f'시뮬레이션 승률 40~60%인 대면 {close_cases["cases"]}개에서는 '
+                    f'평균 {100 * close_cases["probability_mae"]:.1f}%p 차이가 났어요.'
+                )
 
 
 def change_preset(case):
     for key in list(st.session_state):
-        if key.startswith(("아군-", "상대-", "own-set-", "own-bench-", "revealed-", "weather", "mode")):
+        if key.startswith(("아군-", "상대-", "revealed-", "weather", "mode")):
             del st.session_state[key]
     st.session_state["start"] = case
 
@@ -404,35 +528,17 @@ def main():
             foe_start = start.get("foe", [{"pokemon": "rotomwash"}])
             left, right = st.tabs(["아군", "상대"])
             with left:
-                own_active = active_controls("아군", entries, own_start[0], weather)
+                own_active = active_controls("아군", entries, catalog, own_start[0], weather)
                 own = [own_active]
                 if mode == "team":
                     with st.expander("아군 교체 후보"):
-                        own = bench_controls("아군", own_active, entries, own_start)
+                        own = bench_controls("아군", own_active, entries, catalog, own_start, predictor.catalog.compatible_sets)
             with right:
-                foe_active = active_controls("상대", entries, foe_start[0], weather)
+                foe_active = active_controls("상대", entries, catalog, foe_start[0], weather)
                 foe = [foe_active]
                 if mode == "team":
-                    with st.expander("상대 대기 포켓몬"):
-                        foe = bench_controls("상대", foe_active, entries, foe_start)
-                with st.expander("공개된 상대 정보"):
-                    active_sets = entries[foe_active["pokemon"]]["sets"]
-                    possible_moves = sorted({move for row in active_sets for move in row["moves"]})
-                    possible_items = sorted({row["item"] for row in active_sets if row.get("item")})
-                    revealed_move = st.selectbox(
-                        "확인한 기술", [None, *possible_moves],
-                        format_func=lambda value: localized(catalog, value, "move") if value else "미확인",
-                        key=f'revealed-move-{foe_active["pokemon"]}',
-                    )
-                    revealed_item = st.selectbox(
-                        "확인한 도구", [None, *possible_items],
-                        format_func=lambda value: localized(catalog, value, "item") if value else "미확인",
-                        key=f'revealed-item-{foe_active["pokemon"]}',
-                    )
-                    if revealed_move:
-                        foe_active["revealed_moves"] = [revealed_move]
-                    if revealed_item:
-                        foe_active["revealed_item"] = revealed_item
+                    with st.expander("상대 대기 포켓몬과 세트"):
+                        foe = bench_controls("상대", foe_active, entries, catalog, foe_start, predictor.catalog.compatible_sets)
         with results:
             scenario = {"mode": mode, "own": own, "foe": foe, "weather": weather}
             duel = {"mode": "duel", "own": [own_active], "foe": [foe_active], "weather": weather}
@@ -452,10 +558,11 @@ def main():
                     decision_chart(predictor.predict(scenario, list(names)), names)
                 else:
                     st.caption(f'첫 턴 종료 시 아군 예상 HP는 {duel_result["hp_after"]:.0f}%예요.')
-                opponent_panels(inferred, catalog)
+                opponent_panels(inferred, catalog, specified=foe_active["set"] is not None)
             source = catalog["source"]
+            species_count = len({base_species(entry) for entry in entries.values()})
             st.caption(
-                f'레벨 50 · [레귤레이션 M-C]({source["rules_url"]}) · '
+                f'{species_count}종 · 레벨 50 · [레귤레이션 M-C]({source["rules_url"]}) · '
                 f'[Showdown 사용률 {source["month"]}]({source["usage_url"]})'
             )
     with eval_tab:

@@ -149,6 +149,20 @@
 }
 .recommend-score { color: var(--mint); font-weight: 780; font-variant-numeric: tabular-nums; }
 .recommend-score small { color: #bdd2d1; font-size: .73rem; font-weight: 500; }
+.recommendation.is-close {
+  border-color: #746447;
+  background: linear-gradient(90deg, #373425, #242a30);
+}
+.recommendation.is-close .recommend-label,
+.recommendation.is-close .recommend-score { color: #f9daad; }
+.decision-note {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .3rem .55rem;
+  color: var(--muted);
+  font-size: .77rem;
+}
+.decision-note strong { color: #f9daad; font-weight: 720; }
 .choices { overflow: hidden; border: 1px solid var(--line); border-radius: .82rem; background: var(--panel); }
 .choice {
   display: grid;

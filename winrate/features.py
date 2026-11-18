@@ -1,7 +1,7 @@
 """Encode only information available before the first action of a matchup."""
 
 from functools import lru_cache
-from math import log
+from math import ceil, log
 
 import numpy as np
 
@@ -90,10 +90,10 @@ def _one_hot(value, options):
 class Encoder:
     def __init__(self, catalog):
         self.catalog = catalog
-        self.stats = {}
+        self.base_stats = {}
         self.types = {}
         self.stat_points = {}
-        self.nature_multiplier = {}
+        self.nature = {}
         for key, set_data in catalog.sets.items():
             mon = catalog.pokemon[key[0]]
             base_stats = (
@@ -106,20 +106,15 @@ class Encoder:
             self.stat_points[key] = tuple(
                 int(points.get(stat, 0)) for stat in STAT_KEYS
             )
-            self.nature_multiplier[key] = tuple(
-                1.1
+            self.nature[key] = tuple(
+                110
                 if stat == raised and raised != lowered
-                else 0.9
+                else 90
                 if stat == lowered and raised != lowered
-                else 1
+                else 100
                 for stat in STAT_KEYS
             )
-            self.stats[key] = {
-                stat: (float(base_stats.get(stat, 85)) + points + 20) * multiplier
-                for stat, points, multiplier in zip(
-                    STAT_KEYS, self.stat_points[key], self.nature_multiplier[key]
-                )
-            }
+            self.base_stats[key] = tuple(int(base_stats[stat]) for stat in STAT_KEYS)
             self.types[key] = tuple(
                 str(t).title() for t in (set_data.get("battle_types") or mon["types"])
             )
@@ -151,15 +146,14 @@ class Encoder:
     @lru_cache(maxsize=20_000)
     def _variant_stats(self, variant):
         key, points = variant
-        if points is None:
-            return self.stats[key]
-        diffs = (
-            value - baseline for value, baseline in zip(points, self.stat_points[key])
-        )
+        points = self.stat_points[key] if points is None else points
         return {
-            stat: self.stats[key][stat] + delta * multiplier
-            for stat, delta, multiplier in zip(
-                STAT_KEYS, diffs, self.nature_multiplier[key]
+            # Showdown Champions Reg M-C uses fixed level-50 stats.
+            stat: base + point + 75
+            if stat == "hp"
+            else (base + point + 20) * nature // 100
+            for stat, base, point, nature in zip(
+                STAT_KEYS, self.base_stats[key], points, self.nature[key]
             )
         }
 
@@ -253,26 +247,40 @@ class Encoder:
         )
         return speed / 2 if slot.get("status") == "par" else speed
 
+    def _damage_fraction(self, pressure, target):
+        max_hp = self._variant_stats(self._variant(target))["hp"]
+        remaining_hp = max(max_hp * float(target["hp"]) / 100, 1)
+        # At level 50, the leading coefficient in the damage formula is 22/50.
+        # Pressure already includes power/100, approximate modifiers and accuracy.
+        return min(44 * pressure / remaining_hp, 4.0)
+
+    @staticmethod
+    def _ko_turns(damage_fraction):
+        return min(8, ceil(1 / damage_fraction)) / 8 if damage_fraction else 1.0
+
     def _pair(self, own, foe, weather, *, entering=False):
         if own is None or foe is None:
-            return [0.0] * 3
+            return [0.0] * 7
         own_best = max(
             (m[0] * m[1] for m in self._moves(own, foe, weather, entering=entering)),
             default=0,
         )
         foe_best = max((m[0] * m[1] for m in self._moves(foe, own, weather)), default=0)
         speed_delta = self._speed(own, entering) - self._speed(foe)
-        return [own_best, foe_best, speed_delta / 150]
+        own_fraction = self._damage_fraction(own_best, foe)
+        foe_fraction = self._damage_fraction(foe_best, own)
+        return [
+            own_best, foe_best, speed_delta / 150, own_fraction, foe_fraction,
+            self._ko_turns(own_fraction), self._ko_turns(foe_fraction),
+        ]
 
     def damage_rule_logit(self, scenario):
         """Baseline for duels: compare approximate damage per turn against remaining HP."""
         own, foe = scenario["own"][0], scenario["foe"][0]
-        own_power, foe_power, speed = self._pair(
+        _, _, speed, own_fraction, foe_fraction, _, _ = self._pair(
             own, foe, scenario.get("weather") or ""
         )
-        own_pressure = own_power / max(float(foe["hp"]) / 100, 0.01)
-        foe_pressure = foe_power / max(float(own["hp"]) / 100, 0.01)
-        return log((0.05 + own_pressure) / (0.05 + foe_pressure)) + 0.4 * speed
+        return log((0.05 + own_fraction) / (0.05 + foe_fraction)) + 0.4 * speed
 
     def encode(self, scenario, action):
         mode = scenario["mode"]

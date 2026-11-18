@@ -78,7 +78,23 @@ function translation(dictionary, entry) {
   return dictionary.byNumber[number ?? (dictionary === itemNames ? null : entry.num)];
 }
 
-const rankedSpecies = Object.entries(stats.data).sort(([, a], [, b]) => b.usage - a.usage).slice(0, 50);
+const targetSpeciesCount = 60;
+
+function rankBaseSpecies(entries) {
+  const groups = new Map();
+  for (const [name, usage] of Object.entries(entries)) {
+    const species = dex.species.get(name);
+    if (!species.exists || usage.usage <= 0) continue;
+    const base = dex.species.get(species.baseSpecies);
+    if (!groups.has(base.id)) groups.set(base.id, {base, usage: 0, forms: []});
+    const group = groups.get(base.id);
+    group.usage += usage.usage;
+    group.forms.push({name, usage});
+  }
+  return [...groups.values()].sort((a, b) => b.usage - a.usage);
+}
+
+class UnsupportedFormError extends Error {}
 const moveNamesKo = {};
 const itemNamesKo = {};
 const abilityNamesKo = {};
@@ -97,7 +113,7 @@ function legal(set) {
   return !validator.validateSet(structuredClone(set), {});
 }
 
-function pokemonEntry(name, usage, index) {
+function pokemonEntry(name, usage) {
   const species = dex.species.get(name);
   if (!species.exists) throw new Error(`Unknown ranked Pokémon ${name}`);
   const mega = species.forme.startsWith('Mega');
@@ -115,13 +131,13 @@ function pokemonEntry(name, usage, index) {
   const total = Object.values(usage.Abilities).reduce((sum, count) => sum + count, 0);
   const first = availableItems[0];
   const defaultAbility = abilities[0] || possibleAbilities[0];
-  if (!first || !spreads.length || !defaultAbility) throw new Error(`Missing profile source for ${name}`);
+  if (!first || !spreads.length || !defaultAbility) throw new UnsupportedFormError(`Missing profile source for ${name}`);
   const test = {
     species: base.name, item: first.name, ability: defaultAbility, level: 50,
     nature: spreads[0].nature, evs: spreads[0].evs,
   };
   const supportedMoves = moves.filter(move => legal({...test, moves: [move.name]}));
-  if (supportedMoves.length < 4) throw new Error(`Fewer than four valid moves for ${name}: ${JSON.stringify(test)}`);
+  if (supportedMoves.length < 4) throw new UnsupportedFormError(`Fewer than four valid moves for ${name}: ${JSON.stringify(test)}`);
 
   const profiles = [];
   const diverseItems = availableItems.filter(item => item.count / total >= 0.01).slice(0, 3);
@@ -145,7 +161,7 @@ function pokemonEntry(name, usage, index) {
     profiles.push({...sample, count: candidate.count});
   }
   if (profiles.length < 2) {
-    throw new Error(`Unable to produce two valid sets for ${name}: ${JSON.stringify(test)}`);
+    throw new UnsupportedFormError(`Unable to produce two valid sets for ${name}: ${JSON.stringify(test)}`);
   }
 
   const mass = profiles.reduce((sum, profile) => sum + profile.count, 0);
@@ -173,19 +189,49 @@ function pokemonEntry(name, usage, index) {
   return {
     id: species.id, name: species.name, name_ko: speciesNameKo(species),
     base_species: Dex.toID(species.baseSpecies), base_stats: species.baseStats,
-    types: species.types, mega, rank: index + 1, usage: usage.usage, sets,
+    types: species.types, mega, usage: usage.usage, sets,
     item_usage: proportion(usedItems.slice(0, 5), total),
     ability_usage: proportion(usedAbilities.slice(0, 5), total),
     move_usage: proportion(moves.slice(0, 8), total),
   };
 }
 
-const pokemon = rankedSpecies.map(([name, usage], index) => pokemonEntry(name, usage, index));
+const rankedSpecies = rankBaseSpecies(stats.data);
+const pokemon = [];
+const omittedForms = [];
+let selectedSpecies = 0;
+for (const group of rankedSpecies) {
+  if (selectedSpecies === targetSpeciesCount) break;
+  const forms = group.forms.sort((a, b) => b.usage.usage - a.usage.usage).flatMap(({name, usage}) => {
+    try {
+      return [pokemonEntry(name, usage)];
+    } catch (error) {
+      if (!(error instanceof UnsupportedFormError)) throw error;
+      omittedForms.push(name);
+      console.warn(error.message);
+      return [];
+    }
+  });
+  if (!forms.length) continue;
+  selectedSpecies += 1;
+  const baseNameKo = speciesNames.byNumber[group.base.num] || group.base.name;
+  for (const form of forms) {
+    pokemon.push({...form, rank: pokemon.length + 1, base_name_ko: baseNameKo,
+      species_rank: selectedSpecies, species_usage: group.usage});
+  }
+}
+if (selectedSpecies !== targetSpeciesCount) {
+  throw new Error('The source does not contain enough base species with representative sets.');
+}
+const usageMass = rankedSpecies.reduce((sum, group) => sum + group.usage, 0);
+const selectedUsageMass = pokemon.reduce((sum, form) => sum + form.usage, 0);
 const catalog = {
   format,
   format_name: formatName,
   source: {
     month: '2026-10', rating: 1760, battles: stats.info['number of battles'],
+    species_count: selectedSpecies, form_count: pokemon.length, usage_coverage: selectedUsageMass / usageMass,
+    unsupported_forms: omittedForms,
     usage_url: `https://www.smogon.com/stats/2026-10/${format}-1760.txt`,
     movesets_url: `https://www.smogon.com/stats/2026-10/chaos/${sourceFile}`,
     rules_url: 'https://news.pokemon-home.com/ko/page/816.html',
@@ -197,4 +243,4 @@ const catalog = {
 };
 
 writeFileSync(path.join(__dirname, 'catalog.json'), `${JSON.stringify(catalog, null, 2)}\n`);
-console.log(`${pokemon.length} Pokémon, ${pokemon.reduce((sum, entry) => sum + entry.sets.length, 0)} representative sets`);
+console.log(`${selectedSpecies} base species, ${pokemon.length} forms, ${pokemon.reduce((sum, entry) => sum + entry.sets.length, 0)} representative sets`);

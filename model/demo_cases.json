@@ -1,7 +1,6 @@
 [
   {
     "id": "4-high",
-    "label": "상대 HP 95% · 교체 판단",
     "scenario": {
       "mode": "team",
       "own": [
@@ -57,11 +56,11 @@
         }
       ],
       "weather": ""
-    }
+    },
+    "label": "상대 HP 95% · 교체 비교"
   },
   {
     "id": "4-low",
-    "label": "상대 HP 18% · 마무리 판단",
     "scenario": {
       "mode": "team",
       "own": [
@@ -117,6 +116,7 @@
         }
       ],
       "weather": ""
-    }
+    },
+    "label": "상대 HP 18% · 기술 비교"
   }
 ]

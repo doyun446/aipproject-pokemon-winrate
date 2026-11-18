@@ -13,7 +13,7 @@ from .catalog import ACTIONS, Catalog, showdown_id, swap_sides
 from .features import Encoder
 
 
-CHECKPOINT_VERSION = 1
+CHECKPOINT_VERSION = 2
 
 
 def catalog_hash(path):
@@ -180,7 +180,7 @@ class Predictor:
 
     @torch.inference_mode()
     def predict(self, scenario, actions):
-        """Return a win probability and mean opening-turn HP for each action."""
+        """Return the posterior win probability, candidate-set range, and expected HP."""
         actions = list(actions)
         if not actions:
             return []
@@ -211,12 +211,21 @@ class Predictor:
         if scenario["mode"] == "duel":
             probs = (probs[:size] + 1 - probs[size:]) * 0.5
         weights = torch.tensor([weight for _, weight in samples], dtype=probs.dtype)
-        wins = (weights @ probs.reshape(len(samples), len(actions))).clamp(0, 1)
+        by_set = probs.reshape(len(samples), len(actions))
+        wins = (weights @ by_set).clamp(0, 1)
         health = (
             weights
             @ torch.sigmoid(hp_logits[:size]).reshape(len(samples), len(actions))
         ).clamp(0, 1)
         return [
-            {"action": action, "win": float(win), "hp_after": float(hp) * 100}
-            for action, win, hp in zip(actions, wins, health)
+            {
+                "action": action,
+                "win": float(win),
+                "set_min": float(lower),
+                "set_max": float(upper),
+                "hp_after": float(hp) * 100,
+            }
+            for action, win, lower, upper, hp in zip(
+                actions, wins, by_set.amin(dim=0), by_set.amax(dim=0), health
+            )
         ]

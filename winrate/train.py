@@ -3,7 +3,7 @@
 import argparse
 import hashlib
 import json
-from collections import Counter
+from collections import Counter, defaultdict
 from copy import deepcopy
 from pathlib import Path
 
@@ -22,6 +22,11 @@ def load_examples(paths, catalog, *, require_alternate_sp=False):
     wins, health, has_health, pairs, modes = [], [], [], [], []
     mirrors, actions, damage_logits = [], [], []
     group_pairs = {}
+    known_points = defaultdict(set)
+    if require_alternate_sp:
+        for (pokemon_id, _), points in encoder.stat_points.items():
+            base_species = catalog.pokemon[pokemon_id]["base_species"]
+            known_points[base_species].add(points)
 
     def append(state, action, win, hp, pair):
         numeric, species, set_ids = encoder.encode(state, action)
@@ -42,18 +47,25 @@ def load_examples(paths, catalog, *, require_alternate_sp=False):
                 try:
                     record = json.loads(line)
                     scenario, action = record["scenario"], record["action"]
-                    if require_alternate_sp and not any(
-                        slot.get("evs") for slot in scenario["own"] + scenario["foe"]
-                    ):
-                        raise ValueError(
-                            "alternate Stat Point trial must include a slot.evs override"
-                        )
+                    if require_alternate_sp:
+                        variants = [
+                            encoder._variant(slot) for slot in scenario["own"] + scenario["foe"]
+                        ]
+                        if any(points is None for _, points in variants):
+                            raise ValueError(
+                                "alternate Stat Point trial must override every slot"
+                            )
+                        if any(
+                            points in known_points[catalog.pokemon[key[0]]["base_species"]]
+                            for key, points in variants
+                        ):
+                            continue
                     win, hp = float(record["win"]), float(record["hp_after"])
                     if not (0 <= win <= 1 and 0 <= hp <= 100):
                         raise ValueError("win or HP target is out of range")
                     opponents = (
-                        scenario["own"][0]["pokemon"],
-                        scenario["foe"][0]["pokemon"],
+                        catalog.pokemon[scenario[side][0]["pokemon"]]["base_species"]
+                        for side in ("own", "foe")
                     )
                     pair = "|".join(sorted(opponents))
                     group = (scenario["mode"], record["group"])
@@ -248,6 +260,13 @@ def score(predicted, wins, hp_predicted=None, hp=None):
     }
     if hp_predicted is not None:
         result["hp_mae"] = float(F.l1_loss(hp_predicted, hp) * 100)
+    close = (predicted >= 0.4) & (predicted <= 0.6)
+    if torch.any(close):
+        result["predicted_40_60"] = {
+            "n": int(close.sum()),
+            "brier": float(F.mse_loss(predicted[close], wins[close])),
+            "log_loss": float(F.binary_cross_entropy(predicted[close], wins[close])),
+        }
     return result
 
 
@@ -384,7 +403,7 @@ def run(args):
             "matchup_partitions": pair_partitions,
             "by_action": dict(Counter(actions)),
             "by_mode": dict(Counter(modes[original])),
-            "evaluation": "held-out unordered active matchups; per trial, conditional on sampled sets",
+            "evaluation": "held-out unordered active base-species pairs; per trial, conditional on sampled sets",
         },
         "overall": {},
         "duel": {},

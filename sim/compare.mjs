@@ -43,9 +43,11 @@ function selectTestCases() {
   const testPairs = new Set(readJson(values['test-split']).data.matchup_partitions.test);
   const sweepSize = catalog.pokemon.length * (catalog.pokemon.length + 1) / 2;
   const selected = [];
+  const seen = new Set();
   for (const scenario of scenarios(catalog, 'duel', sweepSize, createRandom(caseSeed))) {
-    const id = [scenario.own[0].pokemon, scenario.foe[0].pokemon].sort().join('|');
-    if (!testPairs.has(id)) continue;
+    const id = [scenario.own[0], scenario.foe[0]].map(card => species.get(card.pokemon).base_species).sort().join('|');
+    if (!testPairs.has(id) || seen.has(id)) continue;
+    seen.add(id);
     selected.push({id, scenario});
     if (selected.length >= offset + count) break;
   }
