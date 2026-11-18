@@ -1,0 +1,122 @@
+[
+  {
+    "id": "4-high",
+    "label": "상대 HP 95% · 교체 판단",
+    "scenario": {
+      "mode": "team",
+      "own": [
+        {
+          "pokemon": "sneasler",
+          "set": "set1",
+          "hp": 95,
+          "status": "",
+          "attack": 0,
+          "speed": 0
+        },
+        {
+          "pokemon": "scolipede",
+          "set": "set1",
+          "hp": 100,
+          "status": "",
+          "attack": 0,
+          "speed": 0
+        },
+        {
+          "pokemon": "garchompmegaz",
+          "set": "set1",
+          "hp": 100,
+          "status": "",
+          "attack": 0,
+          "speed": 0
+        }
+      ],
+      "foe": [
+        {
+          "pokemon": "hippowdon",
+          "set": null,
+          "hp": 95,
+          "status": "",
+          "attack": 0,
+          "speed": 0
+        },
+        {
+          "pokemon": "aegislash",
+          "set": null,
+          "hp": 100,
+          "status": "",
+          "attack": 0,
+          "speed": 0
+        },
+        {
+          "pokemon": "lucariomegaz",
+          "set": null,
+          "hp": 100,
+          "status": "",
+          "attack": 0,
+          "speed": 0
+        }
+      ],
+      "weather": ""
+    }
+  },
+  {
+    "id": "4-low",
+    "label": "상대 HP 18% · 마무리 판단",
+    "scenario": {
+      "mode": "team",
+      "own": [
+        {
+          "pokemon": "sneasler",
+          "set": "set1",
+          "hp": 95,
+          "status": "",
+          "attack": 0,
+          "speed": 0
+        },
+        {
+          "pokemon": "scolipede",
+          "set": "set1",
+          "hp": 100,
+          "status": "",
+          "attack": 0,
+          "speed": 0
+        },
+        {
+          "pokemon": "garchompmegaz",
+          "set": "set1",
+          "hp": 100,
+          "status": "",
+          "attack": 0,
+          "speed": 0
+        }
+      ],
+      "foe": [
+        {
+          "pokemon": "hippowdon",
+          "set": null,
+          "hp": 18,
+          "status": "",
+          "attack": 0,
+          "speed": 0
+        },
+        {
+          "pokemon": "aegislash",
+          "set": null,
+          "hp": 100,
+          "status": "",
+          "attack": 0,
+          "speed": 0
+        },
+        {
+          "pokemon": "lucariomegaz",
+          "set": null,
+          "hp": 100,
+          "status": "",
+          "attack": 0,
+          "speed": 0
+        }
+      ],
+      "weather": ""
+    }
+  }
+]

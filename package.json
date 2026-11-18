@@ -1,0 +1,19 @@
+{
+  "name": "aipproject-pokemon-winrate",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Level-50 Pokémon Champions singles simulation dataset",
+  "scripts": {
+    "setup:engine": "node sim/setup-engine.mjs",
+    "generate": "node sim/generate.mjs",
+    "test": "node --test sim/*.test.mjs",
+    "compare": "node sim/compare.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "esbuild": "0.25.0",
+    "ts-chacha20": "1.2.0"
+  }
+}

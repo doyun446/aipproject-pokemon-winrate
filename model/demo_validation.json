@@ -1,0 +1,138 @@
+{
+  "engine": "f827a1d41064e0dec4c19c6ea0394fcf0c23479c",
+  "format": "gen9championsbssregmc",
+  "seed": 5828071,
+  "trials": 400,
+  "cases": [
+    {
+      "id": "4-high",
+      "results": [
+        {
+          "action": "move:0",
+          "n": 400,
+          "ties": 0,
+          "timeouts": 0,
+          "unavailable": 0,
+          "win_rate": 0.51,
+          "hp_after": 0,
+          "standard_error": 0.0250263019536184
+        },
+        {
+          "action": "move:1",
+          "n": 400,
+          "ties": 0,
+          "timeouts": 0,
+          "unavailable": 0,
+          "win_rate": 0.1375,
+          "hp_after": 10.20375,
+          "standard_error": 0.017240285485136914
+        },
+        {
+          "action": "move:2",
+          "n": 400,
+          "ties": 0,
+          "timeouts": 0,
+          "unavailable": 0,
+          "win_rate": 0.415,
+          "hp_after": 86.9975,
+          "standard_error": 0.024666954546853595
+        },
+        {
+          "action": "move:3",
+          "n": 400,
+          "ties": 0,
+          "timeouts": 0,
+          "unavailable": 0,
+          "win_rate": 0.0575,
+          "hp_after": 0,
+          "standard_error": 0.011654352613384097
+        },
+        {
+          "action": "switch:1",
+          "n": 400,
+          "ties": 0,
+          "timeouts": 0,
+          "unavailable": 0,
+          "win_rate": 0.015,
+          "hp_after": 48.29174999999994,
+          "standard_error": 0.006085234193354429
+        },
+        {
+          "action": "switch:2",
+          "n": 400,
+          "ties": 0,
+          "timeouts": 0,
+          "unavailable": 0,
+          "win_rate": 0.525,
+          "hp_after": 60.885249999999935,
+          "standard_error": 0.025
+        }
+      ]
+    },
+    {
+      "id": "4-low",
+      "results": [
+        {
+          "action": "move:0",
+          "n": 400,
+          "ties": 0,
+          "timeouts": 0,
+          "unavailable": 0,
+          "win_rate": 0.8975,
+          "hp_after": 68.41125,
+          "standard_error": 0.015184227900764529
+        },
+        {
+          "action": "move:1",
+          "n": 400,
+          "ties": 0,
+          "timeouts": 0,
+          "unavailable": 0,
+          "win_rate": 0.655,
+          "hp_after": 11.04,
+          "standard_error": 0.023798180255192758
+        },
+        {
+          "action": "move:2",
+          "n": 400,
+          "ties": 0,
+          "timeouts": 0,
+          "unavailable": 0,
+          "win_rate": 0.9775,
+          "hp_after": 86.46125,
+          "standard_error": 0.0074244313217328335
+        },
+        {
+          "action": "move:3",
+          "n": 400,
+          "ties": 0,
+          "timeouts": 0,
+          "unavailable": 0,
+          "win_rate": 0.5525,
+          "hp_after": 0,
+          "standard_error": 0.024892941194307638
+        },
+        {
+          "action": "switch:1",
+          "n": 400,
+          "ties": 0,
+          "timeouts": 0,
+          "unavailable": 0,
+          "win_rate": 0.41,
+          "hp_after": 47.817749999999975,
+          "standard_error": 0.024622462593339462
+        },
+        {
+          "action": "switch:2",
+          "n": 400,
+          "ties": 0,
+          "timeouts": 0,
+          "unavailable": 0,
+          "win_rate": 0.505,
+          "hp_after": 60.540499999999966,
+          "standard_error": 0.02503005711936144
+        }
+      ]
+    }
+  ]
+}
