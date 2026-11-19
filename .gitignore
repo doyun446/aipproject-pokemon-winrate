@@ -165,6 +165,7 @@ __pycache__/
 
 # 용량 큰 생성 데이터
 data/raw/
+data/*.jsonl
 
 # 기타
 .DS_Store
@@ -172,8 +173,4 @@ data/raw/
 
 # 쇼다운 엔진 (GitHub에서 따로 받아 빌드)
 sim/engine/
-data/*.jsonl
-
-# 기타
-.DS_Store
 .vscode/
