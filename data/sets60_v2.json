@@ -20,7 +20,131 @@
     ],
     "audit_before": "평균 절대 차이 24.9%p, ±20%p 이상 307건, 20% 이상인데 빠진 기술 132건",
     "audit_after": "평균 절대 차이 7.7%p, ±20%p 이상 29건, 20% 이상인데 빠진 기술 4건",
-    "limits": "Smogon은 기술 조합 데이터를 공개하지 않아서 변형 세트의 기술 조합은 채용률에 맞춘 추정치"
+    "limits": "Smogon은 기술 조합 데이터를 공개하지 않아서 변형 세트의 기술 조합은 채용률에 맞춘 추정치",
+    "roles": {
+      "description": "세트별 역할 태그. 5단계(3:3)에서 필드 효과 상태와 보정 피처로 서포트형 가치를 반영하는 데 사용",
+      "move_roles": {
+        "벽": [
+          "Aurora Veil",
+          "Light Screen",
+          "Reflect"
+        ],
+        "설치기": [
+          "Ceaseless Edge",
+          "Spikes",
+          "Stealth Rock",
+          "Toxic Spikes"
+        ],
+        "설치기 제거": [
+          "Court Change",
+          "Defog",
+          "Mortal Spin",
+          "Rapid Spin"
+        ],
+        "날씨·필드": [
+          "Chilly Reception",
+          "Electric Terrain",
+          "Grassy Terrain",
+          "Misty Terrain",
+          "Psychic Terrain",
+          "Rain Dance",
+          "Snowscape",
+          "Sunny Day"
+        ],
+        "트릭룸": [
+          "Trick Room"
+        ],
+        "하품·수면": [
+          "Sleep Powder",
+          "Spore",
+          "Yawn"
+        ],
+        "상태이상": [
+          "Dire Claw",
+          "Nuzzle",
+          "Thunder Wave",
+          "Toxic",
+          "Will-O-Wisp"
+        ],
+        "교체기": [
+          "Baton Pass",
+          "Chilly Reception",
+          "Flip Turn",
+          "Parting Shot",
+          "Teleport",
+          "U-turn",
+          "Volt Switch"
+        ],
+        "강제 교체": [
+          "Dragon Tail",
+          "Red Card",
+          "Roar",
+          "Whirlwind"
+        ],
+        "방해": [
+          "Disable",
+          "Encore",
+          "Haze",
+          "Taunt",
+          "Trick"
+        ],
+        "희생·팀 지원": [
+          "Coaching",
+          "Destiny Bond",
+          "Final Gambit",
+          "Healing Wish",
+          "Memento",
+          "Misty Explosion",
+          "Perish Song",
+          "Revival Blessing",
+          "Tailwind",
+          "Wish"
+        ]
+      },
+      "ability_roles": {
+        "Drizzle": "날씨·필드",
+        "Drought": "날씨·필드",
+        "Sand Stream": "날씨·필드",
+        "Snow Warning": "날씨·필드",
+        "Grassy Surge": "날씨·필드",
+        "Psychic Surge": "날씨·필드",
+        "Misty Surge": "날씨·필드",
+        "Electric Surge": "날씨·필드",
+        "Imposter": "변신",
+        "Prankster": "방해"
+      },
+      "item_roles": {
+        "Light Clay": "벽",
+        "Damp Rock": "날씨·필드",
+        "Smooth Rock": "날씨·필드",
+        "Terrain Extender": "날씨·필드",
+        "Red Card": "강제 교체"
+      },
+      "setup_moves": [
+        "Agility",
+        "Belly Drum",
+        "Bulk Up",
+        "Calm Mind",
+        "Cosmic Power",
+        "Curse",
+        "Dragon Dance",
+        "Flame Charge",
+        "Iron Defense",
+        "Nasty Plot",
+        "Quiver Dance",
+        "Shell Smash",
+        "Swords Dance",
+        "Torch Song"
+      ],
+      "support_1v1_hidden": "1:1 최대 데미지 시뮬레이션에서 가치가 덜 드러나는 역할",
+      "support_type": "변화 기술 2개 이상이면서 1:1에서 안 드러나는 역할이 하나 이상인 세트, 또는 메타몽",
+      "support_share": "종 안에서 서포트형 세트의 비율 합"
+    },
+    "decisions": {
+      "renormalize": "10% 미만 세트는 포함된 세트와 같은 비율로 분포한다고 보고 정규화",
+      "support": "서포트형 포함, 5단계에서 보정",
+      "ditto": "메타몽 포함. 피처는 변신 후 능력치(상대 능력치 + 자기 HP + 도구)로 계산"
+    }
   },
   "pokemon": [
     {
@@ -53,7 +177,13 @@
           ],
           "coverage_pct": 46.3,
           "set_id": "Salamence-1",
-          "ratio": 0.475
+          "ratio": 0.475,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Salamence-Mega",
@@ -77,7 +207,11 @@
           ],
           "coverage_pct": 26.8,
           "set_id": "Salamence-2",
-          "ratio": 0.275
+          "ratio": 0.275,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Salamence-Mega",
@@ -101,9 +235,16 @@
           ],
           "coverage_pct": 24.4,
           "set_id": "Salamence-3",
-          "ratio": 0.25
+          "ratio": 0.25,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 2,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0
     },
     {
       "rank": 2,
@@ -137,7 +278,15 @@
           ],
           "coverage_pct": 18.8,
           "set_id": "Garchomp-1",
-          "ratio": 0.209
+          "ratio": 0.209,
+          "roles": [
+            "설치기"
+          ],
+          "support_1v1_hidden": [
+            "설치기"
+          ],
+          "status_moves": 2,
+          "support_type": true
         },
         {
           "form": "Garchomp",
@@ -161,7 +310,11 @@
           ],
           "coverage_pct": 18.7,
           "set_id": "Garchomp-2",
-          "ratio": 0.208
+          "ratio": 0.208,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Garchomp-Mega-Z",
@@ -185,7 +338,11 @@
           ],
           "coverage_pct": 17.9,
           "set_id": "Garchomp-3",
-          "ratio": 0.199
+          "ratio": 0.199,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Garchomp",
@@ -209,7 +366,18 @@
           ],
           "coverage_pct": 12.5,
           "set_id": "Garchomp-4",
-          "ratio": 0.139
+          "ratio": 0.139,
+          "roles": [
+            "강제 교체",
+            "랭크업",
+            "설치기"
+          ],
+          "support_1v1_hidden": [
+            "강제 교체",
+            "설치기"
+          ],
+          "status_moves": 2,
+          "support_type": true
         },
         {
           "form": "Garchomp-Mega-Z",
@@ -233,7 +401,11 @@
           ],
           "coverage_pct": 12.0,
           "set_id": "Garchomp-5",
-          "ratio": 0.133
+          "ratio": 0.133,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Garchomp",
@@ -257,9 +429,18 @@
           ],
           "coverage_pct": 10.1,
           "set_id": "Garchomp-6",
-          "ratio": 0.112
+          "ratio": 0.112,
+          "roles": [
+            "강제 교체"
+          ],
+          "support_1v1_hidden": [
+            "강제 교체"
+          ],
+          "status_moves": 0,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0.348
     },
     {
       "rank": 3,
@@ -291,7 +472,15 @@
           ],
           "coverage_pct": 53.7,
           "set_id": "Primarina-1",
-          "ratio": 0.65
+          "ratio": 0.65,
+          "roles": [
+            "방해"
+          ],
+          "support_1v1_hidden": [
+            "방해"
+          ],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Primarina",
@@ -315,9 +504,19 @@
           ],
           "coverage_pct": 28.9,
           "set_id": "Primarina-2",
-          "ratio": 0.35
+          "ratio": 0.35,
+          "roles": [
+            "교체기",
+            "랭크업"
+          ],
+          "support_1v1_hidden": [
+            "교체기"
+          ],
+          "status_moves": 1,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0
     },
     {
       "rank": 4,
@@ -349,7 +548,16 @@
           ],
           "coverage_pct": 41.9,
           "set_id": "Golisopod-1",
-          "ratio": 0.425
+          "ratio": 0.425,
+          "roles": [
+            "교체기",
+            "랭크업"
+          ],
+          "support_1v1_hidden": [
+            "교체기"
+          ],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Golisopod-Mega",
@@ -373,7 +581,11 @@
           ],
           "coverage_pct": 29.6,
           "set_id": "Golisopod-2",
-          "ratio": 0.3
+          "ratio": 0.3,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Golisopod-Mega",
@@ -397,9 +609,14 @@
           ],
           "coverage_pct": 27.1,
           "set_id": "Golisopod-3",
-          "ratio": 0.275
+          "ratio": 0.275,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0
     },
     {
       "rank": 5,
@@ -431,7 +648,15 @@
           ],
           "coverage_pct": 36.9,
           "set_id": "Archaludon-1",
-          "ratio": 0.405
+          "ratio": 0.405,
+          "roles": [
+            "강제 교체"
+          ],
+          "support_1v1_hidden": [
+            "강제 교체"
+          ],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Archaludon",
@@ -455,7 +680,17 @@
           ],
           "coverage_pct": 30.2,
           "set_id": "Archaludon-2",
-          "ratio": 0.332
+          "ratio": 0.332,
+          "roles": [
+            "강제 교체",
+            "설치기"
+          ],
+          "support_1v1_hidden": [
+            "강제 교체",
+            "설치기"
+          ],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Archaludon",
@@ -479,7 +714,11 @@
           ],
           "coverage_pct": 12.3,
           "set_id": "Archaludon-3",
-          "ratio": 0.135
+          "ratio": 0.135,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Archaludon",
@@ -503,9 +742,19 @@
           ],
           "coverage_pct": 11.7,
           "set_id": "Archaludon-4",
-          "ratio": 0.128
+          "ratio": 0.128,
+          "roles": [
+            "상태이상",
+            "설치기"
+          ],
+          "support_1v1_hidden": [
+            "설치기"
+          ],
+          "status_moves": 2,
+          "support_type": true
         }
-      ]
+      ],
+      "support_share": 0.128
     },
     {
       "rank": 6,
@@ -537,7 +786,13 @@
           ],
           "coverage_pct": 59.9,
           "set_id": "Gholdengo-1",
-          "ratio": 0.692
+          "ratio": 0.692,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 2,
+          "support_type": false
         },
         {
           "form": "Gholdengo",
@@ -561,7 +816,13 @@
           ],
           "coverage_pct": 15.4,
           "set_id": "Gholdengo-2",
-          "ratio": 0.178
+          "ratio": 0.178,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Gholdengo",
@@ -585,9 +846,14 @@
           ],
           "coverage_pct": 11.2,
           "set_id": "Gholdengo-3",
-          "ratio": 0.129
+          "ratio": 0.129,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0
     },
     {
       "rank": 7,
@@ -619,7 +885,13 @@
           ],
           "coverage_pct": 69.2,
           "set_id": "Lucario-1",
-          "ratio": 0.75
+          "ratio": 0.75,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Lucario-Mega-Z",
@@ -643,9 +915,16 @@
           ],
           "coverage_pct": 23.1,
           "set_id": "Lucario-2",
-          "ratio": 0.25
+          "ratio": 0.25,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0
     },
     {
       "rank": 8,
@@ -679,7 +958,21 @@
           ],
           "coverage_pct": 48.8,
           "set_id": "Hippowdon-1",
-          "ratio": 0.5
+          "ratio": 0.5,
+          "roles": [
+            "강제 교체",
+            "날씨·필드",
+            "설치기",
+            "하품·수면"
+          ],
+          "support_1v1_hidden": [
+            "강제 교체",
+            "날씨·필드",
+            "설치기",
+            "하품·수면"
+          ],
+          "status_moves": 3,
+          "support_type": true
         },
         {
           "form": "Hippowdon",
@@ -703,9 +996,22 @@
           ],
           "coverage_pct": 48.8,
           "set_id": "Hippowdon-2",
-          "ratio": 0.5
+          "ratio": 0.5,
+          "roles": [
+            "날씨·필드",
+            "설치기",
+            "하품·수면"
+          ],
+          "support_1v1_hidden": [
+            "날씨·필드",
+            "설치기",
+            "하품·수면"
+          ],
+          "status_moves": 3,
+          "support_type": true
         }
-      ]
+      ],
+      "support_share": 1.0
     },
     {
       "rank": 9,
@@ -737,7 +1043,11 @@
           ],
           "coverage_pct": 20.8,
           "set_id": "Baxcalibur-1",
-          "ratio": 0.224
+          "ratio": 0.224,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Baxcalibur-Mega",
@@ -761,7 +1071,13 @@
           ],
           "coverage_pct": 20.2,
           "set_id": "Baxcalibur-2",
-          "ratio": 0.217
+          "ratio": 0.217,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Baxcalibur-Mega",
@@ -785,7 +1101,13 @@
           ],
           "coverage_pct": 16.6,
           "set_id": "Baxcalibur-3",
-          "ratio": 0.178
+          "ratio": 0.178,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Baxcalibur",
@@ -809,7 +1131,13 @@
           ],
           "coverage_pct": 13.8,
           "set_id": "Baxcalibur-4",
-          "ratio": 0.148
+          "ratio": 0.148,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Baxcalibur",
@@ -833,7 +1161,13 @@
           ],
           "coverage_pct": 10.9,
           "set_id": "Baxcalibur-5",
-          "ratio": 0.117
+          "ratio": 0.117,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Baxcalibur-Mega",
@@ -857,9 +1191,16 @@
           ],
           "coverage_pct": 10.7,
           "set_id": "Baxcalibur-6",
-          "ratio": 0.115
+          "ratio": 0.115,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0
     },
     {
       "rank": 10,
@@ -891,7 +1232,17 @@
           ],
           "coverage_pct": 29.2,
           "set_id": "Rillaboom-1",
-          "ratio": 0.324
+          "ratio": 0.324,
+          "roles": [
+            "교체기",
+            "날씨·필드"
+          ],
+          "support_1v1_hidden": [
+            "교체기",
+            "날씨·필드"
+          ],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Rillaboom",
@@ -915,7 +1266,17 @@
           ],
           "coverage_pct": 23.9,
           "set_id": "Rillaboom-2",
-          "ratio": 0.265
+          "ratio": 0.265,
+          "roles": [
+            "교체기",
+            "날씨·필드"
+          ],
+          "support_1v1_hidden": [
+            "교체기",
+            "날씨·필드"
+          ],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Rillaboom",
@@ -939,7 +1300,17 @@
           ],
           "coverage_pct": 19.0,
           "set_id": "Rillaboom-3",
-          "ratio": 0.211
+          "ratio": 0.211,
+          "roles": [
+            "교체기",
+            "날씨·필드"
+          ],
+          "support_1v1_hidden": [
+            "교체기",
+            "날씨·필드"
+          ],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Rillaboom",
@@ -963,9 +1334,19 @@
           ],
           "coverage_pct": 18.0,
           "set_id": "Rillaboom-4",
-          "ratio": 0.2
+          "ratio": 0.2,
+          "roles": [
+            "날씨·필드",
+            "랭크업"
+          ],
+          "support_1v1_hidden": [
+            "날씨·필드"
+          ],
+          "status_moves": 1,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0
     },
     {
       "rank": 11,
@@ -997,7 +1378,13 @@
           ],
           "coverage_pct": 62.3,
           "set_id": "Mimikyu-1",
-          "ratio": 0.659
+          "ratio": 0.659,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Mimikyu",
@@ -1021,7 +1408,13 @@
           ],
           "coverage_pct": 20.8,
           "set_id": "Mimikyu-2",
-          "ratio": 0.22
+          "ratio": 0.22,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 2,
+          "support_type": false
         },
         {
           "form": "Mimikyu",
@@ -1045,9 +1438,18 @@
           ],
           "coverage_pct": 11.4,
           "set_id": "Mimikyu-3",
-          "ratio": 0.121
+          "ratio": 0.121,
+          "roles": [
+            "트릭룸"
+          ],
+          "support_1v1_hidden": [
+            "트릭룸"
+          ],
+          "status_moves": 1,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0
     },
     {
       "rank": 12,
@@ -1079,7 +1481,15 @@
           ],
           "coverage_pct": 71.7,
           "set_id": "Meowscarada-1",
-          "ratio": 0.798
+          "ratio": 0.798,
+          "roles": [
+            "교체기"
+          ],
+          "support_1v1_hidden": [
+            "교체기"
+          ],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Meowscarada",
@@ -1103,9 +1513,14 @@
           ],
           "coverage_pct": 18.1,
           "set_id": "Meowscarada-2",
-          "ratio": 0.202
+          "ratio": 0.202,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0
     },
     {
       "rank": 13,
@@ -1137,7 +1552,15 @@
           ],
           "coverage_pct": 72.6,
           "set_id": "Basculegion-1",
-          "ratio": 0.778
+          "ratio": 0.778,
+          "roles": [
+            "교체기"
+          ],
+          "support_1v1_hidden": [
+            "교체기"
+          ],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Basculegion",
@@ -1161,9 +1584,16 @@
           ],
           "coverage_pct": 20.7,
           "set_id": "Basculegion-2",
-          "ratio": 0.222
+          "ratio": 0.222,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0
     },
     {
       "rank": 14,
@@ -1195,7 +1625,17 @@
           ],
           "coverage_pct": 29.7,
           "set_id": "Glimmora-1",
-          "ratio": 0.451
+          "ratio": 0.451,
+          "roles": [
+            "설치기",
+            "설치기 제거"
+          ],
+          "support_1v1_hidden": [
+            "설치기",
+            "설치기 제거"
+          ],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Glimmora",
@@ -1219,7 +1659,11 @@
           ],
           "coverage_pct": 21.4,
           "set_id": "Glimmora-2",
-          "ratio": 0.325
+          "ratio": 0.325,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Glimmora",
@@ -1243,9 +1687,20 @@
           ],
           "coverage_pct": 14.8,
           "set_id": "Glimmora-3",
-          "ratio": 0.225
+          "ratio": 0.225,
+          "roles": [
+            "설치기",
+            "희생·팀 지원"
+          ],
+          "support_1v1_hidden": [
+            "설치기",
+            "희생·팀 지원"
+          ],
+          "status_moves": 2,
+          "support_type": true
         }
-      ]
+      ],
+      "support_share": 0.225
     },
     {
       "rank": 15,
@@ -1277,7 +1732,15 @@
           ],
           "coverage_pct": 57.4,
           "set_id": "Corviknight-1",
-          "ratio": 0.6
+          "ratio": 0.6,
+          "roles": [
+            "교체기"
+          ],
+          "support_1v1_hidden": [
+            "교체기"
+          ],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Corviknight",
@@ -1301,9 +1764,16 @@
           ],
           "coverage_pct": 38.2,
           "set_id": "Corviknight-2",
-          "ratio": 0.4
+          "ratio": 0.4,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 3,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0
     },
     {
       "rank": 16,
@@ -1335,7 +1805,13 @@
           ],
           "coverage_pct": 34.7,
           "set_id": "Aegislash-1",
-          "ratio": 0.418
+          "ratio": 0.418,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 2,
+          "support_type": false
         },
         {
           "form": "Aegislash",
@@ -1359,7 +1835,11 @@
           ],
           "coverage_pct": 33.8,
           "set_id": "Aegislash-2",
-          "ratio": 0.407
+          "ratio": 0.407,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Aegislash",
@@ -1383,9 +1863,14 @@
           ],
           "coverage_pct": 14.5,
           "set_id": "Aegislash-3",
-          "ratio": 0.175
+          "ratio": 0.175,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0
     },
     {
       "rank": 17,
@@ -1417,7 +1902,19 @@
           ],
           "coverage_pct": 36.1,
           "set_id": "Ninetales-Alola-1",
-          "ratio": 0.4
+          "ratio": 0.4,
+          "roles": [
+            "날씨·필드",
+            "방해",
+            "벽"
+          ],
+          "support_1v1_hidden": [
+            "날씨·필드",
+            "방해",
+            "벽"
+          ],
+          "status_moves": 2,
+          "support_type": true
         },
         {
           "form": "Ninetales-Alola",
@@ -1441,7 +1938,19 @@
           ],
           "coverage_pct": 36.1,
           "set_id": "Ninetales-Alola-2",
-          "ratio": 0.4
+          "ratio": 0.4,
+          "roles": [
+            "날씨·필드",
+            "방해",
+            "벽"
+          ],
+          "support_1v1_hidden": [
+            "날씨·필드",
+            "방해",
+            "벽"
+          ],
+          "status_moves": 2,
+          "support_type": true
         },
         {
           "form": "Ninetales-Alola",
@@ -1465,9 +1974,20 @@
           ],
           "coverage_pct": 18.1,
           "set_id": "Ninetales-Alola-3",
-          "ratio": 0.2
+          "ratio": 0.2,
+          "roles": [
+            "날씨·필드",
+            "벽"
+          ],
+          "support_1v1_hidden": [
+            "날씨·필드",
+            "벽"
+          ],
+          "status_moves": 2,
+          "support_type": true
         }
-      ]
+      ],
+      "support_share": 1.0
     },
     {
       "rank": 18,
@@ -1501,7 +2021,13 @@
           ],
           "coverage_pct": 37.4,
           "set_id": "Sneasler-1",
-          "ratio": 0.434
+          "ratio": 0.434,
+          "roles": [
+            "상태이상"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Sneasler",
@@ -1525,7 +2051,14 @@
           ],
           "coverage_pct": 24.9,
           "set_id": "Sneasler-2",
-          "ratio": 0.289
+          "ratio": 0.289,
+          "roles": [
+            "랭크업",
+            "상태이상"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Sneasler",
@@ -1549,9 +2082,17 @@
           ],
           "coverage_pct": 23.9,
           "set_id": "Sneasler-3",
-          "ratio": 0.277
+          "ratio": 0.277,
+          "roles": [
+            "랭크업",
+            "상태이상"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0
     },
     {
       "rank": 19,
@@ -1583,7 +2124,15 @@
           ],
           "coverage_pct": 54.5,
           "set_id": "Pawmot-1",
-          "ratio": 0.65
+          "ratio": 0.65,
+          "roles": [
+            "희생·팀 지원"
+          ],
+          "support_1v1_hidden": [
+            "희생·팀 지원"
+          ],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Pawmot",
@@ -1607,9 +2156,19 @@
           ],
           "coverage_pct": 29.3,
           "set_id": "Pawmot-2",
-          "ratio": 0.35
+          "ratio": 0.35,
+          "roles": [
+            "상태이상",
+            "희생·팀 지원"
+          ],
+          "support_1v1_hidden": [
+            "희생·팀 지원"
+          ],
+          "status_moves": 1,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0
     },
     {
       "rank": 20,
@@ -1641,7 +2200,13 @@
           ],
           "coverage_pct": 31.7,
           "set_id": "Blaziken-1",
-          "ratio": 0.339
+          "ratio": 0.339,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 2,
+          "support_type": false
         },
         {
           "form": "Blaziken-Mega",
@@ -1665,7 +2230,11 @@
           ],
           "coverage_pct": 26.4,
           "set_id": "Blaziken-2",
-          "ratio": 0.283
+          "ratio": 0.283,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Blaziken-Mega",
@@ -1689,7 +2258,11 @@
           ],
           "coverage_pct": 12.3,
           "set_id": "Blaziken-3",
-          "ratio": 0.132
+          "ratio": 0.132,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Blaziken",
@@ -1713,7 +2286,15 @@
           ],
           "coverage_pct": 11.7,
           "set_id": "Blaziken-4",
-          "ratio": 0.125
+          "ratio": 0.125,
+          "roles": [
+            "교체기"
+          ],
+          "support_1v1_hidden": [
+            "교체기"
+          ],
+          "status_moves": 2,
+          "support_type": true
         },
         {
           "form": "Blaziken",
@@ -1737,9 +2318,16 @@
           ],
           "coverage_pct": 11.3,
           "set_id": "Blaziken-5",
-          "ratio": 0.121
+          "ratio": 0.121,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 2,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0.125
     },
     {
       "rank": 21,
@@ -1771,7 +2359,17 @@
           ],
           "coverage_pct": 30.0,
           "set_id": "Indeedee-1",
-          "ratio": 0.323
+          "ratio": 0.323,
+          "roles": [
+            "날씨·필드",
+            "방해"
+          ],
+          "support_1v1_hidden": [
+            "날씨·필드",
+            "방해"
+          ],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Indeedee",
@@ -1795,7 +2393,19 @@
           ],
           "coverage_pct": 24.6,
           "set_id": "Indeedee-2",
-          "ratio": 0.265
+          "ratio": 0.265,
+          "roles": [
+            "날씨·필드",
+            "방해",
+            "희생·팀 지원"
+          ],
+          "support_1v1_hidden": [
+            "날씨·필드",
+            "방해",
+            "희생·팀 지원"
+          ],
+          "status_moves": 2,
+          "support_type": true
         },
         {
           "form": "Indeedee",
@@ -1819,7 +2429,15 @@
           ],
           "coverage_pct": 22.3,
           "set_id": "Indeedee-3",
-          "ratio": 0.24
+          "ratio": 0.24,
+          "roles": [
+            "날씨·필드"
+          ],
+          "support_1v1_hidden": [
+            "날씨·필드"
+          ],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Indeedee",
@@ -1843,9 +2461,20 @@
           ],
           "coverage_pct": 16.1,
           "set_id": "Indeedee-4",
-          "ratio": 0.173
+          "ratio": 0.173,
+          "roles": [
+            "날씨·필드",
+            "트릭룸"
+          ],
+          "support_1v1_hidden": [
+            "날씨·필드",
+            "트릭룸"
+          ],
+          "status_moves": 1,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0.265
     },
     {
       "rank": 22,
@@ -1877,7 +2506,13 @@
           ],
           "coverage_pct": 58.4,
           "set_id": "Kingambit-1",
-          "ratio": 0.712
+          "ratio": 0.712,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Kingambit",
@@ -1901,9 +2536,14 @@
           ],
           "coverage_pct": 23.6,
           "set_id": "Kingambit-2",
-          "ratio": 0.288
+          "ratio": 0.288,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0
     },
     {
       "rank": 23,
@@ -1935,7 +2575,11 @@
           ],
           "coverage_pct": 54.5,
           "set_id": "Metagross-1",
-          "ratio": 0.575
+          "ratio": 0.575,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Metagross-Mega",
@@ -1959,7 +2603,11 @@
           ],
           "coverage_pct": 26.1,
           "set_id": "Metagross-2",
-          "ratio": 0.275
+          "ratio": 0.275,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Metagross-Mega",
@@ -1983,9 +2631,14 @@
           ],
           "coverage_pct": 14.2,
           "set_id": "Metagross-3",
-          "ratio": 0.15
+          "ratio": 0.15,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0
     },
     {
       "rank": 24,
@@ -2017,7 +2670,17 @@
           ],
           "coverage_pct": 39.4,
           "set_id": "Pelipper-1",
-          "ratio": 0.433
+          "ratio": 0.433,
+          "roles": [
+            "교체기",
+            "날씨·필드"
+          ],
+          "support_1v1_hidden": [
+            "교체기",
+            "날씨·필드"
+          ],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Pelipper",
@@ -2041,7 +2704,17 @@
           ],
           "coverage_pct": 26.2,
           "set_id": "Pelipper-2",
-          "ratio": 0.288
+          "ratio": 0.288,
+          "roles": [
+            "교체기",
+            "날씨·필드"
+          ],
+          "support_1v1_hidden": [
+            "교체기",
+            "날씨·필드"
+          ],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Pelipper",
@@ -2065,7 +2738,17 @@
           ],
           "coverage_pct": 13.2,
           "set_id": "Pelipper-3",
-          "ratio": 0.145
+          "ratio": 0.145,
+          "roles": [
+            "날씨·필드",
+            "희생·팀 지원"
+          ],
+          "support_1v1_hidden": [
+            "날씨·필드",
+            "희생·팀 지원"
+          ],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Pelipper",
@@ -2089,9 +2772,22 @@
           ],
           "coverage_pct": 12.2,
           "set_id": "Pelipper-4",
-          "ratio": 0.134
+          "ratio": 0.134,
+          "roles": [
+            "교체기",
+            "날씨·필드",
+            "희생·팀 지원"
+          ],
+          "support_1v1_hidden": [
+            "교체기",
+            "날씨·필드",
+            "희생·팀 지원"
+          ],
+          "status_moves": 1,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0
     },
     {
       "rank": 25,
@@ -2123,7 +2819,11 @@
           ],
           "coverage_pct": 44.9,
           "set_id": "Cinderace-1",
-          "ratio": 0.502
+          "ratio": 0.502,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Cinderace",
@@ -2147,7 +2847,15 @@
           ],
           "coverage_pct": 29.2,
           "set_id": "Cinderace-2",
-          "ratio": 0.326
+          "ratio": 0.326,
+          "roles": [
+            "교체기"
+          ],
+          "support_1v1_hidden": [
+            "교체기"
+          ],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Cinderace",
@@ -2171,9 +2879,20 @@
           ],
           "coverage_pct": 15.4,
           "set_id": "Cinderace-3",
-          "ratio": 0.172
+          "ratio": 0.172,
+          "roles": [
+            "교체기",
+            "설치기 제거"
+          ],
+          "support_1v1_hidden": [
+            "교체기",
+            "설치기 제거"
+          ],
+          "status_moves": 1,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0
     },
     {
       "rank": 26,
@@ -2205,7 +2924,13 @@
           ],
           "coverage_pct": 28.7,
           "set_id": "Volcarona-1",
-          "ratio": 0.4
+          "ratio": 0.4,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 2,
+          "support_type": false
         },
         {
           "form": "Volcarona",
@@ -2229,7 +2954,13 @@
           ],
           "coverage_pct": 28.7,
           "set_id": "Volcarona-2",
-          "ratio": 0.4
+          "ratio": 0.4,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Volcarona",
@@ -2253,9 +2984,16 @@
           ],
           "coverage_pct": 14.4,
           "set_id": "Volcarona-3",
-          "ratio": 0.201
+          "ratio": 0.201,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0
     },
     {
       "rank": 27,
@@ -2287,7 +3025,15 @@
           ],
           "coverage_pct": 36.5,
           "set_id": "Charizard-1",
-          "ratio": 0.365
+          "ratio": 0.365,
+          "roles": [
+            "날씨·필드"
+          ],
+          "support_1v1_hidden": [
+            "날씨·필드"
+          ],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Charizard-Mega-Y",
@@ -2311,7 +3057,15 @@
           ],
           "coverage_pct": 23.7,
           "set_id": "Charizard-2",
-          "ratio": 0.237
+          "ratio": 0.237,
+          "roles": [
+            "날씨·필드"
+          ],
+          "support_1v1_hidden": [
+            "날씨·필드"
+          ],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Charizard-Mega-X",
@@ -2335,7 +3089,13 @@
           ],
           "coverage_pct": 16.3,
           "set_id": "Charizard-3",
-          "ratio": 0.163
+          "ratio": 0.163,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Charizard-Mega-Y",
@@ -2359,7 +3119,16 @@
           ],
           "coverage_pct": 12.8,
           "set_id": "Charizard-4",
-          "ratio": 0.128
+          "ratio": 0.128,
+          "roles": [
+            "날씨·필드",
+            "랭크업"
+          ],
+          "support_1v1_hidden": [
+            "날씨·필드"
+          ],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Charizard-Mega-X",
@@ -2383,9 +3152,16 @@
           ],
           "coverage_pct": 10.8,
           "set_id": "Charizard-5",
-          "ratio": 0.108
+          "ratio": 0.108,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 2,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0
     },
     {
       "rank": 28,
@@ -2417,7 +3193,13 @@
           ],
           "coverage_pct": 49.8,
           "set_id": "Blastoise-1",
-          "ratio": 0.525
+          "ratio": 0.525,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Blastoise-Mega",
@@ -2441,7 +3223,13 @@
           ],
           "coverage_pct": 23.7,
           "set_id": "Blastoise-2",
-          "ratio": 0.25
+          "ratio": 0.25,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Blastoise-Mega",
@@ -2465,9 +3253,14 @@
           ],
           "coverage_pct": 21.3,
           "set_id": "Blastoise-3",
-          "ratio": 0.225
+          "ratio": 0.225,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0
     },
     {
       "rank": 29,
@@ -2499,7 +3292,15 @@
           ],
           "coverage_pct": 24.5,
           "set_id": "Gyarados-1",
-          "ratio": 0.265
+          "ratio": 0.265,
+          "roles": [
+            "방해"
+          ],
+          "support_1v1_hidden": [
+            "방해"
+          ],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Gyarados-Mega",
@@ -2523,7 +3324,13 @@
           ],
           "coverage_pct": 22.7,
           "set_id": "Gyarados-2",
-          "ratio": 0.245
+          "ratio": 0.245,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Gyarados",
@@ -2547,7 +3354,11 @@
           ],
           "coverage_pct": 20.2,
           "set_id": "Gyarados-3",
-          "ratio": 0.218
+          "ratio": 0.218,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Gyarados",
@@ -2571,7 +3382,15 @@
           ],
           "coverage_pct": 13.0,
           "set_id": "Gyarados-4",
-          "ratio": 0.14
+          "ratio": 0.14,
+          "roles": [
+            "방해"
+          ],
+          "support_1v1_hidden": [
+            "방해"
+          ],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Gyarados-Mega",
@@ -2595,9 +3414,16 @@
           ],
           "coverage_pct": 12.2,
           "set_id": "Gyarados-5",
-          "ratio": 0.132
+          "ratio": 0.132,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0
     },
     {
       "rank": 30,
@@ -2629,7 +3455,16 @@
           ],
           "coverage_pct": 43.3,
           "set_id": "Rotom-Wash-1",
-          "ratio": 0.467
+          "ratio": 0.467,
+          "roles": [
+            "교체기",
+            "상태이상"
+          ],
+          "support_1v1_hidden": [
+            "교체기"
+          ],
+          "status_moves": 2,
+          "support_type": true
         },
         {
           "form": "Rotom-Wash",
@@ -2653,7 +3488,16 @@
           ],
           "coverage_pct": 35.4,
           "set_id": "Rotom-Wash-2",
-          "ratio": 0.382
+          "ratio": 0.382,
+          "roles": [
+            "교체기",
+            "상태이상"
+          ],
+          "support_1v1_hidden": [
+            "교체기"
+          ],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Rotom-Wash",
@@ -2677,9 +3521,18 @@
           ],
           "coverage_pct": 14.0,
           "set_id": "Rotom-Wash-3",
-          "ratio": 0.151
+          "ratio": 0.151,
+          "roles": [
+            "교체기"
+          ],
+          "support_1v1_hidden": [
+            "교체기"
+          ],
+          "status_moves": 0,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0.467
     },
     {
       "rank": 31,
@@ -2711,7 +3564,11 @@
           ],
           "coverage_pct": 23.9,
           "set_id": "Greninja-1",
-          "ratio": 0.265
+          "ratio": 0.265,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Greninja-Mega",
@@ -2735,7 +3592,11 @@
           ],
           "coverage_pct": 19.5,
           "set_id": "Greninja-2",
-          "ratio": 0.216
+          "ratio": 0.216,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Greninja-Mega",
@@ -2759,7 +3620,11 @@
           ],
           "coverage_pct": 19.5,
           "set_id": "Greninja-3",
-          "ratio": 0.216
+          "ratio": 0.216,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Greninja",
@@ -2783,7 +3648,15 @@
           ],
           "coverage_pct": 15.9,
           "set_id": "Greninja-4",
-          "ratio": 0.176
+          "ratio": 0.176,
+          "roles": [
+            "교체기"
+          ],
+          "support_1v1_hidden": [
+            "교체기"
+          ],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Greninja",
@@ -2807,9 +3680,14 @@
           ],
           "coverage_pct": 11.3,
           "set_id": "Greninja-5",
-          "ratio": 0.125
+          "ratio": 0.125,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0
     },
     {
       "rank": 32,
@@ -2841,7 +3719,15 @@
           ],
           "coverage_pct": 74.9,
           "set_id": "Swampert-1",
-          "ratio": 0.771
+          "ratio": 0.771,
+          "roles": [
+            "교체기"
+          ],
+          "support_1v1_hidden": [
+            "교체기"
+          ],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Swampert",
@@ -2865,9 +3751,22 @@
           ],
           "coverage_pct": 22.2,
           "set_id": "Swampert-2",
-          "ratio": 0.229
+          "ratio": 0.229,
+          "roles": [
+            "교체기",
+            "설치기",
+            "하품·수면"
+          ],
+          "support_1v1_hidden": [
+            "교체기",
+            "설치기",
+            "하품·수면"
+          ],
+          "status_moves": 2,
+          "support_type": true
         }
-      ]
+      ],
+      "support_share": 0.229
     },
     {
       "rank": 33,
@@ -2899,7 +3798,15 @@
           ],
           "coverage_pct": 40.8,
           "set_id": "Gengar-1",
-          "ratio": 0.5
+          "ratio": 0.5,
+          "roles": [
+            "희생·팀 지원"
+          ],
+          "support_1v1_hidden": [
+            "희생·팀 지원"
+          ],
+          "status_moves": 2,
+          "support_type": true
         },
         {
           "form": "Gengar-Mega",
@@ -2923,7 +3830,11 @@
           ],
           "coverage_pct": 26.5,
           "set_id": "Gengar-2",
-          "ratio": 0.325
+          "ratio": 0.325,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Gengar-Mega",
@@ -2947,9 +3858,14 @@
           ],
           "coverage_pct": 14.3,
           "set_id": "Gengar-3",
-          "ratio": 0.175
+          "ratio": 0.175,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 2,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0.5
     },
     {
       "rank": 34,
@@ -2983,7 +3899,17 @@
           ],
           "coverage_pct": 48.2,
           "set_id": "Umbreon-1",
-          "ratio": 0.5
+          "ratio": 0.5,
+          "roles": [
+            "하품·수면",
+            "희생·팀 지원"
+          ],
+          "support_1v1_hidden": [
+            "하품·수면",
+            "희생·팀 지원"
+          ],
+          "status_moves": 3,
+          "support_type": true
         },
         {
           "form": "Umbreon",
@@ -3007,7 +3933,13 @@
           ],
           "coverage_pct": 28.9,
           "set_id": "Umbreon-2",
-          "ratio": 0.3
+          "ratio": 0.3,
+          "roles": [
+            "상태이상"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 3,
+          "support_type": false
         },
         {
           "form": "Umbreon",
@@ -3031,9 +3963,20 @@
           ],
           "coverage_pct": 19.3,
           "set_id": "Umbreon-3",
-          "ratio": 0.2
+          "ratio": 0.2,
+          "roles": [
+            "하품·수면",
+            "희생·팀 지원"
+          ],
+          "support_1v1_hidden": [
+            "하품·수면",
+            "희생·팀 지원"
+          ],
+          "status_moves": 3,
+          "support_type": true
         }
-      ]
+      ],
+      "support_share": 0.7
     },
     {
       "rank": 35,
@@ -3065,7 +4008,13 @@
           ],
           "coverage_pct": 34.9,
           "set_id": "Clefable-1",
-          "ratio": 0.369
+          "ratio": 0.369,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 2,
+          "support_type": false
         },
         {
           "form": "Clefable-Mega",
@@ -3089,7 +4038,13 @@
           ],
           "coverage_pct": 20.9,
           "set_id": "Clefable-2",
-          "ratio": 0.221
+          "ratio": 0.221,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 2,
+          "support_type": false
         },
         {
           "form": "Clefable-Mega",
@@ -3113,7 +4068,16 @@
           ],
           "coverage_pct": 14.0,
           "set_id": "Clefable-3",
-          "ratio": 0.148
+          "ratio": 0.148,
+          "roles": [
+            "랭크업",
+            "설치기"
+          ],
+          "support_1v1_hidden": [
+            "설치기"
+          ],
+          "status_moves": 2,
+          "support_type": true
         },
         {
           "form": "Clefable",
@@ -3137,7 +4101,15 @@
           ],
           "coverage_pct": 13.6,
           "set_id": "Clefable-4",
-          "ratio": 0.144
+          "ratio": 0.144,
+          "roles": [
+            "방해"
+          ],
+          "support_1v1_hidden": [
+            "방해"
+          ],
+          "status_moves": 2,
+          "support_type": true
         },
         {
           "form": "Clefable",
@@ -3161,9 +4133,17 @@
           ],
           "coverage_pct": 11.2,
           "set_id": "Clefable-5",
-          "ratio": 0.118
+          "ratio": 0.118,
+          "roles": [
+            "랭크업",
+            "상태이상"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 3,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0.292
     },
     {
       "rank": 36,
@@ -3195,7 +4175,14 @@
           ],
           "coverage_pct": 52.3,
           "set_id": "Skeledirge-1",
-          "ratio": 0.561
+          "ratio": 0.561,
+          "roles": [
+            "랭크업",
+            "상태이상"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 2,
+          "support_type": false
         },
         {
           "form": "Skeledirge",
@@ -3219,7 +4206,14 @@
           ],
           "coverage_pct": 28.1,
           "set_id": "Skeledirge-2",
-          "ratio": 0.302
+          "ratio": 0.302,
+          "roles": [
+            "랭크업",
+            "상태이상"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 2,
+          "support_type": false
         },
         {
           "form": "Skeledirge",
@@ -3243,9 +4237,19 @@
           ],
           "coverage_pct": 12.8,
           "set_id": "Skeledirge-3",
-          "ratio": 0.137
+          "ratio": 0.137,
+          "roles": [
+            "랭크업",
+            "하품·수면"
+          ],
+          "support_1v1_hidden": [
+            "하품·수면"
+          ],
+          "status_moves": 2,
+          "support_type": true
         }
-      ]
+      ],
+      "support_share": 0.137
     },
     {
       "rank": 37,
@@ -3277,7 +4281,15 @@
           ],
           "coverage_pct": 62.0,
           "set_id": "Hydreigon-1",
-          "ratio": 0.75
+          "ratio": 0.75,
+          "roles": [
+            "교체기"
+          ],
+          "support_1v1_hidden": [
+            "교체기"
+          ],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Hydreigon",
@@ -3301,9 +4313,14 @@
           ],
           "coverage_pct": 20.7,
           "set_id": "Hydreigon-2",
-          "ratio": 0.25
+          "ratio": 0.25,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0
     },
     {
       "rank": 38,
@@ -3335,7 +4352,13 @@
           ],
           "coverage_pct": 54.6,
           "set_id": "Ceruledge-1",
-          "ratio": 0.597
+          "ratio": 0.597,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Ceruledge",
@@ -3359,7 +4382,13 @@
           ],
           "coverage_pct": 19.9,
           "set_id": "Ceruledge-2",
-          "ratio": 0.217
+          "ratio": 0.217,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Ceruledge",
@@ -3383,9 +4412,19 @@
           ],
           "coverage_pct": 17.0,
           "set_id": "Ceruledge-3",
-          "ratio": 0.186
+          "ratio": 0.186,
+          "roles": [
+            "랭크업",
+            "희생·팀 지원"
+          ],
+          "support_1v1_hidden": [
+            "희생·팀 지원"
+          ],
+          "status_moves": 2,
+          "support_type": true
         }
-      ]
+      ],
+      "support_share": 0.186
     },
     {
       "rank": 39,
@@ -3419,7 +4458,19 @@
           ],
           "coverage_pct": 72.6,
           "set_id": "Grimmsnarl-1",
-          "ratio": 0.8
+          "ratio": 0.8,
+          "roles": [
+            "교체기",
+            "방해",
+            "벽"
+          ],
+          "support_1v1_hidden": [
+            "교체기",
+            "방해",
+            "벽"
+          ],
+          "status_moves": 3,
+          "support_type": true
         },
         {
           "form": "Grimmsnarl",
@@ -3443,9 +4494,20 @@
           ],
           "coverage_pct": 18.1,
           "set_id": "Grimmsnarl-2",
-          "ratio": 0.2
+          "ratio": 0.2,
+          "roles": [
+            "방해",
+            "벽"
+          ],
+          "support_1v1_hidden": [
+            "방해",
+            "벽"
+          ],
+          "status_moves": 3,
+          "support_type": true
         }
-      ]
+      ],
+      "support_share": 1.0
     },
     {
       "rank": 40,
@@ -3477,7 +4539,16 @@
           ],
           "coverage_pct": 26.8,
           "set_id": "Scizor-1",
-          "ratio": 0.274
+          "ratio": 0.274,
+          "roles": [
+            "교체기",
+            "랭크업"
+          ],
+          "support_1v1_hidden": [
+            "교체기"
+          ],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Scizor",
@@ -3501,7 +4572,15 @@
           ],
           "coverage_pct": 19.2,
           "set_id": "Scizor-2",
-          "ratio": 0.197
+          "ratio": 0.197,
+          "roles": [
+            "교체기"
+          ],
+          "support_1v1_hidden": [
+            "교체기"
+          ],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Scizor-Mega",
@@ -3525,7 +4604,16 @@
           ],
           "coverage_pct": 15.5,
           "set_id": "Scizor-3",
-          "ratio": 0.159
+          "ratio": 0.159,
+          "roles": [
+            "교체기",
+            "랭크업"
+          ],
+          "support_1v1_hidden": [
+            "교체기"
+          ],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Scizor-Mega",
@@ -3549,7 +4637,13 @@
           ],
           "coverage_pct": 14.5,
           "set_id": "Scizor-4",
-          "ratio": 0.148
+          "ratio": 0.148,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 2,
+          "support_type": false
         },
         {
           "form": "Scizor-Mega",
@@ -3573,7 +4667,11 @@
           ],
           "coverage_pct": 11.4,
           "set_id": "Scizor-5",
-          "ratio": 0.117
+          "ratio": 0.117,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Scizor",
@@ -3597,9 +4695,19 @@
           ],
           "coverage_pct": 10.3,
           "set_id": "Scizor-6",
-          "ratio": 0.105
+          "ratio": 0.105,
+          "roles": [
+            "랭크업",
+            "설치기 제거"
+          ],
+          "support_1v1_hidden": [
+            "설치기 제거"
+          ],
+          "status_moves": 2,
+          "support_type": true
         }
-      ]
+      ],
+      "support_share": 0.105
     },
     {
       "rank": 41,
@@ -3633,7 +4741,15 @@
           ],
           "coverage_pct": 43.4,
           "set_id": "Sylveon-1",
-          "ratio": 0.452
+          "ratio": 0.452,
+          "roles": [
+            "희생·팀 지원"
+          ],
+          "support_1v1_hidden": [
+            "희생·팀 지원"
+          ],
+          "status_moves": 2,
+          "support_type": true
         },
         {
           "form": "Sylveon",
@@ -3657,7 +4773,15 @@
           ],
           "coverage_pct": 28.9,
           "set_id": "Sylveon-2",
-          "ratio": 0.301
+          "ratio": 0.301,
+          "roles": [
+            "하품·수면"
+          ],
+          "support_1v1_hidden": [
+            "하품·수면"
+          ],
+          "status_moves": 2,
+          "support_type": true
         },
         {
           "form": "Sylveon",
@@ -3681,9 +4805,19 @@
           ],
           "coverage_pct": 23.8,
           "set_id": "Sylveon-3",
-          "ratio": 0.248
+          "ratio": 0.248,
+          "roles": [
+            "랭크업",
+            "하품·수면"
+          ],
+          "support_1v1_hidden": [
+            "하품·수면"
+          ],
+          "status_moves": 2,
+          "support_type": true
         }
-      ]
+      ],
+      "support_share": 1.0
     },
     {
       "rank": 42,
@@ -3715,7 +4849,15 @@
           ],
           "coverage_pct": 27.5,
           "set_id": "Samurott-Hisui-1",
-          "ratio": 0.286
+          "ratio": 0.286,
+          "roles": [
+            "설치기"
+          ],
+          "support_1v1_hidden": [
+            "설치기"
+          ],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Samurott-Hisui",
@@ -3739,7 +4881,18 @@
           ],
           "coverage_pct": 19.8,
           "set_id": "Samurott-Hisui-2",
-          "ratio": 0.206
+          "ratio": 0.206,
+          "roles": [
+            "랭크업",
+            "방해",
+            "설치기"
+          ],
+          "support_1v1_hidden": [
+            "방해",
+            "설치기"
+          ],
+          "status_moves": 2,
+          "support_type": true
         },
         {
           "form": "Samurott-Hisui",
@@ -3763,7 +4916,17 @@
           ],
           "coverage_pct": 18.3,
           "set_id": "Samurott-Hisui-3",
-          "ratio": 0.191
+          "ratio": 0.191,
+          "roles": [
+            "방해",
+            "설치기"
+          ],
+          "support_1v1_hidden": [
+            "방해",
+            "설치기"
+          ],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Samurott-Hisui",
@@ -3787,7 +4950,17 @@
           ],
           "coverage_pct": 17.6,
           "set_id": "Samurott-Hisui-4",
-          "ratio": 0.183
+          "ratio": 0.183,
+          "roles": [
+            "방해",
+            "설치기"
+          ],
+          "support_1v1_hidden": [
+            "방해",
+            "설치기"
+          ],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Samurott-Hisui",
@@ -3811,9 +4984,20 @@
           ],
           "coverage_pct": 12.8,
           "set_id": "Samurott-Hisui-5",
-          "ratio": 0.133
+          "ratio": 0.133,
+          "roles": [
+            "교체기",
+            "설치기"
+          ],
+          "support_1v1_hidden": [
+            "교체기",
+            "설치기"
+          ],
+          "status_moves": 0,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0.206
     },
     {
       "rank": 43,
@@ -3845,7 +5029,11 @@
           ],
           "coverage_pct": 40.0,
           "set_id": "Raichu-1",
-          "ratio": 0.4
+          "ratio": 0.4,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Raichu-Mega-Y",
@@ -3869,7 +5057,11 @@
           ],
           "coverage_pct": 30.0,
           "set_id": "Raichu-2",
-          "ratio": 0.3
+          "ratio": 0.3,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Raichu-Mega-Y",
@@ -3893,9 +5085,18 @@
           ],
           "coverage_pct": 30.0,
           "set_id": "Raichu-3",
-          "ratio": 0.3
+          "ratio": 0.3,
+          "roles": [
+            "교체기"
+          ],
+          "support_1v1_hidden": [
+            "교체기"
+          ],
+          "status_moves": 0,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0
     },
     {
       "rank": 44,
@@ -3927,7 +5128,11 @@
           ],
           "coverage_pct": 30.1,
           "set_id": "Dragonite-1",
-          "ratio": 0.307
+          "ratio": 0.307,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Dragonite-Mega",
@@ -3951,7 +5156,11 @@
           ],
           "coverage_pct": 18.1,
           "set_id": "Dragonite-2",
-          "ratio": 0.185
+          "ratio": 0.185,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Dragonite",
@@ -3975,7 +5184,11 @@
           ],
           "coverage_pct": 14.5,
           "set_id": "Dragonite-3",
-          "ratio": 0.148
+          "ratio": 0.148,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Dragonite-Mega",
@@ -3999,7 +5212,11 @@
           ],
           "coverage_pct": 12.0,
           "set_id": "Dragonite-4",
-          "ratio": 0.122
+          "ratio": 0.122,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Dragonite",
@@ -4023,7 +5240,16 @@
           ],
           "coverage_pct": 11.8,
           "set_id": "Dragonite-5",
-          "ratio": 0.12
+          "ratio": 0.12,
+          "roles": [
+            "강제 교체",
+            "랭크업"
+          ],
+          "support_1v1_hidden": [
+            "강제 교체"
+          ],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Dragonite",
@@ -4047,9 +5273,16 @@
           ],
           "coverage_pct": 11.5,
           "set_id": "Dragonite-6",
-          "ratio": 0.117
+          "ratio": 0.117,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0
     },
     {
       "rank": 45,
@@ -4081,7 +5314,16 @@
           ],
           "coverage_pct": 23.0,
           "set_id": "Dragapult-1",
-          "ratio": 0.265
+          "ratio": 0.265,
+          "roles": [
+            "교체기",
+            "랭크업"
+          ],
+          "support_1v1_hidden": [
+            "교체기"
+          ],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Dragapult",
@@ -4105,7 +5347,11 @@
           ],
           "coverage_pct": 22.3,
           "set_id": "Dragapult-2",
-          "ratio": 0.257
+          "ratio": 0.257,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Dragapult",
@@ -4129,7 +5375,16 @@
           ],
           "coverage_pct": 17.9,
           "set_id": "Dragapult-3",
-          "ratio": 0.206
+          "ratio": 0.206,
+          "roles": [
+            "교체기",
+            "상태이상"
+          ],
+          "support_1v1_hidden": [
+            "교체기"
+          ],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Dragapult",
@@ -4153,7 +5408,11 @@
           ],
           "coverage_pct": 13.4,
           "set_id": "Dragapult-4",
-          "ratio": 0.154
+          "ratio": 0.154,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Dragapult",
@@ -4177,9 +5436,14 @@
           ],
           "coverage_pct": 10.2,
           "set_id": "Dragapult-5",
-          "ratio": 0.118
+          "ratio": 0.118,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0
     },
     {
       "rank": 46,
@@ -4210,7 +5474,15 @@
           ],
           "coverage_pct": 81.4,
           "set_id": "Ditto-1",
-          "ratio": 0.887
+          "ratio": 0.887,
+          "roles": [
+            "변신"
+          ],
+          "support_1v1_hidden": [
+            "변신"
+          ],
+          "status_moves": 1,
+          "support_type": true
         },
         {
           "form": "Ditto",
@@ -4231,9 +5503,18 @@
           ],
           "coverage_pct": 10.4,
           "set_id": "Ditto-2",
-          "ratio": 0.113
+          "ratio": 0.113,
+          "roles": [
+            "변신"
+          ],
+          "support_1v1_hidden": [
+            "변신"
+          ],
+          "status_moves": 1,
+          "support_type": true
         }
-      ]
+      ],
+      "support_share": 1.0
     },
     {
       "rank": 47,
@@ -4267,7 +5548,16 @@
           ],
           "coverage_pct": 33.6,
           "set_id": "Toxapex-1",
-          "ratio": 0.4
+          "ratio": 0.4,
+          "roles": [
+            "방해",
+            "상태이상"
+          ],
+          "support_1v1_hidden": [
+            "방해"
+          ],
+          "status_moves": 3,
+          "support_type": true
         },
         {
           "form": "Toxapex",
@@ -4291,7 +5581,13 @@
           ],
           "coverage_pct": 29.4,
           "set_id": "Toxapex-2",
-          "ratio": 0.35
+          "ratio": 0.35,
+          "roles": [
+            "상태이상"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 3,
+          "support_type": false
         },
         {
           "form": "Toxapex",
@@ -4315,9 +5611,20 @@
           ],
           "coverage_pct": 21.0,
           "set_id": "Toxapex-3",
-          "ratio": 0.25
+          "ratio": 0.25,
+          "roles": [
+            "방해",
+            "설치기"
+          ],
+          "support_1v1_hidden": [
+            "방해",
+            "설치기"
+          ],
+          "status_moves": 2,
+          "support_type": true
         }
-      ]
+      ],
+      "support_share": 0.65
     },
     {
       "rank": 48,
@@ -4349,7 +5656,11 @@
           ],
           "coverage_pct": 50.0,
           "set_id": "Absol-1",
-          "ratio": 0.5
+          "ratio": 0.5,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Absol-Mega-Z",
@@ -4373,7 +5684,13 @@
           ],
           "coverage_pct": 30.0,
           "set_id": "Absol-2",
-          "ratio": 0.3
+          "ratio": 0.3,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Absol-Mega-Z",
@@ -4397,9 +5714,16 @@
           ],
           "coverage_pct": 20.0,
           "set_id": "Absol-3",
-          "ratio": 0.2
+          "ratio": 0.2,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0
     },
     {
       "rank": 49,
@@ -4431,7 +5755,17 @@
           ],
           "coverage_pct": 47.5,
           "set_id": "Banette-1",
-          "ratio": 0.475
+          "ratio": 0.475,
+          "roles": [
+            "방해",
+            "희생·팀 지원"
+          ],
+          "support_1v1_hidden": [
+            "방해",
+            "희생·팀 지원"
+          ],
+          "status_moves": 2,
+          "support_type": true
         },
         {
           "form": "Banette-Mega",
@@ -4455,7 +5789,17 @@
           ],
           "coverage_pct": 35.0,
           "set_id": "Banette-2",
-          "ratio": 0.35
+          "ratio": 0.35,
+          "roles": [
+            "방해",
+            "희생·팀 지원"
+          ],
+          "support_1v1_hidden": [
+            "방해",
+            "희생·팀 지원"
+          ],
+          "status_moves": 3,
+          "support_type": true
         },
         {
           "form": "Banette-Mega",
@@ -4479,9 +5823,21 @@
           ],
           "coverage_pct": 17.5,
           "set_id": "Banette-3",
-          "ratio": 0.175
+          "ratio": 0.175,
+          "roles": [
+            "방해",
+            "상태이상",
+            "희생·팀 지원"
+          ],
+          "support_1v1_hidden": [
+            "방해",
+            "희생·팀 지원"
+          ],
+          "status_moves": 2,
+          "support_type": true
         }
-      ]
+      ],
+      "support_share": 1.0
     },
     {
       "rank": 50,
@@ -4513,7 +5869,19 @@
           ],
           "coverage_pct": 44.7,
           "set_id": "Empoleon-1",
-          "ratio": 0.482
+          "ratio": 0.482,
+          "roles": [
+            "교체기",
+            "설치기",
+            "하품·수면"
+          ],
+          "support_1v1_hidden": [
+            "교체기",
+            "설치기",
+            "하품·수면"
+          ],
+          "status_moves": 3,
+          "support_type": true
         },
         {
           "form": "Empoleon",
@@ -4537,7 +5905,15 @@
           ],
           "coverage_pct": 29.8,
           "set_id": "Empoleon-2",
-          "ratio": 0.321
+          "ratio": 0.321,
+          "roles": [
+            "설치기"
+          ],
+          "support_1v1_hidden": [
+            "설치기"
+          ],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Empoleon",
@@ -4561,9 +5937,20 @@
           ],
           "coverage_pct": 18.2,
           "set_id": "Empoleon-3",
-          "ratio": 0.196
+          "ratio": 0.196,
+          "roles": [
+            "교체기",
+            "하품·수면"
+          ],
+          "support_1v1_hidden": [
+            "교체기",
+            "하품·수면"
+          ],
+          "status_moves": 1,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0.482
     },
     {
       "rank": 51,
@@ -4595,7 +5982,17 @@
           ],
           "coverage_pct": 30.7,
           "set_id": "Hatterene-1",
-          "ratio": 0.366
+          "ratio": 0.366,
+          "roles": [
+            "트릭룸",
+            "희생·팀 지원"
+          ],
+          "support_1v1_hidden": [
+            "트릭룸",
+            "희생·팀 지원"
+          ],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Hatterene",
@@ -4619,7 +6016,13 @@
           ],
           "coverage_pct": 22.6,
           "set_id": "Hatterene-2",
-          "ratio": 0.269
+          "ratio": 0.269,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Hatterene",
@@ -4643,7 +6046,19 @@
           ],
           "coverage_pct": 15.3,
           "set_id": "Hatterene-3",
-          "ratio": 0.182
+          "ratio": 0.182,
+          "roles": [
+            "교체기",
+            "트릭룸",
+            "희생·팀 지원"
+          ],
+          "support_1v1_hidden": [
+            "교체기",
+            "트릭룸",
+            "희생·팀 지원"
+          ],
+          "status_moves": 3,
+          "support_type": true
         },
         {
           "form": "Hatterene",
@@ -4667,9 +6082,17 @@
           ],
           "coverage_pct": 15.3,
           "set_id": "Hatterene-4",
-          "ratio": 0.182
+          "ratio": 0.182,
+          "roles": [
+            "랭크업",
+            "상태이상"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0.182
     },
     {
       "rank": 52,
@@ -4701,7 +6124,13 @@
           ],
           "coverage_pct": 42.5,
           "set_id": "Delphox-1",
-          "ratio": 0.425
+          "ratio": 0.425,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 2,
+          "support_type": false
         },
         {
           "form": "Delphox-Mega",
@@ -4725,7 +6154,15 @@
           ],
           "coverage_pct": 30.0,
           "set_id": "Delphox-2",
-          "ratio": 0.3
+          "ratio": 0.3,
+          "roles": [
+            "방해"
+          ],
+          "support_1v1_hidden": [
+            "방해"
+          ],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Delphox-Mega",
@@ -4749,9 +6186,16 @@
           ],
           "coverage_pct": 27.5,
           "set_id": "Delphox-3",
-          "ratio": 0.275
+          "ratio": 0.275,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0
     },
     {
       "rank": 53,
@@ -4783,7 +6227,16 @@
           ],
           "coverage_pct": 20.1,
           "set_id": "Tyranitar-1",
-          "ratio": 0.236
+          "ratio": 0.236,
+          "roles": [
+            "날씨·필드",
+            "랭크업"
+          ],
+          "support_1v1_hidden": [
+            "날씨·필드"
+          ],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Tyranitar-Mega",
@@ -4807,7 +6260,15 @@
           ],
           "coverage_pct": 18.8,
           "set_id": "Tyranitar-2",
-          "ratio": 0.221
+          "ratio": 0.221,
+          "roles": [
+            "날씨·필드"
+          ],
+          "support_1v1_hidden": [
+            "날씨·필드"
+          ],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Tyranitar",
@@ -4831,7 +6292,17 @@
           ],
           "coverage_pct": 13.1,
           "set_id": "Tyranitar-3",
-          "ratio": 0.154
+          "ratio": 0.154,
+          "roles": [
+            "날씨·필드",
+            "설치기"
+          ],
+          "support_1v1_hidden": [
+            "날씨·필드",
+            "설치기"
+          ],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Tyranitar-Mega",
@@ -4855,7 +6326,15 @@
           ],
           "coverage_pct": 11.3,
           "set_id": "Tyranitar-4",
-          "ratio": 0.133
+          "ratio": 0.133,
+          "roles": [
+            "날씨·필드"
+          ],
+          "support_1v1_hidden": [
+            "날씨·필드"
+          ],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Tyranitar",
@@ -4879,7 +6358,17 @@
           ],
           "coverage_pct": 11.1,
           "set_id": "Tyranitar-5",
-          "ratio": 0.13
+          "ratio": 0.13,
+          "roles": [
+            "강제 교체",
+            "날씨·필드"
+          ],
+          "support_1v1_hidden": [
+            "강제 교체",
+            "날씨·필드"
+          ],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Tyranitar",
@@ -4903,9 +6392,22 @@
           ],
           "coverage_pct": 10.8,
           "set_id": "Tyranitar-6",
-          "ratio": 0.127
+          "ratio": 0.127,
+          "roles": [
+            "날씨·필드",
+            "방해",
+            "설치기"
+          ],
+          "support_1v1_hidden": [
+            "날씨·필드",
+            "방해",
+            "설치기"
+          ],
+          "status_moves": 2,
+          "support_type": true
         }
-      ]
+      ],
+      "support_share": 0.127
     },
     {
       "rank": 54,
@@ -4937,7 +6439,13 @@
           ],
           "coverage_pct": 50.0,
           "set_id": "Floette-1",
-          "ratio": 0.5
+          "ratio": 0.5,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Floette-Mega",
@@ -4961,7 +6469,13 @@
           ],
           "coverage_pct": 35.0,
           "set_id": "Floette-2",
-          "ratio": 0.35
+          "ratio": 0.35,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 2,
+          "support_type": false
         },
         {
           "form": "Floette-Mega",
@@ -4985,9 +6499,14 @@
           ],
           "coverage_pct": 15.0,
           "set_id": "Floette-3",
-          "ratio": 0.15
+          "ratio": 0.15,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 2,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0
     },
     {
       "rank": 55,
@@ -5019,9 +6538,14 @@
           ],
           "coverage_pct": 87.8,
           "set_id": "Venusaur-1",
-          "ratio": 1.0
+          "ratio": 1.0,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0
     },
     {
       "rank": 56,
@@ -5055,7 +6579,16 @@
           ],
           "coverage_pct": 38.0,
           "set_id": "Rotom-Heat-1",
-          "ratio": 0.4
+          "ratio": 0.4,
+          "roles": [
+            "교체기",
+            "상태이상"
+          ],
+          "support_1v1_hidden": [
+            "교체기"
+          ],
+          "status_moves": 2,
+          "support_type": true
         },
         {
           "form": "Rotom-Heat",
@@ -5079,7 +6612,15 @@
           ],
           "coverage_pct": 26.0,
           "set_id": "Rotom-Heat-2",
-          "ratio": 0.273
+          "ratio": 0.273,
+          "roles": [
+            "교체기"
+          ],
+          "support_1v1_hidden": [
+            "교체기"
+          ],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Rotom-Heat",
@@ -5103,7 +6644,16 @@
           ],
           "coverage_pct": 20.5,
           "set_id": "Rotom-Heat-3",
-          "ratio": 0.216
+          "ratio": 0.216,
+          "roles": [
+            "교체기",
+            "상태이상"
+          ],
+          "support_1v1_hidden": [
+            "교체기"
+          ],
+          "status_moves": 2,
+          "support_type": true
         },
         {
           "form": "Rotom-Heat",
@@ -5127,9 +6677,19 @@
           ],
           "coverage_pct": 10.6,
           "set_id": "Rotom-Heat-4",
-          "ratio": 0.111
+          "ratio": 0.111,
+          "roles": [
+            "교체기",
+            "상태이상"
+          ],
+          "support_1v1_hidden": [
+            "교체기"
+          ],
+          "status_moves": 1,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0.616
     },
     {
       "rank": 57,
@@ -5161,7 +6721,15 @@
           ],
           "coverage_pct": 47.0,
           "set_id": "Mamoswine-1",
-          "ratio": 0.509
+          "ratio": 0.509,
+          "roles": [
+            "설치기"
+          ],
+          "support_1v1_hidden": [
+            "설치기"
+          ],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Mamoswine",
@@ -5185,7 +6753,11 @@
           ],
           "coverage_pct": 31.3,
           "set_id": "Mamoswine-2",
-          "ratio": 0.339
+          "ratio": 0.339,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Mamoswine",
@@ -5209,9 +6781,18 @@
           ],
           "coverage_pct": 14.1,
           "set_id": "Mamoswine-3",
-          "ratio": 0.153
+          "ratio": 0.153,
+          "roles": [
+            "설치기"
+          ],
+          "support_1v1_hidden": [
+            "설치기"
+          ],
+          "status_moves": 1,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0
     },
     {
       "rank": 58,
@@ -5243,7 +6824,16 @@
           ],
           "coverage_pct": 23.6,
           "set_id": "Excadrill-1",
-          "ratio": 0.298
+          "ratio": 0.298,
+          "roles": [
+            "랭크업",
+            "설치기"
+          ],
+          "support_1v1_hidden": [
+            "설치기"
+          ],
+          "status_moves": 2,
+          "support_type": true
         },
         {
           "form": "Excadrill",
@@ -5267,7 +6857,15 @@
           ],
           "coverage_pct": 20.0,
           "set_id": "Excadrill-2",
-          "ratio": 0.253
+          "ratio": 0.253,
+          "roles": [
+            "설치기 제거"
+          ],
+          "support_1v1_hidden": [
+            "설치기 제거"
+          ],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Excadrill",
@@ -5291,7 +6889,15 @@
           ],
           "coverage_pct": 19.3,
           "set_id": "Excadrill-3",
-          "ratio": 0.244
+          "ratio": 0.244,
+          "roles": [
+            "설치기 제거"
+          ],
+          "support_1v1_hidden": [
+            "설치기 제거"
+          ],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Excadrill",
@@ -5315,9 +6921,14 @@
           ],
           "coverage_pct": 16.2,
           "set_id": "Excadrill-4",
-          "ratio": 0.205
+          "ratio": 0.205,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 0,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0.298
     },
     {
       "rank": 59,
@@ -5349,7 +6960,11 @@
           ],
           "coverage_pct": 32.1,
           "set_id": "Staraptor-1",
-          "ratio": 0.334
+          "ratio": 0.334,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Staraptor",
@@ -5373,7 +6988,15 @@
           ],
           "coverage_pct": 24.6,
           "set_id": "Staraptor-2",
-          "ratio": 0.256
+          "ratio": 0.256,
+          "roles": [
+            "교체기"
+          ],
+          "support_1v1_hidden": [
+            "교체기"
+          ],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Staraptor-Mega",
@@ -5397,7 +7020,11 @@
           ],
           "coverage_pct": 16.0,
           "set_id": "Staraptor-3",
-          "ratio": 0.166
+          "ratio": 0.166,
+          "roles": [],
+          "support_1v1_hidden": [],
+          "status_moves": 2,
+          "support_type": false
         },
         {
           "form": "Staraptor",
@@ -5421,7 +7048,15 @@
           ],
           "coverage_pct": 13.2,
           "set_id": "Staraptor-4",
-          "ratio": 0.137
+          "ratio": 0.137,
+          "roles": [
+            "희생·팀 지원"
+          ],
+          "support_1v1_hidden": [
+            "희생·팀 지원"
+          ],
+          "status_moves": 0,
+          "support_type": false
         },
         {
           "form": "Staraptor-Mega",
@@ -5445,9 +7080,16 @@
           ],
           "coverage_pct": 10.2,
           "set_id": "Staraptor-5",
-          "ratio": 0.106
+          "ratio": 0.106,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 2,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0
     },
     {
       "rank": 60,
@@ -5479,7 +7121,15 @@
           ],
           "coverage_pct": 39.5,
           "set_id": "Armarouge-1",
-          "ratio": 0.447
+          "ratio": 0.447,
+          "roles": [
+            "희생·팀 지원"
+          ],
+          "support_1v1_hidden": [
+            "희생·팀 지원"
+          ],
+          "status_moves": 2,
+          "support_type": true
         },
         {
           "form": "Armarouge",
@@ -5503,7 +7153,15 @@
           ],
           "coverage_pct": 21.5,
           "set_id": "Armarouge-2",
-          "ratio": 0.243
+          "ratio": 0.243,
+          "roles": [
+            "트릭룸"
+          ],
+          "support_1v1_hidden": [
+            "트릭룸"
+          ],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Armarouge",
@@ -5527,7 +7185,13 @@
           ],
           "coverage_pct": 16.5,
           "set_id": "Armarouge-3",
-          "ratio": 0.187
+          "ratio": 0.187,
+          "roles": [
+            "랭크업"
+          ],
+          "support_1v1_hidden": [],
+          "status_moves": 1,
+          "support_type": false
         },
         {
           "form": "Armarouge",
@@ -5551,9 +7215,18 @@
           ],
           "coverage_pct": 10.8,
           "set_id": "Armarouge-4",
-          "ratio": 0.122
+          "ratio": 0.122,
+          "roles": [
+            "희생·팀 지원"
+          ],
+          "support_1v1_hidden": [
+            "희생·팀 지원"
+          ],
+          "status_moves": 1,
+          "support_type": false
         }
-      ]
+      ],
+      "support_share": 0.447
     }
   ]
 }
