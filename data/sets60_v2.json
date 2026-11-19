@@ -144,7 +144,8 @@
       "renormalize": "10% 미만 세트는 포함된 세트와 같은 비율로 분포한다고 보고 정규화",
       "support": "서포트형 포함, 5단계에서 보정",
       "ditto": "메타몽 포함. 피처는 변신 후 능력치(상대 능력치 + 자기 HP + 도구)로 계산"
-    }
+    },
+    "names_ko": "기술·도구·특성 한국어 이름은 PokeAPI(language_id 3, ko) 기준. 형태 이름은 \"메가 + 포켓몬 이름 + X/Y/Z\" 규칙. 게임 내 표기와 다를 수 있어 검토 필요"
   },
   "pokemon": [
     {
@@ -183,7 +184,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가보만다",
+          "ability_ko": "스카이스킨",
+          "item_ko": "보만다나이트",
+          "moves_ko": [
+            "이판사판태클",
+            "용의춤",
+            "지진",
+            "용성군"
+          ]
         },
         {
           "form": "Salamence-Mega",
@@ -211,7 +221,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가보만다",
+          "ability_ko": "스카이스킨",
+          "item_ko": "보만다나이트",
+          "moves_ko": [
+            "불대문자",
+            "역린",
+            "이판사판태클",
+            "날개쉬기"
+          ]
         },
         {
           "form": "Salamence-Mega",
@@ -241,7 +260,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 2,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가보만다",
+          "ability_ko": "스카이스킨",
+          "item_ko": "보만다나이트",
+          "moves_ko": [
+            "용의춤",
+            "지진",
+            "날개쉬기",
+            "드래곤클로"
+          ]
         }
       ],
       "support_share": 0
@@ -286,7 +314,16 @@
             "설치기"
           ],
           "status_moves": 2,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "한카리아스",
+          "ability_ko": "까칠한피부",
+          "item_ko": "울퉁불퉁멧",
+          "moves_ko": [
+            "압정뿌리기",
+            "역린",
+            "스텔스록",
+            "지진"
+          ]
         },
         {
           "form": "Garchomp",
@@ -314,7 +351,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "한카리아스",
+          "ability_ko": "까칠한피부",
+          "item_ko": "구애스카프",
+          "moves_ko": [
+            "지진",
+            "스케일샷",
+            "암석봉인",
+            "독찌르기"
+          ]
         },
         {
           "form": "Garchomp-Mega-Z",
@@ -342,7 +388,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가한카리아스Z",
+          "ability_ko": "부유",
+          "item_ko": "한카리아스나이트Z",
+          "moves_ko": [
+            "용성군",
+            "대지의힘",
+            "화염방사",
+            "용의파동"
+          ]
         },
         {
           "form": "Garchomp",
@@ -377,7 +432,16 @@
             "설치기"
           ],
           "status_moves": 2,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "한카리아스",
+          "ability_ko": "까칠한피부",
+          "item_ko": "기합의띠",
+          "moves_ko": [
+            "스텔스록",
+            "지진",
+            "칼춤",
+            "드래곤테일"
+          ]
         },
         {
           "form": "Garchomp-Mega-Z",
@@ -405,7 +469,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가한카리아스Z",
+          "ability_ko": "부유",
+          "item_ko": "한카리아스나이트Z",
+          "moves_ko": [
+            "파워젬",
+            "불대문자",
+            "용성군",
+            "파도타기"
+          ]
         },
         {
           "form": "Garchomp",
@@ -437,7 +510,16 @@
             "강제 교체"
           ],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "한카리아스",
+          "ability_ko": "까칠한피부",
+          "item_ko": "울퉁불퉁멧",
+          "moves_ko": [
+            "지진",
+            "스톤샤워",
+            "드래곤테일",
+            "불꽃엄니"
+          ]
         }
       ],
       "support_share": 0.348
@@ -480,7 +562,16 @@
             "방해"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "누리레느",
+          "ability_ko": "급류",
+          "item_ko": "자뭉열매",
+          "moves_ko": [
+            "문포스",
+            "물거품아리아",
+            "아쿠아제트",
+            "앙코르"
+          ]
         },
         {
           "form": "Primarina",
@@ -513,7 +604,16 @@
             "교체기"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "누리레느",
+          "ability_ko": "급류",
+          "item_ko": "자뭉열매",
+          "moves_ko": [
+            "문포스",
+            "물거품아리아",
+            "명상",
+            "퀵턴"
+          ]
         }
       ],
       "support_share": 0
@@ -557,7 +657,16 @@
             "교체기"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가갑주무사",
+          "ability_ko": "단단한발톱",
+          "item_ko": "갑주무사나이트",
+          "moves_ko": [
+            "칼춤",
+            "유턴",
+            "아이언헤드",
+            "흡혈"
+          ]
         },
         {
           "form": "Golisopod-Mega",
@@ -585,7 +694,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가갑주무사",
+          "ability_ko": "단단한발톱",
+          "item_ko": "갑주무사나이트",
+          "moves_ko": [
+            "아이언헤드",
+            "만나자마자",
+            "인파이트",
+            "기습"
+          ]
         },
         {
           "form": "Golisopod-Mega",
@@ -613,7 +731,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가갑주무사",
+          "ability_ko": "단단한발톱",
+          "item_ko": "갑주무사나이트",
+          "moves_ko": [
+            "기습",
+            "드릴라이너",
+            "만나자마자",
+            "아쿠아제트"
+          ]
         }
       ],
       "support_share": 0
@@ -656,7 +783,16 @@
             "강제 교체"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "브리두라스",
+          "ability_ko": "지구력",
+          "item_ko": "자뭉열매",
+          "moves_ko": [
+            "용성군",
+            "러스터캐논",
+            "울부짖기",
+            "10만볼트"
+          ]
         },
         {
           "form": "Archaludon",
@@ -690,7 +826,16 @@
             "설치기"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "브리두라스",
+          "ability_ko": "지구력",
+          "item_ko": "자뭉열매",
+          "moves_ko": [
+            "용성군",
+            "드래곤테일",
+            "스텔스록",
+            "일렉트로빔"
+          ]
         },
         {
           "form": "Archaludon",
@@ -718,7 +863,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "브리두라스",
+          "ability_ko": "지구력",
+          "item_ko": "구애스카프",
+          "moves_ko": [
+            "러스터캐논",
+            "악의파동",
+            "10만볼트",
+            "파동탄"
+          ]
         },
         {
           "form": "Archaludon",
@@ -751,7 +905,16 @@
             "설치기"
           ],
           "status_moves": 2,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "브리두라스",
+          "ability_ko": "지구력",
+          "item_ko": "하양허브",
+          "moves_ko": [
+            "전기자석파",
+            "용의파동",
+            "러스터캐논",
+            "스텔스록"
+          ]
         }
       ],
       "support_share": 0.128
@@ -792,7 +955,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 2,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "타부자고",
+          "ability_ko": "황금몸",
+          "item_ko": "풍선",
+          "moves_ko": [
+            "섀도볼",
+            "골드러시",
+            "나쁜음모",
+            "HP회복"
+          ]
         },
         {
           "form": "Gholdengo",
@@ -822,7 +994,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "타부자고",
+          "ability_ko": "황금몸",
+          "item_ko": "먹다남은음식",
+          "moves_ko": [
+            "섀도볼",
+            "골드러시",
+            "나쁜음모",
+            "매지컬샤인"
+          ]
         },
         {
           "form": "Gholdengo",
@@ -850,7 +1031,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "타부자고",
+          "ability_ko": "황금몸",
+          "item_ko": "구애스카프",
+          "moves_ko": [
+            "섀도볼",
+            "러스터캐논",
+            "10만볼트",
+            "기합구슬"
+          ]
         }
       ],
       "support_share": 0
@@ -891,7 +1081,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가루카리오Z",
+          "ability_ko": "파동의방호",
+          "item_ko": "루카리오나이트Z",
+          "moves_ko": [
+            "파동탄",
+            "나쁜음모",
+            "러스터캐논",
+            "악의파동"
+          ]
         },
         {
           "form": "Lucario-Mega-Z",
@@ -921,7 +1120,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가루카리오Z",
+          "ability_ko": "파동의방호",
+          "item_ko": "루카리오나이트Z",
+          "moves_ko": [
+            "파동탄",
+            "나쁜음모",
+            "진공파",
+            "철제광선"
+          ]
         }
       ],
       "support_share": 0
@@ -972,7 +1180,16 @@
             "하품·수면"
           ],
           "status_moves": 3,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "하마돈",
+          "ability_ko": "모래날림",
+          "item_ko": "자뭉열매",
+          "moves_ko": [
+            "지진",
+            "날려버리기",
+            "하품",
+            "스텔스록"
+          ]
         },
         {
           "form": "Hippowdon",
@@ -1008,7 +1225,16 @@
             "하품·수면"
           ],
           "status_moves": 3,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "하마돈",
+          "ability_ko": "모래날림",
+          "item_ko": "자뭉열매",
+          "moves_ko": [
+            "지진",
+            "하품",
+            "스텔스록",
+            "게으름피우기"
+          ]
         }
       ],
       "support_share": 1.0
@@ -1047,7 +1273,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "드닐레이브",
+          "ability_ko": "열교환",
+          "item_ko": "기합의띠",
+          "moves_ko": [
+            "지진",
+            "대검돌격",
+            "얼음뭉치",
+            "고드름떨구기"
+          ]
         },
         {
           "form": "Baxcalibur-Mega",
@@ -1077,7 +1312,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가드닐레이브",
+          "ability_ko": "열교환",
+          "item_ko": "드닐레이브나이트",
+          "moves_ko": [
+            "대검돌격",
+            "지진",
+            "얼음뭉치",
+            "용의춤"
+          ]
         },
         {
           "form": "Baxcalibur-Mega",
@@ -1107,7 +1351,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가드닐레이브",
+          "ability_ko": "열교환",
+          "item_ko": "드닐레이브나이트",
+          "moves_ko": [
+            "고드름떨구기",
+            "대검돌격",
+            "지진",
+            "칼춤"
+          ]
         },
         {
           "form": "Baxcalibur",
@@ -1137,7 +1390,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "드닐레이브",
+          "ability_ko": "열교환",
+          "item_ko": "기합의띠",
+          "moves_ko": [
+            "지진",
+            "대검돌격",
+            "얼음뭉치",
+            "칼춤"
+          ]
         },
         {
           "form": "Baxcalibur",
@@ -1167,7 +1429,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "드닐레이브",
+          "ability_ko": "열교환",
+          "item_ko": "생명의구슬",
+          "moves_ko": [
+            "용의춤",
+            "지진",
+            "대검돌격",
+            "고드름침"
+          ]
         },
         {
           "form": "Baxcalibur-Mega",
@@ -1197,7 +1468,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가드닐레이브",
+          "ability_ko": "열교환",
+          "item_ko": "드닐레이브나이트",
+          "moves_ko": [
+            "고드름침",
+            "번개엄니",
+            "얼음뭉치",
+            "용의춤"
+          ]
         }
       ],
       "support_share": 0
@@ -1242,7 +1522,16 @@
             "날씨·필드"
           ],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "고릴타",
+          "ability_ko": "그래스메이커",
+          "item_ko": "기적의씨",
+          "moves_ko": [
+            "우드해머",
+            "10만마력",
+            "그래스슬라이더",
+            "유턴"
+          ]
         },
         {
           "form": "Rillaboom",
@@ -1276,7 +1565,16 @@
             "날씨·필드"
           ],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "고릴타",
+          "ability_ko": "그래스메이커",
+          "item_ko": "기적의씨",
+          "moves_ko": [
+            "그래스슬라이더",
+            "탁쳐서떨구기",
+            "유턴",
+            "드럼어택"
+          ]
         },
         {
           "form": "Rillaboom",
@@ -1310,7 +1608,16 @@
             "날씨·필드"
           ],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "고릴타",
+          "ability_ko": "그래스메이커",
+          "item_ko": "그라운드코트",
+          "moves_ko": [
+            "그래스슬라이더",
+            "탁쳐서떨구기",
+            "속이기",
+            "유턴"
+          ]
         },
         {
           "form": "Rillaboom",
@@ -1343,7 +1650,16 @@
             "날씨·필드"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "고릴타",
+          "ability_ko": "그래스메이커",
+          "item_ko": "먹다남은음식",
+          "moves_ko": [
+            "그래스슬라이더",
+            "칼춤",
+            "우드해머",
+            "10만마력"
+          ]
         }
       ],
       "support_share": 0
@@ -1384,7 +1700,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "따라큐",
+          "ability_ko": "탈",
+          "item_ko": "생명의구슬",
+          "moves_ko": [
+            "치근거리기",
+            "야습",
+            "칼춤",
+            "섀도클로"
+          ]
         },
         {
           "form": "Mimikyu",
@@ -1414,7 +1739,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 2,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "따라큐",
+          "ability_ko": "탈",
+          "item_ko": "생명의구슬",
+          "moves_ko": [
+            "야습",
+            "치근거리기",
+            "칼춤",
+            "저주"
+          ]
         },
         {
           "form": "Mimikyu",
@@ -1446,7 +1780,16 @@
             "트릭룸"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "따라큐",
+          "ability_ko": "탈",
+          "item_ko": "울퉁불퉁멧",
+          "moves_ko": [
+            "야습",
+            "치근거리기",
+            "트릭룸",
+            "드레인펀치"
+          ]
         }
       ],
       "support_share": 0
@@ -1489,7 +1832,16 @@
             "교체기"
           ],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "마스카나",
+          "ability_ko": "변환자재",
+          "item_ko": "구애스카프",
+          "moves_ko": [
+            "트릭플라워",
+            "트리플악셀",
+            "탁쳐서떨구기",
+            "유턴"
+          ]
         },
         {
           "form": "Meowscarada",
@@ -1517,7 +1869,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "마스카나",
+          "ability_ko": "변환자재",
+          "item_ko": "기합의띠",
+          "moves_ko": [
+            "기습",
+            "트릭플라워",
+            "트리플악셀",
+            "번개펀치"
+          ]
         }
       ],
       "support_share": 0
@@ -1560,7 +1921,16 @@
             "교체기"
           ],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "대쓰여너",
+          "ability_ko": "적응력",
+          "item_ko": "구애스카프",
+          "moves_ko": [
+            "성묘",
+            "웨이브태클",
+            "아쿠아제트",
+            "퀵턴"
+          ]
         },
         {
           "form": "Basculegion",
@@ -1590,7 +1960,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "대쓰여너",
+          "ability_ko": "적응력",
+          "item_ko": "생명의구슬",
+          "moves_ko": [
+            "성묘",
+            "웨이브태클",
+            "아쿠아제트",
+            "고속이동"
+          ]
         }
       ],
       "support_share": 0
@@ -1635,7 +2014,16 @@
             "설치기 제거"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "키라플로르",
+          "ability_ko": "독치장",
+          "item_ko": "기합의띠",
+          "moves_ko": [
+            "킬러스핀",
+            "파워젬",
+            "머드샷",
+            "스텔스록"
+          ]
         },
         {
           "form": "Glimmora",
@@ -1663,7 +2051,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "키라플로르",
+          "ability_ko": "독치장",
+          "item_ko": "기합의띠",
+          "moves_ko": [
+            "파워젬",
+            "에너지볼",
+            "대지의힘",
+            "오물웨이브"
+          ]
         },
         {
           "form": "Glimmora",
@@ -1697,7 +2094,16 @@
             "희생·팀 지원"
           ],
           "status_moves": 2,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "키라플로르",
+          "ability_ko": "독치장",
+          "item_ko": "기합의띠",
+          "moves_ko": [
+            "추억의선물",
+            "대지의힘",
+            "오물폭탄",
+            "스텔스록"
+          ]
         }
       ],
       "support_share": 0.225
@@ -1740,7 +2146,16 @@
             "교체기"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "아머까오",
+          "ability_ko": "프레셔",
+          "item_ko": "울퉁불퉁멧",
+          "moves_ko": [
+            "날개쉬기",
+            "바디프레스",
+            "유턴",
+            "브레이브버드"
+          ]
         },
         {
           "form": "Corviknight",
@@ -1770,7 +2185,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 3,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "아머까오",
+          "ability_ko": "프레셔",
+          "item_ko": "울퉁불퉁멧",
+          "moves_ko": [
+            "철벽",
+            "날개쉬기",
+            "아이언헤드",
+            "벌크업"
+          ]
         }
       ],
       "support_share": 0
@@ -1811,7 +2235,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 2,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "킬가르도",
+          "ability_ko": "배틀스위치",
+          "item_ko": "저주의부적",
+          "moves_ko": [
+            "야습",
+            "킹실드",
+            "폴터가이스트",
+            "칼춤"
+          ]
         },
         {
           "form": "Aegislash",
@@ -1839,7 +2272,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "킬가르도",
+          "ability_ko": "배틀스위치",
+          "item_ko": "먹다남은음식",
+          "moves_ko": [
+            "야습",
+            "킹실드",
+            "섀도볼",
+            "성스러운칼"
+          ]
         },
         {
           "form": "Aegislash",
@@ -1867,7 +2309,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "킬가르도",
+          "ability_ko": "배틀스위치",
+          "item_ko": "먹다남은음식",
+          "moves_ko": [
+            "야습",
+            "폴터가이스트",
+            "러스터캐논",
+            "아이언헤드"
+          ]
         }
       ],
       "support_share": 0
@@ -1914,7 +2365,16 @@
             "벽"
           ],
           "status_moves": 2,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "알로라 나인테일",
+          "ability_ko": "눈퍼뜨리기",
+          "item_ko": "빛의점토",
+          "moves_ko": [
+            "오로라베일",
+            "앙코르",
+            "프리즈드라이",
+            "문포스"
+          ]
         },
         {
           "form": "Ninetales-Alola",
@@ -1950,7 +2410,16 @@
             "벽"
           ],
           "status_moves": 2,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "알로라 나인테일",
+          "ability_ko": "눈퍼뜨리기",
+          "item_ko": "빛의점토",
+          "moves_ko": [
+            "눈보라",
+            "오로라베일",
+            "앙코르",
+            "프리즈드라이"
+          ]
         },
         {
           "form": "Ninetales-Alola",
@@ -1984,7 +2453,16 @@
             "벽"
           ],
           "status_moves": 2,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "알로라 나인테일",
+          "ability_ko": "눈퍼뜨리기",
+          "item_ko": "빛의점토",
+          "moves_ko": [
+            "눈보라",
+            "오로라베일",
+            "문포스",
+            "미스트필드"
+          ]
         }
       ],
       "support_share": 1.0
@@ -2027,7 +2505,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "포푸니크",
+          "ability_ko": "곡예",
+          "item_ko": "사이코시드",
+          "moves_ko": [
+            "속이기",
+            "인파이트",
+            "페이탈클로",
+            "지옥찌르기"
+          ]
         },
         {
           "form": "Sneasler",
@@ -2058,7 +2545,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "포푸니크",
+          "ability_ko": "곡예",
+          "item_ko": "사이코시드",
+          "moves_ko": [
+            "인파이트",
+            "페이탈클로",
+            "불꽃펀치",
+            "칼춤"
+          ]
         },
         {
           "form": "Sneasler",
@@ -2089,7 +2585,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "포푸니크",
+          "ability_ko": "곡예",
+          "item_ko": "하양허브",
+          "moves_ko": [
+            "인파이트",
+            "페이탈클로",
+            "칼춤",
+            "애크러뱃"
+          ]
         }
       ],
       "support_share": 0
@@ -2132,7 +2637,16 @@
             "희생·팀 지원"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "빠르모트",
+          "ability_ko": "철주먹",
+          "item_ko": "기합의띠",
+          "moves_ko": [
+            "회생의기도",
+            "전광쌍격",
+            "인파이트",
+            "냉동펀치"
+          ]
         },
         {
           "form": "Pawmot",
@@ -2165,7 +2679,16 @@
             "희생·팀 지원"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "빠르모트",
+          "ability_ko": "철주먹",
+          "item_ko": "기합의띠",
+          "moves_ko": [
+            "마하펀치",
+            "회생의기도",
+            "전광쌍격",
+            "볼부비부비"
+          ]
         }
       ],
       "support_share": 0
@@ -2206,7 +2729,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 2,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가번치코",
+          "ability_ko": "가속",
+          "item_ko": "번치코나이트",
+          "moves_ko": [
+            "칼춤",
+            "플레어드라이브",
+            "인파이트",
+            "방어"
+          ]
         },
         {
           "form": "Blaziken-Mega",
@@ -2234,7 +2766,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가번치코",
+          "ability_ko": "가속",
+          "item_ko": "번치코나이트",
+          "moves_ko": [
+            "플레어드라이브",
+            "인파이트",
+            "번개펀치",
+            "판별"
+          ]
         },
         {
           "form": "Blaziken-Mega",
@@ -2262,7 +2803,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가번치코",
+          "ability_ko": "가속",
+          "item_ko": "번치코나이트",
+          "moves_ko": [
+            "플레어드라이브",
+            "무릎차기",
+            "스톤에지",
+            "번개펀치"
+          ]
         },
         {
           "form": "Blaziken",
@@ -2294,7 +2844,16 @@
             "교체기"
           ],
           "status_moves": 2,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "번치코",
+          "ability_ko": "가속",
+          "item_ko": "기합의띠",
+          "moves_ko": [
+            "배턴터치",
+            "번개펀치",
+            "인파이트",
+            "방어"
+          ]
         },
         {
           "form": "Blaziken",
@@ -2324,7 +2883,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 2,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "번치코",
+          "ability_ko": "가속",
+          "item_ko": "생명의구슬",
+          "moves_ko": [
+            "지진",
+            "판별",
+            "칼춤",
+            "플레어드라이브"
+          ]
         }
       ],
       "support_share": 0.125
@@ -2369,7 +2937,16 @@
             "방해"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "에써르",
+          "ability_ko": "사이코메이커",
+          "item_ko": "그라운드코트",
+          "moves_ko": [
+            "와이드포스",
+            "매지컬플레임",
+            "앙코르",
+            "매지컬샤인"
+          ]
         },
         {
           "form": "Indeedee",
@@ -2405,7 +2982,16 @@
             "희생·팀 지원"
           ],
           "status_moves": 2,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "에써르",
+          "ability_ko": "사이코메이커",
+          "item_ko": "그라운드코트",
+          "moves_ko": [
+            "와이드포스",
+            "매지컬플레임",
+            "앙코르",
+            "치유소원"
+          ]
         },
         {
           "form": "Indeedee",
@@ -2437,7 +3023,16 @@
             "날씨·필드"
           ],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "에써르",
+          "ability_ko": "사이코메이커",
+          "item_ko": "구애스카프",
+          "moves_ko": [
+            "와이드포스",
+            "매지컬플레임",
+            "매지컬샤인",
+            "하이퍼보이스"
+          ]
         },
         {
           "form": "Indeedee",
@@ -2471,7 +3066,16 @@
             "트릭룸"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "에써르",
+          "ability_ko": "사이코메이커",
+          "item_ko": "기합의띠",
+          "moves_ko": [
+            "와이드포스",
+            "트릭룸",
+            "에너지볼",
+            "매지컬플레임"
+          ]
         }
       ],
       "support_share": 0.265
@@ -2512,7 +3116,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "대도각참",
+          "ability_ko": "총대장",
+          "item_ko": "검은안경",
+          "moves_ko": [
+            "기습",
+            "도각참",
+            "아이언헤드",
+            "칼춤"
+          ]
         },
         {
           "form": "Kingambit",
@@ -2540,7 +3153,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "대도각참",
+          "ability_ko": "총대장",
+          "item_ko": "로플열매",
+          "moves_ko": [
+            "기습",
+            "안다리걸기",
+            "도각참",
+            "아이언헤드"
+          ]
         }
       ],
       "support_share": 0
@@ -2579,7 +3201,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가메타그로스",
+          "ability_ko": "단단한발톱",
+          "item_ko": "메타그로스나이트",
+          "moves_ko": [
+            "불릿펀치",
+            "사이코팽",
+            "냉동펀치",
+            "지진"
+          ]
         },
         {
           "form": "Metagross-Mega",
@@ -2607,7 +3238,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가메타그로스",
+          "ability_ko": "단단한발톱",
+          "item_ko": "메타그로스나이트",
+          "moves_ko": [
+            "코멧펀치",
+            "번개펀치",
+            "사이코팽",
+            "불릿펀치"
+          ]
         },
         {
           "form": "Metagross-Mega",
@@ -2635,7 +3275,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가메타그로스",
+          "ability_ko": "단단한발톱",
+          "item_ko": "메타그로스나이트",
+          "moves_ko": [
+            "냉동펀치",
+            "지진",
+            "암해머",
+            "아이언헤드"
+          ]
         }
       ],
       "support_share": 0
@@ -2680,7 +3329,16 @@
             "날씨·필드"
           ],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "패리퍼",
+          "ability_ko": "잔비",
+          "item_ko": "축축한바위",
+          "moves_ko": [
+            "폭풍",
+            "유턴",
+            "웨더볼",
+            "냉동빔"
+          ]
         },
         {
           "form": "Pelipper",
@@ -2714,7 +3372,16 @@
             "날씨·필드"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "패리퍼",
+          "ability_ko": "잔비",
+          "item_ko": "축축한바위",
+          "moves_ko": [
+            "폭풍",
+            "파도타기",
+            "유턴",
+            "날개쉬기"
+          ]
         },
         {
           "form": "Pelipper",
@@ -2748,7 +3415,16 @@
             "희생·팀 지원"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "패리퍼",
+          "ability_ko": "잔비",
+          "item_ko": "기합의띠",
+          "moves_ko": [
+            "냉동빔",
+            "폭풍",
+            "순풍",
+            "하이드로펌프"
+          ]
         },
         {
           "form": "Pelipper",
@@ -2784,7 +3460,16 @@
             "희생·팀 지원"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "패리퍼",
+          "ability_ko": "잔비",
+          "item_ko": "자뭉열매",
+          "moves_ko": [
+            "폭풍",
+            "순풍",
+            "유턴",
+            "웨더볼"
+          ]
         }
       ],
       "support_share": 0
@@ -2823,7 +3508,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "에이스번",
+          "ability_ko": "리베로",
+          "item_ko": "생명의구슬",
+          "moves_ko": [
+            "화염볼",
+            "기습",
+            "무릎차기",
+            "더스트슈트"
+          ]
         },
         {
           "form": "Cinderace",
@@ -2855,7 +3549,16 @@
             "교체기"
           ],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "에이스번",
+          "ability_ko": "리베로",
+          "item_ko": "구애스카프",
+          "moves_ko": [
+            "화염볼",
+            "무릎차기",
+            "아이언헤드",
+            "유턴"
+          ]
         },
         {
           "form": "Cinderace",
@@ -2889,7 +3592,16 @@
             "설치기 제거"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "에이스번",
+          "ability_ko": "리베로",
+          "item_ko": "기합의띠",
+          "moves_ko": [
+            "화염볼",
+            "코트체인지",
+            "더스트슈트",
+            "유턴"
+          ]
         }
       ],
       "support_share": 0
@@ -2930,7 +3642,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 2,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "불카모스",
+          "ability_ko": "불꽃몸",
+          "item_ko": "자뭉열매",
+          "moves_ko": [
+            "기가드레인",
+            "아침햇살",
+            "불꽃춤",
+            "나비춤"
+          ]
         },
         {
           "form": "Volcarona",
@@ -2960,7 +3681,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "불카모스",
+          "ability_ko": "불꽃몸",
+          "item_ko": "자뭉열매",
+          "moves_ko": [
+            "나비춤",
+            "불꽃춤",
+            "기가드레인",
+            "벌레의야단법석"
+          ]
         },
         {
           "form": "Volcarona",
@@ -2990,7 +3720,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "불카모스",
+          "ability_ko": "불꽃몸",
+          "item_ko": "자뭉열매",
+          "moves_ko": [
+            "사이코키네시스",
+            "나비춤",
+            "벌레의야단법석",
+            "화염방사"
+          ]
         }
       ],
       "support_share": 0
@@ -3033,7 +3772,16 @@
             "날씨·필드"
           ],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가리자몽Y",
+          "ability_ko": "가뭄",
+          "item_ko": "리자몽나이트Y",
+          "moves_ko": [
+            "솔라빔",
+            "웨더볼",
+            "화염방사",
+            "에어슬래시"
+          ]
         },
         {
           "form": "Charizard-Mega-Y",
@@ -3065,7 +3813,16 @@
             "날씨·필드"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가리자몽Y",
+          "ability_ko": "가뭄",
+          "item_ko": "리자몽나이트Y",
+          "moves_ko": [
+            "오버히트",
+            "용의파동",
+            "솔라빔",
+            "날개쉬기"
+          ]
         },
         {
           "form": "Charizard-Mega-X",
@@ -3095,7 +3852,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가리자몽X",
+          "ability_ko": "단단한발톱",
+          "item_ko": "리자몽나이트X",
+          "moves_ko": [
+            "드래곤클로",
+            "용의춤",
+            "번개펀치",
+            "플레어드라이브"
+          ]
         },
         {
           "form": "Charizard-Mega-Y",
@@ -3128,7 +3894,16 @@
             "날씨·필드"
           ],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가리자몽Y",
+          "ability_ko": "가뭄",
+          "item_ko": "리자몽나이트Y",
+          "moves_ko": [
+            "용의파동",
+            "솔라빔",
+            "니트로차지",
+            "원시의힘"
+          ]
         },
         {
           "form": "Charizard-Mega-X",
@@ -3158,7 +3933,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 2,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가리자몽X",
+          "ability_ko": "단단한발톱",
+          "item_ko": "리자몽나이트X",
+          "moves_ko": [
+            "드래곤클로",
+            "용의춤",
+            "날개쉬기",
+            "불꽃펀치"
+          ]
         }
       ],
       "support_share": 0
@@ -3199,7 +3983,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가거북왕",
+          "ability_ko": "메가런처",
+          "item_ko": "거북왕나이트",
+          "moves_ko": [
+            "껍질깨기",
+            "파동탄",
+            "악의파동",
+            "물의파동"
+          ]
         },
         {
           "form": "Blastoise-Mega",
@@ -3229,7 +4022,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가거북왕",
+          "ability_ko": "메가런처",
+          "item_ko": "거북왕나이트",
+          "moves_ko": [
+            "대지의파동",
+            "냉동빔",
+            "껍질깨기",
+            "하이드로펌프"
+          ]
         },
         {
           "form": "Blastoise-Mega",
@@ -3257,7 +4059,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가거북왕",
+          "ability_ko": "메가런처",
+          "item_ko": "거북왕나이트",
+          "moves_ko": [
+            "대지의파동",
+            "파동탄",
+            "악의파동",
+            "해수스파우팅"
+          ]
         }
       ],
       "support_share": 0
@@ -3300,7 +4111,16 @@
             "방해"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "갸라도스",
+          "ability_ko": "위협",
+          "item_ko": "울퉁불퉁멧",
+          "moves_ko": [
+            "파워휩",
+            "눈사태",
+            "도발",
+            "폭포오르기"
+          ]
         },
         {
           "form": "Gyarados-Mega",
@@ -3330,7 +4150,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가갸라도스",
+          "ability_ko": "틀깨기",
+          "item_ko": "갸라도스나이트",
+          "moves_ko": [
+            "용의춤",
+            "지진",
+            "폭포오르기",
+            "얼음엄니"
+          ]
         },
         {
           "form": "Gyarados",
@@ -3358,7 +4187,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "갸라도스",
+          "ability_ko": "위협",
+          "item_ko": "울퉁불퉁멧",
+          "moves_ko": [
+            "눈사태",
+            "파워휩",
+            "열불내기",
+            "아쿠아테일"
+          ]
         },
         {
           "form": "Gyarados",
@@ -3390,7 +4228,16 @@
             "방해"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "갸라도스",
+          "ability_ko": "위협",
+          "item_ko": "울퉁불퉁멧",
+          "moves_ko": [
+            "열불내기",
+            "지진",
+            "폭포오르기",
+            "도발"
+          ]
         },
         {
           "form": "Gyarados-Mega",
@@ -3420,7 +4267,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가갸라도스",
+          "ability_ko": "틀깨기",
+          "item_ko": "갸라도스나이트",
+          "moves_ko": [
+            "용의춤",
+            "파워휩",
+            "깨물어부수기",
+            "지진"
+          ]
         }
       ],
       "support_share": 0
@@ -3464,7 +4320,16 @@
             "교체기"
           ],
           "status_moves": 2,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "워시로토무",
+          "ability_ko": "부유",
+          "item_ko": "자뭉열매",
+          "moves_ko": [
+            "하이드로펌프",
+            "볼트체인지",
+            "도깨비불",
+            "아픔나누기"
+          ]
         },
         {
           "form": "Rotom-Wash",
@@ -3497,7 +4362,16 @@
             "교체기"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "워시로토무",
+          "ability_ko": "부유",
+          "item_ko": "자뭉열매",
+          "moves_ko": [
+            "하이드로펌프",
+            "볼트체인지",
+            "도깨비불",
+            "10만볼트"
+          ]
         },
         {
           "form": "Rotom-Wash",
@@ -3529,7 +4403,16 @@
             "교체기"
           ],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "워시로토무",
+          "ability_ko": "부유",
+          "item_ko": "구애스카프",
+          "moves_ko": [
+            "하이드로펌프",
+            "볼트체인지",
+            "방전",
+            "속임수"
+          ]
         }
       ],
       "support_share": 0.467
@@ -3568,7 +4451,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "개굴닌자",
+          "ability_ko": "변환자재",
+          "item_ko": "기합의띠",
+          "moves_ko": [
+            "악의파동",
+            "냉동빔",
+            "물수리검",
+            "오물웨이브"
+          ]
         },
         {
           "form": "Greninja-Mega",
@@ -3596,7 +4488,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가개굴닌자",
+          "ability_ko": "변환자재",
+          "item_ko": "개굴닌자나이트",
+          "moves_ko": [
+            "냉동빔",
+            "악의파동",
+            "파도타기",
+            "오물웨이브"
+          ]
         },
         {
           "form": "Greninja-Mega",
@@ -3624,7 +4525,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가개굴닌자",
+          "ability_ko": "변환자재",
+          "item_ko": "개굴닌자나이트",
+          "moves_ko": [
+            "냉동빔",
+            "악의파동",
+            "오물웨이브",
+            "물수리검"
+          ]
         },
         {
           "form": "Greninja",
@@ -3656,7 +4566,16 @@
             "교체기"
           ],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "개굴닌자",
+          "ability_ko": "변환자재",
+          "item_ko": "기합의띠",
+          "moves_ko": [
+            "냉동빔",
+            "악의파동",
+            "유턴",
+            "파도타기"
+          ]
         },
         {
           "form": "Greninja",
@@ -3684,7 +4603,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "개굴닌자",
+          "ability_ko": "변환자재",
+          "item_ko": "구애스카프",
+          "moves_ko": [
+            "더스트슈트",
+            "오물웨이브",
+            "풀묶기",
+            "파도타기"
+          ]
         }
       ],
       "support_share": 0
@@ -3727,7 +4655,16 @@
             "교체기"
           ],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가대짱이",
+          "ability_ko": "쓱쓱",
+          "item_ko": "대짱이나이트",
+          "moves_ko": [
+            "지진",
+            "웨이브태클",
+            "냉동펀치",
+            "퀵턴"
+          ]
         },
         {
           "form": "Swampert",
@@ -3763,7 +4700,16 @@
             "하품·수면"
           ],
           "status_moves": 2,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "대짱이",
+          "ability_ko": "급류",
+          "item_ko": "자뭉열매",
+          "moves_ko": [
+            "퀵턴",
+            "스텔스록",
+            "하품",
+            "지진"
+          ]
         }
       ],
       "support_share": 0.229
@@ -3806,7 +4752,16 @@
             "희생·팀 지원"
           ],
           "status_moves": 2,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "메가팬텀",
+          "ability_ko": "그림자밟기",
+          "item_ko": "팬텀나이트",
+          "moves_ko": [
+            "섀도볼",
+            "멸망의노래",
+            "오물웨이브",
+            "길동무"
+          ]
         },
         {
           "form": "Gengar-Mega",
@@ -3834,7 +4789,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가팬텀",
+          "ability_ko": "그림자밟기",
+          "item_ko": "팬텀나이트",
+          "moves_ko": [
+            "방어",
+            "오물폭탄",
+            "섀도볼",
+            "얼어붙은바람"
+          ]
         },
         {
           "form": "Gengar-Mega",
@@ -3862,7 +4826,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 2,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가팬텀",
+          "ability_ko": "그림자밟기",
+          "item_ko": "팬텀나이트",
+          "moves_ko": [
+            "대타출동",
+            "병상첨병",
+            "방어",
+            "오물웨이브"
+          ]
         }
       ],
       "support_share": 0.5
@@ -3909,7 +4882,16 @@
             "희생·팀 지원"
           ],
           "status_moves": 3,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "블래키",
+          "ability_ko": "정신력",
+          "item_ko": "먹다남은음식",
+          "moves_ko": [
+            "속임수",
+            "희망사항",
+            "방어",
+            "하품"
+          ]
         },
         {
           "form": "Umbreon",
@@ -3939,7 +4921,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 3,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "블래키",
+          "ability_ko": "정신력",
+          "item_ko": "먹다남은음식",
+          "moves_ko": [
+            "속임수",
+            "방어",
+            "맹독",
+            "달빛"
+          ]
         },
         {
           "form": "Umbreon",
@@ -3973,7 +4964,16 @@
             "희생·팀 지원"
           ],
           "status_moves": 3,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "블래키",
+          "ability_ko": "정신력",
+          "item_ko": "먹다남은음식",
+          "moves_ko": [
+            "속임수",
+            "판별",
+            "희망사항",
+            "하품"
+          ]
         }
       ],
       "support_share": 0.7
@@ -4014,7 +5014,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 2,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가픽시",
+          "ability_ko": "매직미러",
+          "item_ko": "픽시나이트",
+          "moves_ko": [
+            "화염방사",
+            "문포스",
+            "코스믹파워",
+            "달빛"
+          ]
         },
         {
           "form": "Clefable-Mega",
@@ -4044,7 +5053,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 2,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가픽시",
+          "ability_ko": "매직미러",
+          "item_ko": "픽시나이트",
+          "moves_ko": [
+            "명상",
+            "드레인키스",
+            "달빛",
+            "어시스트파워"
+          ]
         },
         {
           "form": "Clefable-Mega",
@@ -4077,7 +5095,16 @@
             "설치기"
           ],
           "status_moves": 2,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "메가픽시",
+          "ability_ko": "매직미러",
+          "item_ko": "픽시나이트",
+          "moves_ko": [
+            "매지컬플레임",
+            "문포스",
+            "명상",
+            "스텔스록"
+          ]
         },
         {
           "form": "Clefable",
@@ -4109,7 +5136,16 @@
             "방해"
           ],
           "status_moves": 2,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "픽시",
+          "ability_ko": "천진",
+          "item_ko": "먹다남은음식",
+          "moves_ko": [
+            "달빛",
+            "문포스",
+            "화염방사",
+            "앙코르"
+          ]
         },
         {
           "form": "Clefable",
@@ -4140,7 +5176,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 3,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "픽시",
+          "ability_ko": "천진",
+          "item_ko": "먹다남은음식",
+          "moves_ko": [
+            "명상",
+            "전기자석파",
+            "매혹의보이스",
+            "달빛"
+          ]
         }
       ],
       "support_share": 0.292
@@ -4182,7 +5227,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 2,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "라우드본",
+          "ability_ko": "천진",
+          "item_ko": "자뭉열매",
+          "moves_ko": [
+            "플레어송",
+            "게으름피우기",
+            "도깨비불",
+            "섀도볼"
+          ]
         },
         {
           "form": "Skeledirge",
@@ -4213,7 +5267,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 2,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "라우드본",
+          "ability_ko": "천진",
+          "item_ko": "자뭉열매",
+          "moves_ko": [
+            "플레어송",
+            "게으름피우기",
+            "도깨비불",
+            "병상첨병"
+          ]
         },
         {
           "form": "Skeledirge",
@@ -4246,7 +5309,16 @@
             "하품·수면"
           ],
           "status_moves": 2,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "라우드본",
+          "ability_ko": "천진",
+          "item_ko": "풍선",
+          "moves_ko": [
+            "하품",
+            "플레어송",
+            "게으름피우기",
+            "매혹의보이스"
+          ]
         }
       ],
       "support_share": 0.137
@@ -4289,7 +5361,16 @@
             "교체기"
           ],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "삼삼드래",
+          "ability_ko": "부유",
+          "item_ko": "구애스카프",
+          "moves_ko": [
+            "악의파동",
+            "용성군",
+            "유턴",
+            "화염방사"
+          ]
         },
         {
           "form": "Hydreigon",
@@ -4317,7 +5398,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "삼삼드래",
+          "ability_ko": "부유",
+          "item_ko": "구애스카프",
+          "moves_ko": [
+            "악의파동",
+            "용성군",
+            "대지의힘",
+            "불대문자"
+          ]
         }
       ],
       "support_share": 0
@@ -4358,7 +5448,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "창파도",
+          "ability_ko": "깨어진갑옷",
+          "item_ko": "기합의띠",
+          "moves_ko": [
+            "원념의칼",
+            "야습",
+            "폴터가이스트",
+            "칼춤"
+          ]
         },
         {
           "form": "Ceruledge",
@@ -4388,7 +5487,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "창파도",
+          "ability_ko": "깨어진갑옷",
+          "item_ko": "생명의구슬",
+          "moves_ko": [
+            "인파이트",
+            "원념의칼",
+            "벌크업",
+            "야습"
+          ]
         },
         {
           "form": "Ceruledge",
@@ -4421,7 +5529,16 @@
             "희생·팀 지원"
           ],
           "status_moves": 2,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "창파도",
+          "ability_ko": "깨어진갑옷",
+          "item_ko": "자뭉열매",
+          "moves_ko": [
+            "원념의칼",
+            "길동무",
+            "폴터가이스트",
+            "칼춤"
+          ]
         }
       ],
       "support_share": 0.186
@@ -4470,7 +5587,16 @@
             "벽"
           ],
           "status_moves": 3,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "오롱털",
+          "ability_ko": "짓궂은마음",
+          "item_ko": "빛의점토",
+          "moves_ko": [
+            "리플렉터",
+            "빛의장막",
+            "소울크래시",
+            "막말내뱉기"
+          ]
         },
         {
           "form": "Grimmsnarl",
@@ -4504,7 +5630,16 @@
             "벽"
           ],
           "status_moves": 3,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "오롱털",
+          "ability_ko": "짓궂은마음",
+          "item_ko": "빛의점토",
+          "moves_ko": [
+            "리플렉터",
+            "빛의장막",
+            "속임수",
+            "도발"
+          ]
         }
       ],
       "support_share": 1.0
@@ -4548,7 +5683,16 @@
             "교체기"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "핫삼",
+          "ability_ko": "테크니션",
+          "item_ko": "생명의구슬",
+          "moves_ko": [
+            "불릿펀치",
+            "유턴",
+            "칼춤",
+            "인파이트"
+          ]
         },
         {
           "form": "Scizor",
@@ -4580,7 +5724,16 @@
             "교체기"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "핫삼",
+          "ability_ko": "테크니션",
+          "item_ko": "울퉁불퉁멧",
+          "moves_ko": [
+            "불릿펀치",
+            "날개쉬기",
+            "탁쳐서떨구기",
+            "유턴"
+          ]
         },
         {
           "form": "Scizor-Mega",
@@ -4613,7 +5766,16 @@
             "교체기"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가핫삼",
+          "ability_ko": "테크니션",
+          "item_ko": "핫삼나이트",
+          "moves_ko": [
+            "유턴",
+            "인파이트",
+            "불릿펀치",
+            "칼춤"
+          ]
         },
         {
           "form": "Scizor-Mega",
@@ -4643,7 +5805,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 2,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가핫삼",
+          "ability_ko": "테크니션",
+          "item_ko": "핫삼나이트",
+          "moves_ko": [
+            "불릿펀치",
+            "깨뜨리다",
+            "날개쉬기",
+            "칼춤"
+          ]
         },
         {
           "form": "Scizor-Mega",
@@ -4671,7 +5842,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가핫삼",
+          "ability_ko": "테크니션",
+          "item_ko": "핫삼나이트",
+          "moves_ko": [
+            "불릿펀치",
+            "더블윙",
+            "인파이트",
+            "탁쳐서떨구기"
+          ]
         },
         {
           "form": "Scizor",
@@ -4704,7 +5884,16 @@
             "설치기 제거"
           ],
           "status_moves": 2,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "핫삼",
+          "ability_ko": "테크니션",
+          "item_ko": "울퉁불퉁멧",
+          "moves_ko": [
+            "안개제거",
+            "더블윙",
+            "불릿펀치",
+            "칼춤"
+          ]
         }
       ],
       "support_share": 0.105
@@ -4749,7 +5938,16 @@
             "희생·팀 지원"
           ],
           "status_moves": 2,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "님피아",
+          "ability_ko": "페어리스킨",
+          "item_ko": "먹다남은음식",
+          "moves_ko": [
+            "방어",
+            "하이퍼보이스",
+            "매지컬플레임",
+            "희망사항"
+          ]
         },
         {
           "form": "Sylveon",
@@ -4781,7 +5979,16 @@
             "하품·수면"
           ],
           "status_moves": 2,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "님피아",
+          "ability_ko": "페어리스킨",
+          "item_ko": "먹다남은음식",
+          "moves_ko": [
+            "하이퍼보이스",
+            "판별",
+            "하품",
+            "전광석화"
+          ]
         },
         {
           "form": "Sylveon",
@@ -4814,7 +6021,16 @@
             "하품·수면"
           ],
           "status_moves": 2,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "님피아",
+          "ability_ko": "페어리스킨",
+          "item_ko": "요정의깃털",
+          "moves_ko": [
+            "파괴광선",
+            "하이퍼보이스",
+            "하품",
+            "명상"
+          ]
         }
       ],
       "support_share": 1.0
@@ -4857,7 +6073,16 @@
             "설치기"
           ],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "히스이 대검귀",
+          "ability_ko": "예리함",
+          "item_ko": "기합의띠",
+          "moves_ko": [
+            "비검천중파",
+            "성스러운칼",
+            "아쿠아커터",
+            "아쿠아제트"
+          ]
         },
         {
           "form": "Samurott-Hisui",
@@ -4892,7 +6117,16 @@
             "설치기"
           ],
           "status_moves": 2,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "히스이 대검귀",
+          "ability_ko": "예리함",
+          "item_ko": "검은안경",
+          "moves_ko": [
+            "셸블레이드",
+            "비검천중파",
+            "칼춤",
+            "앙코르"
+          ]
         },
         {
           "form": "Samurott-Hisui",
@@ -4926,7 +6160,16 @@
             "설치기"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "히스이 대검귀",
+          "ability_ko": "예리함",
+          "item_ko": "기합의띠",
+          "moves_ko": [
+            "비검천중파",
+            "성스러운칼",
+            "도발",
+            "기습"
+          ]
         },
         {
           "form": "Samurott-Hisui",
@@ -4960,7 +6203,16 @@
             "설치기"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "히스이 대검귀",
+          "ability_ko": "예리함",
+          "item_ko": "자뭉열매",
+          "moves_ko": [
+            "비검천중파",
+            "성스러운칼",
+            "기습",
+            "앙코르"
+          ]
         },
         {
           "form": "Samurott-Hisui",
@@ -4994,7 +6246,16 @@
             "설치기"
           ],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "히스이 대검귀",
+          "ability_ko": "예리함",
+          "item_ko": "구애스카프",
+          "moves_ko": [
+            "퀵턴",
+            "성스러운칼",
+            "셸블레이드",
+            "비검천중파"
+          ]
         }
       ],
       "support_share": 0.206
@@ -5033,7 +6294,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가라이츄Y",
+          "ability_ko": "노가드",
+          "item_ko": "라이츄나이트Y",
+          "moves_ko": [
+            "전자포",
+            "기합구슬",
+            "풀묶기",
+            "대타출동"
+          ]
         },
         {
           "form": "Raichu-Mega-Y",
@@ -5061,7 +6331,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가라이츄Y",
+          "ability_ko": "노가드",
+          "item_ko": "라이츄나이트Y",
+          "moves_ko": [
+            "전자포",
+            "기합구슬",
+            "속이기",
+            "매혹의보이스"
+          ]
         },
         {
           "form": "Raichu-Mega-Y",
@@ -5093,7 +6372,16 @@
             "교체기"
           ],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가라이츄Y",
+          "ability_ko": "노가드",
+          "item_ko": "라이츄나이트Y",
+          "moves_ko": [
+            "전자포",
+            "기합구슬",
+            "풀묶기",
+            "볼트체인지"
+          ]
         }
       ],
       "support_share": 0
@@ -5132,7 +6420,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가망나뇽",
+          "ability_ko": "멀티스케일",
+          "item_ko": "망나뇽나이트",
+          "moves_ko": [
+            "에어슬래시",
+            "날개쉬기",
+            "용성군",
+            "화염방사"
+          ]
         },
         {
           "form": "Dragonite-Mega",
@@ -5160,7 +6457,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가망나뇽",
+          "ability_ko": "멀티스케일",
+          "item_ko": "망나뇽나이트",
+          "moves_ko": [
+            "화염방사",
+            "용의파동",
+            "신속",
+            "10만볼트"
+          ]
         },
         {
           "form": "Dragonite",
@@ -5188,7 +6494,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "망나뇽",
+          "ability_ko": "멀티스케일",
+          "item_ko": "울퉁불퉁멧",
+          "moves_ko": [
+            "지진",
+            "날개쉬기",
+            "신속",
+            "드래곤클로"
+          ]
         },
         {
           "form": "Dragonite-Mega",
@@ -5216,7 +6531,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가망나뇽",
+          "ability_ko": "멀티스케일",
+          "item_ko": "망나뇽나이트",
+          "moves_ko": [
+            "냉동빔",
+            "10만볼트",
+            "용성군",
+            "불대문자"
+          ]
         },
         {
           "form": "Dragonite",
@@ -5249,7 +6573,16 @@
             "강제 교체"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "망나뇽",
+          "ability_ko": "멀티스케일",
+          "item_ko": "울퉁불퉁멧",
+          "moves_ko": [
+            "용의춤",
+            "지진",
+            "신속",
+            "드래곤테일"
+          ]
         },
         {
           "form": "Dragonite",
@@ -5279,7 +6612,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "망나뇽",
+          "ability_ko": "멀티스케일",
+          "item_ko": "생명의구슬",
+          "moves_ko": [
+            "불꽃펀치",
+            "지진",
+            "용의춤",
+            "역린"
+          ]
         }
       ],
       "support_share": 0
@@ -5323,7 +6665,16 @@
             "교체기"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "드래펄트",
+          "ability_ko": "틈새포착",
+          "item_ko": "생명의구슬",
+          "moves_ko": [
+            "섀도볼",
+            "용의춤",
+            "유턴",
+            "고스트다이브"
+          ]
         },
         {
           "form": "Dragapult",
@@ -5351,7 +6702,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "드래펄트",
+          "ability_ko": "틈새포착",
+          "item_ko": "구애스카프",
+          "moves_ko": [
+            "드래곤애로",
+            "10만볼트",
+            "용성군",
+            "불대문자"
+          ]
         },
         {
           "form": "Dragapult",
@@ -5384,7 +6744,16 @@
             "교체기"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "드래펄트",
+          "ability_ko": "틈새포착",
+          "item_ko": "생명의구슬",
+          "moves_ko": [
+            "화염방사",
+            "드래곤애로",
+            "유턴",
+            "도깨비불"
+          ]
         },
         {
           "form": "Dragapult",
@@ -5412,7 +6781,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "드래펄트",
+          "ability_ko": "틈새포착",
+          "item_ko": "기합의띠",
+          "moves_ko": [
+            "강철날개",
+            "섀도볼",
+            "용성군",
+            "기습"
+          ]
         },
         {
           "form": "Dragapult",
@@ -5440,7 +6818,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "드래펄트",
+          "ability_ko": "틈새포착",
+          "item_ko": "생명의구슬",
+          "moves_ko": [
+            "섀도볼",
+            "화염방사",
+            "용성군",
+            "고스트다이브"
+          ]
         }
       ],
       "support_share": 0
@@ -5482,7 +6869,13 @@
             "변신"
           ],
           "status_moves": 1,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "메타몽",
+          "ability_ko": "괴짜",
+          "item_ko": "구애스카프",
+          "moves_ko": [
+            "변신"
+          ]
         },
         {
           "form": "Ditto",
@@ -5511,7 +6904,13 @@
             "변신"
           ],
           "status_moves": 1,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "메타몽",
+          "ability_ko": "괴짜",
+          "item_ko": "반짝가루",
+          "moves_ko": [
+            "변신"
+          ]
         }
       ],
       "support_share": 1.0
@@ -5557,7 +6956,16 @@
             "방해"
           ],
           "status_moves": 3,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "더시마사리",
+          "ability_ko": "재생력",
+          "item_ko": "먹다남은음식",
+          "moves_ko": [
+            "HP회복",
+            "맹독",
+            "흑안개",
+            "아쿠아브레이크"
+          ]
         },
         {
           "form": "Toxapex",
@@ -5587,7 +6995,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 3,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "더시마사리",
+          "ability_ko": "재생력",
+          "item_ko": "먹다남은음식",
+          "moves_ko": [
+            "맹독",
+            "HP회복",
+            "토치카",
+            "파도타기"
+          ]
         },
         {
           "form": "Toxapex",
@@ -5621,7 +7038,16 @@
             "설치기"
           ],
           "status_moves": 2,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "더시마사리",
+          "ability_ko": "재생력",
+          "item_ko": "먹다남은음식",
+          "moves_ko": [
+            "독압정",
+            "엉겨붙기",
+            "찬물끼얹기",
+            "흑안개"
+          ]
         }
       ],
       "support_share": 0.65
@@ -5660,7 +7086,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가앱솔Z",
+          "ability_ko": "예리함",
+          "item_ko": "앱솔나이트Z",
+          "moves_ko": [
+            "섀도클로",
+            "기습",
+            "깜짝베기",
+            "인파이트"
+          ]
         },
         {
           "form": "Absol-Mega-Z",
@@ -5690,7 +7125,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가앱솔Z",
+          "ability_ko": "예리함",
+          "item_ko": "앱솔나이트Z",
+          "moves_ko": [
+            "사이코커터",
+            "칼춤",
+            "섀도클로",
+            "인파이트"
+          ]
         },
         {
           "form": "Absol-Mega-Z",
@@ -5720,7 +7164,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가앱솔Z",
+          "ability_ko": "예리함",
+          "item_ko": "앱솔나이트Z",
+          "moves_ko": [
+            "야습",
+            "섀도클로",
+            "칼춤",
+            "시저크로스"
+          ]
         }
       ],
       "support_share": 0
@@ -5765,7 +7218,16 @@
             "희생·팀 지원"
           ],
           "status_moves": 2,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "메가다크펫",
+          "ability_ko": "짓궂은마음",
+          "item_ko": "다크펫나이트",
+          "moves_ko": [
+            "길동무",
+            "폴터가이스트",
+            "앙코르",
+            "야습"
+          ]
         },
         {
           "form": "Banette-Mega",
@@ -5799,7 +7261,16 @@
             "희생·팀 지원"
           ],
           "status_moves": 3,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "메가다크펫",
+          "ability_ko": "짓궂은마음",
+          "item_ko": "다크펫나이트",
+          "moves_ko": [
+            "길동무",
+            "폴터가이스트",
+            "도발",
+            "앙코르"
+          ]
         },
         {
           "form": "Banette-Mega",
@@ -5834,7 +7305,16 @@
             "희생·팀 지원"
           ],
           "status_moves": 2,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "메가다크펫",
+          "ability_ko": "짓궂은마음",
+          "item_ko": "다크펫나이트",
+          "moves_ko": [
+            "길동무",
+            "폴터가이스트",
+            "도깨비불",
+            "더스트슈트"
+          ]
         }
       ],
       "support_share": 1.0
@@ -5881,7 +7361,16 @@
             "하품·수면"
           ],
           "status_moves": 3,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "엠페르트",
+          "ability_ko": "승기",
+          "item_ko": "먹다남은음식",
+          "moves_ko": [
+            "하품",
+            "스텔스록",
+            "퀵턴",
+            "날개쉬기"
+          ]
         },
         {
           "form": "Empoleon",
@@ -5913,7 +7402,16 @@
             "설치기"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "엠페르트",
+          "ability_ko": "승기",
+          "item_ko": "먹다남은음식",
+          "moves_ko": [
+            "냉동빔",
+            "파도타기",
+            "러스터캐논",
+            "스텔스록"
+          ]
         },
         {
           "form": "Empoleon",
@@ -5947,7 +7445,16 @@
             "하품·수면"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "엠페르트",
+          "ability_ko": "승기",
+          "item_ko": "풍선",
+          "moves_ko": [
+            "퀵턴",
+            "진공파",
+            "하품",
+            "냉동빔"
+          ]
         }
       ],
       "support_share": 0.482
@@ -5992,7 +7499,16 @@
             "희생·팀 지원"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "브리무음",
+          "ability_ko": "매직미러",
+          "item_ko": "먹다남은음식",
+          "moves_ko": [
+            "매지컬플레임",
+            "사이코키네시스",
+            "미스트버스트",
+            "트릭룸"
+          ]
         },
         {
           "form": "Hatterene",
@@ -6022,7 +7538,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "브리무음",
+          "ability_ko": "매직미러",
+          "item_ko": "기합의띠",
+          "moves_ko": [
+            "매지컬플레임",
+            "사이코노이즈",
+            "매지컬샤인",
+            "명상"
+          ]
         },
         {
           "form": "Hatterene",
@@ -6058,7 +7583,16 @@
             "희생·팀 지원"
           ],
           "status_moves": 3,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "브리무음",
+          "ability_ko": "매직미러",
+          "item_ko": "먹다남은음식",
+          "moves_ko": [
+            "배턴터치",
+            "치유소원",
+            "드레인키스",
+            "트릭룸"
+          ]
         },
         {
           "form": "Hatterene",
@@ -6089,7 +7623,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "브리무음",
+          "ability_ko": "매직미러",
+          "item_ko": "먹다남은음식",
+          "moves_ko": [
+            "볼부비부비",
+            "드레인키스",
+            "명상",
+            "사이코쇼크"
+          ]
         }
       ],
       "support_share": 0.182
@@ -6130,7 +7673,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 2,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가마폭시",
+          "ability_ko": "부유",
+          "item_ko": "마폭시나이트",
+          "moves_ko": [
+            "사이코쇼크",
+            "대타출동",
+            "화염방사",
+            "나쁜음모"
+          ]
         },
         {
           "form": "Delphox-Mega",
@@ -6162,7 +7714,16 @@
             "방해"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가마폭시",
+          "ability_ko": "부유",
+          "item_ko": "마폭시나이트",
+          "moves_ko": [
+            "앙코르",
+            "화염방사",
+            "사이코키네시스",
+            "매지컬샤인"
+          ]
         },
         {
           "form": "Delphox-Mega",
@@ -6192,7 +7753,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가마폭시",
+          "ability_ko": "부유",
+          "item_ko": "마폭시나이트",
+          "moves_ko": [
+            "나쁜음모",
+            "사이코키네시스",
+            "매지컬샤인",
+            "오버히트"
+          ]
         }
       ],
       "support_share": 0
@@ -6236,7 +7806,16 @@
             "날씨·필드"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가마기라스",
+          "ability_ko": "모래날림",
+          "item_ko": "마기라스나이트",
+          "moves_ko": [
+            "탁쳐서떨구기",
+            "용의춤",
+            "엄청난힘",
+            "스톤에지"
+          ]
         },
         {
           "form": "Tyranitar-Mega",
@@ -6268,7 +7847,16 @@
             "날씨·필드"
           ],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가마기라스",
+          "ability_ko": "모래날림",
+          "item_ko": "마기라스나이트",
+          "moves_ko": [
+            "지진",
+            "스톤샤워",
+            "탁쳐서떨구기",
+            "냉동펀치"
+          ]
         },
         {
           "form": "Tyranitar",
@@ -6302,7 +7890,16 @@
             "설치기"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "마기라스",
+          "ability_ko": "모래날림",
+          "item_ko": "자뭉열매",
+          "moves_ko": [
+            "냉동빔",
+            "냉동펀치",
+            "스텔스록",
+            "암석봉인"
+          ]
         },
         {
           "form": "Tyranitar-Mega",
@@ -6334,7 +7931,16 @@
             "날씨·필드"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가마기라스",
+          "ability_ko": "모래날림",
+          "item_ko": "마기라스나이트",
+          "moves_ko": [
+            "지진",
+            "암석봉인",
+            "방어",
+            "냉동펀치"
+          ]
         },
         {
           "form": "Tyranitar",
@@ -6368,7 +7974,16 @@
             "날씨·필드"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "마기라스",
+          "ability_ko": "모래날림",
+          "item_ko": "보송보송바위",
+          "moves_ko": [
+            "탁쳐서떨구기",
+            "울부짖기",
+            "스톤샤워",
+            "지진"
+          ]
         },
         {
           "form": "Tyranitar",
@@ -6404,7 +8019,16 @@
             "설치기"
           ],
           "status_moves": 2,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "마기라스",
+          "ability_ko": "모래날림",
+          "item_ko": "자뭉열매",
+          "moves_ko": [
+            "탁쳐서떨구기",
+            "도발",
+            "스톤에지",
+            "스텔스록"
+          ]
         }
       ],
       "support_share": 0.127
@@ -6445,7 +8069,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가플라엣테",
+          "ability_ko": "페어리오라",
+          "item_ko": "플라베베나이트",
+          "moves_ko": [
+            "문포스",
+            "명상",
+            "드레인키스",
+            "파멸의빛"
+          ]
         },
         {
           "form": "Floette-Mega",
@@ -6475,7 +8108,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 2,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가플라엣테",
+          "ability_ko": "페어리오라",
+          "item_ko": "플라베베나이트",
+          "moves_ko": [
+            "문포스",
+            "사이코키네시스",
+            "광합성",
+            "명상"
+          ]
         },
         {
           "form": "Floette-Mega",
@@ -6503,7 +8145,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 2,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가플라엣테",
+          "ability_ko": "페어리오라",
+          "item_ko": "플라베베나이트",
+          "moves_ko": [
+            "애교부리기",
+            "드레인키스",
+            "문포스",
+            "방어"
+          ]
         }
       ],
       "support_share": 0
@@ -6542,7 +8193,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가이상해꽃",
+          "ability_ko": "두꺼운지방",
+          "item_ko": "이상해꽃나이트",
+          "moves_ko": [
+            "대지의힘",
+            "오물폭탄",
+            "광합성",
+            "기가드레인"
+          ]
         }
       ],
       "support_share": 0
@@ -6588,7 +8248,16 @@
             "교체기"
           ],
           "status_moves": 2,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "히트로토무",
+          "ability_ko": "부유",
+          "item_ko": "자뭉열매",
+          "moves_ko": [
+            "오버히트",
+            "볼트체인지",
+            "도깨비불",
+            "아픔나누기"
+          ]
         },
         {
           "form": "Rotom-Heat",
@@ -6620,7 +8289,16 @@
             "교체기"
           ],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "히트로토무",
+          "ability_ko": "부유",
+          "item_ko": "구애스카프",
+          "moves_ko": [
+            "오버히트",
+            "볼트체인지",
+            "10만볼트",
+            "속임수"
+          ]
         },
         {
           "form": "Rotom-Heat",
@@ -6653,7 +8331,16 @@
             "교체기"
           ],
           "status_moves": 2,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "히트로토무",
+          "ability_ko": "부유",
+          "item_ko": "자뭉열매",
+          "moves_ko": [
+            "오버히트",
+            "볼트체인지",
+            "도깨비불",
+            "전기자석파"
+          ]
         },
         {
           "form": "Rotom-Heat",
@@ -6686,7 +8373,16 @@
             "교체기"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "히트로토무",
+          "ability_ko": "부유",
+          "item_ko": "광각렌즈",
+          "moves_ko": [
+            "10만볼트",
+            "오버히트",
+            "도깨비불",
+            "볼트체인지"
+          ]
         }
       ],
       "support_share": 0.616
@@ -6729,7 +8425,16 @@
             "설치기"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "맘모꾸리",
+          "ability_ko": "둔감",
+          "item_ko": "기합의띠",
+          "moves_ko": [
+            "얼음뭉치",
+            "지진",
+            "스텔스록",
+            "고드름떨구기"
+          ]
         },
         {
           "form": "Mamoswine",
@@ -6757,7 +8462,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "맘모꾸리",
+          "ability_ko": "둔감",
+          "item_ko": "기합의띠",
+          "moves_ko": [
+            "얼음뭉치",
+            "지진",
+            "암석봉인",
+            "고드름침"
+          ]
         },
         {
           "form": "Mamoswine",
@@ -6789,7 +8503,16 @@
             "설치기"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "맘모꾸리",
+          "ability_ko": "둔감",
+          "item_ko": "생명의구슬",
+          "moves_ko": [
+            "스텔스록",
+            "죽기살기",
+            "얼음뭉치",
+            "10만마력"
+          ]
         }
       ],
       "support_share": 0
@@ -6833,7 +8556,16 @@
             "설치기"
           ],
           "status_moves": 2,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "몰드류",
+          "ability_ko": "틀깨기",
+          "item_ko": "기합의띠",
+          "moves_ko": [
+            "지진",
+            "아이언헤드",
+            "스텔스록",
+            "칼춤"
+          ]
         },
         {
           "form": "Excadrill",
@@ -6865,7 +8597,16 @@
             "설치기 제거"
           ],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "몰드류",
+          "ability_ko": "틀깨기",
+          "item_ko": "구애스카프",
+          "moves_ko": [
+            "지진",
+            "아이언헤드",
+            "고속스핀",
+            "암석봉인"
+          ]
         },
         {
           "form": "Excadrill",
@@ -6897,7 +8638,16 @@
             "설치기 제거"
           ],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "몰드류",
+          "ability_ko": "틀깨기",
+          "item_ko": "기합의띠",
+          "moves_ko": [
+            "지진",
+            "아이언헤드",
+            "스톤샤워",
+            "고속스핀"
+          ]
         },
         {
           "form": "Excadrill",
@@ -6925,7 +8675,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "몰드류",
+          "ability_ko": "틀깨기",
+          "item_ko": "풍선",
+          "moves_ko": [
+            "지진",
+            "아이언헤드",
+            "뿔드릴",
+            "스톤샤워"
+          ]
         }
       ],
       "support_share": 0.298
@@ -6964,7 +8723,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가찌르호크",
+          "ability_ko": "심술꾸러기",
+          "item_ko": "찌르호크나이트",
+          "moves_ko": [
+            "인파이트",
+            "날개쉬기",
+            "브레이브버드",
+            "블레이즈킥"
+          ]
         },
         {
           "form": "Staraptor",
@@ -6996,7 +8764,16 @@
             "교체기"
           ],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "찌르호크",
+          "ability_ko": "이판사판",
+          "item_ko": "구애스카프",
+          "moves_ko": [
+            "브레이브버드",
+            "인파이트",
+            "이판사판태클",
+            "유턴"
+          ]
         },
         {
           "form": "Staraptor-Mega",
@@ -7024,7 +8801,16 @@
           "roles": [],
           "support_1v1_hidden": [],
           "status_moves": 2,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가찌르호크",
+          "ability_ko": "심술꾸러기",
+          "item_ko": "찌르호크나이트",
+          "moves_ko": [
+            "브레이브버드",
+            "날개쉬기",
+            "방어",
+            "인파이트"
+          ]
         },
         {
           "form": "Staraptor",
@@ -7056,7 +8842,16 @@
             "희생·팀 지원"
           ],
           "status_moves": 0,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "찌르호크",
+          "ability_ko": "이판사판",
+          "item_ko": "구애스카프",
+          "moves_ko": [
+            "목숨걸기",
+            "브레이브버드",
+            "블레이즈킥",
+            "인파이트"
+          ]
         },
         {
           "form": "Staraptor-Mega",
@@ -7086,7 +8881,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 2,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "메가찌르호크",
+          "ability_ko": "심술꾸러기",
+          "item_ko": "찌르호크나이트",
+          "moves_ko": [
+            "인파이트",
+            "날개쉬기",
+            "더블윙",
+            "벌크업"
+          ]
         }
       ],
       "support_share": 0
@@ -7129,7 +8933,16 @@
             "희생·팀 지원"
           ],
           "status_moves": 2,
-          "support_type": true
+          "support_type": true,
+          "form_ko": "카디나르마",
+          "ability_ko": "깨어진갑옷",
+          "item_ko": "기합의띠",
+          "moves_ko": [
+            "아머캐논",
+            "와이드포스",
+            "길동무",
+            "버티기"
+          ]
         },
         {
           "form": "Armarouge",
@@ -7161,7 +8974,16 @@
             "트릭룸"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "카디나르마",
+          "ability_ko": "깨어진갑옷",
+          "item_ko": "기합의띠",
+          "moves_ko": [
+            "트릭룸",
+            "아머캐논",
+            "파동탄",
+            "와이드포스"
+          ]
         },
         {
           "form": "Armarouge",
@@ -7191,7 +9013,16 @@
           ],
           "support_1v1_hidden": [],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "카디나르마",
+          "ability_ko": "깨어진갑옷",
+          "item_ko": "생명의구슬",
+          "moves_ko": [
+            "와이드포스",
+            "아머캐논",
+            "명상",
+            "에너지볼"
+          ]
         },
         {
           "form": "Armarouge",
@@ -7223,7 +9054,16 @@
             "희생·팀 지원"
           ],
           "status_moves": 1,
-          "support_type": false
+          "support_type": false,
+          "form_ko": "카디나르마",
+          "ability_ko": "깨어진갑옷",
+          "item_ko": "기합의띠",
+          "moves_ko": [
+            "아머캐논",
+            "사이코키네시스",
+            "길동무",
+            "기합구슬"
+          ]
         }
       ],
       "support_share": 0.447
