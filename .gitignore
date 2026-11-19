@@ -155,3 +155,18 @@ vite.config.ts.timestamp-*
 .nx/cache
 .nx/workspace-data
 .nx/migrate-runs
+# 비밀값
+.env
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# 용량 큰 생성 데이터
+data/raw/
+data/*.jsonl
+
+# 기타
+.DS_Store
+.vscode/
