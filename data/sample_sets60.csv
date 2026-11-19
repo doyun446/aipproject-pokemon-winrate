@@ -1,0 +1,61 @@
+﻿순위,포켓몬,영문,사용률%,대표 형태,형태 비중%,다른 형태,타입,특성,도구,성격,능력 포인트(H/A/B/C/D/S),기술1,기술2,기술3,기술4,공격 기술 수,확인 필요
+1,보만다,Salamence,36.31,Salamence-Mega,97.5,,Dragon/Flying,Aerilate,Salamencite,Adamant,1/32/0/0/1/32,Double-Edge,Dragon Dance,Earthquake,Roost,2,
+2,한카리아스,Garchomp,32.21,Garchomp,66.4,Garchomp-Mega-Z(29.9%),Dragon/Ground,Rough Skin,Choice Scarf,Jolly,2/32/0/0/0/32,Earthquake,Stealth Rock,Dragon Tail,Outrage,3,조합 확인: 구애 도구와 변화 기술이 함께 뽑힘 · 다른 형태 Garchomp-Mega-Z도 엔진 특성 불일치
+3,누리레느,Primarina,27.03,Primarina,100,,Water/Fairy,Torrent,Sitrus Berry,Modest,32/0/0/32/2/0,Moonblast,Sparkling Aria,Aqua Jet,Encore,3,
+4,갑주무사,Golisopod,21.78,Golisopod-Mega,98.6,,Bug/Steel,Tough Claws,Golisopite,Adamant,32/32/0/0/2/0,Iron Head,Leech Life,Sucker Punch,First Impression,4,엔진 특성 불일치: 래더 Tough Claws / npm 엔진 Emergency Exit
+5,브리두라스,Archaludon,19.9,Archaludon,100,,Steel/Dragon,Stamina,Sitrus Berry,Modest,2/0/0/32/0/32,Draco Meteor,Flash Cannon,Stealth Rock,Thunderbolt,3,
+6,타부자고,Gholdengo,18.86,Gholdengo,100,,Steel/Ghost,Good as Gold,Air Balloon,Timid,2/0/0/32/0/32,Shadow Ball,Make It Rain,Nasty Plot,Recover,2,
+7,루카리오,Lucario,18.13,Lucario-Mega-Z,92.3,Lucario-Mega(7.7%),Fighting/Steel,Aura Guard,Lucarionite Z,Timid,2/0/0/32/0/32,Aura Sphere,Nasty Plot,Flash Cannon,Dark Pulse,3,엔진 특성 불일치: 래더 Aura Guard / npm 엔진 Adaptability
+8,하마돈,Hippowdon,16.93,Hippowdon,100,,Ground,Sand Stream,Sitrus Berry,Impish,32/0/2/0/32/0,Earthquake,Yawn,Stealth Rock,Slack Off,1,서포트형: 대표 기술 4개 중 공격 기술 2개 미만
+9,드닐레이브,Baxcalibur,15.96,Baxcalibur,52.5,Baxcalibur-Mega(47.5%),Dragon/Ice,Thermal Exchange,Focus Sash,Adamant,1/32/1/0/0/32,Earthquake,Glaive Rush,Ice Shard,Icicle Crash,4,
+10,고릴타,Rillaboom,13.99,Rillaboom,100,,Grass,Grassy Surge,Miracle Seed,Jolly,2/32/0/0/0/32,Grassy Glide,U-turn,Wood Hammer,High Horsepower,4,
+11,따라큐,Mimikyu,12.89,Mimikyu,100,,Ghost/Fairy,Disguise,Life Orb,Adamant,2/32/0/0/0/32,Play Rough,Shadow Sneak,Swords Dance,Shadow Claw,3,
+12,마스카나,Meowscarada,12.81,Meowscarada,100,,Grass/Dark,Protean,Choice Scarf,Jolly,2/32/0/0/0/32,Flower Trick,Triple Axel,Knock Off,U-turn,4,
+13,대쓰여너,Basculegion,11.42,Basculegion,100,,Water/Ghost,Adaptability,Choice Scarf,Jolly,2/32/0/0/0/32,Last Respects,Wave Crash,Aqua Jet,Flip Turn,4,
+14,키라플로르,Glimmora,11.33,Glimmora,89.3,Glimmora-Mega(10.7%),Rock/Poison,Toxic Debris,Focus Sash,Timid,1/0/0/32/1/32,Power Gem,Stealth Rock,Earth Power,Sludge Wave,3,
+15,아머까오,Corviknight,10.96,Corviknight,100,,Flying/Steel,Pressure,Rocky Helmet,Impish,32/0/32/0/2/0,Roost,Body Press,U-turn,Iron Defense,2,
+16,킬가르도,Aegislash,9.19,Aegislash,100,,Steel/Ghost,Stance Change,Leftovers,Adamant,32/32/0/0/2/0,Shadow Sneak,King's Shield,Poltergeist,Swords Dance,2,
+17,알로라 나인테일,Ninetales-Alola,8.73,Ninetales-Alola,100,,Ice/Fairy,Snow Warning,Light Clay,Timid,1/0/0/32/1/32,Aurora Veil,Encore,Freeze-Dry,Moonblast,2,
+18,포푸니크,Sneasler,8.13,Sneasler,100,,Fighting/Poison,Unburden,Psychic Seed,Adamant,2/32/0/0/0/32,Close Combat,Dire Claw,Swords Dance,Fake Out,3,Psychic Seed는 필드가 있어야 발동
+19,빠르모트,Pawmot,7.84,Pawmot,100,,Electric/Fighting,Iron Fist,Focus Sash,Jolly,2/32/0/0/0/32,Revival Blessing,Double Shock,Close Combat,Ice Punch,3,
+20,번치코,Blaziken,7.75,Blaziken-Mega,70.5,Blaziken(29.5%),Fire/Fighting,Speed Boost,Blazikenite,Adamant,2/32/0/0/0/32,Flare Blitz,Close Combat,Thunder Punch,Protect,3,
+21,에써르,Indeedee,7.65,Indeedee,100,,Psychic/Normal,Psychic Surge,Terrain Extender,Timid,2/0/0/32/0/32,Expanding Force,Mystical Fire,Encore,Dazzling Gleam,3,
+22,대도각참,Kingambit,7.54,Kingambit,100,,Dark/Steel,Supreme Overlord,Black Glasses,Adamant,32/32/0/0/2/0,Sucker Punch,Kowtow Cleave,Iron Head,Swords Dance,3,
+23,메타그로스,Metagross,7.48,Metagross-Mega,94.8,Metagross(5.2%),Steel/Psychic,Tough Claws,Metagrossite,Jolly,2/32/0/0/0/32,Bullet Punch,Psychic Fangs,Ice Punch,Earthquake,4,
+24,패리퍼,Pelipper,6.97,Pelipper,100,,Water/Flying,Drizzle,Damp Rock,Modest,2/0/0/32/0/32,Hurricane,U-turn,Ice Beam,Weather Ball,4,
+25,에이스번,Cinderace,6.69,Cinderace,100,,Fire,Libero,Choice Scarf,Jolly,2/32/0/0/0/32,Pyro Ball,High Jump Kick,Gunk Shot,U-turn,4,
+26,불카모스,Volcarona,6.49,Volcarona,100,,Bug/Fire,Flame Body,Sitrus Berry,Modest,1/0/0/32/1/32,Quiver Dance,Fiery Dance,Giga Drain,Bug Buzz,3,
+27,리자몽,Charizard,6.36,Charizard-Mega-Y,72.9,Charizard-Mega-X(27.1%),Fire/Flying,Drought,Charizardite Y,Timid,2/0/0/32/0/32,Solar Beam,Flamethrower,Dragon Pulse,Air Slash,4,
+28,거북왕,Blastoise,6.36,Blastoise-Mega,94.8,Blastoise(5.2%),Water,Mega Launcher,Blastoisinite,Modest,2/0/0/32/0/32,Shell Smash,Aura Sphere,Dark Pulse,Terrain Pulse,3,
+29,갸라도스,Gyarados,6.28,Gyarados,65.1,Gyarados-Mega(34.9%),Water/Flying,Intimidate,Rocky Helmet,Impish,31/1/32/0/0/2,Power Whip,Avalanche,Taunt,Temper Flare,3,
+30,워시로토무,Rotom-Wash,6.17,Rotom-Wash,100,,Electric/Water,Levitate,Sitrus Berry,Timid,2/0/0/32/0/32,Hydro Pump,Volt Switch,Will-O-Wisp,Pain Split,2,
+31,개굴닌자,Greninja,6.07,Greninja,61,Greninja-Mega(39%),Water/Dark,Protean,Focus Sash,Timid,2/0/0/32/0/32,Dark Pulse,Ice Beam,Sludge Wave,Surf,4,
+32,대짱이,Swampert,6.01,Swampert-Mega,74.9,Swampert(25.1%),Water/Ground,Swift Swim,Swampertite,Adamant,2/32/0/0/0/32,Earthquake,Wave Crash,Ice Punch,Flip Turn,4,
+33,팬텀,Gengar,5.97,Gengar-Mega,81.6,Gengar(18.4%),Ghost/Poison,Shadow Tag,Gengarite,Timid,2/0/0/32/0/32,Shadow Ball,Sludge Wave,Protect,Destiny Bond,2,
+34,블래키,Umbreon,5.88,Umbreon,100,,Dark,Inner Focus,Leftovers,Bold,32/0/32/0/2/0,Foul Play,Wish,Protect,Yawn,1,서포트형: 대표 기술 4개 중 공격 기술 2개 미만
+35,픽시,Clefable,5.1,Clefable-Mega,69.8,Clefable(30.2%),Fairy/Flying,Magic Bounce,Clefablite,Bold,32/0/32/0/2/0,Moonlight,Moonblast,Calm Mind,Flamethrower,2,
+36,라우드본,Skeledirge,4.61,Skeledirge,100,,Fire/Ghost,Unaware,Sitrus Berry,Bold,32/0/32/0/2/0,Torch Song,Slack Off,Will-O-Wisp,Shadow Ball,2,
+37,삼삼드래,Hydreigon,4.57,Hydreigon,100,,Dark/Dragon,Levitate,Choice Scarf,Modest,2/0/0/32/0/32,Dark Pulse,Draco Meteor,U-turn,Flamethrower,4,
+38,창파도,Ceruledge,4.46,Ceruledge,100,,Fire/Ghost,Weak Armor,Focus Sash,Adamant,1/32/0/0/1/32,Bitter Blade,Shadow Sneak,Poltergeist,Swords Dance,3,
+39,오롱털,Grimmsnarl,4.37,Grimmsnarl,100,,Dark/Fairy,Prankster,Light Clay,Careful,32/2/0/0/32/0,Reflect,Light Screen,Spirit Break,Parting Shot,1,서포트형: 대표 기술 4개 중 공격 기술 2개 미만
+40,핫삼,Scizor,4.22,Scizor,58.6,Scizor-Mega(41.4%),Bug/Steel,Technician,Life Orb,Adamant,32/32/0/0/2/0,Bullet Punch,U-turn,Swords Dance,Close Combat,3,
+41,님피아,Sylveon,4.12,Sylveon,100,,Fairy,Pixilate,Leftovers,Bold,32/0/32/0/2/0,Hyper Voice,Yawn,Wish,Protect,1,서포트형: 대표 기술 4개 중 공격 기술 2개 미만
+42,히스이 대검귀,Samurott-Hisui,4.07,Samurott-Hisui,100,,Water/Dark,Sharpness,Focus Sash,Jolly,2/32/0/0/0/32,Ceaseless Edge,Sacred Sword,Sucker Punch,Encore,3,
+43,라이츄,Raichu,4.05,Raichu-Mega-Y,100,,Electric,No Guard,Raichunite Y,Timid,2/0/0/32/0/32,Zap Cannon,Focus Blast,Grass Knot,Substitute,3,
+44,망나뇽,Dragonite,3.95,Dragonite-Mega,60.2,Dragonite(39.8%),Dragon/Flying,Multiscale,Dragoninite,Modest,2/0/0/32/0/32,Flamethrower,Draco Meteor,Roost,Thunderbolt,3,
+45,드래펄트,Dragapult,3.94,Dragapult,100,,Dragon/Ghost,Infiltrator,Life Orb,Timid,2/0/0/32/0/32,Shadow Ball,Dragon Darts,Draco Meteor,U-turn,4,
+46,메타몽,Ditto,3.84,Ditto,100,,Normal,Imposter,Choice Scarf,Bold,32/0/32/0/2/0,Transform,,,,0,변신(Transform) 전용: 1:1에서 항상 거울전
+47,더시마사리,Toxapex,3.82,Toxapex,100,,Poison/Water,Regenerator,Leftovers,Bold,32/0/32/0/2/0,Recover,Toxic,Haze,Infestation,1,서포트형: 대표 기술 4개 중 공격 기술 2개 미만
+48,앱솔,Absol,3.54,Absol-Mega-Z,100,,Dark/Ghost,Sharpness,Absolite Z,Jolly,2/32/0/0/0/32,Shadow Claw,Close Combat,Swords Dance,Night Slash,3,엔진 특성 불일치: 래더 Sharpness / npm 엔진 Magic Bounce
+49,다크펫,Banette,3.49,Banette-Mega,100,,Ghost,Prankster,Banettite,Adamant,32/32/0/0/2/0,Destiny Bond,Poltergeist,Encore,Shadow Sneak,2,
+50,엠페르트,Empoleon,3.36,Empoleon,100,,Water/Steel,Competitive,Leftovers,Sassy,32/0/0/5/29/0,Yawn,Stealth Rock,Flip Turn,Ice Beam,2,
+51,브리무음,Hatterene,3.24,Hatterene,100,,Psychic/Fairy,Magic Bounce,Focus Sash,Quiet,32/0/2/32/0/0,Mystical Fire,Trick Room,Draining Kiss,Calm Mind,2,
+52,마폭시,Delphox,2.91,Delphox-Mega,100,,Fire/Psychic,Levitate,Delphoxite,Timid,1/0/0/32/1/32,Flamethrower,Nasty Plot,Psychic,Dazzling Gleam,3,
+53,마기라스,Tyranitar,2.91,Tyranitar-Mega,50.2,Tyranitar(49.8%),Rock/Dark,Sand Stream,Tyranitarite,Adamant,32/32/0/0/2/0,Knock Off,Ice Punch,Earthquake,Stone Edge,4,
+54,플라엣테,Floette,2.71,Floette-Mega,100,,Fairy,Fairy Aura,Floettite,Timid,2/0/0/32/0/32,Moonblast,Calm Mind,Draining Kiss,Light of Ruin,3,
+55,이상해꽃,Venusaur,2.71,Venusaur-Mega,87.8,Venusaur(12.2%),Grass/Poison,Thick Fat,Venusaurite,Modest,32/0/2/32/0/0,Earth Power,Sludge Bomb,Synthesis,Giga Drain,3,
+56,히트로토무,Rotom-Heat,2.69,Rotom-Heat,100,,Electric/Fire,Levitate,Choice Scarf,Timid,2/0/0/32/0/32,Overheat,Volt Switch,Will-O-Wisp,Thunderbolt,3,조합 확인: 구애 도구와 변화 기술이 함께 뽑힘
+57,맘모꾸리,Mamoswine,2.64,Mamoswine,100,,Ice/Ground,Oblivious,Focus Sash,Adamant,2/32/0/0/0/32,Ice Shard,Earthquake,Stealth Rock,Icicle Crash,3,
+58,몰드류,Excadrill,2.59,Excadrill,100,,Ground/Steel,Mold Breaker,Focus Sash,Jolly,2/32/0/0/0/32,Earthquake,Iron Head,Rapid Spin,Rock Slide,4,
+59,찌르호크,Staraptor,2.52,Staraptor-Mega,58.3,Staraptor(41.7%),Fighting/Flying,Contrary,Staraptite,Jolly,2/32/0/0/0/32,Close Combat,Roost,Brave Bird,Blaze Kick,3,
+60,카디나르마,Armarouge,2.42,Armarouge,100,,Fire/Psychic,Weak Armor,Focus Sash,Modest,2/0/0/32/0/32,Armor Cannon,Expanding Force,Destiny Bond,Endure,2,

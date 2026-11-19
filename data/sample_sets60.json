@@ -1,0 +1,3288 @@
+{
+  "meta": {
+    "source": "Smogon usage stats 2026-09, gen9championsbssregmc, rating 1500 (moveset + usage)",
+    "method": "종마다 가장 많이 쓰는 형태 1개, 그 형태의 1위 특성·도구·배분과 채용률 상위 4개 기술",
+    "note": "기술 4개는 각각의 채용률 순위라 실제로 한 세트에 같이 쓰였다는 보장은 없음"
+  },
+  "pokemon": [
+    {
+      "rank": 1,
+      "species": "Salamence",
+      "name_ko": "보만다",
+      "usage_pct": 36.31,
+      "form": "Salamence-Mega",
+      "form_share_pct": 97.5,
+      "other_forms": [],
+      "types": [
+        "Dragon",
+        "Flying"
+      ],
+      "base_stats": {
+        "hp": 95,
+        "atk": 145,
+        "def": 130,
+        "spa": 120,
+        "spd": 90,
+        "spe": 120
+      },
+      "set": {
+        "ability": "Aerilate",
+        "item": "Salamencite",
+        "nature": "Adamant",
+        "sp": {
+          "hp": 1,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 1,
+          "spe": 32
+        },
+        "moves": [
+          "Double-Edge",
+          "Dragon Dance",
+          "Earthquake",
+          "Roost"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 100,
+        "item": 100,
+        "spread": 9.381,
+        "moves": [
+          79.212,
+          69.696,
+          68.073,
+          49.458
+        ]
+      },
+      "attack_moves": 2,
+      "flags": []
+    },
+    {
+      "rank": 2,
+      "species": "Garchomp",
+      "name_ko": "한카리아스",
+      "usage_pct": 32.21,
+      "form": "Garchomp",
+      "form_share_pct": 66.4,
+      "other_forms": [
+        {
+          "form": "Garchomp-Mega-Z",
+          "share_pct": 29.9
+        }
+      ],
+      "types": [
+        "Dragon",
+        "Ground"
+      ],
+      "base_stats": {
+        "hp": 108,
+        "atk": 130,
+        "def": 95,
+        "spa": 80,
+        "spd": 85,
+        "spe": 102
+      },
+      "set": {
+        "ability": "Rough Skin",
+        "item": "Choice Scarf",
+        "nature": "Jolly",
+        "sp": {
+          "hp": 2,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Earthquake",
+          "Stealth Rock",
+          "Dragon Tail",
+          "Outrage"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 97.901,
+        "item": 28.127,
+        "spread": 26.478,
+        "moves": [
+          98.154,
+          59.565,
+          40.231,
+          34.395
+        ]
+      },
+      "attack_moves": 3,
+      "flags": [
+        "조합 확인: 구애 도구와 변화 기술이 함께 뽑힘",
+        "다른 형태 Garchomp-Mega-Z도 엔진 특성 불일치"
+      ]
+    },
+    {
+      "rank": 3,
+      "species": "Primarina",
+      "name_ko": "누리레느",
+      "usage_pct": 27.03,
+      "form": "Primarina",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Water",
+        "Fairy"
+      ],
+      "base_stats": {
+        "hp": 80,
+        "atk": 74,
+        "def": 74,
+        "spa": 126,
+        "spd": 116,
+        "spe": 60
+      },
+      "set": {
+        "ability": "Torrent",
+        "item": "Sitrus Berry",
+        "nature": "Modest",
+        "sp": {
+          "hp": 32,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 2,
+          "spe": 0
+        },
+        "moves": [
+          "Moonblast",
+          "Sparkling Aria",
+          "Aqua Jet",
+          "Encore"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 93.153,
+        "item": 45.929,
+        "spread": 4.832,
+        "moves": [
+          95.676,
+          81.475,
+          66.998,
+          45.234
+        ]
+      },
+      "attack_moves": 3,
+      "flags": []
+    },
+    {
+      "rank": 4,
+      "species": "Golisopod",
+      "name_ko": "갑주무사",
+      "usage_pct": 21.78,
+      "form": "Golisopod-Mega",
+      "form_share_pct": 98.6,
+      "other_forms": [],
+      "types": [
+        "Bug",
+        "Steel"
+      ],
+      "base_stats": {
+        "hp": 75,
+        "atk": 150,
+        "def": 175,
+        "spa": 70,
+        "spd": 120,
+        "spe": 40
+      },
+      "set": {
+        "ability": "Tough Claws",
+        "item": "Golisopite",
+        "nature": "Adamant",
+        "sp": {
+          "hp": 32,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 2,
+          "spe": 0
+        },
+        "moves": [
+          "Iron Head",
+          "Leech Life",
+          "Sucker Punch",
+          "First Impression"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 100,
+        "item": 100,
+        "spread": 40.682,
+        "moves": [
+          69.9,
+          55.685,
+          53.643,
+          52.822
+        ]
+      },
+      "attack_moves": 4,
+      "flags": [
+        "엔진 특성 불일치: 래더 Tough Claws / npm 엔진 Emergency Exit"
+      ]
+    },
+    {
+      "rank": 5,
+      "species": "Archaludon",
+      "name_ko": "브리두라스",
+      "usage_pct": 19.9,
+      "form": "Archaludon",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Steel",
+        "Dragon"
+      ],
+      "base_stats": {
+        "hp": 90,
+        "atk": 105,
+        "def": 130,
+        "spa": 125,
+        "spd": 65,
+        "spe": 85
+      },
+      "set": {
+        "ability": "Stamina",
+        "item": "Sitrus Berry",
+        "nature": "Modest",
+        "sp": {
+          "hp": 2,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Draco Meteor",
+          "Flash Cannon",
+          "Stealth Rock",
+          "Thunderbolt"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 82.132,
+        "item": 38.953,
+        "spread": 17.403,
+        "moves": [
+          73.638,
+          67.814,
+          55.897,
+          53.709
+        ]
+      },
+      "attack_moves": 3,
+      "flags": []
+    },
+    {
+      "rank": 6,
+      "species": "Gholdengo",
+      "name_ko": "타부자고",
+      "usage_pct": 18.86,
+      "form": "Gholdengo",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Steel",
+        "Ghost"
+      ],
+      "base_stats": {
+        "hp": 87,
+        "atk": 60,
+        "def": 95,
+        "spa": 133,
+        "spd": 91,
+        "spe": 84
+      },
+      "set": {
+        "ability": "Good as Gold",
+        "item": "Air Balloon",
+        "nature": "Timid",
+        "sp": {
+          "hp": 2,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Shadow Ball",
+          "Make It Rain",
+          "Nasty Plot",
+          "Recover"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 100,
+        "item": 59.877,
+        "spread": 15.446,
+        "moves": [
+          98.67,
+          90.115,
+          81.91,
+          65.061
+        ]
+      },
+      "attack_moves": 2,
+      "flags": []
+    },
+    {
+      "rank": 7,
+      "species": "Lucario",
+      "name_ko": "루카리오",
+      "usage_pct": 18.13,
+      "form": "Lucario-Mega-Z",
+      "form_share_pct": 92.3,
+      "other_forms": [
+        {
+          "form": "Lucario-Mega",
+          "share_pct": 7.7
+        }
+      ],
+      "types": [
+        "Fighting",
+        "Steel"
+      ],
+      "base_stats": {
+        "hp": 70,
+        "atk": 100,
+        "def": 70,
+        "spa": 164,
+        "spd": 70,
+        "spe": 151
+      },
+      "set": {
+        "ability": "Aura Guard",
+        "item": "Lucarionite Z",
+        "nature": "Timid",
+        "sp": {
+          "hp": 2,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Aura Sphere",
+          "Nasty Plot",
+          "Flash Cannon",
+          "Dark Pulse"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 100,
+        "item": 100,
+        "spread": 46.17,
+        "moves": [
+          87.301,
+          79.217,
+          77.212,
+          74.428
+        ]
+      },
+      "attack_moves": 3,
+      "flags": [
+        "엔진 특성 불일치: 래더 Aura Guard / npm 엔진 Adaptability"
+      ]
+    },
+    {
+      "rank": 8,
+      "species": "Hippowdon",
+      "name_ko": "하마돈",
+      "usage_pct": 16.93,
+      "form": "Hippowdon",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Ground"
+      ],
+      "base_stats": {
+        "hp": 108,
+        "atk": 112,
+        "def": 118,
+        "spa": 68,
+        "spd": 72,
+        "spe": 47
+      },
+      "set": {
+        "ability": "Sand Stream",
+        "item": "Sitrus Berry",
+        "nature": "Impish",
+        "sp": {
+          "hp": 32,
+          "atk": 0,
+          "def": 2,
+          "spa": 0,
+          "spd": 32,
+          "spe": 0
+        },
+        "moves": [
+          "Earthquake",
+          "Yawn",
+          "Stealth Rock",
+          "Slack Off"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 99.923,
+        "item": 56.879,
+        "spread": 11.265,
+        "moves": [
+          97.019,
+          93.675,
+          88.326,
+          51.759
+        ]
+      },
+      "attack_moves": 1,
+      "flags": [
+        "서포트형: 대표 기술 4개 중 공격 기술 2개 미만"
+      ]
+    },
+    {
+      "rank": 9,
+      "species": "Baxcalibur",
+      "name_ko": "드닐레이브",
+      "usage_pct": 15.96,
+      "form": "Baxcalibur",
+      "form_share_pct": 52.5,
+      "other_forms": [
+        {
+          "form": "Baxcalibur-Mega",
+          "share_pct": 47.5
+        }
+      ],
+      "types": [
+        "Dragon",
+        "Ice"
+      ],
+      "base_stats": {
+        "hp": 115,
+        "atk": 145,
+        "def": 92,
+        "spa": 75,
+        "spd": 86,
+        "spe": 87
+      },
+      "set": {
+        "ability": "Thermal Exchange",
+        "item": "Focus Sash",
+        "nature": "Adamant",
+        "sp": {
+          "hp": 1,
+          "atk": 32,
+          "def": 1,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Earthquake",
+          "Glaive Rush",
+          "Ice Shard",
+          "Icicle Crash"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 99.456,
+        "item": 65.852,
+        "spread": 26.611,
+        "moves": [
+          92.322,
+          89.376,
+          86.997,
+          47.558
+        ]
+      },
+      "attack_moves": 4,
+      "flags": []
+    },
+    {
+      "rank": 10,
+      "species": "Rillaboom",
+      "name_ko": "고릴타",
+      "usage_pct": 13.99,
+      "form": "Rillaboom",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Grass"
+      ],
+      "base_stats": {
+        "hp": 100,
+        "atk": 125,
+        "def": 90,
+        "spa": 60,
+        "spd": 70,
+        "spe": 85
+      },
+      "set": {
+        "ability": "Grassy Surge",
+        "item": "Miracle Seed",
+        "nature": "Jolly",
+        "sp": {
+          "hp": 2,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Grassy Glide",
+          "U-turn",
+          "Wood Hammer",
+          "High Horsepower"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 98.759,
+        "item": 26.766,
+        "spread": 16.824,
+        "moves": [
+          97.478,
+          69.449,
+          49.663,
+          48.599
+        ]
+      },
+      "attack_moves": 4,
+      "flags": []
+    },
+    {
+      "rank": 11,
+      "species": "Mimikyu",
+      "name_ko": "따라큐",
+      "usage_pct": 12.89,
+      "form": "Mimikyu",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Ghost",
+        "Fairy"
+      ],
+      "base_stats": {
+        "hp": 55,
+        "atk": 90,
+        "def": 80,
+        "spa": 50,
+        "spd": 105,
+        "spe": 96
+      },
+      "set": {
+        "ability": "Disguise",
+        "item": "Life Orb",
+        "nature": "Adamant",
+        "sp": {
+          "hp": 2,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Play Rough",
+          "Shadow Sneak",
+          "Swords Dance",
+          "Shadow Claw"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 100,
+        "item": 80.775,
+        "spread": 21.69,
+        "moves": [
+          98.919,
+          95.878,
+          79.733,
+          65.327
+        ]
+      },
+      "attack_moves": 3,
+      "flags": []
+    },
+    {
+      "rank": 12,
+      "species": "Meowscarada",
+      "name_ko": "마스카나",
+      "usage_pct": 12.81,
+      "form": "Meowscarada",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Grass",
+        "Dark"
+      ],
+      "base_stats": {
+        "hp": 76,
+        "atk": 110,
+        "def": 70,
+        "spa": 81,
+        "spd": 70,
+        "spe": 123
+      },
+      "set": {
+        "ability": "Protean",
+        "item": "Choice Scarf",
+        "nature": "Jolly",
+        "sp": {
+          "hp": 2,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Flower Trick",
+          "Triple Axel",
+          "Knock Off",
+          "U-turn"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 90.11,
+        "item": 71.668,
+        "spread": 62.1,
+        "moves": [
+          96.855,
+          89.003,
+          75.057,
+          62.174
+        ]
+      },
+      "attack_moves": 4,
+      "flags": []
+    },
+    {
+      "rank": 13,
+      "species": "Basculegion",
+      "name_ko": "대쓰여너",
+      "usage_pct": 11.42,
+      "form": "Basculegion",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Water",
+        "Ghost"
+      ],
+      "base_stats": {
+        "hp": 120,
+        "atk": 112,
+        "def": 65,
+        "spa": 80,
+        "spd": 75,
+        "spe": 78
+      },
+      "set": {
+        "ability": "Adaptability",
+        "item": "Choice Scarf",
+        "nature": "Jolly",
+        "sp": {
+          "hp": 2,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Last Respects",
+          "Wave Crash",
+          "Aqua Jet",
+          "Flip Turn"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 91.322,
+        "item": 72.552,
+        "spread": 50.388,
+        "moves": [
+          98.232,
+          96.053,
+          87.401,
+          80.434
+        ]
+      },
+      "attack_moves": 4,
+      "flags": []
+    },
+    {
+      "rank": 14,
+      "species": "Glimmora",
+      "name_ko": "키라플로르",
+      "usage_pct": 11.33,
+      "form": "Glimmora",
+      "form_share_pct": 89.3,
+      "other_forms": [
+        {
+          "form": "Glimmora-Mega",
+          "share_pct": 10.7
+        }
+      ],
+      "types": [
+        "Rock",
+        "Poison"
+      ],
+      "base_stats": {
+        "hp": 83,
+        "atk": 55,
+        "def": 90,
+        "spa": 130,
+        "spd": 81,
+        "spe": 86
+      },
+      "set": {
+        "ability": "Toxic Debris",
+        "item": "Focus Sash",
+        "nature": "Timid",
+        "sp": {
+          "hp": 1,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 1,
+          "spe": 32
+        },
+        "moves": [
+          "Power Gem",
+          "Stealth Rock",
+          "Earth Power",
+          "Sludge Wave"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 96.56,
+        "item": 73.844,
+        "spread": 22.544,
+        "moves": [
+          78.681,
+          74.134,
+          50.603,
+          45.605
+        ]
+      },
+      "attack_moves": 3,
+      "flags": []
+    },
+    {
+      "rank": 15,
+      "species": "Corviknight",
+      "name_ko": "아머까오",
+      "usage_pct": 10.96,
+      "form": "Corviknight",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Flying",
+        "Steel"
+      ],
+      "base_stats": {
+        "hp": 98,
+        "atk": 87,
+        "def": 105,
+        "spa": 53,
+        "spd": 85,
+        "spe": 67
+      },
+      "set": {
+        "ability": "Pressure",
+        "item": "Rocky Helmet",
+        "nature": "Impish",
+        "sp": {
+          "hp": 32,
+          "atk": 0,
+          "def": 32,
+          "spa": 0,
+          "spd": 2,
+          "spe": 0
+        },
+        "moves": [
+          "Roost",
+          "Body Press",
+          "U-turn",
+          "Iron Defense"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 69.824,
+        "item": 51.658,
+        "spread": 23.245,
+        "moves": [
+          97.797,
+          68.606,
+          60.054,
+          56.215
+        ]
+      },
+      "attack_moves": 2,
+      "flags": []
+    },
+    {
+      "rank": 16,
+      "species": "Aegislash",
+      "name_ko": "킬가르도",
+      "usage_pct": 9.19,
+      "form": "Aegislash",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Steel",
+        "Ghost"
+      ],
+      "base_stats": {
+        "hp": 60,
+        "atk": 50,
+        "def": 140,
+        "spa": 50,
+        "spd": 140,
+        "spe": 60
+      },
+      "set": {
+        "ability": "Stance Change",
+        "item": "Leftovers",
+        "nature": "Adamant",
+        "sp": {
+          "hp": 32,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 2,
+          "spe": 0
+        },
+        "moves": [
+          "Shadow Sneak",
+          "King's Shield",
+          "Poltergeist",
+          "Swords Dance"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 100,
+        "item": 41.14,
+        "spread": 13.433,
+        "moves": [
+          88.94,
+          82.541,
+          49.245,
+          42.212
+        ]
+      },
+      "attack_moves": 2,
+      "flags": []
+    },
+    {
+      "rank": 17,
+      "species": "Ninetales-Alola",
+      "name_ko": "알로라 나인테일",
+      "usage_pct": 8.73,
+      "form": "Ninetales-Alola",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Ice",
+        "Fairy"
+      ],
+      "base_stats": {
+        "hp": 73,
+        "atk": 67,
+        "def": 75,
+        "spa": 81,
+        "spd": 100,
+        "spe": 109
+      },
+      "set": {
+        "ability": "Snow Warning",
+        "item": "Light Clay",
+        "nature": "Timid",
+        "sp": {
+          "hp": 1,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 1,
+          "spe": 32
+        },
+        "moves": [
+          "Aurora Veil",
+          "Encore",
+          "Freeze-Dry",
+          "Moonblast"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 99.22,
+        "item": 90.267,
+        "spread": 18.964,
+        "moves": [
+          96.531,
+          74.794,
+          74.102,
+          61.288
+        ]
+      },
+      "attack_moves": 2,
+      "flags": []
+    },
+    {
+      "rank": 18,
+      "species": "Sneasler",
+      "name_ko": "포푸니크",
+      "usage_pct": 8.13,
+      "form": "Sneasler",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Fighting",
+        "Poison"
+      ],
+      "base_stats": {
+        "hp": 80,
+        "atk": 130,
+        "def": 60,
+        "spa": 40,
+        "spd": 80,
+        "spe": 120
+      },
+      "set": {
+        "ability": "Unburden",
+        "item": "Psychic Seed",
+        "nature": "Adamant",
+        "sp": {
+          "hp": 2,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Close Combat",
+          "Dire Claw",
+          "Swords Dance",
+          "Fake Out"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 92.082,
+        "item": 46.407,
+        "spread": 42.161,
+        "moves": [
+          98.36,
+          95.113,
+          58.692,
+          41.895
+        ]
+      },
+      "attack_moves": 3,
+      "flags": [
+        "Psychic Seed는 필드가 있어야 발동"
+      ]
+    },
+    {
+      "rank": 19,
+      "species": "Pawmot",
+      "name_ko": "빠르모트",
+      "usage_pct": 7.84,
+      "form": "Pawmot",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Electric",
+        "Fighting"
+      ],
+      "base_stats": {
+        "hp": 70,
+        "atk": 115,
+        "def": 70,
+        "spa": 70,
+        "spd": 60,
+        "spe": 105
+      },
+      "set": {
+        "ability": "Iron Fist",
+        "item": "Focus Sash",
+        "nature": "Jolly",
+        "sp": {
+          "hp": 2,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Revival Blessing",
+          "Double Shock",
+          "Close Combat",
+          "Ice Punch"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 92.421,
+        "item": 83.846,
+        "spread": 70.054,
+        "moves": [
+          91.532,
+          88.121,
+          65.205,
+          60.958
+        ]
+      },
+      "attack_moves": 3,
+      "flags": []
+    },
+    {
+      "rank": 20,
+      "species": "Blaziken",
+      "name_ko": "번치코",
+      "usage_pct": 7.75,
+      "form": "Blaziken-Mega",
+      "form_share_pct": 70.5,
+      "other_forms": [
+        {
+          "form": "Blaziken",
+          "share_pct": 29.5
+        }
+      ],
+      "types": [
+        "Fire",
+        "Fighting"
+      ],
+      "base_stats": {
+        "hp": 80,
+        "atk": 160,
+        "def": 80,
+        "spa": 130,
+        "spd": 80,
+        "spe": 100
+      },
+      "set": {
+        "ability": "Speed Boost",
+        "item": "Blazikenite",
+        "nature": "Adamant",
+        "sp": {
+          "hp": 2,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Flare Blitz",
+          "Close Combat",
+          "Thunder Punch",
+          "Protect"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 100,
+        "item": 100,
+        "spread": 55.856,
+        "moves": [
+          85.964,
+          81.968,
+          53.281,
+          40.674
+        ]
+      },
+      "attack_moves": 3,
+      "flags": []
+    },
+    {
+      "rank": 21,
+      "species": "Indeedee",
+      "name_ko": "에써르",
+      "usage_pct": 7.65,
+      "form": "Indeedee",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Psychic",
+        "Normal"
+      ],
+      "base_stats": {
+        "hp": 60,
+        "atk": 65,
+        "def": 55,
+        "spa": 105,
+        "spd": 95,
+        "spe": 95
+      },
+      "set": {
+        "ability": "Psychic Surge",
+        "item": "Terrain Extender",
+        "nature": "Timid",
+        "sp": {
+          "hp": 2,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Expanding Force",
+          "Mystical Fire",
+          "Encore",
+          "Dazzling Gleam"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 99.447,
+        "item": 54.57,
+        "spread": 46.911,
+        "moves": [
+          99.316,
+          87.66,
+          57.976,
+          53.823
+        ]
+      },
+      "attack_moves": 3,
+      "flags": []
+    },
+    {
+      "rank": 22,
+      "species": "Kingambit",
+      "name_ko": "대도각참",
+      "usage_pct": 7.54,
+      "form": "Kingambit",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Dark",
+        "Steel"
+      ],
+      "base_stats": {
+        "hp": 100,
+        "atk": 135,
+        "def": 120,
+        "spa": 60,
+        "spd": 85,
+        "spe": 50
+      },
+      "set": {
+        "ability": "Supreme Overlord",
+        "item": "Black Glasses",
+        "nature": "Adamant",
+        "sp": {
+          "hp": 32,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 2,
+          "spe": 0
+        },
+        "moves": [
+          "Sucker Punch",
+          "Kowtow Cleave",
+          "Iron Head",
+          "Swords Dance"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 55.13,
+        "item": 48.773,
+        "spread": 36.964,
+        "moves": [
+          98.414,
+          94.188,
+          87.358,
+          64.398
+        ]
+      },
+      "attack_moves": 3,
+      "flags": []
+    },
+    {
+      "rank": 23,
+      "species": "Metagross",
+      "name_ko": "메타그로스",
+      "usage_pct": 7.48,
+      "form": "Metagross-Mega",
+      "form_share_pct": 94.8,
+      "other_forms": [
+        {
+          "form": "Metagross",
+          "share_pct": 5.2
+        }
+      ],
+      "types": [
+        "Steel",
+        "Psychic"
+      ],
+      "base_stats": {
+        "hp": 80,
+        "atk": 145,
+        "def": 150,
+        "spa": 105,
+        "spd": 110,
+        "spe": 110
+      },
+      "set": {
+        "ability": "Tough Claws",
+        "item": "Metagrossite",
+        "nature": "Jolly",
+        "sp": {
+          "hp": 2,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Bullet Punch",
+          "Psychic Fangs",
+          "Ice Punch",
+          "Earthquake"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 100,
+        "item": 100,
+        "spread": 16.844,
+        "moves": [
+          83.397,
+          81.967,
+          66.939,
+          65.949
+        ]
+      },
+      "attack_moves": 4,
+      "flags": []
+    },
+    {
+      "rank": 24,
+      "species": "Pelipper",
+      "name_ko": "패리퍼",
+      "usage_pct": 6.97,
+      "form": "Pelipper",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Water",
+        "Flying"
+      ],
+      "base_stats": {
+        "hp": 60,
+        "atk": 50,
+        "def": 100,
+        "spa": 95,
+        "spd": 70,
+        "spe": 65
+      },
+      "set": {
+        "ability": "Drizzle",
+        "item": "Damp Rock",
+        "nature": "Modest",
+        "sp": {
+          "hp": 2,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Hurricane",
+          "U-turn",
+          "Ice Beam",
+          "Weather Ball"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 99.065,
+        "item": 65.566,
+        "spread": 22.479,
+        "moves": [
+          97.949,
+          81.852,
+          57.516,
+          54.182
+        ]
+      },
+      "attack_moves": 4,
+      "flags": []
+    },
+    {
+      "rank": 25,
+      "species": "Cinderace",
+      "name_ko": "에이스번",
+      "usage_pct": 6.69,
+      "form": "Cinderace",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Fire"
+      ],
+      "base_stats": {
+        "hp": 80,
+        "atk": 116,
+        "def": 75,
+        "spa": 65,
+        "spd": 75,
+        "spe": 119
+      },
+      "set": {
+        "ability": "Libero",
+        "item": "Choice Scarf",
+        "nature": "Jolly",
+        "sp": {
+          "hp": 2,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Pyro Ball",
+          "High Jump Kick",
+          "Gunk Shot",
+          "U-turn"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 95.671,
+        "item": 29.233,
+        "spread": 54.84,
+        "moves": [
+          97.912,
+          80.275,
+          69.719,
+          55.04
+        ]
+      },
+      "attack_moves": 4,
+      "flags": []
+    },
+    {
+      "rank": 26,
+      "species": "Volcarona",
+      "name_ko": "불카모스",
+      "usage_pct": 6.49,
+      "form": "Volcarona",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Bug",
+        "Fire"
+      ],
+      "base_stats": {
+        "hp": 85,
+        "atk": 60,
+        "def": 65,
+        "spa": 135,
+        "spd": 105,
+        "spe": 100
+      },
+      "set": {
+        "ability": "Flame Body",
+        "item": "Sitrus Berry",
+        "nature": "Modest",
+        "sp": {
+          "hp": 1,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 1,
+          "spe": 32
+        },
+        "moves": [
+          "Quiver Dance",
+          "Fiery Dance",
+          "Giga Drain",
+          "Bug Buzz"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 92.101,
+        "item": 36.895,
+        "spread": 13.15,
+        "moves": [
+          94.243,
+          79.046,
+          65.566,
+          57.913
+        ]
+      },
+      "attack_moves": 3,
+      "flags": []
+    },
+    {
+      "rank": 27,
+      "species": "Charizard",
+      "name_ko": "리자몽",
+      "usage_pct": 6.36,
+      "form": "Charizard-Mega-Y",
+      "form_share_pct": 72.9,
+      "other_forms": [
+        {
+          "form": "Charizard-Mega-X",
+          "share_pct": 27.1
+        }
+      ],
+      "types": [
+        "Fire",
+        "Flying"
+      ],
+      "base_stats": {
+        "hp": 78,
+        "atk": 104,
+        "def": 78,
+        "spa": 159,
+        "spd": 115,
+        "spe": 100
+      },
+      "set": {
+        "ability": "Drought",
+        "item": "Charizardite Y",
+        "nature": "Timid",
+        "sp": {
+          "hp": 2,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Solar Beam",
+          "Flamethrower",
+          "Dragon Pulse",
+          "Air Slash"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 100,
+        "item": 100,
+        "spread": 21.319,
+        "moves": [
+          88.511,
+          54.741,
+          45.128,
+          43.543
+        ]
+      },
+      "attack_moves": 4,
+      "flags": []
+    },
+    {
+      "rank": 28,
+      "species": "Blastoise",
+      "name_ko": "거북왕",
+      "usage_pct": 6.36,
+      "form": "Blastoise-Mega",
+      "form_share_pct": 94.8,
+      "other_forms": [
+        {
+          "form": "Blastoise",
+          "share_pct": 5.2
+        }
+      ],
+      "types": [
+        "Water"
+      ],
+      "base_stats": {
+        "hp": 79,
+        "atk": 103,
+        "def": 120,
+        "spa": 135,
+        "spd": 115,
+        "spe": 78
+      },
+      "set": {
+        "ability": "Mega Launcher",
+        "item": "Blastoisinite",
+        "nature": "Modest",
+        "sp": {
+          "hp": 2,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Shell Smash",
+          "Aura Sphere",
+          "Dark Pulse",
+          "Terrain Pulse"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 100,
+        "item": 100,
+        "spread": 20.733,
+        "moves": [
+          83.989,
+          83.334,
+          75.094,
+          55.78
+        ]
+      },
+      "attack_moves": 3,
+      "flags": []
+    },
+    {
+      "rank": 29,
+      "species": "Gyarados",
+      "name_ko": "갸라도스",
+      "usage_pct": 6.28,
+      "form": "Gyarados",
+      "form_share_pct": 65.1,
+      "other_forms": [
+        {
+          "form": "Gyarados-Mega",
+          "share_pct": 34.9
+        }
+      ],
+      "types": [
+        "Water",
+        "Flying"
+      ],
+      "base_stats": {
+        "hp": 95,
+        "atk": 125,
+        "def": 79,
+        "spa": 60,
+        "spd": 100,
+        "spe": 81
+      },
+      "set": {
+        "ability": "Intimidate",
+        "item": "Rocky Helmet",
+        "nature": "Impish",
+        "sp": {
+          "hp": 31,
+          "atk": 1,
+          "def": 32,
+          "spa": 0,
+          "spd": 0,
+          "spe": 2
+        },
+        "moves": [
+          "Power Whip",
+          "Avalanche",
+          "Taunt",
+          "Temper Flare"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 98.233,
+        "item": 68.006,
+        "spread": 26.638,
+        "moves": [
+          83.04,
+          77.619,
+          64.533,
+          59.127
+        ]
+      },
+      "attack_moves": 3,
+      "flags": []
+    },
+    {
+      "rank": 30,
+      "species": "Rotom-Wash",
+      "name_ko": "워시로토무",
+      "usage_pct": 6.17,
+      "form": "Rotom-Wash",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Electric",
+        "Water"
+      ],
+      "base_stats": {
+        "hp": 50,
+        "atk": 65,
+        "def": 107,
+        "spa": 105,
+        "spd": 107,
+        "spe": 86
+      },
+      "set": {
+        "ability": "Levitate",
+        "item": "Sitrus Berry",
+        "nature": "Timid",
+        "sp": {
+          "hp": 2,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Hydro Pump",
+          "Volt Switch",
+          "Will-O-Wisp",
+          "Pain Split"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 100,
+        "item": 40.714,
+        "spread": 15.11,
+        "moves": [
+          96.074,
+          90.431,
+          81.046,
+          38.218
+        ]
+      },
+      "attack_moves": 2,
+      "flags": []
+    },
+    {
+      "rank": 31,
+      "species": "Greninja",
+      "name_ko": "개굴닌자",
+      "usage_pct": 6.07,
+      "form": "Greninja",
+      "form_share_pct": 61,
+      "other_forms": [
+        {
+          "form": "Greninja-Mega",
+          "share_pct": 39
+        }
+      ],
+      "types": [
+        "Water",
+        "Dark"
+      ],
+      "base_stats": {
+        "hp": 72,
+        "atk": 95,
+        "def": 67,
+        "spa": 103,
+        "spd": 71,
+        "spe": 122
+      },
+      "set": {
+        "ability": "Protean",
+        "item": "Focus Sash",
+        "nature": "Timid",
+        "sp": {
+          "hp": 2,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Dark Pulse",
+          "Ice Beam",
+          "Sludge Wave",
+          "Surf"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 65.484,
+        "item": 65.267,
+        "spread": 44.97,
+        "moves": [
+          80.995,
+          79.977,
+          56.339,
+          50.147
+        ]
+      },
+      "attack_moves": 4,
+      "flags": []
+    },
+    {
+      "rank": 32,
+      "species": "Swampert",
+      "name_ko": "대짱이",
+      "usage_pct": 6.01,
+      "form": "Swampert-Mega",
+      "form_share_pct": 74.9,
+      "other_forms": [
+        {
+          "form": "Swampert",
+          "share_pct": 25.1
+        }
+      ],
+      "types": [
+        "Water",
+        "Ground"
+      ],
+      "base_stats": {
+        "hp": 100,
+        "atk": 150,
+        "def": 110,
+        "spa": 95,
+        "spd": 110,
+        "spe": 70
+      },
+      "set": {
+        "ability": "Swift Swim",
+        "item": "Swampertite",
+        "nature": "Adamant",
+        "sp": {
+          "hp": 2,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Earthquake",
+          "Wave Crash",
+          "Ice Punch",
+          "Flip Turn"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 100,
+        "item": 100,
+        "spread": 44.539,
+        "moves": [
+          95.603,
+          95.579,
+          95.25,
+          82.665
+        ]
+      },
+      "attack_moves": 4,
+      "flags": []
+    },
+    {
+      "rank": 33,
+      "species": "Gengar",
+      "name_ko": "팬텀",
+      "usage_pct": 5.97,
+      "form": "Gengar-Mega",
+      "form_share_pct": 81.6,
+      "other_forms": [
+        {
+          "form": "Gengar",
+          "share_pct": 18.4
+        }
+      ],
+      "types": [
+        "Ghost",
+        "Poison"
+      ],
+      "base_stats": {
+        "hp": 60,
+        "atk": 65,
+        "def": 80,
+        "spa": 170,
+        "spd": 95,
+        "spe": 130
+      },
+      "set": {
+        "ability": "Shadow Tag",
+        "item": "Gengarite",
+        "nature": "Timid",
+        "sp": {
+          "hp": 2,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Shadow Ball",
+          "Sludge Wave",
+          "Protect",
+          "Destiny Bond"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 100,
+        "item": 100,
+        "spread": 29.098,
+        "moves": [
+          85.301,
+          52.871,
+          46.914,
+          44.714
+        ]
+      },
+      "attack_moves": 2,
+      "flags": []
+    },
+    {
+      "rank": 34,
+      "species": "Umbreon",
+      "name_ko": "블래키",
+      "usage_pct": 5.88,
+      "form": "Umbreon",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Dark"
+      ],
+      "base_stats": {
+        "hp": 95,
+        "atk": 65,
+        "def": 110,
+        "spa": 60,
+        "spd": 130,
+        "spe": 65
+      },
+      "set": {
+        "ability": "Inner Focus",
+        "item": "Leftovers",
+        "nature": "Bold",
+        "sp": {
+          "hp": 32,
+          "atk": 0,
+          "def": 32,
+          "spa": 0,
+          "spd": 2,
+          "spe": 0
+        },
+        "moves": [
+          "Foul Play",
+          "Wish",
+          "Protect",
+          "Yawn"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 54.61,
+        "item": 90.91,
+        "spread": 24.169,
+        "moves": [
+          92.541,
+          73.96,
+          69.42,
+          61.751
+        ]
+      },
+      "attack_moves": 1,
+      "flags": [
+        "서포트형: 대표 기술 4개 중 공격 기술 2개 미만"
+      ]
+    },
+    {
+      "rank": 35,
+      "species": "Clefable",
+      "name_ko": "픽시",
+      "usage_pct": 5.1,
+      "form": "Clefable-Mega",
+      "form_share_pct": 69.8,
+      "other_forms": [
+        {
+          "form": "Clefable",
+          "share_pct": 30.2
+        }
+      ],
+      "types": [
+        "Fairy",
+        "Flying"
+      ],
+      "base_stats": {
+        "hp": 95,
+        "atk": 80,
+        "def": 93,
+        "spa": 135,
+        "spd": 110,
+        "spe": 70
+      },
+      "set": {
+        "ability": "Magic Bounce",
+        "item": "Clefablite",
+        "nature": "Bold",
+        "sp": {
+          "hp": 32,
+          "atk": 0,
+          "def": 32,
+          "spa": 0,
+          "spd": 2,
+          "spe": 0
+        },
+        "moves": [
+          "Moonlight",
+          "Moonblast",
+          "Calm Mind",
+          "Flamethrower"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 100,
+        "item": 100,
+        "spread": 19.882,
+        "moves": [
+          83.355,
+          72.753,
+          50.372,
+          49.62
+        ]
+      },
+      "attack_moves": 2,
+      "flags": []
+    },
+    {
+      "rank": 36,
+      "species": "Skeledirge",
+      "name_ko": "라우드본",
+      "usage_pct": 4.61,
+      "form": "Skeledirge",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Fire",
+        "Ghost"
+      ],
+      "base_stats": {
+        "hp": 104,
+        "atk": 75,
+        "def": 100,
+        "spa": 110,
+        "spd": 75,
+        "spe": 66
+      },
+      "set": {
+        "ability": "Unaware",
+        "item": "Sitrus Berry",
+        "nature": "Bold",
+        "sp": {
+          "hp": 32,
+          "atk": 0,
+          "def": 32,
+          "spa": 0,
+          "spd": 2,
+          "spe": 0
+        },
+        "moves": [
+          "Torch Song",
+          "Slack Off",
+          "Will-O-Wisp",
+          "Shadow Ball"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 96.239,
+        "item": 29.153,
+        "spread": 25.051,
+        "moves": [
+          97.087,
+          96.503,
+          81.858,
+          55.714
+        ]
+      },
+      "attack_moves": 2,
+      "flags": []
+    },
+    {
+      "rank": 37,
+      "species": "Hydreigon",
+      "name_ko": "삼삼드래",
+      "usage_pct": 4.57,
+      "form": "Hydreigon",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Dark",
+        "Dragon"
+      ],
+      "base_stats": {
+        "hp": 92,
+        "atk": 105,
+        "def": 90,
+        "spa": 125,
+        "spd": 90,
+        "spe": 98
+      },
+      "set": {
+        "ability": "Levitate",
+        "item": "Choice Scarf",
+        "nature": "Modest",
+        "sp": {
+          "hp": 2,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Dark Pulse",
+          "Draco Meteor",
+          "U-turn",
+          "Flamethrower"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 100,
+        "item": 82.66,
+        "spread": 47.43,
+        "moves": [
+          97.909,
+          93.265,
+          70.402,
+          61.556
+        ]
+      },
+      "attack_moves": 4,
+      "flags": []
+    },
+    {
+      "rank": 38,
+      "species": "Ceruledge",
+      "name_ko": "창파도",
+      "usage_pct": 4.46,
+      "form": "Ceruledge",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Fire",
+        "Ghost"
+      ],
+      "base_stats": {
+        "hp": 75,
+        "atk": 125,
+        "def": 80,
+        "spa": 60,
+        "spd": 100,
+        "spe": 85
+      },
+      "set": {
+        "ability": "Weak Armor",
+        "item": "Focus Sash",
+        "nature": "Adamant",
+        "sp": {
+          "hp": 1,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 1,
+          "spe": 32
+        },
+        "moves": [
+          "Bitter Blade",
+          "Shadow Sneak",
+          "Poltergeist",
+          "Swords Dance"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 62.149,
+        "item": 54.614,
+        "spread": 15.306,
+        "moves": [
+          95.245,
+          88.352,
+          75.917,
+          70.921
+        ]
+      },
+      "attack_moves": 3,
+      "flags": []
+    },
+    {
+      "rank": 39,
+      "species": "Grimmsnarl",
+      "name_ko": "오롱털",
+      "usage_pct": 4.37,
+      "form": "Grimmsnarl",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Dark",
+        "Fairy"
+      ],
+      "base_stats": {
+        "hp": 95,
+        "atk": 120,
+        "def": 65,
+        "spa": 95,
+        "spd": 75,
+        "spe": 60
+      },
+      "set": {
+        "ability": "Prankster",
+        "item": "Light Clay",
+        "nature": "Careful",
+        "sp": {
+          "hp": 32,
+          "atk": 2,
+          "def": 0,
+          "spa": 0,
+          "spd": 32,
+          "spe": 0
+        },
+        "moves": [
+          "Reflect",
+          "Light Screen",
+          "Spirit Break",
+          "Parting Shot"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 99.932,
+        "item": 90.732,
+        "spread": 15.097,
+        "moves": [
+          93.383,
+          91.284,
+          74.536,
+          68.635
+        ]
+      },
+      "attack_moves": 1,
+      "flags": [
+        "서포트형: 대표 기술 4개 중 공격 기술 2개 미만"
+      ]
+    },
+    {
+      "rank": 40,
+      "species": "Scizor",
+      "name_ko": "핫삼",
+      "usage_pct": 4.22,
+      "form": "Scizor",
+      "form_share_pct": 58.6,
+      "other_forms": [
+        {
+          "form": "Scizor-Mega",
+          "share_pct": 41.4
+        }
+      ],
+      "types": [
+        "Bug",
+        "Steel"
+      ],
+      "base_stats": {
+        "hp": 70,
+        "atk": 130,
+        "def": 100,
+        "spa": 55,
+        "spd": 80,
+        "spe": 65
+      },
+      "set": {
+        "ability": "Technician",
+        "item": "Life Orb",
+        "nature": "Adamant",
+        "sp": {
+          "hp": 32,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 2,
+          "spe": 0
+        },
+        "moves": [
+          "Bullet Punch",
+          "U-turn",
+          "Swords Dance",
+          "Close Combat"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 97.828,
+        "item": 30.856,
+        "spread": 36.026,
+        "moves": [
+          98.956,
+          60.882,
+          54.341,
+          46.657
+        ]
+      },
+      "attack_moves": 3,
+      "flags": []
+    },
+    {
+      "rank": 41,
+      "species": "Sylveon",
+      "name_ko": "님피아",
+      "usage_pct": 4.12,
+      "form": "Sylveon",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Fairy"
+      ],
+      "base_stats": {
+        "hp": 95,
+        "atk": 65,
+        "def": 65,
+        "spa": 110,
+        "spd": 130,
+        "spe": 60
+      },
+      "set": {
+        "ability": "Pixilate",
+        "item": "Leftovers",
+        "nature": "Bold",
+        "sp": {
+          "hp": 32,
+          "atk": 0,
+          "def": 32,
+          "spa": 0,
+          "spd": 2,
+          "spe": 0
+        },
+        "moves": [
+          "Hyper Voice",
+          "Yawn",
+          "Wish",
+          "Protect"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 97.725,
+        "item": 49.949,
+        "spread": 12.325,
+        "moves": [
+          96.465,
+          60.757,
+          49.702,
+          44.683
+        ]
+      },
+      "attack_moves": 1,
+      "flags": [
+        "서포트형: 대표 기술 4개 중 공격 기술 2개 미만"
+      ]
+    },
+    {
+      "rank": 42,
+      "species": "Samurott-Hisui",
+      "name_ko": "히스이 대검귀",
+      "usage_pct": 4.07,
+      "form": "Samurott-Hisui",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Water",
+        "Dark"
+      ],
+      "base_stats": {
+        "hp": 90,
+        "atk": 108,
+        "def": 80,
+        "spa": 100,
+        "spd": 65,
+        "spe": 85
+      },
+      "set": {
+        "ability": "Sharpness",
+        "item": "Focus Sash",
+        "nature": "Jolly",
+        "sp": {
+          "hp": 2,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Ceaseless Edge",
+          "Sacred Sword",
+          "Sucker Punch",
+          "Encore"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 99.561,
+        "item": 45.824,
+        "spread": 32.601,
+        "moves": [
+          98.083,
+          81.263,
+          42.712,
+          37.97
+        ]
+      },
+      "attack_moves": 3,
+      "flags": []
+    },
+    {
+      "rank": 43,
+      "species": "Raichu",
+      "name_ko": "라이츄",
+      "usage_pct": 4.05,
+      "form": "Raichu-Mega-Y",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Electric"
+      ],
+      "base_stats": {
+        "hp": 60,
+        "atk": 100,
+        "def": 55,
+        "spa": 160,
+        "spd": 80,
+        "spe": 130
+      },
+      "set": {
+        "ability": "No Guard",
+        "item": "Raichunite Y",
+        "nature": "Timid",
+        "sp": {
+          "hp": 2,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Zap Cannon",
+          "Focus Blast",
+          "Grass Knot",
+          "Substitute"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 100,
+        "item": 100,
+        "spread": 49.37,
+        "moves": [
+          98.693,
+          94.749,
+          58.453,
+          28.42
+        ]
+      },
+      "attack_moves": 3,
+      "flags": []
+    },
+    {
+      "rank": 44,
+      "species": "Dragonite",
+      "name_ko": "망나뇽",
+      "usage_pct": 3.95,
+      "form": "Dragonite-Mega",
+      "form_share_pct": 60.2,
+      "other_forms": [
+        {
+          "form": "Dragonite",
+          "share_pct": 39.8
+        }
+      ],
+      "types": [
+        "Dragon",
+        "Flying"
+      ],
+      "base_stats": {
+        "hp": 91,
+        "atk": 124,
+        "def": 115,
+        "spa": 145,
+        "spd": 125,
+        "spe": 100
+      },
+      "set": {
+        "ability": "Multiscale",
+        "item": "Dragoninite",
+        "nature": "Modest",
+        "sp": {
+          "hp": 2,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Flamethrower",
+          "Draco Meteor",
+          "Roost",
+          "Thunderbolt"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 100,
+        "item": 100,
+        "spread": 12.954,
+        "moves": [
+          69.448,
+          61.121,
+          53.342,
+          43.531
+        ]
+      },
+      "attack_moves": 3,
+      "flags": []
+    },
+    {
+      "rank": 45,
+      "species": "Dragapult",
+      "name_ko": "드래펄트",
+      "usage_pct": 3.94,
+      "form": "Dragapult",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Dragon",
+        "Ghost"
+      ],
+      "base_stats": {
+        "hp": 88,
+        "atk": 120,
+        "def": 75,
+        "spa": 100,
+        "spd": 75,
+        "spe": 142
+      },
+      "set": {
+        "ability": "Infiltrator",
+        "item": "Life Orb",
+        "nature": "Timid",
+        "sp": {
+          "hp": 2,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Shadow Ball",
+          "Dragon Darts",
+          "Draco Meteor",
+          "U-turn"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 65.369,
+        "item": 44.94,
+        "spread": 22.136,
+        "moves": [
+          47.312,
+          47.255,
+          44.982,
+          37.99
+        ]
+      },
+      "attack_moves": 4,
+      "flags": []
+    },
+    {
+      "rank": 46,
+      "species": "Ditto",
+      "name_ko": "메타몽",
+      "usage_pct": 3.84,
+      "form": "Ditto",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Normal"
+      ],
+      "base_stats": {
+        "hp": 48,
+        "atk": 48,
+        "def": 48,
+        "spa": 48,
+        "spd": 48,
+        "spe": 48
+      },
+      "set": {
+        "ability": "Imposter",
+        "item": "Choice Scarf",
+        "nature": "Bold",
+        "sp": {
+          "hp": 32,
+          "atk": 0,
+          "def": 32,
+          "spa": 0,
+          "spd": 2,
+          "spe": 0
+        },
+        "moves": [
+          "Transform"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 98.032,
+        "item": 81.358,
+        "spread": 23.845,
+        "moves": [
+          100
+        ]
+      },
+      "attack_moves": 0,
+      "flags": [
+        "변신(Transform) 전용: 1:1에서 항상 거울전"
+      ]
+    },
+    {
+      "rank": 47,
+      "species": "Toxapex",
+      "name_ko": "더시마사리",
+      "usage_pct": 3.82,
+      "form": "Toxapex",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Poison",
+        "Water"
+      ],
+      "base_stats": {
+        "hp": 50,
+        "atk": 63,
+        "def": 152,
+        "spa": 53,
+        "spd": 142,
+        "spe": 35
+      },
+      "set": {
+        "ability": "Regenerator",
+        "item": "Leftovers",
+        "nature": "Bold",
+        "sp": {
+          "hp": 32,
+          "atk": 0,
+          "def": 32,
+          "spa": 0,
+          "spd": 2,
+          "spe": 0
+        },
+        "moves": [
+          "Recover",
+          "Toxic",
+          "Haze",
+          "Infestation"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 97.171,
+        "item": 49.977,
+        "spread": 8.08,
+        "moves": [
+          88.651,
+          84.592,
+          58.349,
+          42.931
+        ]
+      },
+      "attack_moves": 1,
+      "flags": [
+        "서포트형: 대표 기술 4개 중 공격 기술 2개 미만"
+      ]
+    },
+    {
+      "rank": 48,
+      "species": "Absol",
+      "name_ko": "앱솔",
+      "usage_pct": 3.54,
+      "form": "Absol-Mega-Z",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Dark",
+        "Ghost"
+      ],
+      "base_stats": {
+        "hp": 65,
+        "atk": 154,
+        "def": 60,
+        "spa": 75,
+        "spd": 60,
+        "spe": 151
+      },
+      "set": {
+        "ability": "Sharpness",
+        "item": "Absolite Z",
+        "nature": "Jolly",
+        "sp": {
+          "hp": 2,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Shadow Claw",
+          "Close Combat",
+          "Swords Dance",
+          "Night Slash"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 100,
+        "item": 100,
+        "spread": 48.246,
+        "moves": [
+          90.168,
+          62.557,
+          54.352,
+          53.239
+        ]
+      },
+      "attack_moves": 3,
+      "flags": [
+        "엔진 특성 불일치: 래더 Sharpness / npm 엔진 Magic Bounce"
+      ]
+    },
+    {
+      "rank": 49,
+      "species": "Banette",
+      "name_ko": "다크펫",
+      "usage_pct": 3.49,
+      "form": "Banette-Mega",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Ghost"
+      ],
+      "base_stats": {
+        "hp": 64,
+        "atk": 165,
+        "def": 75,
+        "spa": 93,
+        "spd": 83,
+        "spe": 75
+      },
+      "set": {
+        "ability": "Prankster",
+        "item": "Banettite",
+        "nature": "Adamant",
+        "sp": {
+          "hp": 32,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 2,
+          "spe": 0
+        },
+        "moves": [
+          "Destiny Bond",
+          "Poltergeist",
+          "Encore",
+          "Shadow Sneak"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 100,
+        "item": 100,
+        "spread": 18.891,
+        "moves": [
+          99.64,
+          96.874,
+          74.62,
+          41.811
+        ]
+      },
+      "attack_moves": 2,
+      "flags": []
+    },
+    {
+      "rank": 50,
+      "species": "Empoleon",
+      "name_ko": "엠페르트",
+      "usage_pct": 3.36,
+      "form": "Empoleon",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Water",
+        "Steel"
+      ],
+      "base_stats": {
+        "hp": 84,
+        "atk": 86,
+        "def": 88,
+        "spa": 111,
+        "spd": 101,
+        "spe": 60
+      },
+      "set": {
+        "ability": "Competitive",
+        "item": "Leftovers",
+        "nature": "Sassy",
+        "sp": {
+          "hp": 32,
+          "atk": 0,
+          "def": 0,
+          "spa": 5,
+          "spd": 29,
+          "spe": 0
+        },
+        "moves": [
+          "Yawn",
+          "Stealth Rock",
+          "Flip Turn",
+          "Ice Beam"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 55.075,
+        "item": 47.527,
+        "spread": 29.489,
+        "moves": [
+          74.413,
+          66.339,
+          62.716,
+          47.387
+        ]
+      },
+      "attack_moves": 2,
+      "flags": []
+    },
+    {
+      "rank": 51,
+      "species": "Hatterene",
+      "name_ko": "브리무음",
+      "usage_pct": 3.24,
+      "form": "Hatterene",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Psychic",
+        "Fairy"
+      ],
+      "base_stats": {
+        "hp": 57,
+        "atk": 90,
+        "def": 95,
+        "spa": 136,
+        "spd": 103,
+        "spe": 29
+      },
+      "set": {
+        "ability": "Magic Bounce",
+        "item": "Focus Sash",
+        "nature": "Quiet",
+        "sp": {
+          "hp": 32,
+          "atk": 0,
+          "def": 2,
+          "spa": 32,
+          "spd": 0,
+          "spe": 0
+        },
+        "moves": [
+          "Mystical Fire",
+          "Trick Room",
+          "Draining Kiss",
+          "Calm Mind"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 97.097,
+        "item": 22.558,
+        "spread": 14.355,
+        "moves": [
+          69.398,
+          49.064,
+          44.16,
+          37.28
+        ]
+      },
+      "attack_moves": 2,
+      "flags": []
+    },
+    {
+      "rank": 52,
+      "species": "Delphox",
+      "name_ko": "마폭시",
+      "usage_pct": 2.91,
+      "form": "Delphox-Mega",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Fire",
+        "Psychic"
+      ],
+      "base_stats": {
+        "hp": 75,
+        "atk": 69,
+        "def": 72,
+        "spa": 159,
+        "spd": 125,
+        "spe": 134
+      },
+      "set": {
+        "ability": "Levitate",
+        "item": "Delphoxite",
+        "nature": "Timid",
+        "sp": {
+          "hp": 1,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 1,
+          "spe": 32
+        },
+        "moves": [
+          "Flamethrower",
+          "Nasty Plot",
+          "Psychic",
+          "Dazzling Gleam"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 100,
+        "item": 100,
+        "spread": 34.851,
+        "moves": [
+          62.002,
+          57.153,
+          46.671,
+          46.065
+        ]
+      },
+      "attack_moves": 3,
+      "flags": []
+    },
+    {
+      "rank": 53,
+      "species": "Tyranitar",
+      "name_ko": "마기라스",
+      "usage_pct": 2.91,
+      "form": "Tyranitar-Mega",
+      "form_share_pct": 50.2,
+      "other_forms": [
+        {
+          "form": "Tyranitar",
+          "share_pct": 49.8
+        }
+      ],
+      "types": [
+        "Rock",
+        "Dark"
+      ],
+      "base_stats": {
+        "hp": 100,
+        "atk": 164,
+        "def": 150,
+        "spa": 95,
+        "spd": 120,
+        "spe": 71
+      },
+      "set": {
+        "ability": "Sand Stream",
+        "item": "Tyranitarite",
+        "nature": "Adamant",
+        "sp": {
+          "hp": 32,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 2,
+          "spe": 0
+        },
+        "moves": [
+          "Knock Off",
+          "Ice Punch",
+          "Earthquake",
+          "Stone Edge"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 100,
+        "item": 100,
+        "spread": 37.497,
+        "moves": [
+          66.927,
+          64.164,
+          49.145,
+          40.953
+        ]
+      },
+      "attack_moves": 4,
+      "flags": []
+    },
+    {
+      "rank": 54,
+      "species": "Floette",
+      "name_ko": "플라엣테",
+      "usage_pct": 2.71,
+      "form": "Floette-Mega",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Fairy"
+      ],
+      "base_stats": {
+        "hp": 74,
+        "atk": 85,
+        "def": 87,
+        "spa": 155,
+        "spd": 148,
+        "spe": 102
+      },
+      "set": {
+        "ability": "Fairy Aura",
+        "item": "Floettite",
+        "nature": "Timid",
+        "sp": {
+          "hp": 2,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Moonblast",
+          "Calm Mind",
+          "Draining Kiss",
+          "Light of Ruin"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 100,
+        "item": 100,
+        "spread": 28.943,
+        "moves": [
+          91.53,
+          87.247,
+          59.46,
+          45.693
+        ]
+      },
+      "attack_moves": 3,
+      "flags": []
+    },
+    {
+      "rank": 55,
+      "species": "Venusaur",
+      "name_ko": "이상해꽃",
+      "usage_pct": 2.71,
+      "form": "Venusaur-Mega",
+      "form_share_pct": 87.8,
+      "other_forms": [
+        {
+          "form": "Venusaur",
+          "share_pct": 12.2
+        }
+      ],
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "base_stats": {
+        "hp": 80,
+        "atk": 100,
+        "def": 123,
+        "spa": 122,
+        "spd": 120,
+        "spe": 80
+      },
+      "set": {
+        "ability": "Thick Fat",
+        "item": "Venusaurite",
+        "nature": "Modest",
+        "sp": {
+          "hp": 32,
+          "atk": 0,
+          "def": 2,
+          "spa": 32,
+          "spd": 0,
+          "spe": 0
+        },
+        "moves": [
+          "Earth Power",
+          "Sludge Bomb",
+          "Synthesis",
+          "Giga Drain"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 100,
+        "item": 100,
+        "spread": 28.132,
+        "moves": [
+          97.377,
+          80.684,
+          77.197,
+          75.854
+        ]
+      },
+      "attack_moves": 3,
+      "flags": []
+    },
+    {
+      "rank": 56,
+      "species": "Rotom-Heat",
+      "name_ko": "히트로토무",
+      "usage_pct": 2.69,
+      "form": "Rotom-Heat",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Electric",
+        "Fire"
+      ],
+      "base_stats": {
+        "hp": 50,
+        "atk": 65,
+        "def": 107,
+        "spa": 105,
+        "spd": 107,
+        "spe": 86
+      },
+      "set": {
+        "ability": "Levitate",
+        "item": "Choice Scarf",
+        "nature": "Timid",
+        "sp": {
+          "hp": 2,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Overheat",
+          "Volt Switch",
+          "Will-O-Wisp",
+          "Thunderbolt"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 100,
+        "item": 26.038,
+        "spread": 12.477,
+        "moves": [
+          98.795,
+          90.87,
+          72.3,
+          39.281
+        ]
+      },
+      "attack_moves": 3,
+      "flags": [
+        "조합 확인: 구애 도구와 변화 기술이 함께 뽑힘"
+      ]
+    },
+    {
+      "rank": 57,
+      "species": "Mamoswine",
+      "name_ko": "맘모꾸리",
+      "usage_pct": 2.64,
+      "form": "Mamoswine",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Ice",
+        "Ground"
+      ],
+      "base_stats": {
+        "hp": 110,
+        "atk": 130,
+        "def": 80,
+        "spa": 70,
+        "spd": 60,
+        "spe": 80
+      },
+      "set": {
+        "ability": "Oblivious",
+        "item": "Focus Sash",
+        "nature": "Adamant",
+        "sp": {
+          "hp": 2,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Ice Shard",
+          "Earthquake",
+          "Stealth Rock",
+          "Icicle Crash"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 76.853,
+        "item": 78.304,
+        "spread": 42.726,
+        "moves": [
+          94.837,
+          88.984,
+          52.679,
+          51.204
+        ]
+      },
+      "attack_moves": 3,
+      "flags": []
+    },
+    {
+      "rank": 58,
+      "species": "Excadrill",
+      "name_ko": "몰드류",
+      "usage_pct": 2.59,
+      "form": "Excadrill",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Ground",
+        "Steel"
+      ],
+      "base_stats": {
+        "hp": 110,
+        "atk": 135,
+        "def": 60,
+        "spa": 50,
+        "spd": 65,
+        "spe": 88
+      },
+      "set": {
+        "ability": "Mold Breaker",
+        "item": "Focus Sash",
+        "nature": "Jolly",
+        "sp": {
+          "hp": 2,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Earthquake",
+          "Iron Head",
+          "Rapid Spin",
+          "Rock Slide"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 71.857,
+        "item": 42.895,
+        "spread": 45.02,
+        "moves": [
+          90.441,
+          86.568,
+          53.073,
+          41.403
+        ]
+      },
+      "attack_moves": 4,
+      "flags": []
+    },
+    {
+      "rank": 59,
+      "species": "Staraptor",
+      "name_ko": "찌르호크",
+      "usage_pct": 2.52,
+      "form": "Staraptor-Mega",
+      "form_share_pct": 58.3,
+      "other_forms": [
+        {
+          "form": "Staraptor",
+          "share_pct": 41.7
+        }
+      ],
+      "types": [
+        "Fighting",
+        "Flying"
+      ],
+      "base_stats": {
+        "hp": 85,
+        "atk": 140,
+        "def": 100,
+        "spa": 60,
+        "spd": 90,
+        "spe": 110
+      },
+      "set": {
+        "ability": "Contrary",
+        "item": "Staraptite",
+        "nature": "Jolly",
+        "sp": {
+          "hp": 2,
+          "atk": 32,
+          "def": 0,
+          "spa": 0,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Close Combat",
+          "Roost",
+          "Brave Bird",
+          "Blaze Kick"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 100,
+        "item": 100,
+        "spread": 17.636,
+        "moves": [
+          99.965,
+          88.263,
+          84.197,
+          43.89
+        ]
+      },
+      "attack_moves": 3,
+      "flags": []
+    },
+    {
+      "rank": 60,
+      "species": "Armarouge",
+      "name_ko": "카디나르마",
+      "usage_pct": 2.42,
+      "form": "Armarouge",
+      "form_share_pct": 100,
+      "other_forms": [],
+      "types": [
+        "Fire",
+        "Psychic"
+      ],
+      "base_stats": {
+        "hp": 85,
+        "atk": 60,
+        "def": 100,
+        "spa": 125,
+        "spd": 80,
+        "spe": 75
+      },
+      "set": {
+        "ability": "Weak Armor",
+        "item": "Focus Sash",
+        "nature": "Modest",
+        "sp": {
+          "hp": 2,
+          "atk": 0,
+          "def": 0,
+          "spa": 32,
+          "spd": 0,
+          "spe": 32
+        },
+        "moves": [
+          "Armor Cannon",
+          "Expanding Force",
+          "Destiny Bond",
+          "Endure"
+        ]
+      },
+      "smogon_pct": {
+        "ability": 83.014,
+        "item": 71.816,
+        "spread": 36.153,
+        "moves": [
+          95.036,
+          87.344,
+          58.602,
+          38.065
+        ]
+      },
+      "attack_moves": 2,
+      "flags": []
+    }
+  ]
+}
