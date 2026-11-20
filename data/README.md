@@ -10,11 +10,17 @@
 - 메가 엔트리의 `name`, `types`, `base_stats`는 변신 후 형태를 표시합니다. 세트의 `species`와 `ability`는 변신 전 값을, `mega`와 `battle_ability`는 변신 후 값을 표시합니다. 메가진화 전 특성은 엔진의 기본 특성을 사용합니다.
 - 한국어 명칭은 PokéAPI 데이터를 바탕으로 구성했습니다. [PokéAPI CSV](https://github.com/PokeAPI/pokeapi/tree/4e84512eaf7f58a5a50d2a27941b1191cdb9e5e9/data/v2/csv) · [PokéAPI 라이선스](https://github.com/PokeAPI/pokeapi/blob/4e84512eaf7f58a5a50d2a27941b1191cdb9e5e9/LICENSE.md)
 
+## 학습 외 종
+
+`fallback_catalog.json`에는 같은 통계에서 학습 종 다음 순위인 12종(18개 폼, 대표 세트 53개)을 담았습니다. 추가 12종의 시뮬레이션 기록은 1:1 모델 학습에 포함되지 않았습니다. 이 파일의 세트 가중치는 각 폼에서 M-C 규칙을 통과한 대표 세트 안에서 합이 1이 되도록 계산한 값입니다. [사용률 및 세트 통계](https://www.smogon.com/stats/2026-10/chaos/gen9championsbssregmc-1760.json)
+
 ## 카탈로그 다시 만들기
 
 프로젝트의 시뮬레이터 설치 단계에서 Showdown 엔진 빌드를 완료한 뒤 아래 명령을 실행합니다. 원본은 `data/catalog-input/`에 받아 보관합니다.
 
 ```powershell
 .\data\fetch-catalog-sources.ps1
-node data/build-catalog.cjs
+node data/build-catalog.cjs --include-fallback
 ```
+
+기본 60종 카탈로그만 다시 만들 때는 `--include-fallback`을 생략합니다.

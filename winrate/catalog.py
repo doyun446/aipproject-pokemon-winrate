@@ -25,7 +25,7 @@ def target_index(action):
 
 
 class Catalog:
-    def __init__(self, path):
+    def __init__(self, path, fallback_path=None):
         self.path = Path(path)
         data = json.loads(self.path.read_text(encoding="utf-8-sig"))
         self.pokemon = {entry["id"]: entry for entry in data["pokemon"]}
@@ -43,6 +43,34 @@ class Catalog:
         self.moves = {
             showdown_id(key): value for key, value in data.get("move_data", {}).items()
         }
+        if fallback_path is not None:
+            fallback = json.loads(Path(fallback_path).read_text(encoding="utf-8-sig"))
+            self._add_fallback(data.get("format"), fallback)
+
+    def _add_fallback(self, format_id, fallback):
+        if fallback.get("format") != format_id:
+            raise ValueError(
+                "The fallback catalog must use the training catalog's format."
+            )
+        entries = fallback["pokemon"]
+        ids = {entry["id"] for entry in entries}
+        trained_bases = {
+            entry.get("base_species", entry["id"]) for entry in self.pokemon.values()
+        }
+        if len(ids) != len(entries) or any(
+            entry["id"] in self.pokemon
+            or entry.get("base_species", entry["id"]) in trained_bases
+            for entry in entries
+        ):
+            raise ValueError(
+                "The fallback catalog must contain distinct IDs from unseen base species."
+            )
+        for entry in entries:
+            self.pokemon[entry["id"]] = entry
+            for set_data in entry["sets"]:
+                self.sets[(entry["id"], set_data["id"])] = set_data
+        for key, value in fallback.get("move_data", {}).items():
+            self.moves.setdefault(showdown_id(key), value)
 
     def compatible_sets(self, slot):
         candidates = self.pokemon[slot["pokemon"]]["sets"]

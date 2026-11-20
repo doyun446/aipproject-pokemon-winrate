@@ -1,0 +1,3699 @@
+{
+  "format": "gen9championsbssregmc",
+  "format_name": "Pokémon Champions · 싱글 레귤레이션 M-C",
+  "source": {
+    "month": "2026-10",
+    "rating": 1760,
+    "battles": 87848,
+    "species_count": 12,
+    "form_count": 18,
+    "usage_coverage": 0.030978182564250858,
+    "unsupported_forms": [],
+    "usage_url": "https://www.smogon.com/stats/2026-10/gen9championsbssregmc-1760.txt",
+    "movesets_url": "https://www.smogon.com/stats/2026-10/chaos/gen9championsbssregmc-1760.json",
+    "rules_url": "https://news.pokemon-home.com/ko/page/816.html",
+    "prior_method": "도구가 다양한 경우 도구 사용률, 도구가 고정된 경우 능력치 배분 사용률을 대표 세트 안에서 정규화한 추정치입니다. 도구·특성·기술의 개별 사용률은 Showdown 통계입니다.",
+    "names_url": "https://github.com/PokeAPI/pokeapi/tree/4e84512eaf7f58a5a50d2a27941b1191cdb9e5e9/data/v2/csv",
+    "inference_only": true
+  },
+  "pokemon": [
+    {
+      "id": "bellibolt",
+      "name": "Bellibolt",
+      "name_ko": "찌리배리",
+      "base_species": "bellibolt",
+      "base_stats": {
+        "hp": 109,
+        "atk": 64,
+        "def": 91,
+        "spa": 103,
+        "spd": 83,
+        "spe": 45
+      },
+      "types": [
+        "Electric"
+      ],
+      "mega": false,
+      "usage": 0.0191816,
+      "sets": [
+        {
+          "id": "set1",
+          "name": "대표 세트 1",
+          "weight": 0.44041315787696117,
+          "species": "Bellibolt",
+          "item": "Leftovers",
+          "ability": "Electromorphosis",
+          "level": 50,
+          "nature": "Bold",
+          "evs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 9,
+            "spa": 0,
+            "spd": 26,
+            "spe": 0
+          },
+          "moves": [
+            "Slack Off",
+            "Soak",
+            "Toxic",
+            "Volt Switch"
+          ],
+          "mega": null,
+          "battle_ability": "Electromorphosis"
+        },
+        {
+          "id": "set2",
+          "name": "대표 세트 2",
+          "weight": 0.4062039395610148,
+          "species": "Bellibolt",
+          "item": "Red Card",
+          "ability": "Electromorphosis",
+          "level": 50,
+          "nature": "Calm",
+          "evs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 1,
+            "spa": 0,
+            "spd": 29,
+            "spe": 5
+          },
+          "moves": [
+            "Slack Off",
+            "Soak",
+            "Toxic",
+            "Parabolic Charge"
+          ],
+          "mega": null,
+          "battle_ability": "Electromorphosis"
+        },
+        {
+          "id": "set3",
+          "name": "대표 세트 3",
+          "weight": 0.15338290256202397,
+          "species": "Bellibolt",
+          "item": "Shuca Berry",
+          "ability": "Electromorphosis",
+          "level": 50,
+          "nature": "Bold",
+          "evs": {
+            "hp": 32,
+            "atk": 0,
+            "def": 32,
+            "spa": 1,
+            "spd": 1,
+            "spe": 0
+          },
+          "moves": [
+            "Slack Off",
+            "Soak",
+            "Toxic",
+            "Acid Spray"
+          ],
+          "mega": null,
+          "battle_ability": "Electromorphosis"
+        }
+      ],
+      "item_usage": [
+        {
+          "name": "Leftovers",
+          "usage": 0.4014218483986271
+        },
+        {
+          "name": "Red Card",
+          "usage": 0.3702412912262282
+        },
+        {
+          "name": "Shuca Berry",
+          "usage": 0.13980338043486754
+        },
+        {
+          "name": "Sitrus Berry",
+          "usage": 0.08283770183941154
+        },
+        {
+          "name": "Magnet",
+          "usage": 0.0023107788875531506
+        }
+      ],
+      "ability_usage": [
+        {
+          "name": "Electromorphosis",
+          "usage": 0.9999538816848779
+        },
+        {
+          "name": "Static",
+          "usage": 0.000046118315122100494
+        }
+      ],
+      "move_usage": [
+        {
+          "name": "Slack Off",
+          "usage": 0.9775825326988814
+        },
+        {
+          "name": "Soak",
+          "usage": 0.6245144531566149
+        },
+        {
+          "name": "Toxic",
+          "usage": 0.6052245561698223
+        },
+        {
+          "name": "Volt Switch",
+          "usage": 0.538924405519965
+        },
+        {
+          "name": "Parabolic Charge",
+          "usage": 0.46467816309718685
+        },
+        {
+          "name": "Acid Spray",
+          "usage": 0.38179733950251105
+        },
+        {
+          "name": "Thunderbolt",
+          "usage": 0.3812688468566326
+        },
+        {
+          "name": "Thunder",
+          "usage": 0.0109950881895457
+        }
+      ],
+      "rank": 96,
+      "base_name_ko": "찌리배리",
+      "species_rank": 61,
+      "species_usage": 0.0191816
+    },
+    {
+      "id": "vanilluxe",
+      "name": "Vanilluxe",
+      "name_ko": "배바닐라",
+      "base_species": "vanilluxe",
+      "base_stats": {
+        "hp": 71,
+        "atk": 95,
+        "def": 85,
+        "spa": 110,
+        "spd": 95,
+        "spe": 79
+      },
+      "types": [
+        "Ice"
+      ],
+      "mega": false,
+      "usage": 0.0184912,
+      "sets": [
+        {
+          "id": "set1",
+          "name": "대표 세트 1",
+          "weight": 0.4279260265611981,
+          "species": "Vanilluxe",
+          "item": "Never-Melt Ice",
+          "ability": "Snow Warning",
+          "level": 50,
+          "nature": "Modest",
+          "evs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 19,
+            "spa": 2,
+            "spd": 0,
+            "spe": 14
+          },
+          "moves": [
+            "Ice Shard",
+            "Blizzard",
+            "Freeze-Dry",
+            "Aurora Veil"
+          ],
+          "mega": null,
+          "battle_ability": "Snow Warning"
+        },
+        {
+          "id": "set2",
+          "name": "대표 세트 2",
+          "weight": 0.30736797820815503,
+          "species": "Vanilluxe",
+          "item": "Light Clay",
+          "ability": "Snow Warning",
+          "level": 50,
+          "nature": "Naive",
+          "evs": {
+            "hp": 0,
+            "atk": 0,
+            "def": 0,
+            "spa": 32,
+            "spd": 0,
+            "spe": 31
+          },
+          "moves": [
+            "Ice Shard",
+            "Blizzard",
+            "Freeze-Dry",
+            "Sheer Cold"
+          ],
+          "mega": null,
+          "battle_ability": "Snow Warning"
+        },
+        {
+          "id": "set3",
+          "name": "대표 세트 3",
+          "weight": 0.26470599523064675,
+          "species": "Vanilluxe",
+          "item": "Focus Sash",
+          "ability": "Snow Warning",
+          "level": 50,
+          "nature": "Rash",
+          "evs": {
+            "hp": 3,
+            "atk": 0,
+            "def": 0,
+            "spa": 32,
+            "spd": 0,
+            "spe": 31
+          },
+          "moves": [
+            "Ice Shard",
+            "Blizzard",
+            "Freeze-Dry",
+            "Mirror Coat"
+          ],
+          "mega": null,
+          "battle_ability": "Snow Warning"
+        }
+      ],
+      "item_usage": [
+        {
+          "name": "Never-Melt Ice",
+          "usage": 0.40429963491583204
+        },
+        {
+          "name": "Light Clay",
+          "usage": 0.2903977642420931
+        },
+        {
+          "name": "Focus Sash",
+          "usage": 0.25009120873482876
+        },
+        {
+          "name": "Sitrus Berry",
+          "usage": 0.053901361823740467
+        },
+        {
+          "name": "Leftovers",
+          "usage": 0.0010519579555306425
+        }
+      ],
+      "ability_usage": [
+        {
+          "name": "Snow Warning",
+          "usage": 0.9999991247124742
+        },
+        {
+          "name": "Weak Armor",
+          "usage": 5.937200522247899e-7
+        },
+        {
+          "name": "Ice Body",
+          "usage": 2.8156747348358375e-7
+        }
+      ],
+      "move_usage": [
+        {
+          "name": "Ice Shard",
+          "usage": 0.9923939234838449
+        },
+        {
+          "name": "Blizzard",
+          "usage": 0.9469693741524753
+        },
+        {
+          "name": "Freeze-Dry",
+          "usage": 0.9452433395912124
+        },
+        {
+          "name": "Aurora Veil",
+          "usage": 0.36599731001381425
+        },
+        {
+          "name": "Sheer Cold",
+          "usage": 0.31436454281665605
+        },
+        {
+          "name": "Mirror Coat",
+          "usage": 0.1912577206230545
+        },
+        {
+          "name": "Taunt",
+          "usage": 0.1815655492964437
+        },
+        {
+          "name": "Acid Armor",
+          "usage": 0.04466837322627107
+        }
+      ],
+      "rank": 97,
+      "base_name_ko": "배바닐라",
+      "species_rank": 62,
+      "species_usage": 0.0184912
+    },
+    {
+      "id": "snorlax",
+      "name": "Snorlax",
+      "name_ko": "잠만보",
+      "base_species": "snorlax",
+      "base_stats": {
+        "hp": 160,
+        "atk": 110,
+        "def": 65,
+        "spa": 65,
+        "spd": 110,
+        "spe": 30
+      },
+      "types": [
+        "Normal"
+      ],
+      "mega": false,
+      "usage": 0.0181216,
+      "sets": [
+        {
+          "id": "set1",
+          "name": "대표 세트 1",
+          "weight": 0.8092078049591567,
+          "species": "Snorlax",
+          "item": "Leftovers",
+          "ability": "Thick Fat",
+          "level": 50,
+          "nature": "Adamant",
+          "evs": {
+            "hp": 4,
+            "atk": 20,
+            "def": 31,
+            "spa": 0,
+            "spd": 11,
+            "spe": 0
+          },
+          "moves": [
+            "Earthquake",
+            "Ice Punch",
+            "Yawn",
+            "Thunder Punch"
+          ],
+          "mega": null,
+          "battle_ability": "Thick Fat"
+        },
+        {
+          "id": "set2",
+          "name": "대표 세트 2",
+          "weight": 0.1408819518318001,
+          "species": "Snorlax",
+          "item": "Chople Berry",
+          "ability": "Thick Fat",
+          "level": 50,
+          "nature": "Adamant",
+          "evs": {
+            "hp": 6,
+            "atk": 10,
+            "def": 32,
+            "spa": 0,
+            "spd": 18,
+            "spe": 0
+          },
+          "moves": [
+            "Earthquake",
+            "Ice Punch",
+            "Yawn",
+            "Self-Destruct"
+          ],
+          "mega": null,
+          "battle_ability": "Thick Fat"
+        },
+        {
+          "id": "set3",
+          "name": "대표 세트 3",
+          "weight": 0.0499102432090433,
+          "species": "Snorlax",
+          "item": "Normal Gem",
+          "ability": "Thick Fat",
+          "level": 50,
+          "nature": "Adamant",
+          "evs": {
+            "hp": 2,
+            "atk": 30,
+            "def": 32,
+            "spa": 0,
+            "spd": 2,
+            "spe": 0
+          },
+          "moves": [
+            "Earthquake",
+            "Ice Punch",
+            "Yawn",
+            "Rest"
+          ],
+          "mega": null,
+          "battle_ability": "Thick Fat"
+        }
+      ],
+      "item_usage": [
+        {
+          "name": "Leftovers",
+          "usage": 0.7682452235495609
+        },
+        {
+          "name": "Chople Berry",
+          "usage": 0.13375042345838786
+        },
+        {
+          "name": "Normal Gem",
+          "usage": 0.04738375694915564
+        },
+        {
+          "name": "Sitrus Berry",
+          "usage": 0.03405390134970998
+        },
+        {
+          "name": "Chesto Berry",
+          "usage": 0.01531386046308319
+        }
+      ],
+      "ability_usage": [
+        {
+          "name": "Thick Fat",
+          "usage": 0.9481562011183698
+        },
+        {
+          "name": "Immunity",
+          "usage": 0.05184341088806569
+        },
+        {
+          "name": "Gluttony",
+          "usage": 3.87993564396176e-7
+        }
+      ],
+      "move_usage": [
+        {
+          "name": "Earthquake",
+          "usage": 0.7543816818266369
+        },
+        {
+          "name": "Ice Punch",
+          "usage": 0.7246500936876168
+        },
+        {
+          "name": "Yawn",
+          "usage": 0.6531635220304676
+        },
+        {
+          "name": "Thunder Punch",
+          "usage": 0.35730884290117587
+        },
+        {
+          "name": "Self-Destruct",
+          "usage": 0.29571425754916886
+        },
+        {
+          "name": "Rest",
+          "usage": 0.28519433510357833
+        },
+        {
+          "name": "Fissure",
+          "usage": 0.2534461640443933
+        },
+        {
+          "name": "Smack Down",
+          "usage": 0.16532968902862286
+        }
+      ],
+      "rank": 98,
+      "base_name_ko": "잠만보",
+      "species_rank": 63,
+      "species_usage": 0.0181216
+    },
+    {
+      "id": "dragalgemega",
+      "name": "Dragalge-Mega",
+      "name_ko": "메가드래캄",
+      "base_species": "dragalge",
+      "base_stats": {
+        "hp": 65,
+        "atk": 85,
+        "def": 105,
+        "spa": 132,
+        "spd": 163,
+        "spe": 44
+      },
+      "types": [
+        "Poison",
+        "Dragon"
+      ],
+      "mega": true,
+      "usage": 0.0178296,
+      "sets": [
+        {
+          "id": "set1",
+          "name": "대표 세트 1",
+          "weight": 0.399689720207093,
+          "species": "Dragalge",
+          "item": "Dragalgite",
+          "ability": "Poison Point",
+          "level": 50,
+          "nature": "Calm",
+          "evs": {
+            "hp": 32,
+            "atk": 0,
+            "def": 14,
+            "spa": 0,
+            "spd": 20,
+            "spe": 0
+          },
+          "moves": [
+            "Flip Turn",
+            "Sludge Bomb",
+            "Haze",
+            "Draco Meteor"
+          ],
+          "mega": "Dragalge-Mega",
+          "battle_ability": "Regenerator"
+        },
+        {
+          "id": "set2",
+          "name": "대표 세트 2",
+          "weight": 0.3710249776949319,
+          "species": "Dragalge",
+          "item": "Dragalgite",
+          "ability": "Poison Point",
+          "level": 50,
+          "nature": "Quiet",
+          "evs": {
+            "hp": 32,
+            "atk": 0,
+            "def": 0,
+            "spa": 4,
+            "spd": 30,
+            "spe": 0
+          },
+          "moves": [
+            "Flip Turn",
+            "Sludge Bomb",
+            "Haze",
+            "Shadow Ball"
+          ],
+          "mega": "Dragalge-Mega",
+          "battle_ability": "Regenerator"
+        },
+        {
+          "id": "set3",
+          "name": "대표 세트 3",
+          "weight": 0.22928530209797515,
+          "species": "Dragalge",
+          "item": "Dragalgite",
+          "ability": "Poison Point",
+          "level": 50,
+          "nature": "Quiet",
+          "evs": {
+            "hp": 32,
+            "atk": 0,
+            "def": 0,
+            "spa": 2,
+            "spd": 32,
+            "spe": 0
+          },
+          "moves": [
+            "Flip Turn",
+            "Sludge Bomb",
+            "Haze",
+            "Toxic"
+          ],
+          "mega": "Dragalge-Mega",
+          "battle_ability": "Regenerator"
+        }
+      ],
+      "item_usage": [
+        {
+          "name": "Dragalgite",
+          "usage": 1
+        }
+      ],
+      "ability_usage": [
+        {
+          "name": "Regenerator",
+          "usage": 1
+        }
+      ],
+      "move_usage": [
+        {
+          "name": "Flip Turn",
+          "usage": 0.9874678180321951
+        },
+        {
+          "name": "Sludge Bomb",
+          "usage": 0.8681734753493563
+        },
+        {
+          "name": "Haze",
+          "usage": 0.8142786412688093
+        },
+        {
+          "name": "Draco Meteor",
+          "usage": 0.6640781773540646
+        },
+        {
+          "name": "Shadow Ball",
+          "usage": 0.3202722333149774
+        },
+        {
+          "name": "Toxic",
+          "usage": 0.11255871356084216
+        },
+        {
+          "name": "Sludge Wave",
+          "usage": 0.07996110603813557
+        },
+        {
+          "name": "Focus Blast",
+          "usage": 0.035412651711541225
+        }
+      ],
+      "rank": 99,
+      "base_name_ko": "드래캄",
+      "species_rank": 64,
+      "species_usage": 0.0180366
+    },
+    {
+      "id": "dragalge",
+      "name": "Dragalge",
+      "name_ko": "드래캄",
+      "base_species": "dragalge",
+      "base_stats": {
+        "hp": 65,
+        "atk": 75,
+        "def": 90,
+        "spa": 97,
+        "spd": 123,
+        "spe": 44
+      },
+      "types": [
+        "Poison",
+        "Dragon"
+      ],
+      "mega": false,
+      "usage": 0.000207,
+      "sets": [
+        {
+          "id": "set1",
+          "name": "대표 세트 1",
+          "weight": 0.6957529276199657,
+          "species": "Dragalge",
+          "item": "White Herb",
+          "ability": "Adaptability",
+          "level": 50,
+          "nature": "Modest",
+          "evs": {
+            "hp": 32,
+            "atk": 0,
+            "def": 0,
+            "spa": 32,
+            "spd": 2,
+            "spe": 0
+          },
+          "moves": [
+            "Draco Meteor",
+            "Sludge Wave",
+            "Toxic",
+            "Surf"
+          ],
+          "mega": null,
+          "battle_ability": "Adaptability"
+        },
+        {
+          "id": "set2",
+          "name": "대표 세트 2",
+          "weight": 0.2712774907487274,
+          "species": "Dragalge",
+          "item": "Leftovers",
+          "ability": "Adaptability",
+          "level": 50,
+          "nature": "Calm",
+          "evs": {
+            "hp": 32,
+            "atk": 0,
+            "def": 0,
+            "spa": 2,
+            "spd": 32,
+            "spe": 0
+          },
+          "moves": [
+            "Draco Meteor",
+            "Sludge Wave",
+            "Toxic",
+            "Flip Turn"
+          ],
+          "mega": null,
+          "battle_ability": "Adaptability"
+        },
+        {
+          "id": "set3",
+          "name": "대표 세트 3",
+          "weight": 0.03296958163130685,
+          "species": "Dragalge",
+          "item": "Wise Glasses",
+          "ability": "Adaptability",
+          "level": 50,
+          "nature": "Quiet",
+          "evs": {
+            "hp": 32,
+            "atk": 0,
+            "def": 0,
+            "spa": 2,
+            "spd": 32,
+            "spe": 0
+          },
+          "moves": [
+            "Draco Meteor",
+            "Sludge Wave",
+            "Toxic",
+            "Scald"
+          ],
+          "mega": null,
+          "battle_ability": "Adaptability"
+        }
+      ],
+      "item_usage": [
+        {
+          "name": "White Herb",
+          "usage": 0.6955678749601496
+        },
+        {
+          "name": "Leftovers",
+          "usage": 0.2712053378058961
+        },
+        {
+          "name": "Wise Glasses",
+          "usage": 0.03296081255749962
+        },
+        {
+          "name": "Life Orb",
+          "usage": 0.00026597083699152365
+        },
+        {
+          "name": "Expert Belt",
+          "usage": 3.838186806593595e-9
+        }
+      ],
+      "ability_usage": [
+        {
+          "name": "Adaptability",
+          "usage": 0.9999999999987237
+        },
+        {
+          "name": "Poison Point",
+          "usage": 1.2763487092988221e-12
+        }
+      ],
+      "move_usage": [
+        {
+          "name": "Draco Meteor",
+          "usage": 0.9999999961618132
+        },
+        {
+          "name": "Sludge Wave",
+          "usage": 0.7287946621928275
+        },
+        {
+          "name": "Toxic",
+          "usage": 0.6955678749614234
+        },
+        {
+          "name": "Surf",
+          "usage": 0.6955678749601496
+        },
+        {
+          "name": "Flip Turn",
+          "usage": 0.30416615036466704
+        },
+        {
+          "name": "Scald",
+          "usage": 0.27120534164408294
+        },
+        {
+          "name": "Sludge Bomb",
+          "usage": 0.27120533780589356
+        },
+        {
+          "name": "Focus Blast",
+          "usage": 0.03296081255750821
+        }
+      ],
+      "rank": 100,
+      "base_name_ko": "드래캄",
+      "species_rank": 64,
+      "species_usage": 0.0180366
+    },
+    {
+      "id": "arcaninehisui",
+      "name": "Arcanine-Hisui",
+      "name_ko": "윈디 (히스이)",
+      "base_species": "arcanine",
+      "base_stats": {
+        "hp": 95,
+        "atk": 115,
+        "def": 80,
+        "spa": 95,
+        "spd": 80,
+        "spe": 90
+      },
+      "types": [
+        "Fire",
+        "Rock"
+      ],
+      "mega": false,
+      "usage": 0.014859800000000001,
+      "sets": [
+        {
+          "id": "set1",
+          "name": "대표 세트 1",
+          "weight": 0.7920972830432963,
+          "species": "Arcanine-Hisui",
+          "item": "Focus Sash",
+          "ability": "Rock Head",
+          "level": 50,
+          "nature": "Jolly",
+          "evs": {
+            "hp": 2,
+            "atk": 32,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 32
+          },
+          "moves": [
+            "Flare Blitz",
+            "Head Smash",
+            "Extreme Speed",
+            "Stealth Rock"
+          ],
+          "mega": null,
+          "battle_ability": "Rock Head"
+        },
+        {
+          "id": "set2",
+          "name": "대표 세트 2",
+          "weight": 0.16236130217791928,
+          "species": "Arcanine-Hisui",
+          "item": "Air Balloon",
+          "ability": "Rock Head",
+          "level": 50,
+          "nature": "Adamant",
+          "evs": {
+            "hp": 2,
+            "atk": 32,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 32
+          },
+          "moves": [
+            "Flare Blitz",
+            "Head Smash",
+            "Extreme Speed",
+            "Wild Charge"
+          ],
+          "mega": null,
+          "battle_ability": "Rock Head"
+        },
+        {
+          "id": "set3",
+          "name": "대표 세트 3",
+          "weight": 0.045541414778784546,
+          "species": "Arcanine-Hisui",
+          "item": "Choice Scarf",
+          "ability": "Rock Head",
+          "level": 50,
+          "nature": "Adamant",
+          "evs": {
+            "hp": 1,
+            "atk": 32,
+            "def": 0,
+            "spa": 0,
+            "spd": 1,
+            "spe": 32
+          },
+          "moves": [
+            "Flare Blitz",
+            "Head Smash",
+            "Extreme Speed",
+            "Wild Charge"
+          ],
+          "mega": null,
+          "battle_ability": "Rock Head"
+        }
+      ],
+      "item_usage": [
+        {
+          "name": "Focus Sash",
+          "usage": 0.7755674362624283
+        },
+        {
+          "name": "Air Balloon",
+          "usage": 0.15897307259350282
+        },
+        {
+          "name": "Choice Scarf",
+          "usage": 0.04459103579808033
+        },
+        {
+          "name": "Life Orb",
+          "usage": 0.007054976967201599
+        },
+        {
+          "name": "Hard Stone",
+          "usage": 0.004723889852077994
+        }
+      ],
+      "ability_usage": [
+        {
+          "name": "Rock Head",
+          "usage": 0.9847918301711136
+        },
+        {
+          "name": "Flash Fire",
+          "usage": 0.009772768042602686
+        },
+        {
+          "name": "Intimidate",
+          "usage": 0.005435401786283764
+        }
+      ],
+      "move_usage": [
+        {
+          "name": "Flare Blitz",
+          "usage": 0.9990910544204814
+        },
+        {
+          "name": "Head Smash",
+          "usage": 0.9990851961172641
+        },
+        {
+          "name": "Extreme Speed",
+          "usage": 0.9702108306747412
+        },
+        {
+          "name": "Stealth Rock",
+          "usage": 0.4715815832097419
+        },
+        {
+          "name": "Wild Charge",
+          "usage": 0.30510952975019695
+        },
+        {
+          "name": "Close Combat",
+          "usage": 0.2016719875452661
+        },
+        {
+          "name": "Protect",
+          "usage": 0.030295564759144675
+        },
+        {
+          "name": "Outrage",
+          "usage": 0.00870565949704622
+        }
+      ],
+      "rank": 101,
+      "base_name_ko": "윈디",
+      "species_rank": 65,
+      "species_usage": 0.0158529
+    },
+    {
+      "id": "arcanine",
+      "name": "Arcanine",
+      "name_ko": "윈디",
+      "base_species": "arcanine",
+      "base_stats": {
+        "hp": 90,
+        "atk": 110,
+        "def": 80,
+        "spa": 100,
+        "spd": 80,
+        "spe": 95
+      },
+      "types": [
+        "Fire"
+      ],
+      "mega": false,
+      "usage": 0.0009931,
+      "sets": [
+        {
+          "id": "set1",
+          "name": "대표 세트 1",
+          "weight": 0.5210934342933089,
+          "species": "Arcanine",
+          "item": "Rocky Helmet",
+          "ability": "Intimidate",
+          "level": 50,
+          "nature": "Impish",
+          "evs": {
+            "hp": 32,
+            "atk": 2,
+            "def": 32,
+            "spa": 0,
+            "spd": 0,
+            "spe": 0
+          },
+          "moves": [
+            "Extreme Speed",
+            "Will-O-Wisp",
+            "Flare Blitz",
+            "Morning Sun"
+          ],
+          "mega": null,
+          "battle_ability": "Intimidate"
+        },
+        {
+          "id": "set2",
+          "name": "대표 세트 2",
+          "weight": 0.36207704001582264,
+          "species": "Arcanine",
+          "item": "Charcoal",
+          "ability": "Intimidate",
+          "level": 50,
+          "nature": "Timid",
+          "evs": {
+            "hp": 2,
+            "atk": 0,
+            "def": 0,
+            "spa": 32,
+            "spd": 0,
+            "spe": 32
+          },
+          "moves": [
+            "Extreme Speed",
+            "Will-O-Wisp",
+            "Flare Blitz",
+            "Dragon Pulse"
+          ],
+          "mega": null,
+          "battle_ability": "Intimidate"
+        },
+        {
+          "id": "set3",
+          "name": "대표 세트 3",
+          "weight": 0.11682952569086842,
+          "species": "Arcanine",
+          "item": "Life Orb",
+          "ability": "Intimidate",
+          "level": 50,
+          "nature": "Adamant",
+          "evs": {
+            "hp": 32,
+            "atk": 32,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 2
+          },
+          "moves": [
+            "Extreme Speed",
+            "Will-O-Wisp",
+            "Flare Blitz",
+            "Flamethrower"
+          ],
+          "mega": null,
+          "battle_ability": "Intimidate"
+        }
+      ],
+      "item_usage": [
+        {
+          "name": "Rocky Helmet",
+          "usage": 0.4420610390946997
+        },
+        {
+          "name": "Charcoal",
+          "usage": 0.30716209801951627
+        },
+        {
+          "name": "Life Orb",
+          "usage": 0.09911040539953578
+        },
+        {
+          "name": "Air Balloon",
+          "usage": 0.04377608156392221
+        },
+        {
+          "name": "Shell Bell",
+          "usage": 0.0407626403737602
+        }
+      ],
+      "ability_usage": [
+        {
+          "name": "Intimidate",
+          "usage": 0.999996647970561
+        },
+        {
+          "name": "Flash Fire",
+          "usage": 0.0000033520294391612404
+        }
+      ],
+      "move_usage": [
+        {
+          "name": "Extreme Speed",
+          "usage": 0.8700253854409411
+        },
+        {
+          "name": "Will-O-Wisp",
+          "usage": 0.6409814943613158
+        },
+        {
+          "name": "Flare Blitz",
+          "usage": 0.6079893573329389
+        },
+        {
+          "name": "Morning Sun",
+          "usage": 0.48923804534944465
+        },
+        {
+          "name": "Dragon Pulse",
+          "usage": 0.34109710006168814
+        },
+        {
+          "name": "Flamethrower",
+          "usage": 0.3197914578205638
+        },
+        {
+          "name": "Roar",
+          "usage": 0.3117807610471113
+        },
+        {
+          "name": "Close Combat",
+          "usage": 0.14641913313263216
+        }
+      ],
+      "rank": 102,
+      "base_name_ko": "윈디",
+      "species_rank": 65,
+      "species_usage": 0.0158529
+    },
+    {
+      "id": "scovillain",
+      "name": "Scovillain",
+      "name_ko": "스코빌런",
+      "base_species": "scovillain",
+      "base_stats": {
+        "hp": 65,
+        "atk": 108,
+        "def": 65,
+        "spa": 108,
+        "spd": 65,
+        "spe": 75
+      },
+      "types": [
+        "Grass",
+        "Fire"
+      ],
+      "mega": false,
+      "usage": 0.012866599999999999,
+      "sets": [
+        {
+          "id": "set1",
+          "name": "대표 세트 1",
+          "weight": 0.9905386670818518,
+          "species": "Scovillain",
+          "item": "Leftovers",
+          "ability": "Moody",
+          "level": 50,
+          "nature": "Timid",
+          "evs": {
+            "hp": 5,
+            "atk": 0,
+            "def": 32,
+            "spa": 0,
+            "spd": 18,
+            "spe": 11
+          },
+          "moves": [
+            "Protect",
+            "Leech Seed",
+            "Substitute",
+            "Flamethrower"
+          ],
+          "mega": null,
+          "battle_ability": "Moody"
+        },
+        {
+          "id": "set2",
+          "name": "대표 세트 2",
+          "weight": 0.008555728264031523,
+          "species": "Scovillain",
+          "item": "Leftovers",
+          "ability": "Moody",
+          "level": 50,
+          "nature": "Sassy",
+          "evs": {
+            "hp": 32,
+            "atk": 0,
+            "def": 17,
+            "spa": 0,
+            "spd": 17,
+            "spe": 0
+          },
+          "moves": [
+            "Protect",
+            "Leech Seed",
+            "Substitute",
+            "Flare Blitz"
+          ],
+          "mega": null,
+          "battle_ability": "Moody"
+        },
+        {
+          "id": "set3",
+          "name": "대표 세트 3",
+          "weight": 0.0009056046541167836,
+          "species": "Scovillain",
+          "item": "Leftovers",
+          "ability": "Moody",
+          "level": 50,
+          "nature": "Timid",
+          "evs": {
+            "hp": 0,
+            "atk": 0,
+            "def": 32,
+            "spa": 0,
+            "spd": 32,
+            "spe": 2
+          },
+          "moves": [
+            "Protect",
+            "Leech Seed",
+            "Substitute",
+            "Leaf Storm"
+          ],
+          "mega": null,
+          "battle_ability": "Moody"
+        }
+      ],
+      "item_usage": [
+        {
+          "name": "Leftovers",
+          "usage": 0.9995148757792693
+        },
+        {
+          "name": "Charcoal",
+          "usage": 0.00024521303432535277
+        },
+        {
+          "name": "Life Orb",
+          "usage": 0.00023111750315831856
+        },
+        {
+          "name": "Expert Belt",
+          "usage": 0.000008793092543487846
+        },
+        {
+          "name": "Bright Powder",
+          "usage": 5.907031353981096e-10
+        }
+      ],
+      "ability_usage": [
+        {
+          "name": "Moody",
+          "usage": 0.9997459935838403
+        },
+        {
+          "name": "Chlorophyll",
+          "usage": 0.00025400641615960133
+        }
+      ],
+      "move_usage": [
+        {
+          "name": "Protect",
+          "usage": 0.9994094085045079
+        },
+        {
+          "name": "Leech Seed",
+          "usage": 0.999178290572618
+        },
+        {
+          "name": "Substitute",
+          "usage": 0.9909795557772266
+        },
+        {
+          "name": "Flamethrower",
+          "usage": 0.9895929893972379
+        },
+        {
+          "name": "Flare Blitz",
+          "usage": 0.008535311800602775
+        },
+        {
+          "name": "Leaf Storm",
+          "usage": 0.008535311661162268
+        },
+        {
+          "name": "Giga Drain",
+          "usage": 0.002082521187201058
+        },
+        {
+          "name": "Overheat",
+          "usage": 0.0008473065553898261
+        }
+      ],
+      "rank": 103,
+      "base_name_ko": "스코빌런",
+      "species_rank": 66,
+      "species_usage": 0.015801199999999998
+    },
+    {
+      "id": "scovillainmega",
+      "name": "Scovillain-Mega",
+      "name_ko": "메가스코빌런",
+      "base_species": "scovillain",
+      "base_stats": {
+        "hp": 65,
+        "atk": 138,
+        "def": 85,
+        "spa": 138,
+        "spd": 85,
+        "spe": 75
+      },
+      "types": [
+        "Grass",
+        "Fire"
+      ],
+      "mega": true,
+      "usage": 0.0029346,
+      "sets": [
+        {
+          "id": "set1",
+          "name": "대표 세트 1",
+          "weight": 0.5036250681909918,
+          "species": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Chlorophyll",
+          "level": 50,
+          "nature": "Calm",
+          "evs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 0,
+            "spa": 0,
+            "spd": 15,
+            "spe": 20
+          },
+          "moves": [
+            "Flamethrower",
+            "Leech Seed",
+            "Protect",
+            "Super Fang"
+          ],
+          "mega": "Scovillain-Mega",
+          "battle_ability": "Spicy Spray"
+        },
+        {
+          "id": "set2",
+          "name": "대표 세트 2",
+          "weight": 0.268820933580677,
+          "species": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Chlorophyll",
+          "level": 50,
+          "nature": "Modest",
+          "evs": {
+            "hp": 32,
+            "atk": 0,
+            "def": 2,
+            "spa": 32,
+            "spd": 0,
+            "spe": 0
+          },
+          "moves": [
+            "Flamethrower",
+            "Leech Seed",
+            "Protect",
+            "Leaf Storm"
+          ],
+          "mega": "Scovillain-Mega",
+          "battle_ability": "Spicy Spray"
+        },
+        {
+          "id": "set3",
+          "name": "대표 세트 3",
+          "weight": 0.22755399822833122,
+          "species": "Scovillain",
+          "item": "Scovillainite",
+          "ability": "Chlorophyll",
+          "level": 50,
+          "nature": "Bold",
+          "evs": {
+            "hp": 31,
+            "atk": 0,
+            "def": 25,
+            "spa": 0,
+            "spd": 7,
+            "spe": 3
+          },
+          "moves": [
+            "Flamethrower",
+            "Leech Seed",
+            "Protect",
+            "Fire Blast"
+          ],
+          "mega": "Scovillain-Mega",
+          "battle_ability": "Spicy Spray"
+        }
+      ],
+      "item_usage": [
+        {
+          "name": "Scovillainite",
+          "usage": 1
+        }
+      ],
+      "ability_usage": [
+        {
+          "name": "Spicy Spray",
+          "usage": 1
+        }
+      ],
+      "move_usage": [
+        {
+          "name": "Flamethrower",
+          "usage": 0.9860161140407055
+        },
+        {
+          "name": "Leech Seed",
+          "usage": 0.7694289724496863
+        },
+        {
+          "name": "Protect",
+          "usage": 0.6725411053935155
+        },
+        {
+          "name": "Super Fang",
+          "usage": 0.6576943506473557
+        },
+        {
+          "name": "Leaf Storm",
+          "usage": 0.30253222379373607
+        },
+        {
+          "name": "Fire Blast",
+          "usage": 0.22888588101499305
+        },
+        {
+          "name": "Substitute",
+          "usage": 0.20883846741404463
+        },
+        {
+          "name": "Giga Drain",
+          "usage": 0.1301178639022177
+        }
+      ],
+      "rank": 104,
+      "base_name_ko": "스코빌런",
+      "species_rank": 66,
+      "species_usage": 0.015801199999999998
+    },
+    {
+      "id": "empoleon",
+      "name": "Empoleon",
+      "name_ko": "엠페르트",
+      "base_species": "empoleon",
+      "base_stats": {
+        "hp": 84,
+        "atk": 86,
+        "def": 88,
+        "spa": 111,
+        "spd": 101,
+        "spe": 60
+      },
+      "types": [
+        "Water",
+        "Steel"
+      ],
+      "mega": false,
+      "usage": 0.0141512,
+      "sets": [
+        {
+          "id": "set1",
+          "name": "대표 세트 1",
+          "weight": 0.47136889066330434,
+          "species": "Empoleon",
+          "item": "Shuca Berry",
+          "ability": "Competitive",
+          "level": 50,
+          "nature": "Relaxed",
+          "evs": {
+            "hp": 32,
+            "atk": 0,
+            "def": 32,
+            "spa": 0,
+            "spd": 2,
+            "spe": 0
+          },
+          "moves": [
+            "Ice Beam",
+            "Stealth Rock",
+            "Yawn",
+            "Surf"
+          ],
+          "mega": null,
+          "battle_ability": "Competitive"
+        },
+        {
+          "id": "set2",
+          "name": "대표 세트 2",
+          "weight": 0.3143427039100372,
+          "species": "Empoleon",
+          "item": "Leftovers",
+          "ability": "Competitive",
+          "level": 50,
+          "nature": "Modest",
+          "evs": {
+            "hp": 22,
+            "atk": 0,
+            "def": 22,
+            "spa": 0,
+            "spd": 22,
+            "spe": 0
+          },
+          "moves": [
+            "Ice Beam",
+            "Stealth Rock",
+            "Yawn",
+            "Roost"
+          ],
+          "mega": null,
+          "battle_ability": "Competitive"
+        },
+        {
+          "id": "set3",
+          "name": "대표 세트 3",
+          "weight": 0.21428840542665856,
+          "species": "Empoleon",
+          "item": "Air Balloon",
+          "ability": "Competitive",
+          "level": 50,
+          "nature": "Modest",
+          "evs": {
+            "hp": 32,
+            "atk": 0,
+            "def": 5,
+            "spa": 0,
+            "spd": 29,
+            "spe": 0
+          },
+          "moves": [
+            "Ice Beam",
+            "Stealth Rock",
+            "Yawn",
+            "Flash Cannon"
+          ],
+          "mega": null,
+          "battle_ability": "Competitive"
+        }
+      ],
+      "item_usage": [
+        {
+          "name": "Shuca Berry",
+          "usage": 0.35884871775649
+        },
+        {
+          "name": "Leftovers",
+          "usage": 0.23930615377585068
+        },
+        {
+          "name": "Air Balloon",
+          "usage": 0.16313575426929566
+        },
+        {
+          "name": "Red Card",
+          "usage": 0.1557147741133178
+        },
+        {
+          "name": "Sitrus Berry",
+          "usage": 0.06213986843692734
+        }
+      ],
+      "ability_usage": [
+        {
+          "name": "Competitive",
+          "usage": 0.9236630935259379
+        },
+        {
+          "name": "Torrent",
+          "usage": 0.07633690647406208
+        }
+      ],
+      "move_usage": [
+        {
+          "name": "Ice Beam",
+          "usage": 0.8369271280491581
+        },
+        {
+          "name": "Stealth Rock",
+          "usage": 0.7173407984814804
+        },
+        {
+          "name": "Yawn",
+          "usage": 0.6714223584939079
+        },
+        {
+          "name": "Surf",
+          "usage": 0.41902464302625536
+        },
+        {
+          "name": "Roost",
+          "usage": 0.3486460309174622
+        },
+        {
+          "name": "Flash Cannon",
+          "usage": 0.34648982971705083
+        },
+        {
+          "name": "Flip Turn",
+          "usage": 0.2853910112759403
+        },
+        {
+          "name": "Vacuum Wave",
+          "usage": 0.1815130472657489
+        }
+      ],
+      "rank": 105,
+      "base_name_ko": "엠페르트",
+      "species_rank": 67,
+      "species_usage": 0.0141512
+    },
+    {
+      "id": "venusaurmega",
+      "name": "Venusaur-Mega",
+      "name_ko": "메가이상해꽃",
+      "base_species": "venusaur",
+      "base_stats": {
+        "hp": 80,
+        "atk": 100,
+        "def": 123,
+        "spa": 122,
+        "spd": 120,
+        "spe": 80
+      },
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "mega": true,
+      "usage": 0.0074658,
+      "sets": [
+        {
+          "id": "set1",
+          "name": "대표 세트 1",
+          "weight": 0.5635366103300041,
+          "species": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Overgrow",
+          "level": 50,
+          "nature": "Modest",
+          "evs": {
+            "hp": 32,
+            "atk": 0,
+            "def": 2,
+            "spa": 32,
+            "spd": 0,
+            "spe": 0
+          },
+          "moves": [
+            "Earth Power",
+            "Giga Drain",
+            "Synthesis",
+            "Sludge Bomb"
+          ],
+          "mega": "Venusaur-Mega",
+          "battle_ability": "Thick Fat"
+        },
+        {
+          "id": "set2",
+          "name": "대표 세트 2",
+          "weight": 0.3062497323790756,
+          "species": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Overgrow",
+          "level": 50,
+          "nature": "Bold",
+          "evs": {
+            "hp": 32,
+            "atk": 0,
+            "def": 21,
+            "spa": 0,
+            "spd": 13,
+            "spe": 0
+          },
+          "moves": [
+            "Earth Power",
+            "Giga Drain",
+            "Synthesis",
+            "Leech Seed"
+          ],
+          "mega": "Venusaur-Mega",
+          "battle_ability": "Thick Fat"
+        },
+        {
+          "id": "set3",
+          "name": "대표 세트 3",
+          "weight": 0.1302136572909202,
+          "species": "Venusaur",
+          "item": "Venusaurite",
+          "ability": "Overgrow",
+          "level": 50,
+          "nature": "Bold",
+          "evs": {
+            "hp": 32,
+            "atk": 0,
+            "def": 32,
+            "spa": 0,
+            "spd": 2,
+            "spe": 0
+          },
+          "moves": [
+            "Earth Power",
+            "Giga Drain",
+            "Synthesis",
+            "Sludge Wave"
+          ],
+          "mega": "Venusaur-Mega",
+          "battle_ability": "Thick Fat"
+        }
+      ],
+      "item_usage": [
+        {
+          "name": "Venusaurite",
+          "usage": 1
+        }
+      ],
+      "ability_usage": [
+        {
+          "name": "Thick Fat",
+          "usage": 1
+        }
+      ],
+      "move_usage": [
+        {
+          "name": "Earth Power",
+          "usage": 0.9863641819250062
+        },
+        {
+          "name": "Giga Drain",
+          "usage": 0.95389745754588
+        },
+        {
+          "name": "Synthesis",
+          "usage": 0.875449254757416
+        },
+        {
+          "name": "Sludge Bomb",
+          "usage": 0.8440630977798763
+        },
+        {
+          "name": "Leech Seed",
+          "usage": 0.15023148200979855
+        },
+        {
+          "name": "Sludge Wave",
+          "usage": 0.13126184600187393
+        },
+        {
+          "name": "Toxic",
+          "usage": 0.025249312743310656
+        },
+        {
+          "name": "Energy Ball",
+          "usage": 0.016499072912131447
+        }
+      ],
+      "rank": 106,
+      "base_name_ko": "이상해꽃",
+      "species_rank": 68,
+      "species_usage": 0.014115800000000001
+    },
+    {
+      "id": "venusaur",
+      "name": "Venusaur",
+      "name_ko": "이상해꽃",
+      "base_species": "venusaur",
+      "base_stats": {
+        "hp": 80,
+        "atk": 82,
+        "def": 83,
+        "spa": 100,
+        "spd": 100,
+        "spe": 80
+      },
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "mega": false,
+      "usage": 0.0066500000000000005,
+      "sets": [
+        {
+          "id": "set1",
+          "name": "대표 세트 1",
+          "weight": 0.8530831651474338,
+          "species": "Venusaur",
+          "item": "Life Orb",
+          "ability": "Chlorophyll",
+          "level": 50,
+          "nature": "Modest",
+          "evs": {
+            "hp": 0,
+            "atk": 0,
+            "def": 0,
+            "spa": 32,
+            "spd": 2,
+            "spe": 32
+          },
+          "moves": [
+            "Sludge Wave",
+            "Weather Ball",
+            "Growth",
+            "Giga Drain"
+          ],
+          "mega": null,
+          "battle_ability": "Chlorophyll"
+        },
+        {
+          "id": "set2",
+          "name": "대표 세트 2",
+          "weight": 0.1200957768397734,
+          "species": "Venusaur",
+          "item": "Focus Sash",
+          "ability": "Chlorophyll",
+          "level": 50,
+          "nature": "Modest",
+          "evs": {
+            "hp": 2,
+            "atk": 0,
+            "def": 0,
+            "spa": 32,
+            "spd": 0,
+            "spe": 32
+          },
+          "moves": [
+            "Sludge Wave",
+            "Weather Ball",
+            "Growth",
+            "Earth Power"
+          ],
+          "mega": null,
+          "battle_ability": "Chlorophyll"
+        },
+        {
+          "id": "set3",
+          "name": "대표 세트 3",
+          "weight": 0.026821058012792887,
+          "species": "Venusaur",
+          "item": "Wide Lens",
+          "ability": "Chlorophyll",
+          "level": 50,
+          "nature": "Timid",
+          "evs": {
+            "hp": 2,
+            "atk": 0,
+            "def": 0,
+            "spa": 32,
+            "spd": 0,
+            "spe": 32
+          },
+          "moves": [
+            "Sludge Wave",
+            "Weather Ball",
+            "Growth",
+            "Energy Ball"
+          ],
+          "mega": null,
+          "battle_ability": "Chlorophyll"
+        }
+      ],
+      "item_usage": [
+        {
+          "name": "Life Orb",
+          "usage": 0.8328510902973157
+        },
+        {
+          "name": "Focus Sash",
+          "usage": 0.1172475354894879
+        },
+        {
+          "name": "Wide Lens",
+          "usage": 0.026184958655257915
+        },
+        {
+          "name": "Expert Belt",
+          "usage": 0.011889556224948673
+        },
+        {
+          "name": "Miracle Seed",
+          "usage": 0.0058931787035397505
+        }
+      ],
+      "ability_usage": [
+        {
+          "name": "Chlorophyll",
+          "usage": 0.990552901973876
+        },
+        {
+          "name": "Overgrow",
+          "usage": 0.009447098026123894
+        }
+      ],
+      "move_usage": [
+        {
+          "name": "Sludge Wave",
+          "usage": 0.9612245500630544
+        },
+        {
+          "name": "Weather Ball",
+          "usage": 0.7176235485940421
+        },
+        {
+          "name": "Growth",
+          "usage": 0.669003946453603
+        },
+        {
+          "name": "Giga Drain",
+          "usage": 0.5737755267850213
+        },
+        {
+          "name": "Earth Power",
+          "usage": 0.3176054132821234
+        },
+        {
+          "name": "Energy Ball",
+          "usage": 0.23493154285090223
+        },
+        {
+          "name": "Sleep Powder",
+          "usage": 0.22867371794951336
+        },
+        {
+          "name": "Leaf Storm",
+          "usage": 0.1211889709311181
+        }
+      ],
+      "rank": 107,
+      "base_name_ko": "이상해꽃",
+      "species_rank": 68,
+      "species_usage": 0.014115800000000001
+    },
+    {
+      "id": "goodrahisui",
+      "name": "Goodra-Hisui",
+      "name_ko": "미끄래곤 (히스이)",
+      "base_species": "goodra",
+      "base_stats": {
+        "hp": 80,
+        "atk": 100,
+        "def": 100,
+        "spa": 110,
+        "spd": 150,
+        "spe": 60
+      },
+      "types": [
+        "Steel",
+        "Dragon"
+      ],
+      "mega": false,
+      "usage": 0.013466899999999999,
+      "sets": [
+        {
+          "id": "set1",
+          "name": "대표 세트 1",
+          "weight": 0.7640830903741194,
+          "species": "Goodra-Hisui",
+          "item": "Leftovers",
+          "ability": "Gooey",
+          "level": 50,
+          "nature": "Sassy",
+          "evs": {
+            "hp": 32,
+            "atk": 0,
+            "def": 6,
+            "spa": 8,
+            "spd": 20,
+            "spe": 0
+          },
+          "moves": [
+            "Dragon Tail",
+            "Heavy Slam",
+            "Flamethrower",
+            "Draco Meteor"
+          ],
+          "mega": null,
+          "battle_ability": "Gooey"
+        },
+        {
+          "id": "set2",
+          "name": "대표 세트 2",
+          "weight": 0.13754744075774303,
+          "species": "Goodra-Hisui",
+          "item": "Sitrus Berry",
+          "ability": "Gooey",
+          "level": 50,
+          "nature": "Careful",
+          "evs": {
+            "hp": 32,
+            "atk": 0,
+            "def": 0,
+            "spa": 0,
+            "spd": 18,
+            "spe": 16
+          },
+          "moves": [
+            "Dragon Tail",
+            "Heavy Slam",
+            "Flamethrower",
+            "Body Press"
+          ],
+          "mega": null,
+          "battle_ability": "Gooey"
+        },
+        {
+          "id": "set3",
+          "name": "대표 세트 3",
+          "weight": 0.09836946886813765,
+          "species": "Goodra-Hisui",
+          "item": "Chople Berry",
+          "ability": "Gooey",
+          "level": 50,
+          "nature": "Impish",
+          "evs": {
+            "hp": 17,
+            "atk": 0,
+            "def": 32,
+            "spa": 0,
+            "spd": 17,
+            "spe": 0
+          },
+          "moves": [
+            "Dragon Tail",
+            "Heavy Slam",
+            "Flamethrower",
+            "Ice Beam"
+          ],
+          "mega": null,
+          "battle_ability": "Gooey"
+        }
+      ],
+      "item_usage": [
+        {
+          "name": "Leftovers",
+          "usage": 0.7383758952932424
+        },
+        {
+          "name": "Sitrus Berry",
+          "usage": 0.1329197256087226
+        },
+        {
+          "name": "Chople Berry",
+          "usage": 0.09505987707366764
+        },
+        {
+          "name": "Life Orb",
+          "usage": 0.010550168515146233
+        },
+        {
+          "name": "Expert Belt",
+          "usage": 0.009132847596624315
+        }
+      ],
+      "ability_usage": [
+        {
+          "name": "Gooey",
+          "usage": 0.7254729622400714
+        },
+        {
+          "name": "Shell Armor",
+          "usage": 0.15507203813692047
+        },
+        {
+          "name": "Sap Sipper",
+          "usage": 0.11945499962300817
+        }
+      ],
+      "move_usage": [
+        {
+          "name": "Dragon Tail",
+          "usage": 0.8570814662083708
+        },
+        {
+          "name": "Heavy Slam",
+          "usage": 0.8468185707782501
+        },
+        {
+          "name": "Flamethrower",
+          "usage": 0.7073498779911941
+        },
+        {
+          "name": "Draco Meteor",
+          "usage": 0.5961585520390004
+        },
+        {
+          "name": "Body Press",
+          "usage": 0.2066440009547169
+        },
+        {
+          "name": "Ice Beam",
+          "usage": 0.20427695159796802
+        },
+        {
+          "name": "Counter",
+          "usage": 0.20082434163495386
+        },
+        {
+          "name": "Thunderbolt",
+          "usage": 0.11329541673869765
+        }
+      ],
+      "rank": 108,
+      "base_name_ko": "미끄래곤",
+      "species_rank": 69,
+      "species_usage": 0.014025099999999999
+    },
+    {
+      "id": "goodra",
+      "name": "Goodra",
+      "name_ko": "미끄래곤",
+      "base_species": "goodra",
+      "base_stats": {
+        "hp": 90,
+        "atk": 100,
+        "def": 70,
+        "spa": 110,
+        "spd": 150,
+        "spe": 80
+      },
+      "types": [
+        "Dragon"
+      ],
+      "mega": false,
+      "usage": 0.0005582,
+      "sets": [
+        {
+          "id": "set1",
+          "name": "대표 세트 1",
+          "weight": 0.5092280015740397,
+          "species": "Goodra",
+          "item": "",
+          "ability": "Sap Sipper",
+          "level": 50,
+          "nature": "Hardy",
+          "evs": {
+            "hp": 32,
+            "atk": 0,
+            "def": 2,
+            "spa": 0,
+            "spd": 0,
+            "spe": 32
+          },
+          "moves": [
+            "Aqua Tail",
+            "Flamethrower",
+            "Draco Meteor",
+            "Thunderbolt"
+          ],
+          "mega": null,
+          "battle_ability": "Sap Sipper"
+        },
+        {
+          "id": "set2",
+          "name": "대표 세트 2",
+          "weight": 0.33743328424192676,
+          "species": "Goodra",
+          "item": "Leftovers",
+          "ability": "Sap Sipper",
+          "level": 50,
+          "nature": "Modest",
+          "evs": {
+            "hp": 32,
+            "atk": 0,
+            "def": 0,
+            "spa": 32,
+            "spd": 2,
+            "spe": 0
+          },
+          "moves": [
+            "Aqua Tail",
+            "Flamethrower",
+            "Draco Meteor",
+            "Ice Beam"
+          ],
+          "mega": null,
+          "battle_ability": "Sap Sipper"
+        },
+        {
+          "id": "set3",
+          "name": "대표 세트 3",
+          "weight": 0.15333871418403353,
+          "species": "Goodra",
+          "item": "Life Orb",
+          "ability": "Sap Sipper",
+          "level": 50,
+          "nature": "Hardy",
+          "evs": {
+            "hp": 32,
+            "atk": 0,
+            "def": 0,
+            "spa": 0,
+            "spd": 32,
+            "spe": 0
+          },
+          "moves": [
+            "Aqua Tail",
+            "Flamethrower",
+            "Draco Meteor",
+            "Dragon Pulse"
+          ],
+          "mega": null,
+          "battle_ability": "Sap Sipper"
+        }
+      ],
+      "item_usage": [
+        {
+          "name": "",
+          "usage": 0.5077261410396497
+        },
+        {
+          "name": "Leftovers",
+          "usage": 0.33643809597453755
+        },
+        {
+          "name": "Life Orb",
+          "usage": 0.15288647400376995
+        },
+        {
+          "name": "Choice Scarf",
+          "usage": 0.0013862251048784619
+        },
+        {
+          "name": "Shell Bell",
+          "usage": 0.0012252652217405768
+        }
+      ],
+      "ability_usage": [
+        {
+          "name": "Sap Sipper",
+          "usage": 0.7576806639503739
+        },
+        {
+          "name": "Gooey",
+          "usage": 0.2423192337273949
+        },
+        {
+          "name": "Hydration",
+          "usage": 1.0232223117666255e-7
+        }
+      ],
+      "move_usage": [
+        {
+          "name": "Aqua Tail",
+          "usage": 0.5077261410396497
+        },
+        {
+          "name": "Flamethrower",
+          "usage": 0.33615658539765675
+        },
+        {
+          "name": "Draco Meteor",
+          "usage": 0.251306375192502
+        },
+        {
+          "name": "Thunderbolt",
+          "usage": 0.2408123714448424
+        },
+        {
+          "name": "Ice Beam",
+          "usage": 0.24034640556021805
+        },
+        {
+          "name": "Dragon Pulse",
+          "usage": 0.24034558499607267
+        },
+        {
+          "name": "Fire Blast",
+          "usage": 0.15455417921957132
+        },
+        {
+          "name": "Giga Drain",
+          "usage": 0.15285738894906914
+        }
+      ],
+      "rank": 109,
+      "base_name_ko": "미끄래곤",
+      "species_rank": 69,
+      "species_usage": 0.014025099999999999
+    },
+    {
+      "id": "toxtricity",
+      "name": "Toxtricity",
+      "name_ko": "스트린더",
+      "base_species": "toxtricity",
+      "base_stats": {
+        "hp": 75,
+        "atk": 98,
+        "def": 70,
+        "spa": 114,
+        "spd": 70,
+        "spe": 75
+      },
+      "types": [
+        "Electric",
+        "Poison"
+      ],
+      "mega": false,
+      "usage": 0.0132625,
+      "sets": [
+        {
+          "id": "set1",
+          "name": "대표 세트 1",
+          "weight": 0.8412669908676991,
+          "species": "Toxtricity",
+          "item": "Life Orb",
+          "ability": "Punk Rock",
+          "level": 50,
+          "nature": "Modest",
+          "evs": {
+            "hp": 1,
+            "atk": 0,
+            "def": 0,
+            "spa": 32,
+            "spd": 1,
+            "spe": 32
+          },
+          "moves": [
+            "Boomburst",
+            "Overdrive",
+            "Shift Gear",
+            "Sludge Wave"
+          ],
+          "mega": null,
+          "battle_ability": "Punk Rock"
+        },
+        {
+          "id": "set2",
+          "name": "대표 세트 2",
+          "weight": 0.1284008109993567,
+          "species": "Toxtricity",
+          "item": "Air Balloon",
+          "ability": "Punk Rock",
+          "level": 50,
+          "nature": "Timid",
+          "evs": {
+            "hp": 0,
+            "atk": 0,
+            "def": 0,
+            "spa": 32,
+            "spd": 0,
+            "spe": 32
+          },
+          "moves": [
+            "Boomburst",
+            "Overdrive",
+            "Shift Gear",
+            "Volt Switch"
+          ],
+          "mega": null,
+          "battle_ability": "Punk Rock"
+        },
+        {
+          "id": "set3",
+          "name": "대표 세트 3",
+          "weight": 0.03033219813294424,
+          "species": "Toxtricity",
+          "item": "Choice Scarf",
+          "ability": "Punk Rock",
+          "level": 50,
+          "nature": "Modest",
+          "evs": {
+            "hp": 16,
+            "atk": 0,
+            "def": 0,
+            "spa": 32,
+            "spd": 0,
+            "spe": 18
+          },
+          "moves": [
+            "Boomburst",
+            "Overdrive",
+            "Sludge Wave",
+            "Volt Switch"
+          ],
+          "mega": null,
+          "battle_ability": "Punk Rock"
+        }
+      ],
+      "item_usage": [
+        {
+          "name": "Life Orb",
+          "usage": 0.8354012873598686
+        },
+        {
+          "name": "Air Balloon",
+          "usage": 0.12750554101293973
+        },
+        {
+          "name": "Choice Scarf",
+          "usage": 0.030120707984251843
+        },
+        {
+          "name": "Leftovers",
+          "usage": 0.002811709437534948
+        },
+        {
+          "name": "",
+          "usage": 0.0018559874132659047
+        }
+      ],
+      "ability_usage": [
+        {
+          "name": "Punk Rock",
+          "usage": 0.9998457761379058
+        },
+        {
+          "name": "Technician",
+          "usage": 0.00015422386209416986
+        }
+      ],
+      "move_usage": [
+        {
+          "name": "Boomburst",
+          "usage": 0.9971452432497288
+        },
+        {
+          "name": "Overdrive",
+          "usage": 0.9962752245441268
+        },
+        {
+          "name": "Shift Gear",
+          "usage": 0.8605981078646228
+        },
+        {
+          "name": "Sludge Wave",
+          "usage": 0.6559608241416329
+        },
+        {
+          "name": "Volt Switch",
+          "usage": 0.3176819422109491
+        },
+        {
+          "name": "Taunt",
+          "usage": 0.07402901335979038
+        },
+        {
+          "name": "Sludge Bomb",
+          "usage": 0.04190170444453683
+        },
+        {
+          "name": "Toxic Spikes",
+          "usage": 0.015472419286817191
+        }
+      ],
+      "rank": 110,
+      "base_name_ko": "스트린더",
+      "species_rank": 70,
+      "species_usage": 0.0132625
+    },
+    {
+      "id": "pyroarmega",
+      "name": "Pyroar-Mega",
+      "name_ko": "메가화염레오",
+      "base_species": "pyroar",
+      "base_stats": {
+        "hp": 86,
+        "atk": 88,
+        "def": 92,
+        "spa": 129,
+        "spd": 86,
+        "spe": 126
+      },
+      "types": [
+        "Fire",
+        "Normal"
+      ],
+      "mega": true,
+      "usage": 0.0131063,
+      "sets": [
+        {
+          "id": "set1",
+          "name": "대표 세트 1",
+          "weight": 0.49396874435913024,
+          "species": "Pyroar",
+          "item": "Pyroarite",
+          "ability": "Rivalry",
+          "level": 50,
+          "nature": "Timid",
+          "evs": {
+            "hp": 2,
+            "atk": 0,
+            "def": 0,
+            "spa": 32,
+            "spd": 0,
+            "spe": 32
+          },
+          "moves": [
+            "Flamethrower",
+            "Overheat",
+            "Hyper Voice",
+            "Hyper Beam"
+          ],
+          "mega": "Pyroar-Mega",
+          "battle_ability": "Fire Mane"
+        },
+        {
+          "id": "set2",
+          "name": "대표 세트 2",
+          "weight": 0.3151760876761535,
+          "species": "Pyroar",
+          "item": "Pyroarite",
+          "ability": "Rivalry",
+          "level": 50,
+          "nature": "Timid",
+          "evs": {
+            "hp": 0,
+            "atk": 0,
+            "def": 0,
+            "spa": 32,
+            "spd": 2,
+            "spe": 32
+          },
+          "moves": [
+            "Flamethrower",
+            "Overheat",
+            "Hyper Voice",
+            "Solar Beam"
+          ],
+          "mega": "Pyroar-Mega",
+          "battle_ability": "Fire Mane"
+        },
+        {
+          "id": "set3",
+          "name": "대표 세트 3",
+          "weight": 0.1908551679647163,
+          "species": "Pyroar",
+          "item": "Pyroarite",
+          "ability": "Rivalry",
+          "level": 50,
+          "nature": "Modest",
+          "evs": {
+            "hp": 30,
+            "atk": 0,
+            "def": 4,
+            "spa": 32,
+            "spd": 0,
+            "spe": 0
+          },
+          "moves": [
+            "Flamethrower",
+            "Overheat",
+            "Hyper Voice",
+            "Yawn"
+          ],
+          "mega": "Pyroar-Mega",
+          "battle_ability": "Fire Mane"
+        }
+      ],
+      "item_usage": [
+        {
+          "name": "Pyroarite",
+          "usage": 1
+        }
+      ],
+      "ability_usage": [
+        {
+          "name": "Fire Mane",
+          "usage": 1
+        }
+      ],
+      "move_usage": [
+        {
+          "name": "Flamethrower",
+          "usage": 0.9793595085663007
+        },
+        {
+          "name": "Overheat",
+          "usage": 0.9345932317800563
+        },
+        {
+          "name": "Hyper Voice",
+          "usage": 0.6400430644038773
+        },
+        {
+          "name": "Hyper Beam",
+          "usage": 0.3227070187097297
+        },
+        {
+          "name": "Solar Beam",
+          "usage": 0.32000227803231596
+        },
+        {
+          "name": "Yawn",
+          "usage": 0.3125500776231009
+        },
+        {
+          "name": "Scorching Sands",
+          "usage": 0.20656915983529767
+        },
+        {
+          "name": "Protect",
+          "usage": 0.12369898639980277
+        }
+      ],
+      "rank": 111,
+      "base_name_ko": "화염레오",
+      "species_rank": 71,
+      "species_usage": 0.0131063
+    },
+    {
+      "id": "staraptormega",
+      "name": "Staraptor-Mega",
+      "name_ko": "메가찌르호크",
+      "base_species": "staraptor",
+      "base_stats": {
+        "hp": 85,
+        "atk": 140,
+        "def": 100,
+        "spa": 60,
+        "spd": 90,
+        "spe": 110
+      },
+      "types": [
+        "Fighting",
+        "Flying"
+      ],
+      "mega": true,
+      "usage": 0.0083789,
+      "sets": [
+        {
+          "id": "set1",
+          "name": "대표 세트 1",
+          "weight": 0.4430447102902754,
+          "species": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "level": 50,
+          "nature": "Jolly",
+          "evs": {
+            "hp": 31,
+            "atk": 3,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 32
+          },
+          "moves": [
+            "Close Combat",
+            "Brave Bird",
+            "Blaze Kick",
+            "Roost"
+          ],
+          "mega": "Staraptor-Mega",
+          "battle_ability": "Contrary"
+        },
+        {
+          "id": "set2",
+          "name": "대표 세트 2",
+          "weight": 0.3520682051970075,
+          "species": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "level": 50,
+          "nature": "Jolly",
+          "evs": {
+            "hp": 2,
+            "atk": 32,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 32
+          },
+          "moves": [
+            "Close Combat",
+            "Brave Bird",
+            "Blaze Kick",
+            "Bulk Up"
+          ],
+          "mega": "Staraptor-Mega",
+          "battle_ability": "Contrary"
+        },
+        {
+          "id": "set3",
+          "name": "대표 세트 3",
+          "weight": 0.20488708451271714,
+          "species": "Staraptor",
+          "item": "Staraptite",
+          "ability": "Intimidate",
+          "level": 50,
+          "nature": "Jolly",
+          "evs": {
+            "hp": 27,
+            "atk": 7,
+            "def": 0,
+            "spa": 0,
+            "spd": 0,
+            "spe": 32
+          },
+          "moves": [
+            "Close Combat",
+            "Brave Bird",
+            "Blaze Kick",
+            "Final Gambit"
+          ],
+          "mega": "Staraptor-Mega",
+          "battle_ability": "Contrary"
+        }
+      ],
+      "item_usage": [
+        {
+          "name": "Staraptite",
+          "usage": 1
+        }
+      ],
+      "ability_usage": [
+        {
+          "name": "Contrary",
+          "usage": 1
+        }
+      ],
+      "move_usage": [
+        {
+          "name": "Close Combat",
+          "usage": 1
+        },
+        {
+          "name": "Brave Bird",
+          "usage": 0.9294695984438964
+        },
+        {
+          "name": "Blaze Kick",
+          "usage": 0.8045557928432618
+        },
+        {
+          "name": "Roost",
+          "usage": 0.7715445341240244
+        },
+        {
+          "name": "Bulk Up",
+          "usage": 0.1229211566130367
+        },
+        {
+          "name": "Final Gambit",
+          "usage": 0.10090768467094251
+        },
+        {
+          "name": "Quick Attack",
+          "usage": 0.05539568038506278
+        },
+        {
+          "name": "U-turn",
+          "usage": 0.05383131855519441
+        }
+      ],
+      "rank": 112,
+      "base_name_ko": "찌르호크",
+      "species_rank": 72,
+      "species_usage": 0.0116606
+    },
+    {
+      "id": "staraptor",
+      "name": "Staraptor",
+      "name_ko": "찌르호크",
+      "base_species": "staraptor",
+      "base_stats": {
+        "hp": 85,
+        "atk": 120,
+        "def": 70,
+        "spa": 50,
+        "spd": 60,
+        "spe": 100
+      },
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "mega": false,
+      "usage": 0.0032817000000000002,
+      "sets": [
+        {
+          "id": "set1",
+          "name": "대표 세트 1",
+          "weight": 0.9887591707728256,
+          "species": "Staraptor",
+          "item": "Choice Scarf",
+          "ability": "Reckless",
+          "level": 50,
+          "nature": "Jolly",
+          "evs": {
+            "hp": 0,
+            "atk": 32,
+            "def": 2,
+            "spa": 0,
+            "spd": 0,
+            "spe": 32
+          },
+          "moves": [
+            "Brave Bird",
+            "Close Combat",
+            "Double-Edge",
+            "Final Gambit"
+          ],
+          "mega": null,
+          "battle_ability": "Reckless"
+        },
+        {
+          "id": "set2",
+          "name": "대표 세트 2",
+          "weight": 0.01124082922717437,
+          "species": "Staraptor",
+          "item": "Life Orb",
+          "ability": "Reckless",
+          "level": 50,
+          "nature": "Jolly",
+          "evs": {
+            "hp": 1,
+            "atk": 32,
+            "def": 0,
+            "spa": 0,
+            "spd": 1,
+            "spe": 32
+          },
+          "moves": [
+            "Brave Bird",
+            "Close Combat",
+            "Double-Edge",
+            "U-turn"
+          ],
+          "mega": null,
+          "battle_ability": "Reckless"
+        }
+      ],
+      "item_usage": [
+        {
+          "name": "Choice Scarf",
+          "usage": 0.9867769632861799
+        },
+        {
+          "name": "Life Orb",
+          "usage": 0.011218294259602038
+        },
+        {
+          "name": "Quick Claw",
+          "usage": 0.0019711728945426056
+        },
+        {
+          "name": "",
+          "usage": 0.000033569559676135626
+        }
+      ],
+      "ability_usage": [
+        {
+          "name": "Reckless",
+          "usage": 0.8108533255940344
+        },
+        {
+          "name": "Intimidate",
+          "usage": 0.18914667440596564
+        }
+      ],
+      "move_usage": [
+        {
+          "name": "Brave Bird",
+          "usage": 0.9967802468340038
+        },
+        {
+          "name": "Close Combat",
+          "usage": 0.9739741454041857
+        },
+        {
+          "name": "Double-Edge",
+          "usage": 0.6903710254065414
+        },
+        {
+          "name": "Final Gambit",
+          "usage": 0.6686855627536281
+        },
+        {
+          "name": "U-turn",
+          "usage": 0.5114598084778076
+        },
+        {
+          "name": "Blaze Kick",
+          "usage": 0.10111664935930993
+        },
+        {
+          "name": "Quick Attack",
+          "usage": 0.03372965727387341
+        },
+        {
+          "name": "Roost",
+          "usage": 0.011637458863115166
+        }
+      ],
+      "rank": 113,
+      "base_name_ko": "찌르호크",
+      "species_rank": 72,
+      "species_usage": 0.0116606
+    }
+  ],
+  "move_data": {
+    "Slack Off": {
+      "type": "Normal",
+      "category": "Status",
+      "base_power": 0,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Soak": {
+      "type": "Water",
+      "category": "Status",
+      "base_power": 0,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Toxic": {
+      "type": "Poison",
+      "category": "Status",
+      "base_power": 0,
+      "priority": 0,
+      "accuracy": 90
+    },
+    "Volt Switch": {
+      "type": "Electric",
+      "category": "Special",
+      "base_power": 70,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Parabolic Charge": {
+      "type": "Electric",
+      "category": "Special",
+      "base_power": 65,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Acid Spray": {
+      "type": "Poison",
+      "category": "Special",
+      "base_power": 40,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Thunderbolt": {
+      "type": "Electric",
+      "category": "Special",
+      "base_power": 90,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Thunder": {
+      "type": "Electric",
+      "category": "Special",
+      "base_power": 110,
+      "priority": 0,
+      "accuracy": 70
+    },
+    "Ice Shard": {
+      "type": "Ice",
+      "category": "Physical",
+      "base_power": 40,
+      "priority": 1,
+      "accuracy": 100
+    },
+    "Blizzard": {
+      "type": "Ice",
+      "category": "Special",
+      "base_power": 110,
+      "priority": 0,
+      "accuracy": 70
+    },
+    "Freeze-Dry": {
+      "type": "Ice",
+      "category": "Special",
+      "base_power": 70,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Aurora Veil": {
+      "type": "Ice",
+      "category": "Status",
+      "base_power": 0,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Sheer Cold": {
+      "type": "Ice",
+      "category": "Special",
+      "base_power": 0,
+      "priority": 0,
+      "accuracy": 30
+    },
+    "Mirror Coat": {
+      "type": "Psychic",
+      "category": "Special",
+      "base_power": 0,
+      "priority": -5,
+      "accuracy": 100
+    },
+    "Taunt": {
+      "type": "Dark",
+      "category": "Status",
+      "base_power": 0,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Acid Armor": {
+      "type": "Poison",
+      "category": "Status",
+      "base_power": 0,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Earthquake": {
+      "type": "Ground",
+      "category": "Physical",
+      "base_power": 100,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Ice Punch": {
+      "type": "Ice",
+      "category": "Physical",
+      "base_power": 75,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Yawn": {
+      "type": "Normal",
+      "category": "Status",
+      "base_power": 0,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Thunder Punch": {
+      "type": "Electric",
+      "category": "Physical",
+      "base_power": 75,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Self-Destruct": {
+      "type": "Normal",
+      "category": "Physical",
+      "base_power": 200,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Rest": {
+      "type": "Psychic",
+      "category": "Status",
+      "base_power": 0,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Fissure": {
+      "type": "Ground",
+      "category": "Physical",
+      "base_power": 0,
+      "priority": 0,
+      "accuracy": 30
+    },
+    "Smack Down": {
+      "type": "Rock",
+      "category": "Physical",
+      "base_power": 50,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Flip Turn": {
+      "type": "Water",
+      "category": "Physical",
+      "base_power": 60,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Sludge Bomb": {
+      "type": "Poison",
+      "category": "Special",
+      "base_power": 90,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Haze": {
+      "type": "Ice",
+      "category": "Status",
+      "base_power": 0,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Draco Meteor": {
+      "type": "Dragon",
+      "category": "Special",
+      "base_power": 130,
+      "priority": 0,
+      "accuracy": 90
+    },
+    "Shadow Ball": {
+      "type": "Ghost",
+      "category": "Special",
+      "base_power": 80,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Sludge Wave": {
+      "type": "Poison",
+      "category": "Special",
+      "base_power": 95,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Focus Blast": {
+      "type": "Fighting",
+      "category": "Special",
+      "base_power": 120,
+      "priority": 0,
+      "accuracy": 70
+    },
+    "Surf": {
+      "type": "Water",
+      "category": "Special",
+      "base_power": 90,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Scald": {
+      "type": "Water",
+      "category": "Special",
+      "base_power": 80,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Flare Blitz": {
+      "type": "Fire",
+      "category": "Physical",
+      "base_power": 120,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Head Smash": {
+      "type": "Rock",
+      "category": "Physical",
+      "base_power": 150,
+      "priority": 0,
+      "accuracy": 80
+    },
+    "Extreme Speed": {
+      "type": "Normal",
+      "category": "Physical",
+      "base_power": 80,
+      "priority": 2,
+      "accuracy": 100
+    },
+    "Stealth Rock": {
+      "type": "Rock",
+      "category": "Status",
+      "base_power": 0,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Wild Charge": {
+      "type": "Electric",
+      "category": "Physical",
+      "base_power": 90,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Close Combat": {
+      "type": "Fighting",
+      "category": "Physical",
+      "base_power": 120,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Protect": {
+      "type": "Normal",
+      "category": "Status",
+      "base_power": 0,
+      "priority": 4,
+      "accuracy": 100
+    },
+    "Outrage": {
+      "type": "Dragon",
+      "category": "Physical",
+      "base_power": 120,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Will-O-Wisp": {
+      "type": "Fire",
+      "category": "Status",
+      "base_power": 0,
+      "priority": 0,
+      "accuracy": 85
+    },
+    "Morning Sun": {
+      "type": "Normal",
+      "category": "Status",
+      "base_power": 0,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Dragon Pulse": {
+      "type": "Dragon",
+      "category": "Special",
+      "base_power": 85,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Flamethrower": {
+      "type": "Fire",
+      "category": "Special",
+      "base_power": 90,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Roar": {
+      "type": "Normal",
+      "category": "Status",
+      "base_power": 0,
+      "priority": -6,
+      "accuracy": 100
+    },
+    "Leech Seed": {
+      "type": "Grass",
+      "category": "Status",
+      "base_power": 0,
+      "priority": 0,
+      "accuracy": 90
+    },
+    "Substitute": {
+      "type": "Normal",
+      "category": "Status",
+      "base_power": 0,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Leaf Storm": {
+      "type": "Grass",
+      "category": "Special",
+      "base_power": 130,
+      "priority": 0,
+      "accuracy": 90
+    },
+    "Giga Drain": {
+      "type": "Grass",
+      "category": "Special",
+      "base_power": 75,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Overheat": {
+      "type": "Fire",
+      "category": "Special",
+      "base_power": 130,
+      "priority": 0,
+      "accuracy": 90
+    },
+    "Super Fang": {
+      "type": "Normal",
+      "category": "Physical",
+      "base_power": 0,
+      "priority": 0,
+      "accuracy": 90
+    },
+    "Fire Blast": {
+      "type": "Fire",
+      "category": "Special",
+      "base_power": 110,
+      "priority": 0,
+      "accuracy": 85
+    },
+    "Ice Beam": {
+      "type": "Ice",
+      "category": "Special",
+      "base_power": 90,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Roost": {
+      "type": "Flying",
+      "category": "Status",
+      "base_power": 0,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Flash Cannon": {
+      "type": "Steel",
+      "category": "Special",
+      "base_power": 80,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Vacuum Wave": {
+      "type": "Fighting",
+      "category": "Special",
+      "base_power": 40,
+      "priority": 1,
+      "accuracy": 100
+    },
+    "Earth Power": {
+      "type": "Ground",
+      "category": "Special",
+      "base_power": 90,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Synthesis": {
+      "type": "Grass",
+      "category": "Status",
+      "base_power": 0,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Energy Ball": {
+      "type": "Grass",
+      "category": "Special",
+      "base_power": 90,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Weather Ball": {
+      "type": "Normal",
+      "category": "Special",
+      "base_power": 50,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Growth": {
+      "type": "Grass",
+      "category": "Status",
+      "base_power": 0,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Sleep Powder": {
+      "type": "Grass",
+      "category": "Status",
+      "base_power": 0,
+      "priority": 0,
+      "accuracy": 75
+    },
+    "Dragon Tail": {
+      "type": "Dragon",
+      "category": "Physical",
+      "base_power": 60,
+      "priority": -6,
+      "accuracy": 90
+    },
+    "Heavy Slam": {
+      "type": "Steel",
+      "category": "Physical",
+      "base_power": 0,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Body Press": {
+      "type": "Fighting",
+      "category": "Physical",
+      "base_power": 80,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Counter": {
+      "type": "Fighting",
+      "category": "Physical",
+      "base_power": 0,
+      "priority": -5,
+      "accuracy": 100
+    },
+    "Aqua Tail": {
+      "type": "Water",
+      "category": "Physical",
+      "base_power": 90,
+      "priority": 0,
+      "accuracy": 90
+    },
+    "Boomburst": {
+      "type": "Normal",
+      "category": "Special",
+      "base_power": 140,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Overdrive": {
+      "type": "Electric",
+      "category": "Special",
+      "base_power": 80,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Shift Gear": {
+      "type": "Steel",
+      "category": "Status",
+      "base_power": 0,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Toxic Spikes": {
+      "type": "Poison",
+      "category": "Status",
+      "base_power": 0,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Hyper Voice": {
+      "type": "Normal",
+      "category": "Special",
+      "base_power": 90,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Hyper Beam": {
+      "type": "Normal",
+      "category": "Special",
+      "base_power": 150,
+      "priority": 0,
+      "accuracy": 90
+    },
+    "Solar Beam": {
+      "type": "Grass",
+      "category": "Special",
+      "base_power": 120,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Scorching Sands": {
+      "type": "Ground",
+      "category": "Special",
+      "base_power": 70,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Brave Bird": {
+      "type": "Flying",
+      "category": "Physical",
+      "base_power": 120,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Blaze Kick": {
+      "type": "Fire",
+      "category": "Physical",
+      "base_power": 85,
+      "priority": 0,
+      "accuracy": 90
+    },
+    "Bulk Up": {
+      "type": "Fighting",
+      "category": "Status",
+      "base_power": 0,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Final Gambit": {
+      "type": "Fighting",
+      "category": "Special",
+      "base_power": 0,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Quick Attack": {
+      "type": "Normal",
+      "category": "Physical",
+      "base_power": 40,
+      "priority": 1,
+      "accuracy": 100
+    },
+    "U-turn": {
+      "type": "Bug",
+      "category": "Physical",
+      "base_power": 70,
+      "priority": 0,
+      "accuracy": 100
+    },
+    "Double-Edge": {
+      "type": "Normal",
+      "category": "Physical",
+      "base_power": 120,
+      "priority": 0,
+      "accuracy": 100
+    }
+  },
+  "move_names_ko": {
+    "slackoff": "게으름피우기",
+    "soak": "물붓기",
+    "toxic": "맹독",
+    "voltswitch": "볼트체인지",
+    "paraboliccharge": "파라볼라차지",
+    "acidspray": "애시드봄",
+    "thunderbolt": "10만볼트",
+    "thunder": "번개",
+    "iceshard": "얼음뭉치",
+    "blizzard": "눈보라",
+    "freezedry": "프리즈드라이",
+    "auroraveil": "오로라베일",
+    "sheercold": "절대영도",
+    "mirrorcoat": "미러코트",
+    "taunt": "도발",
+    "acidarmor": "녹기",
+    "earthquake": "지진",
+    "icepunch": "냉동펀치",
+    "yawn": "하품",
+    "thunderpunch": "번개펀치",
+    "selfdestruct": "자폭",
+    "rest": "잠자기",
+    "fissure": "땅가르기",
+    "smackdown": "떨어뜨리기",
+    "flipturn": "퀵턴",
+    "sludgebomb": "오물폭탄",
+    "haze": "흑안개",
+    "dracometeor": "용성군",
+    "shadowball": "섀도볼",
+    "sludgewave": "오물웨이브",
+    "focusblast": "기합구슬",
+    "surf": "파도타기",
+    "scald": "열탕",
+    "flareblitz": "플레어드라이브",
+    "headsmash": "양날박치기",
+    "extremespeed": "신속",
+    "stealthrock": "스텔스록",
+    "wildcharge": "와일드볼트",
+    "closecombat": "인파이트",
+    "protect": "방어",
+    "outrage": "역린",
+    "willowisp": "도깨비불",
+    "morningsun": "아침햇살",
+    "dragonpulse": "용의파동",
+    "flamethrower": "화염방사",
+    "roar": "울부짖기",
+    "leechseed": "씨뿌리기",
+    "substitute": "대타출동",
+    "leafstorm": "리프스톰",
+    "gigadrain": "기가드레인",
+    "overheat": "오버히트",
+    "superfang": "분노의앞니",
+    "fireblast": "불대문자",
+    "icebeam": "냉동빔",
+    "roost": "날개쉬기",
+    "flashcannon": "러스터캐논",
+    "vacuumwave": "진공파",
+    "earthpower": "대지의힘",
+    "synthesis": "광합성",
+    "energyball": "에너지볼",
+    "weatherball": "웨더볼",
+    "growth": "성장",
+    "sleeppowder": "수면가루",
+    "dragontail": "드래곤테일",
+    "heavyslam": "헤비봄버",
+    "bodypress": "바디프레스",
+    "counter": "카운터",
+    "aquatail": "아쿠아테일",
+    "boomburst": "폭음파",
+    "overdrive": "오버드라이브",
+    "shiftgear": "기어체인지",
+    "toxicspikes": "독압정",
+    "hypervoice": "하이퍼보이스",
+    "hyperbeam": "파괴광선",
+    "solarbeam": "솔라빔",
+    "scorchingsands": "열사의대지",
+    "bravebird": "브레이브버드",
+    "blazekick": "블레이즈킥",
+    "bulkup": "벌크업",
+    "finalgambit": "목숨걸기",
+    "quickattack": "전광석화",
+    "uturn": "유턴",
+    "doubleedge": "이판사판태클"
+  },
+  "item_names_ko": {
+    "leftovers": "먹다남은음식",
+    "redcard": "레드카드",
+    "shucaberry": "슈캐열매",
+    "sitrusberry": "자뭉열매",
+    "magnet": "자석",
+    "nevermeltice": "녹지않는얼음",
+    "lightclay": "빛의점토",
+    "focussash": "기합의띠",
+    "choicescarf": "구애스카프",
+    "chopleberry": "로플열매",
+    "normalgem": "노말주얼",
+    "chestoberry": "유루열매",
+    "lifeorb": "생명의구슬",
+    "dragalgite": "드래캄나이트",
+    "whiteherb": "하양허브",
+    "wiseglasses": "박식안경",
+    "expertbelt": "달인의띠",
+    "airballoon": "풍선",
+    "hardstone": "딱딱한돌",
+    "rockyhelmet": "울퉁불퉁멧",
+    "charcoal": "목탄",
+    "shellbell": "조개껍질방울",
+    "brightpowder": "반짝가루",
+    "bigroot": "큰뿌리",
+    "scovillainite": "스코빌런나이트",
+    "venusaurite": "이상해꽃나이트",
+    "widelens": "광각렌즈",
+    "miracleseed": "기적의씨",
+    "pyroarite": "화염레오나이트",
+    "staraptite": "찌르호크나이트",
+    "quickclaw": "선제공격손톱"
+  },
+  "ability_names_ko": {
+    "electromorphosis": "전기로바꾸기",
+    "static": "정전기",
+    "snowwarning": "눈퍼뜨리기",
+    "weakarmor": "깨어진갑옷",
+    "icebody": "아이스바디",
+    "thickfat": "두꺼운지방",
+    "immunity": "면역",
+    "gluttony": "먹보",
+    "poisonpoint": "독가시",
+    "regenerator": "재생력",
+    "adaptability": "적응력",
+    "rockhead": "돌머리",
+    "flashfire": "타오르는불꽃",
+    "intimidate": "위협",
+    "moody": "변덕쟁이",
+    "chlorophyll": "엽록소",
+    "spicyspray": "하바네로분출",
+    "competitive": "승기",
+    "torrent": "급류",
+    "overgrow": "심록",
+    "gooey": "미끈미끈",
+    "shellarmor": "조가비갑옷",
+    "sapsipper": "초식",
+    "hydration": "촉촉바디",
+    "punkrock": "펑크록",
+    "technician": "테크니션",
+    "rivalry": "투쟁심",
+    "firemane": "불꽃의갈기",
+    "contrary": "심술꾸러기",
+    "reckless": "이판사판"
+  }
+}

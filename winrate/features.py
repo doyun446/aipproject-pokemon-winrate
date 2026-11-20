@@ -270,8 +270,13 @@ class Encoder:
         own_fraction = self._damage_fraction(own_best, foe)
         foe_fraction = self._damage_fraction(foe_best, own)
         return [
-            own_best, foe_best, speed_delta / 150, own_fraction, foe_fraction,
-            self._ko_turns(own_fraction), self._ko_turns(foe_fraction),
+            own_best,
+            foe_best,
+            speed_delta / 150,
+            own_fraction,
+            foe_fraction,
+            self._ko_turns(own_fraction),
+            self._ko_turns(foe_fraction),
         ]
 
     def damage_rule_logit(self, scenario):
@@ -304,10 +309,12 @@ class Encoder:
 
         slots = [*own, *([None] * (3 - len(own))), *foe, *([None] * (3 - len(foe)))]
         mon_ids = [
-            self.catalog.pokemon_ids[slot["pokemon"]] if slot else 0 for slot in slots
+            self.catalog.pokemon_ids.get(slot["pokemon"], 0) if slot else 0
+            for slot in slots
         ]
         set_ids = [
-            self.catalog.set_ids[self._key(slot)] if slot else 0 for slot in slots
+            self.catalog.set_ids.get(self._key(slot), 0) if slot else 0
+            for slot in slots
         ]
         slot_features = [value for slot in slots for value in self._slot(slot)]
         pairs = [

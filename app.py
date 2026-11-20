@@ -12,7 +12,10 @@ from winrate import Predictor
 
 ROOT = Path(__file__).resolve().parent
 CATALOG = ROOT / "data" / "catalog.json"
+FALLBACK_CATALOG = ROOT / "data" / "fallback_catalog.json"
 CHECKPOINT = ROOT / "model" / "model.pt"
+UNSEEN_CHECKPOINT = ROOT / "model" / "unseen.pt"
+UNSEEN_METRICS = ROOT / "model" / "unseen_metrics.json"
 METRICS = ROOT / "model" / "metrics.json"
 HOLDOUT = ROOT / "model" / "holdout.json"
 DEMO_CASES = ROOT / "model" / "demo_cases.json"
@@ -58,8 +61,27 @@ def load_json(path):
 
 
 @st.cache_resource
-def load_predictor(model_path, catalog_path, model_modified_at, catalog_modified_at):
+def load_predictor(
+    model_path, catalog_path, model_modified_at, catalog_modified_at,
+    fallback_path=None, fallback_modified_at=None,
+):
+    if fallback_path is not None:
+        return Predictor.load(model_path, catalog_path, fallback_path)
     return Predictor.load(model_path, catalog_path)
+
+
+def expanded_catalog(catalog, fallback):
+    core_species = {base_species(row) for row in catalog["pokemon"]}
+    unknown = [
+        {**row, "outside_training": True}
+        for row in fallback["pokemon"]
+        if base_species(row) not in core_species
+    ]
+    combined = {**catalog, "pokemon": [*catalog["pokemon"], *unknown]}
+    for kind in ("move", "item", "ability"):
+        key = f"{kind}_names_ko"
+        combined[key] = {**fallback.get(key, {}), **catalog.get(key, {})}
+    return combined
 
 
 def esc(value):
@@ -111,7 +133,8 @@ def select_pokemon(label, entries, options, initial, key):
 
     def species_label(species):
         first = entries[groups[species][0]]
-        return first.get("base_name_ko") or pokemon_name(entries.get(species, first))
+        name = first.get("base_name_ko") or pokemon_name(entries.get(species, first))
+        return f"{name} · 학습 밖" if first.get("outside_training") else name
 
     species = select_option(
         label, list(groups), base_species(entries[initial]), species_label, key,
@@ -275,6 +298,8 @@ def type_badges(types):
 def fighter_card(state, entry, side, label):
     hp = int(state["hp"])
     notes = [STATUS[state["status"]]]
+    if entry.get("outside_training"):
+        notes.append("학습 밖")
     for key, text in (("attack", "공격"), ("speed", "스피드")):
         if state[key]:
             notes.append(f"{text} {state[key]:+d}")
@@ -477,6 +502,46 @@ def evaluation():
                 )
 
 
+def unseen_evaluation(catalog):
+    if not UNSEEN_METRICS.is_file():
+        return
+    report = load_json(UNSEEN_METRICS)
+    data = report["data"]
+    names = {
+        base_species(row): row.get("base_name_ko") or pokemon_name(row)
+        for row in catalog["pokemon"]
+    }
+    heldout = ", ".join(names.get(key, key) for key in data["holdout_base_species"])
+    model_names = {
+        "masked_mlp": "미학습 슬롯을 학습한 MLP",
+        "plain_mlp": "기본 MLP",
+        "logistic": "로지스틱 회귀",
+    }
+    with st.expander("처음 보는 포켓몬 검증"):
+        st.write(
+            f"**{heldout}**의 모든 형태를 학습과 확률 보정에서 제외하고 1:1 대면을 평가했어요."
+        )
+        rows = [
+            {
+                "모델": name, "평가 표본": score["n"],
+                "Brier 점수": round(score["brier"], 4),
+                "로그 손실": round(score["log_loss"], 4),
+            }
+            for key, name in model_names.items()
+            for score in [report["unseen"].get(key)]
+            if score and score["n"]
+        ]
+        if rows:
+            st.dataframe(pd.DataFrame(rows), hide_index=True, width="stretch")
+        one = data.get("unseen_trials_by_slots", {}).get("one", 0)
+        two = data.get("unseen_trials_by_slots", {}).get("two", 0)
+        if one or two:
+            st.caption(f"미학습 포켓몬 1마리 대면 {one:,}건 · 2마리 대면 {two:,}건")
+        st.caption(
+            "위 수치는 다섯 종을 뺀 별도 실험 결과예요. 데모 모델은 기준 60종을 사용해 다시 학습했어요."
+        )
+
+
 def change_preset(case):
     for key in list(st.session_state):
         if key.startswith(("아군-", "상대-", "revealed-", "weather", "mode")):
@@ -495,8 +560,8 @@ def main():
     if not CATALOG.is_file() or not CHECKPOINT.is_file():
         st.error("카탈로그 또는 학습 모델이 없어요. README의 학습 방법으로 두 파일을 준비해 주세요.")
         return
-    catalog = load_json(CATALOG)
-    entries = {row["id"]: row for row in catalog["pokemon"]}
+    core_catalog = load_json(CATALOG)
+    fallback_available = FALLBACK_CATALOG.is_file() and UNSEEN_CHECKPOINT.is_file()
     predictor = load_predictor(str(CHECKPOINT), str(CATALOG), CHECKPOINT.stat().st_mtime_ns, CATALOG.stat().st_mtime_ns)
     cases = load_json(DEMO_CASES) if DEMO_CASES.is_file() else []
     if "start" not in st.session_state:
@@ -520,6 +585,10 @@ def main():
                 format_func={"duel": "1:1 대면", "team": "3:3 선택 비교"}.__getitem__,
                 horizontal=True, key="mode",
             )
+            catalog = core_catalog
+            if mode == "duel" and fallback_available:
+                catalog = expanded_catalog(core_catalog, load_json(FALLBACK_CATALOG))
+            entries = {row["id"]: row for row in catalog["pokemon"]}
             weather = st.selectbox(
                 "날씨", list(WEATHER), index=index_for(list(WEATHER), start.get("weather", "")),
                 format_func=WEATHER.__getitem__, key="weather",
@@ -542,12 +611,31 @@ def main():
         with results:
             scenario = {"mode": mode, "own": own, "foe": foe, "weather": weather}
             duel = {"mode": "duel", "own": [own_active], "foe": [foe_active], "weather": weather}
+            outside_training = any(
+                entries[card["pokemon"]].get("outside_training")
+                for card in (own_active, foe_active)
+            )
+            selected_predictor = predictor
+            if outside_training:
+                try:
+                    selected_predictor = load_predictor(
+                        str(UNSEEN_CHECKPOINT), str(CATALOG), UNSEEN_CHECKPOINT.stat().st_mtime_ns,
+                        CATALOG.stat().st_mtime_ns, str(FALLBACK_CATALOG),
+                        FALLBACK_CATALOG.stat().st_mtime_ns,
+                    )
+                except (OSError, ValueError) as error:
+                    st.error(f"학습 범위 밖 모델을 열 수 없어요. {error}")
+                    return
+                st.warning(
+                    "**신뢰도 낮음** · 학습 범위 밖 포켓몬이 포함됐어요. "
+                    "등록된 대표 세트와 능력치, 타입, 기술 정보를 바탕으로 승률을 추정해요."
+                )
             try:
-                inferred = predictor.opponent_sets(scenario)
+                inferred = selected_predictor.opponent_sets(scenario)
             except ValueError:
                 st.warning("공개된 정보와 도구 중복 제한을 함께 만족하는 상대 세트가 없어요. 상대 포켓몬이나 공개 정보를 조정해 주세요.")
             else:
-                duel_result = predictor.predict(duel, ["auto"])[0]
+                duel_result = selected_predictor.predict(duel, ["auto"])[0]
                 matchup(scenario, entries, duel_result["win"])
                 if mode == "team":
                     st.subheader("선택지별 승률")
@@ -560,13 +648,18 @@ def main():
                     st.caption(f'첫 턴 종료 시 아군 예상 HP는 {duel_result["hp_after"]:.0f}%예요.')
                 opponent_panels(inferred, catalog, specified=foe_active["set"] is not None)
             source = catalog["source"]
-            species_count = len({base_species(entry) for entry in entries.values()})
+            core_count = len({base_species(entry) for entry in core_catalog["pokemon"]})
+            outside_count = len({
+                base_species(entry) for entry in entries.values() if entry.get("outside_training")
+            })
+            coverage = f"{core_count}종 + 학습 밖 {outside_count}종" if outside_count else f"{core_count}종"
             st.caption(
-                f'{species_count}종 · 레벨 50 · [레귤레이션 M-C]({source["rules_url"]}) · '
+                f'{coverage} · 레벨 50 · [레귤레이션 M-C]({source["rules_url"]}) · '
                 f'[Showdown 사용률 {source["month"]}]({source["usage_url"]})'
             )
     with eval_tab:
         evaluation()
+        unseen_evaluation(core_catalog)
 
 
 if __name__ == "__main__":

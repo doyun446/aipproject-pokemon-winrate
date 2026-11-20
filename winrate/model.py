@@ -65,30 +65,52 @@ class LogisticBaseline(nn.Module):
 
 
 class Predictor:
-    def __init__(self, catalog, model, feature_mean, feature_scale, temperature):
+    def __init__(
+        self,
+        catalog,
+        model,
+        feature_mean,
+        feature_scale,
+        temperature,
+        *,
+        duel_only=False,
+    ):
         self.catalog = catalog
         self.encoder = Encoder(catalog)
         self.model = model.eval()
         self.feature_mean = feature_mean
         self.feature_scale = feature_scale
         self.temperature = temperature
+        self.duel_only = duel_only
 
     @classmethod
-    def load(cls, model_path, catalog_path):
+    def load(cls, model_path, catalog_path, fallback_catalog_path=None):
         bundle = torch.load(model_path, map_location="cpu", weights_only=True)
         if bundle["version"] != CHECKPOINT_VERSION:
             raise ValueError(
                 "This checkpoint uses an unsupported schema. Retrain with the current code."
             )
-        catalog = Catalog(catalog_path)
+        supports_unseen = bundle.get("supports_unseen_species", False)
+        if fallback_catalog_path is not None and not supports_unseen:
+            raise ValueError(
+                "Use a checkpoint trained for unseen species with the fallback catalog."
+            )
+        catalog = Catalog(catalog_path, fallback_catalog_path)
         if catalog_hash(catalog.path) != bundle["catalog_hash"]:
             raise ValueError(
                 "The checkpoint and catalog do not match. Use the original catalog or retrain."
             )
         mean = bundle["feature_mean"]
-        model = MatchMLP(len(mean), len(catalog.pokemon), len(catalog.sets))
+        model = MatchMLP(len(mean), len(catalog.pokemon_ids), len(catalog.set_ids))
         model.load_state_dict(bundle["state_dict"])
-        return cls(catalog, model, mean, bundle["feature_scale"], bundle["temperature"])
+        return cls(
+            catalog,
+            model,
+            mean,
+            bundle["feature_scale"],
+            bundle["temperature"],
+            duel_only=supports_unseen,
+        )
 
     def opponent_sets(self, scenario):
         probabilities = {}
@@ -159,6 +181,8 @@ class Predictor:
     def legal_actions(self, scenario):
         if scenario["mode"] == "duel":
             return ["auto"]
+        if self.duel_only:
+            raise ValueError("The unseen-species predictor supports 1:1 battles only.")
         own, foe = scenario["own"][0], scenario["foe"][0]
         own_key = (own["pokemon"], own["set"])
         own_set = self.catalog.sets[own_key]

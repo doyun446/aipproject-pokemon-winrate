@@ -1,5 +1,8 @@
 const {readFileSync, writeFileSync} = require('node:fs');
 const path = require('node:path');
+const {parseArgs} = require('node:util');
+
+const {values} = parseArgs({options: {'include-fallback': {type: 'boolean'}}});
 
 const stage = path.join(__dirname, '..');
 const engine = process.env.SHOWDOWN_ENGINE || path.join(stage, 'sim-engine', 'dist', 'sim');
@@ -79,6 +82,7 @@ function translation(dictionary, entry) {
 }
 
 const targetSpeciesCount = 60;
+const fallbackSpeciesCount = 12;
 
 function rankBaseSpecies(entries) {
   const groups = new Map();
@@ -95,10 +99,6 @@ function rankBaseSpecies(entries) {
 }
 
 class UnsupportedFormError extends Error {}
-const moveNamesKo = {};
-const itemNamesKo = {};
-const abilityNamesKo = {};
-const moveData = {};
 
 function remember(entries, table, names, labels) {
   for (const {name} of entries) {
@@ -113,7 +113,7 @@ function legal(set) {
   return !validator.validateSet(structuredClone(set), {});
 }
 
-function pokemonEntry(name, usage) {
+function pokemonEntry(name, usage, {moveNamesKo, itemNamesKo, abilityNamesKo, moveData}) {
   const species = dex.species.get(name);
   if (!species.exists) throw new Error(`Unknown ranked Pokémon ${name}`);
   const mega = species.forme.startsWith('Mega');
@@ -196,51 +196,73 @@ function pokemonEntry(name, usage) {
   };
 }
 
-const rankedSpecies = rankBaseSpecies(stats.data);
-const pokemon = [];
-const omittedForms = [];
-let selectedSpecies = 0;
-for (const group of rankedSpecies) {
-  if (selectedSpecies === targetSpeciesCount) break;
-  const forms = group.forms.sort((a, b) => b.usage.usage - a.usage.usage).flatMap(({name, usage}) => {
-    try {
-      return [pokemonEntry(name, usage)];
-    } catch (error) {
-      if (!(error instanceof UnsupportedFormError)) throw error;
-      omittedForms.push(name);
-      console.warn(error.message);
-      return [];
+function selectSpecies(groups, count, {speciesOffset = 0, formOffset = 0} = {}) {
+  const pokemon = [];
+  const omittedForms = [];
+  const metadata = {moveNamesKo: {}, itemNamesKo: {}, abilityNamesKo: {}, moveData: {}};
+  let groupsRead = 0;
+  let selectedSpecies = 0;
+  for (const group of groups) {
+    if (selectedSpecies === count) break;
+    groupsRead += 1;
+    const forms = group.forms.sort((a, b) => b.usage.usage - a.usage.usage).flatMap(({name, usage}) => {
+      try {
+        return [pokemonEntry(name, usage, metadata)];
+      } catch (error) {
+        if (!(error instanceof UnsupportedFormError)) throw error;
+        omittedForms.push(name);
+        console.warn(error.message);
+        return [];
+      }
+    });
+    if (!forms.length) continue;
+    selectedSpecies += 1;
+    const baseNameKo = speciesNames.byNumber[group.base.num] || group.base.name;
+    for (const form of forms) {
+      pokemon.push({...form, rank: formOffset + pokemon.length + 1, base_name_ko: baseNameKo,
+        species_rank: speciesOffset + selectedSpecies, species_usage: group.usage});
     }
-  });
-  if (!forms.length) continue;
-  selectedSpecies += 1;
-  const baseNameKo = speciesNames.byNumber[group.base.num] || group.base.name;
-  for (const form of forms) {
-    pokemon.push({...form, rank: pokemon.length + 1, base_name_ko: baseNameKo,
-      species_rank: selectedSpecies, species_usage: group.usage});
   }
+  if (selectedSpecies !== count) {
+    throw new Error('The source does not contain enough base species with representative sets.');
+  }
+  return {pokemon, omittedForms, selectedSpecies, groupsRead, ...metadata};
 }
-if (selectedSpecies !== targetSpeciesCount) {
-  throw new Error('The source does not contain enough base species with representative sets.');
-}
-const usageMass = rankedSpecies.reduce((sum, group) => sum + group.usage, 0);
-const selectedUsageMass = pokemon.reduce((sum, form) => sum + form.usage, 0);
-const catalog = {
-  format,
-  format_name: formatName,
-  source: {
-    month: '2026-10', rating: 1760, battles: stats.info['number of battles'],
-    species_count: selectedSpecies, form_count: pokemon.length, usage_coverage: selectedUsageMass / usageMass,
-    unsupported_forms: omittedForms,
-    usage_url: `https://www.smogon.com/stats/2026-10/${format}-1760.txt`,
-    movesets_url: `https://www.smogon.com/stats/2026-10/chaos/${sourceFile}`,
-    rules_url: 'https://news.pokemon-home.com/ko/page/816.html',
-    prior_method: '도구가 다양한 경우 도구 사용률, 도구가 고정된 경우 능력치 배분 사용률을 대표 세트 안에서 정규화한 추정치입니다. 도구·특성·기술의 개별 사용률은 Showdown 통계입니다.',
-    names_url: 'https://github.com/PokeAPI/pokeapi/tree/4e84512eaf7f58a5a50d2a27941b1191cdb9e5e9/data/v2/csv',
-  },
-  pokemon, move_data: moveData, move_names_ko: moveNamesKo,
-  item_names_ko: itemNamesKo, ability_names_ko: abilityNamesKo,
-};
 
-writeFileSync(path.join(__dirname, 'catalog.json'), `${JSON.stringify(catalog, null, 2)}\n`);
-console.log(`${selectedSpecies} base species, ${pokemon.length} forms, ${pokemon.reduce((sum, entry) => sum + entry.sets.length, 0)} representative sets`);
+const rankedSpecies = rankBaseSpecies(stats.data);
+const usageMass = rankedSpecies.reduce((sum, group) => sum + group.usage, 0);
+
+function writeCatalog(filename, selection, extraSource = {}) {
+  const {pokemon, omittedForms, selectedSpecies, moveData, moveNamesKo, itemNamesKo, abilityNamesKo} = selection;
+  const selectedUsageMass = pokemon.reduce((sum, form) => sum + form.usage, 0);
+  const catalog = {
+    format,
+    format_name: formatName,
+    source: {
+      month: '2026-10', rating: 1760, battles: stats.info['number of battles'],
+      species_count: selectedSpecies, form_count: pokemon.length, usage_coverage: selectedUsageMass / usageMass,
+      unsupported_forms: omittedForms,
+      usage_url: `https://www.smogon.com/stats/2026-10/${format}-1760.txt`,
+      movesets_url: `https://www.smogon.com/stats/2026-10/chaos/${sourceFile}`,
+      rules_url: 'https://news.pokemon-home.com/ko/page/816.html',
+      prior_method: '도구가 다양한 경우 도구 사용률, 도구가 고정된 경우 능력치 배분 사용률을 대표 세트 안에서 정규화한 추정치입니다. 도구·특성·기술의 개별 사용률은 Showdown 통계입니다.',
+      names_url: 'https://github.com/PokeAPI/pokeapi/tree/4e84512eaf7f58a5a50d2a27941b1191cdb9e5e9/data/v2/csv',
+      ...extraSource,
+    },
+    pokemon, move_data: moveData, move_names_ko: moveNamesKo,
+    item_names_ko: itemNamesKo, ability_names_ko: abilityNamesKo,
+  };
+  writeFileSync(path.join(__dirname, filename), `${JSON.stringify(catalog, null, 2)}\n`);
+  const setCount = pokemon.reduce((sum, entry) => sum + entry.sets.length, 0);
+  console.log(`${filename}: ${selectedSpecies} base species, ${pokemon.length} forms, ${setCount} representative sets`);
+}
+
+const training = selectSpecies(rankedSpecies, targetSpeciesCount);
+writeCatalog('catalog.json', training);
+if (values['include-fallback']) {
+  const fallback = selectSpecies(rankedSpecies.slice(training.groupsRead), fallbackSpeciesCount, {
+    speciesOffset: training.selectedSpecies,
+    formOffset: training.pokemon.length,
+  });
+  writeCatalog('fallback_catalog.json', fallback, {inference_only: true});
+}
